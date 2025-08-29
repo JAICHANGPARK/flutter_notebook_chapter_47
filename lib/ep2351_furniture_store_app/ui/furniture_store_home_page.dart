@@ -85,7 +85,22 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                       ),
                     ],
                   ),
-                  Container(height: 62, child: Placeholder()),
+                  Container(
+                    height: 48,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Color.fromRGBO(172, 127, 85, 1),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 12),
+                          child: Center(child: Text("All")),
+                        ),
+                      ],
+                    ),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
