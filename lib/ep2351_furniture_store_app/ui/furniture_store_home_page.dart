@@ -66,7 +66,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.white,
                           ),
-                          child: TextField(),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: "Search furniture",
+                              icon: Icon(Icons.search),
+                            ),
+                          ),
                         ),
                       ),
                       CircleAvatar(),
@@ -74,11 +79,19 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                   ),
                   Container(height: 62, child: Placeholder()),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Recommended for you"),
+                      Text(
+                        "Recommended for you",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
                       TextButton(onPressed: () {}, child: Text("See All")),
                     ],
                   ),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
