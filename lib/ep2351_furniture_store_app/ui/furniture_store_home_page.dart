@@ -28,16 +28,21 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Discover Your"),
-                            Text.rich(TextSpan(children: [
-                              TextSpan(text: "")
-                            ])),
+                            Text.rich(
+                              TextSpan(
+                                children: [
+                                  TextSpan(text: "Perfect"),
+                                  TextSpan(text: "Furniture!"),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
                       CircleAvatar(
                         radius: 30,
                         child: Icon(HugeIcons.strokeRoundedNotification01),
-                      )
+                      ),
                     ],
                   ),
                 ],
