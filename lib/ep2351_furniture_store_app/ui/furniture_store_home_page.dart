@@ -103,7 +103,10 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           child: Center(
                             child: Text(
                               "All",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
                             ),
                           ),
                         ),
@@ -117,7 +120,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             horizontal: 18,
                             vertical: 8,
                           ),
-                          child: Center(child: Text("Chair")),
+                          child: Center(
+                            child: Text(
+                              "Chair",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(right: 8),
