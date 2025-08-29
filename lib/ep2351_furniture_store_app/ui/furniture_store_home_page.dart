@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class FurnitureStoreHomePage extends StatefulWidget {
   const FurnitureStoreHomePage({super.key});
@@ -32,7 +33,8 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                   CircleAvatar(
                     radius: 30,
                     backgroundColor: Color.fromRGBO(172, 127, 85, 1),
-                    
+                    foregroundColor: Colors.white,
+                    child: Icon(HugeIcons.strokeRoundedHome05),
                   ),
                   CircleAvatar(radius: 30, backgroundColor: Colors.white24),
                   CircleAvatar(radius: 30, backgroundColor: Colors.white24),
