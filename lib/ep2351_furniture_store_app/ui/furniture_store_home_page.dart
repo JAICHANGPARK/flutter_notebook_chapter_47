@@ -72,11 +72,17 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             decoration: InputDecoration(
                               hintText: "Search furniture",
                               icon: Icon(Icons.search),
+                              border: InputBorder.none,
                             ),
                           ),
                         ),
                       ),
-                      CircleAvatar(radius: 24),
+                      CircleAvatar(
+                        radius: 24,
+                        backgroundColor: Color.fromRGBO(172, 127, 85, 1),
+                        foregroundColor: Colors.white,
+                        child: Icon(Icons.tune),
+                      ),
                     ],
                   ),
                   Container(height: 62, child: Placeholder()),
