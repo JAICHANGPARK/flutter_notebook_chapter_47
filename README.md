@@ -2,7 +2,7 @@
 
 ## EP2351 
 
-- Real Estate Mobile App Design
+- FurniQuue - Furniture Store Mobile Apps
 - UIX Maruf Hossen
 - https://dribbble.com/shots/26438534-Real-Estate-Mobile-App-Design
 
