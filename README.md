@@ -6,6 +6,6 @@
 - Vektora UIUX for Vektora
 - https://dribbble.com/shots/26450248-FurniQuue-Furniture-Store-Mobile-Apps
 
-<img src="https://cdn.dribbble.com/userupload/44627106/file/25e9d650deca299c7a55c7c7098354f6.png?resize=1905x1429&vertical=center">
+<img src="https://cdn.dribbble.com/userupload/44665508/file/88bbfcafeab9ddeffb6d2409acadd90c.png?resize=1905x1429&vertical=center">
 
 A new Flutter project.
