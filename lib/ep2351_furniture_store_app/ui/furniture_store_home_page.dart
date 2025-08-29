@@ -31,7 +31,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                 children: [CircleAvatar(
                   radius: 30,
                 ),
-                  CircleAvatar(),
+                  CircleAvatar( radius: 30,),
                   CircleAvatar(),
                   CircleAvatar(),
 
