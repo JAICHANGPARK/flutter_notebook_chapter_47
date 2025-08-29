@@ -14,7 +14,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+
         ],
       ),
     );
