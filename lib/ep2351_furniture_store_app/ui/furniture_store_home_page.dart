@@ -15,7 +15,24 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
       backgroundColor: Colors.grey[200]!,
       body: Stack(
         children: [
-          Positioned.fill(child: Column(children: [])),
+          Positioned.fill(
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text("Discover Your"),
+                          Text.rich(TextSpan(children: [])),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
