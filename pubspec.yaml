@@ -9,8 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  hugeicons:
-  gap: 
+  hugeicons: ^0.0.11
+  gap: ^3.0.1
 
 dev_dependencies:
   flutter_test:
