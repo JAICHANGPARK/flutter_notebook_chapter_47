@@ -91,6 +91,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
+                          margin: EdgeInsets.only(right: 8),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Color.fromRGBO(172, 127, 85, 1),
@@ -107,6 +108,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           ),
                         ),
                         Container(
+                          margin: EdgeInsets.only(right: 8),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.white,
@@ -115,12 +117,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             horizontal: 18,
                             vertical: 8,
                           ),
-                          child: Center(
-                            child: Text(
-                              "Chair",
-
-                            ),
-                          ),
+                          child: Center(child: Text("Chair")),
                         ),
                         Container(
                           decoration: ShapeDecoration(
@@ -131,12 +128,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             horizontal: 18,
                             vertical: 8,
                           ),
-                          child: Center(
-                            child: Text(
-                              "Table",
-
-                            ),
-                          ),
+                          child: Center(child: Text("Table")),
                         ),
                         Container(
                           decoration: ShapeDecoration(
@@ -147,12 +139,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             horizontal: 18,
                             vertical: 8,
                           ),
-                          child: Center(
-                            child: Text(
-                              "Nightstand",
-
-                            ),
-                          ),
+                          child: Center(child: Text("Nightstand")),
                         ),
                       ],
                     ),
