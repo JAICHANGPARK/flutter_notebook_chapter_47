@@ -73,6 +73,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                     ],
                   ),
                   Container(height: 62, child: Placeholder()),
+                  Row(
+                    children: [
+                      Text("Recommended for you"),
+                      TextButton(onPressed: () {}, child: Text("See All")),
+                    ],
+                  ),
                 ],
               ),
             ),
