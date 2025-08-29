@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FurnitureStoreHomePage extends StatefulWidget {
   const FurnitureStoreHomePage({super.key});
 
@@ -13,8 +12,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        children: [
+        children: [Positioned.fill(child: Column(children: []))
+          Align(
+            child: Container(decoration: ShapeDecoration(shape: StadiumBorder(),
 
+              color: Colors.black,
+            ),),)
         ],
       ),
     );
