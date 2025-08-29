@@ -28,7 +28,9 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
               child: Row(
                 spacing: 4,
                 mainAxisSize: MainAxisSize.min,
-                children: [CircleAvatar(),
+                children: [CircleAvatar(
+                  radius: 30,
+                ),
                   CircleAvatar(),
                   CircleAvatar(),
                   CircleAvatar(),
