@@ -51,10 +51,22 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                       ),
                       CircleAvatar(
                         radius: 30,
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
                         child: Icon(HugeIcons.strokeRoundedNotification01),
                       ),
                     ],
                   ),
+                  Row(
+                    children: [
+                      Expanded(child: TextField()),
+                      CircleAvatar()
+                    ],
+                  ),
+                  Container(
+                    height: 52,
+                    child: Placeholder(),
+                  )
                 ],
               ),
             ),
