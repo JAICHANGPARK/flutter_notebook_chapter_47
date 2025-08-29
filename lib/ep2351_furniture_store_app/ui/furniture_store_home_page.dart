@@ -11,6 +11,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200]!,
       body: Stack(
         children: [
           Positioned.fill(child: Column(children: [])),
