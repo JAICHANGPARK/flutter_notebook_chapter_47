@@ -181,7 +181,11 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
-                        return Container(height: 240, child: Placeholder());
+                        return Container(
+                          margin: EdgeInsets.only(bottom: 12),
+                          height: 240,
+                          child: Placeholder(),
+                        );
                       },
                     ),
                   ),
