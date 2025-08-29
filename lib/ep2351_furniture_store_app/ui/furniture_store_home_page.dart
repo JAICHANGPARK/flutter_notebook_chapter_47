@@ -27,12 +27,21 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Discover Your"),
+                            Text(
+                              "Discover Your",
+                              style: TextStyle(fontSize: 24),
+                            ),
                             Text.rich(
                               TextSpan(
                                 children: [
-                                  TextSpan(text: "Perfect"),
-                                  TextSpan(text: "Furniture!"),
+                                  TextSpan(
+                                    text: "Perfect",
+                                    style: TextStyle(fontSize: 24),
+                                  ),
+                                  TextSpan(
+                                    text: "Furniture!",
+                                    style: TextStyle(fontSize: 24),
+                                  ),
                                 ],
                               ),
                             ),
