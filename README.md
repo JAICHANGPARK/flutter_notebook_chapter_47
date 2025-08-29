@@ -4,7 +4,7 @@
 
 - FurniQuue - Furniture Store Mobile Apps
 - Vektora UIUX for Vektora
-- https://dribbble.com/shots/26438534-Real-Estate-Mobile-App-Design
+- https://dribbble.com/shots/26450248-FurniQuue-Furniture-Store-Mobile-Apps
 
 <img src="https://cdn.dribbble.com/userupload/44627106/file/25e9d650deca299c7a55c7c7098354f6.png?resize=1905x1429&vertical=center">
 
