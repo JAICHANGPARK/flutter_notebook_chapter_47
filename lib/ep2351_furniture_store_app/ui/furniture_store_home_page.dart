@@ -23,7 +23,6 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
               padding: EdgeInsets.all(10),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
-
                 color: Colors.black,
               ),
               child: Row(
