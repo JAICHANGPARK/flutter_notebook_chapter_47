@@ -21,6 +21,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
             right: 16,
             child: SafeArea(
               child: Column(
+                spacing: 24,
                 children: [
                   Row(
                     children: [
@@ -59,7 +60,15 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                   ),
                   Row(
                     children: [
-                      Expanded(child: TextField()),
+                      Expanded(
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          child: TextField(),
+                        ),
+                      ),
                       CircleAvatar(),
                     ],
                   ),
