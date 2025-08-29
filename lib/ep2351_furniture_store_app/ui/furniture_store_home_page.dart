@@ -60,13 +60,10 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                   Row(
                     children: [
                       Expanded(child: TextField()),
-                      CircleAvatar()
+                      CircleAvatar(),
                     ],
                   ),
-                  Container(
-                    height: 52,
-                    child: Placeholder(),
-                  )
+                  Container(height: 62, child: Placeholder()),
                 ],
               ),
             ),
