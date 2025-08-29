@@ -95,8 +95,16 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             shape: StadiumBorder(),
                             color: Color.fromRGBO(172, 127, 85, 1),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 18, vertical: 8),
-                          child: Center(child: Text("All")),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 18,
+                            vertical: 8,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "All",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
                         ),
                       ],
                     ),
