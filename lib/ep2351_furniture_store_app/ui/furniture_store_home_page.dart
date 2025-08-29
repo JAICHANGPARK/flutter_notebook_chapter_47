@@ -36,7 +36,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                     foregroundColor: Colors.white,
                     child: Icon(HugeIcons.strokeRoundedHome05),
                   ),
-                  CircleAvatar(radius: 30, backgroundColor: Colors.white24),
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Colors.white24,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.favorite_border),
+                  ),
                   CircleAvatar(radius: 30, backgroundColor: Colors.white24),
                   CircleAvatar(radius: 30, backgroundColor: Colors.white24),
                 ],
