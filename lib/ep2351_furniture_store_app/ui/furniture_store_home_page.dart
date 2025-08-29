@@ -19,13 +19,14 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
             alignment: Alignment.bottomCenter,
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 24),
-              
+              padding: EdgeInsets.all(12),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
 
                 color: Colors.black,
               ),
               child: Row(
+                spacing: 4,
                 mainAxisSize: MainAxisSize.min,
                 children: [CircleAvatar(),
                   CircleAvatar(),
