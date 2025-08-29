@@ -28,7 +28,9 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Discover Your"),
-                            Text.rich(TextSpan(children: [])),
+                            Text.rich(TextSpan(children: [
+                              TextSpan(text: "")
+                            ])),
                           ],
                         ),
                       ),
