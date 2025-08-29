@@ -22,12 +22,17 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                   children: [
                     Expanded(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Discover Your"),
                           Text.rich(TextSpan(children: [])),
                         ],
                       ),
                     ),
+                    CircleAvatar(
+                      radius: 30,
+                      child: Icon(HugeIcons.strokeRoundedNotification01),
+                    )
                   ],
                 ),
               ],
