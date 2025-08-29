@@ -20,7 +20,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
             alignment: Alignment.bottomCenter,
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 24),
-              padding: EdgeInsets.all(12),
+              padding: EdgeInsets.all(10),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
 
@@ -31,25 +31,25 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   CircleAvatar(
-                    radius: 30,
+                    radius: 32,
                     backgroundColor: Color.fromRGBO(172, 127, 85, 1),
                     foregroundColor: Colors.white,
                     child: Icon(HugeIcons.strokeRoundedHome05),
                   ),
                   CircleAvatar(
-                    radius: 30,
+                    radius: 32,
                     backgroundColor: Colors.white24,
                     foregroundColor: Colors.white,
                     child: Icon(Icons.favorite_border),
                   ),
                   CircleAvatar(
-                    radius: 30,
+                    radius: 32,
                     backgroundColor: Colors.white24,
                     foregroundColor: Colors.white,
                     child: Icon(Icons.shopping_bag_outlined),
                   ),
                   CircleAvatar(
-                    radius: 30,
+                    radius: 32,
                     backgroundColor: Colors.white24,
                     foregroundColor: Colors.white,
                     child: Icon(Icons.person_2_outlined),
