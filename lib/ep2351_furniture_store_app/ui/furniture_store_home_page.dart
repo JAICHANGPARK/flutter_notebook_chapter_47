@@ -59,7 +59,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                     ],
                   ),
                   Row(
-                    spacing: 16,
+                    spacing: 12,
                     children: [
                       Expanded(
                         child: Container(
@@ -76,7 +76,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           ),
                         ),
                       ),
-                      CircleAvatar(),
+                      CircleAvatar(radius: 24),
                     ],
                   ),
                   Container(height: 62, child: Placeholder()),
