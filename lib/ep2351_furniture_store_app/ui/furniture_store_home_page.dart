@@ -17,8 +17,8 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
         children: [
           Positioned.fill(
             top: 24,
-            left: 16,
-            right: 16,
+            left: 24,
+            right: 24,
             child: SafeArea(
               bottom: false,
               child: Column(
