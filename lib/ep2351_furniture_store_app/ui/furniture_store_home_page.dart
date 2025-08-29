@@ -106,6 +106,54 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             ),
                           ),
                         ),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 18,
+                            vertical: 8,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Chair",
+
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 18,
+                            vertical: 8,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Table",
+
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 18,
+                            vertical: 8,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Nightstand",
+
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
