@@ -32,13 +32,11 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                   CircleAvatar(
                     radius: 30,
                     backgroundColor: Color.fromRGBO(172, 127, 85, 1),
+                    
                   ),
-                  CircleAvatar(radius: 30,
-                  backgroundColor: Colors.white24,),
-                  CircleAvatar(radius: 30,
-                    backgroundColor: Colors.white24,),
-                  CircleAvatar(radius: 30,
-                    backgroundColor: Colors.white24,),
+                  CircleAvatar(radius: 30, backgroundColor: Colors.white24),
+                  CircleAvatar(radius: 30, backgroundColor: Colors.white24),
+                  CircleAvatar(radius: 30, backgroundColor: Colors.white24),
                 ],
               ),
             ),
