@@ -59,6 +59,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                     ],
                   ),
                   Row(
+                    spacing: 16,
                     children: [
                       Expanded(
                         child: Container(
@@ -66,6 +67,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.white,
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 12),
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: "Search furniture",
