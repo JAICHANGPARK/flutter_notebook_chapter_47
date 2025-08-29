@@ -16,26 +16,30 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Discover Your"),
-                          Text.rich(TextSpan(children: [])),
-                        ],
+            left: 16,
+            right: 16,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Discover Your"),
+                            Text.rich(TextSpan(children: [])),
+                          ],
+                        ),
                       ),
-                    ),
-                    CircleAvatar(
-                      radius: 30,
-                      child: Icon(HugeIcons.strokeRoundedNotification01),
-                    )
-                  ],
-                ),
-              ],
+                      CircleAvatar(
+                        radius: 30,
+                        child: Icon(HugeIcons.strokeRoundedNotification01),
+                      )
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
           Align(
