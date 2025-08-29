@@ -23,6 +23,14 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
 
                 color: Colors.black,
               ),
+              child: Row(
+                children: [CircleAvatar(),
+                  CircleAvatar(),
+                  CircleAvatar(),
+                  CircleAvatar(),
+
+                ],
+              ),
             ),
           ),
         ],
