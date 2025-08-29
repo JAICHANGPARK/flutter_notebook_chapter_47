@@ -20,6 +20,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
             left: 16,
             right: 16,
             child: SafeArea(
+              bottom: false,
               child: Column(
                 spacing: 24,
                 children: [
@@ -137,8 +138,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             horizontal: 18,
                             vertical: 8,
                           ),
-                          child: Center(child: Text("Table",
-                            style: TextStyle(fontSize: 16),)),
+                          child: Center(
+                            child: Text(
+                              "Table",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(right: 8),
@@ -150,8 +155,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             horizontal: 18,
                             vertical: 8,
                           ),
-                          child: Center(child: Text("Nightstand",
-                            style: TextStyle(fontSize: 16),)),
+                          child: Center(
+                            child: Text(
+                              "Nightstand",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -169,7 +178,13 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                       TextButton(onPressed: () {}, child: Text("See All")),
                     ],
                   ),
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(height: 240, child: Placeholder());
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),
