@@ -16,6 +16,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
+            top: 24,
             left: 16,
             right: 16,
             child: SafeArea(
@@ -39,7 +40,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                     style: TextStyle(fontSize: 24),
                                   ),
                                   TextSpan(
-                                    text: "Furniture!",
+                                    text: " Furniture!",
                                     style: TextStyle(fontSize: 24),
                                   ),
                                 ],
