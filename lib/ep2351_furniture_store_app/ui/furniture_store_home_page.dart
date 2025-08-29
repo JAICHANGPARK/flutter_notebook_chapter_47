@@ -12,12 +12,18 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        children: [Positioned.fill(child: Column(children: []))
+        children: [
+          Positioned.fill(child: Column(children: [])),
           Align(
-            child: Container(decoration: ShapeDecoration(shape: StadiumBorder(),
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
 
-              color: Colors.black,
-            ),),)
+                color: Colors.black,
+              ),
+            ),
+          ),
         ],
       ),
     );
