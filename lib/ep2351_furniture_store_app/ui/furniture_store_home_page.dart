@@ -120,6 +120,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           child: Center(child: Text("Chair")),
                         ),
                         Container(
+                          margin: EdgeInsets.only(right: 8),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.white,
@@ -131,6 +132,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           child: Center(child: Text("Table")),
                         ),
                         Container(
+                          margin: EdgeInsets.only(right: 8),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.white,
