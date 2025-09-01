@@ -248,12 +248,19 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                           children: [
                                             Text(
                                               "Chair Dining Minimalist",
-                                              style: TextStyle(fontSize: 18,),
+                                              style: TextStyle(fontSize: 18),
                                             ),
                                             Text.rich(
                                               TextSpan(
                                                 children: [
-                                                  TextSpan(text: "\$320"),
+                                                  TextSpan(
+                                                    text: "\$320",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ),
+                                                  ),
                                                   TextSpan(text: ".00"),
                                                 ],
                                               ),
