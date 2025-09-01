@@ -185,8 +185,13 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           margin: EdgeInsets.only(bottom: 12),
                           height: 240,
                           decoration: BoxDecoration(
-                            image: DecorationImage(image: NetworkImage("https://cdn.pixabay.com/photo/2024/09/17/11/19/real-estate-9053405_1280.jpg",),
-                            fit: BoxFit.cover,)
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2024/09/17/11/19/real-estate-9053405_1280.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(16),
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
