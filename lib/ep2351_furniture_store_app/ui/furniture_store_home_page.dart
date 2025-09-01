@@ -184,7 +184,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                         return Container(
                           margin: EdgeInsets.only(bottom: 12),
                           height: 240,
-                          child: Placeholder(),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+
+                            ],
+                          )
                         );
                       },
                     ),
