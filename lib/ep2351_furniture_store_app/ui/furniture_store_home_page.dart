@@ -187,9 +187,17 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-
+                              Align(
+                                alignment: Alignment.centerRight,
+                                child: Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
                             ],
-                          )
+                          ),
                         );
                       },
                     ),
