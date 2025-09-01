@@ -204,8 +204,9 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                     color: Colors.white,
                                   ),
                                   child: Row(
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      Icon(Icons.star),
+                                      Icon(Icons.star, color: Colors.yellow),
                                       Text(
                                         "4.9",
                                         style: TextStyle(
@@ -215,7 +216,10 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                       ),
                                       Text(
                                         "(Review)",
-                                        style: TextStyle(fontSize: 16),
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.grey,
+                                        ),
                                       ),
                                     ],
                                   ),
