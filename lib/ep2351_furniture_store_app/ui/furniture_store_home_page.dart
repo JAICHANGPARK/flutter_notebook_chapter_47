@@ -203,6 +203,16 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                     shape: StadiumBorder(),
                                     color: Colors.white,
                                   ),
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.star),
+                                      Text("4.9",style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16
+                                      ),),
+                                      Text("(Review)")
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
