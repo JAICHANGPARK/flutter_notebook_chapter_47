@@ -239,9 +239,16 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                   ),
                                   child: Row(
                                     children: [
-                                      Expanded(child: Column(children: [
-                                        
-                                      ],))
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text("Chair Dining Minialist"),
+                                            Text.rich(TextSpan(children: [])),
+                                          ],
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),
