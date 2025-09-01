@@ -256,12 +256,17 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                                   TextSpan(
                                                     text: "\$320",
                                                     style: TextStyle(
-                                                      fontSize: 16,
+                                                      fontSize: 18,
                                                       fontWeight:
                                                           FontWeight.bold,
                                                     ),
                                                   ),
-                                                  TextSpan(text: ".00"),
+                                                  TextSpan(
+                                                    text: ".00",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
