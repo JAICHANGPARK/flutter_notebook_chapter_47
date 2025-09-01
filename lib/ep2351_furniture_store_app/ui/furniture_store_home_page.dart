@@ -232,6 +232,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                     ),
                                   ),
                                 ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
