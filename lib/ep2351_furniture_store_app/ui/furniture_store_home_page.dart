@@ -206,7 +206,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                       color: Colors.white,
                                     ),
                                     padding: EdgeInsets.symmetric(
-                                      horizontal: 12,
+                                      horizontal: 8,
                                       vertical: 6,
                                     ),
                                     child: Row(
@@ -276,6 +276,10 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                       CircleAvatar(
                                         radius: 24,
                                         backgroundColor: Colors.brown[400]!,
+                                        child: Icon(
+                                          Icons.shopping_basket_outlined,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ],
                                   ),
