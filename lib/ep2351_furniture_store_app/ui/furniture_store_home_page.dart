@@ -205,7 +205,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                       shape: StadiumBorder(),
                                       color: Colors.white,
                                     ),
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 12,
+                                      vertical: 6,
+                                    ),
                                     child: Row(
+                                      spacing: 4,
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Icon(Icons.star, color: Colors.yellow),
