@@ -237,6 +237,13 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                     borderRadius: BorderRadius.circular(12),
                                     color: Colors.white,
                                   ),
+                                  child: Row(
+                                    children: [
+                                      Expanded(child: Column(children: [
+                                        
+                                      ],))
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
