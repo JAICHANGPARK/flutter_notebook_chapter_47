@@ -206,11 +206,17 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                   child: Row(
                                     children: [
                                       Icon(Icons.star),
-                                      Text("4.9",style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16
-                                      ),),
-                                      Text("(Review)")
+                                      Text(
+                                        "4.9",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                      Text(
+                                        "(Review)",
+                                        style: TextStyle(fontSize: 16),
+                                      ),
                                     ],
                                   ),
                                 ),
