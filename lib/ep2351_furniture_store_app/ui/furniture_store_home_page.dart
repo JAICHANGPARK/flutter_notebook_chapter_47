@@ -245,13 +245,20 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text("Chair Dining Minimalist"),
-                                            Text.rich(TextSpan(children: [
-                                              TextSpan(text: "\$320"),
-                                              TextSpan(text: ".00")
-
-                                            ])),
+                                            Text.rich(
+                                              TextSpan(
+                                                children: [
+                                                  TextSpan(text: "\$320"),
+                                                  TextSpan(text: ".00"),
+                                                ],
+                                              ),
+                                            ),
                                           ],
                                         ),
+                                      ),
+                                      CircleAvatar(
+                                        radius: 24,
+                                        backgroundColor: Colors.brown[400]!,
                                       ),
                                     ],
                                   ),
