@@ -183,7 +183,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           margin: EdgeInsets.only(bottom: 12),
-                          height: 240,
+                          height: 260,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               image: NetworkImage(
