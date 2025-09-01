@@ -237,6 +237,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                                     borderRadius: BorderRadius.circular(12),
                                     color: Colors.white,
                                   ),
+                                  padding: EdgeInsets.all(12),
                                   child: Row(
                                     children: [
                                       Expanded(
