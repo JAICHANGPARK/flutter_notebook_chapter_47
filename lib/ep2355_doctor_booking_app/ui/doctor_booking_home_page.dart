@@ -32,10 +32,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
             child: SafeArea(
               bottom: false,
               child: Column(
+                spacing: 24,
                 children: [
                   Row(
+                    spacing: 16,
                     children: [
-                      CircleAvatar(radius: 32),
+                      CircleAvatar(radius: 28),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
