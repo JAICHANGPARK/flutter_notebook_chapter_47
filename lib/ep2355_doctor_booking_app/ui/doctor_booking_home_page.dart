@@ -77,7 +77,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                     child: SingleChildScrollView(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        spacing: 16,
+                        spacing: 20,
                         children: [
                           Row(
                             children: [
