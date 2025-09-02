@@ -76,6 +76,8 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        spacing: 16,
                         children: [
                           Row(
                             children: [
@@ -87,6 +89,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                           Text("Specialist"),
                           Container(height: 62, child: Placeholder()),
                           Container(height: 180, child: Placeholder()),
+                          Row(
+                            children: [
+                              Text("Upcoming Appointment"),
+                              Icon(Icons.chevron_right),
+                            ],
+                          ),
                         ],
                       ),
                     ),
