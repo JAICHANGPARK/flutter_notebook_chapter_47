@@ -34,7 +34,6 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
               child: Column(
                 spacing: 24,
                 children: [
-
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Column(
@@ -58,7 +57,9 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                 ],
                               ),
                             ),
-                            Badge(child: Icon(Icons.notifications_none, size: 32)),
+                            Badge(
+                              child: Icon(Icons.notifications_none, size: 32),
+                            ),
                           ],
                         ),
                         Container(
@@ -72,17 +73,23 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                       ],
                     ),
                   ),
-                  Expanded(child: SingleChildScrollView(child: Column(
-                    children: [
-                      Row(
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
                         children: [
-                          Text("Upcoming Appointment"),
-                          Icon(Icons.chevron_right)
+                          Row(
+                            children: [
+                              Text("Upcoming Appointment"),
+                              Icon(Icons.chevron_right),
+                            ],
+                          ),
+                          Container(height: 180, child: Placeholder()),
+                          Text("Specialist"),
+                          Container(height: 62, child: Placeholder()),
                         ],
-                      )
-                    ],
-                  ),))
-
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
