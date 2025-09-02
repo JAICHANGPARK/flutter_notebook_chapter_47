@@ -86,6 +86,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                           Container(height: 180, child: Placeholder()),
                           Text("Specialist"),
                           Container(height: 62, child: Placeholder()),
+                          Container(height: 180, child: Placeholder()),
                         ],
                       ),
                     ),
