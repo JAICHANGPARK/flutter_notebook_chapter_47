@@ -20,6 +20,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                   colors: [
                     Color.fromRGBO(239, 249, 255, 1),
                     Color.fromRGBO(238, 249, 252, 1),
+                    Color.fromRGBO(242, 244, 234, 1),
                   ],
                 ),
               ),
