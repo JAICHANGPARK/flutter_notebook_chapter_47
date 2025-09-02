@@ -30,6 +30,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
           ),
           Positioned.fill(
             child: SafeArea(
+              bottom: false,
               child: Column(
                 children: [
                   Row(
@@ -37,6 +38,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                       CircleAvatar(),
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Dream Walker"),
                             Row(
@@ -48,6 +50,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                           ],
                         ),
                       ),
+                      Badge(child: Icon(Icons.notifications_none, size: 32)),
                     ],
                   ),
                 ],
