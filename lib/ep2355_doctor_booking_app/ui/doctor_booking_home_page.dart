@@ -17,7 +17,10 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Color.fromRGBO(239, 249, 255, 1)],
+                  colors: [
+                    Color.fromRGBO(239, 249, 255, 1),
+                    Color.fromRGBO(238, 249, 252, 1),
+                  ],
                 ),
               ),
             ),
