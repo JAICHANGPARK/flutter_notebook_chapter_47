@@ -10,6 +10,16 @@ class DoctorBookingHomePage extends StatefulWidget {
 class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(gradient: LinearGradient(colors: [])),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
