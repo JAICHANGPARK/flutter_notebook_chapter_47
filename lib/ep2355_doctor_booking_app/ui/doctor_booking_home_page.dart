@@ -35,7 +35,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(radius: 32),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,6 +52,14 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                       ),
                       Badge(child: Icon(Icons.notifications_none, size: 32)),
                     ],
+                  ),
+                  Container(
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(
+                        side: BorderSide(color: Colors.grey[300]!),
+                      ),
+                    ),
+                    child: TextField(),
                   ),
                 ],
               ),
