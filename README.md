@@ -1,8 +1,8 @@
 # flutter_notebook_chapter_47
 
-## EP2351-2354
+## EP2355
 
-- FurniQuue - Furniture Store Mobile Apps
+- Doctor Appointment Booking App
 - Vektora UIUX for Vektora
 - https://dribbble.com/shots/26450248-FurniQuue-Furniture-Store-Mobile-Apps
 
