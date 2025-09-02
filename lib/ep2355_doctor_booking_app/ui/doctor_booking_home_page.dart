@@ -34,35 +34,55 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
               child: Column(
                 spacing: 24,
                 children: [
-                  Row(
-                    spacing: 16,
-                    children: [
-                      CircleAvatar(radius: 28),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Column(
+                      spacing: 24,
+                      children: [
+                        Row(
+                          spacing: 16,
                           children: [
-                            Text("Dream Walker"),
-                            Row(
-                              children: [
-                                Icon(Icons.location_on_outlined),
-                                Text("Seoul"),
-                              ],
+                            CircleAvatar(radius: 28),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Dream Walker"),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.location_on_outlined),
+                                      Text("Seoul"),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
+                            Badge(child: Icon(Icons.notifications_none, size: 32)),
                           ],
                         ),
-                      ),
-                      Badge(child: Icon(Icons.notifications_none, size: 32)),
-                    ],
-                  ),
-                  Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(
-                        side: BorderSide(color: Colors.grey[300]!),
-                      ),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(
+                              side: BorderSide(color: Colors.grey[300]!),
+                            ),
+                          ),
+                          child: TextField(),
+                        ),
+                      ],
                     ),
-                    child: TextField(),
                   ),
+                  Expanded(child: SingleChildScrollView(child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("Upcoming Appointment"),
+                          Icon(Icons.chevron_right)
+                        ],
+                      )
+                    ],
+                  ),))
+
                 ],
               ),
             ),
