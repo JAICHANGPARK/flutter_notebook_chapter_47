@@ -29,7 +29,23 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
             ),
           ),
           Positioned.fill(
-            child: SafeArea(child: Column(children: [])),
+            child: SafeArea(child: Column(children: [
+              Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(child: Column(children: [
+                    Text("Dream Walker"),
+                    Row(
+                      children: [
+                        Icon(Icons.location_on_outlined),
+                        Text("Seoul")
+                      ],
+                    )
+                  ],))
+                ],
+              )
+
+            ])),
           ),
         ],
       ),
