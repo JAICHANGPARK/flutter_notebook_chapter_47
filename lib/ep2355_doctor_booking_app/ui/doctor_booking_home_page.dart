@@ -117,12 +117,18 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   ),
                                   child: Stack(
                                     children: [
-                                      Column(
-                                        children: [
-                                          Text("Dr, Dream Walker"),
-                                          Text("7:30 PM, 24 August"),
-                                          Text('Flutter Hospital'),
-                                        ],
+                                      Positioned.fill(
+                                        left: 16,
+                                        top: 16,
+                                        child: Column(
+                                          children: [
+                                            Text("Dr, Dream Walker"),
+                                            Spacer(),
+                                            Text("7:30 PM, 24 August"),
+                                            Text('Flutter Hospital'),
+                                            Text("Code Surgeon"),
+                                          ],
+                                        ),
                                       ),
                                     ],
                                   ),
