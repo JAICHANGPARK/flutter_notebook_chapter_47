@@ -115,7 +115,17 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                       ],
                                     ),
                                   ),
-                                  child: Stack(children: []),
+                                  child: Stack(
+                                    children: [
+                                      Column(
+                                        children: [
+                                          Text("Dr, Dream Walker"),
+                                          Text("7:30 PM, 24 August"),
+                                          Text('Flutter Hospital'),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
