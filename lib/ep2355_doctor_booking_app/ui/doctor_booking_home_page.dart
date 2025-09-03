@@ -100,7 +100,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   ],
                                 ),
                                 Container(
-                                  height: 180,
+                                  height: 200,
                                   decoration: ShapeDecoration(
                                     shape: RoundedSuperellipseBorder(
                                       borderRadius: BorderRadius.circular(24),
@@ -124,6 +124,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                         child: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
+                                          spacing: 4,
                                           children: [
                                             Text(
                                               "Dr, Dream Walker",
@@ -144,7 +145,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                               'Flutter Hospital',
                                               style: TextStyle(fontSize: 16),
                                             ),
-                                            Text("Code Surgeon"),
+                                            Text(
+                                              "Code Surgeon",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       ),
