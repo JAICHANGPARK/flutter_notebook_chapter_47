@@ -133,8 +133,17 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                               ),
                                             ),
                                             Spacer(),
-                                            Text("7:30 PM, 24 August"),
-                                            Text('Flutter Hospital'),
+                                            Text(
+                                              "7:30 PM, 24 August",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              'Flutter Hospital',
+                                              style: TextStyle(fontSize: 16),
+                                            ),
                                             Text("Code Surgeon"),
                                           ],
                                         ),
