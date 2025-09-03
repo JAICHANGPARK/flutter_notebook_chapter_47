@@ -105,7 +105,11 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                     shape: RoundedSuperellipseBorder(
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    gradient: LinearGradient(colors: []),
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        Color.fromRGBO(223, 237, 235, 1),
+                                      ],
+                                    ),
                                   ),
                                   child: Stack(children: []),
                                 ),
