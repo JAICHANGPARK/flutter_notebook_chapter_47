@@ -68,7 +68,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               side: BorderSide(color: Colors.grey[300]!),
                             ),
                           ),
-                          child: TextField(),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              icon: Icon(Icons.search),
+                              hintText: "Try \"Orthopedics\""
+                            ),
+                          ),
                         ),
                       ],
                     ),
