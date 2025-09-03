@@ -68,10 +68,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               side: BorderSide(color: Colors.grey[300]!),
                             ),
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 12),
                           child: TextField(
                             decoration: InputDecoration(
                               icon: Icon(Icons.search),
-                              hintText: "Try \"Orthopedics\""
+                              hintText: "Try \"Orthopedics\"",
+                              border: InputBorder.none,
                             ),
                           ),
                         ),
@@ -84,13 +86,21 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         spacing: 20,
                         children: [
-                          Row(
-                            children: [
-                              Text("Upcoming Appointment"),
-                              Icon(Icons.chevron_right),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Column(
+                              spacing: 16,
+                              children: [
+                              Row(
+                                children: [
+                                  Text("Upcoming Appointment"),
+                                  Icon(Icons.chevron_right),
+                                ],
+                              ),
+                              Container(height: 180, child: Placeholder()),
+                            ],),
                           ),
-                          Container(height: 180, child: Placeholder()),
+
                           Text("Specialist"),
                           Container(height: 62, child: Placeholder()),
                           Container(height: 180, child: Placeholder()),
