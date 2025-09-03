@@ -108,6 +108,8 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                     gradient: LinearGradient(
                                       colors: [
                                         Color.fromRGBO(223, 237, 235, 1),
+                                        Color.fromRGBO(228, 239, 226, 1),
+                                        Color.fromRGBO(232, 242, 222, 1),
                                       ],
                                     ),
                                   ),
