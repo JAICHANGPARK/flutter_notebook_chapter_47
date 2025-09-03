@@ -95,7 +95,10 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("Upcoming Appointment"),
+                                    Text(
+                                      "Upcoming Appointment",
+                                      style: TextStyle(fontSize: 16),
+                                    ),
                                     Icon(Icons.chevron_right),
                                   ],
                                 ),
