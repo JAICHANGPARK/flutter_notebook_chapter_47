@@ -106,6 +106,8 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     gradient: LinearGradient(
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
                                       colors: [
                                         Color.fromRGBO(223, 237, 235, 1),
                                         Color.fromRGBO(228, 239, 226, 1),
