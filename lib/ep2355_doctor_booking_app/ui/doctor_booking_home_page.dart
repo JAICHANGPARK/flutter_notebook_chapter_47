@@ -91,14 +91,26 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                             child: Column(
                               spacing: 16,
                               children: [
-                              Row(
-                                children: [
-                                  Text("Upcoming Appointment"),
-                                  Icon(Icons.chevron_right),
-                                ],
-                              ),
-                              Container(height: 180, child: Placeholder()),
-                            ],),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("Upcoming Appointment"),
+                                    Icon(Icons.chevron_right),
+                                  ],
+                                ),
+                                Container(
+                                  height: 180,
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedSuperellipseBorder(
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    gradient: LinearGradient(colors: []),
+                                  ),
+                                  child: Stack(children: []),
+                                ),
+                              ],
+                            ),
                           ),
 
                           Text("Specialist"),
