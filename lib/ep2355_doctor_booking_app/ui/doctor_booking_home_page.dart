@@ -119,10 +119,19 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                     children: [
                                       Positioned.fill(
                                         left: 16,
-                                        top: 16,
+                                        top: 24,
+                                        bottom: 24,
                                         child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
-                                            Text("Dr, Dream Walker"),
+                                            Text(
+                                              "Dr, Dream Walker",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
+                                            ),
                                             Spacer(),
                                             Text("7:30 PM, 24 August"),
                                             Text('Flutter Hospital'),
