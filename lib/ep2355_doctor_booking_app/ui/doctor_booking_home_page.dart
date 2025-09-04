@@ -169,11 +169,11 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                             padding: const EdgeInsets.only(left: 16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              spacing: 12,
+                              spacing: 16,
                               children: [
                                 Text(
                                   "Specialist",
-                                  style: TextStyle(fontSize: 16),
+                                  style: TextStyle(fontSize: 18),
                                 ),
                                 Container(
                                   height: 58,
@@ -183,6 +183,9 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                     itemBuilder: (context, index) {
                                       final title = tabLists[index];
                                       return Container(
+                                        margin: EdgeInsets.only(
+                                          right: 16
+                                        ),
                                         padding: EdgeInsets.symmetric(
                                           horizontal: 42,
                                         ),
@@ -215,7 +218,11 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                             ),
                           ),
 
-                          Container(height: 180, child: Placeholder()),
+                          Container(
+                              padding: EdgeInsets.only(
+                                left: 16
+                              ),
+                              height: 180, child: Placeholder()),
                           Row(
                             children: [
                               Text("Upcoming Appointment"),
