@@ -176,13 +176,14 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   style: TextStyle(fontSize: 16),
                                 ),
                                 Container(
-                                  height: 62,
+                                  height: 58,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemCount: tabLists.length,
                                     itemBuilder: (context, index) {
                                       final title = tabLists[index];
                                       return Container(
+                                        padding: EdgeInsets.symmetric(horizontal: 42),
                                         decoration: ShapeDecoration(
                                           shape: StadiumBorder(),
                                           color: index == 0
