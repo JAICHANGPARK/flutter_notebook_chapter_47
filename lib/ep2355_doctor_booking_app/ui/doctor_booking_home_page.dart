@@ -8,7 +8,11 @@ class DoctorBookingHomePage extends StatefulWidget {
 }
 
 class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
-  List<String> tabLists = [];
+  List<String> tabLists = [
+    "All",
+    "Cardiologist",
+    "Physiotherapy",
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
