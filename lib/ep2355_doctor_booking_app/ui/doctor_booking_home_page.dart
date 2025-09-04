@@ -181,6 +181,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                 Container(
                                   height: 62,
                                   child: ListView.builder(
+                                    itemCount: tabLists.length,
                                     itemBuilder: (context, index) {
                                       return Container(
                                         child: Center(),
