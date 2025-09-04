@@ -163,12 +163,24 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               ],
                             ),
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Specialist"),
-                              Container(height: 62, child: Placeholder()),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.only(left: 16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              spacing: 12,
+                              children: [
+                                Text(
+                                  "Specialist",
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                Container(
+                                  height: 62,
+                                  child: ListView.builder(
+                                    itemBuilder: (context, index) {},
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
 
                           Container(height: 180, child: Placeholder()),
