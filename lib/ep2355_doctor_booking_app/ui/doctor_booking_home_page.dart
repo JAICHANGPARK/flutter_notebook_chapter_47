@@ -164,6 +164,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                             ),
                           ),
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Specialist"),
                               Container(height: 62, child: Placeholder()),
