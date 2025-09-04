@@ -197,7 +197,9 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                             "${title}",
                                             style: TextStyle(
                                               fontSize: 16,
-                                              color: Colors.white,
+                                              color: index == 0
+                                                  ? Colors.white
+                                                  : null,
                                             ),
                                           ),
                                         ),
