@@ -218,12 +218,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
 
                           Container(
                             padding: EdgeInsets.only(left: 16),
-                            height: 180,
+                            height: 190,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 180,
+                                  width: 280,
                                   margin: EdgeInsets.only(right: 16),
                                   child: Placeholder(),
                                 );
