@@ -190,7 +190,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                         decoration: ShapeDecoration(
                                           shape: StadiumBorder(
                                             side: BorderSide(
-                                              color: Colors.grey,
+                                              color: Colors.grey[400]!,
                                             ),
                                           ),
                                           color: index == 0
