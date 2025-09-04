@@ -183,14 +183,24 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                     itemBuilder: (context, index) {
                                       final title = tabLists[index];
                                       return Container(
-                                        padding: EdgeInsets.symmetric(horizontal: 42),
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 42,
+                                        ),
                                         decoration: ShapeDecoration(
                                           shape: StadiumBorder(),
                                           color: index == 0
                                               ? Color.fromRGBO(16, 165, 192, 1)
                                               : Colors.transparent,
                                         ),
-                                        child: Center(child: Text("${title}")),
+                                        child: Center(
+                                          child: Text(
+                                            "${title}",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
                                       );
                                     },
                                   ),
