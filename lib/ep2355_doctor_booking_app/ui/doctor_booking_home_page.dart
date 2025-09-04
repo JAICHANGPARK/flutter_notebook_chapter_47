@@ -8,11 +8,8 @@ class DoctorBookingHomePage extends StatefulWidget {
 }
 
 class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
-  List<String> tabLists = [
-    "All",
-    "Cardiologist",
-    "Physiotherapy",
-  ];
+  List<String> tabLists = ["All", "Cardiologist", "Physiotherapy"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -183,8 +180,10 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   child: ListView.builder(
                                     itemCount: tabLists.length,
                                     itemBuilder: (context, index) {
+                                      final title = tabLists[index];
+
                                       return Container(
-                                        child: Center(),
+                                        child: Center(child: Text("${title}")),
                                       );
                                     },
                                   ),
