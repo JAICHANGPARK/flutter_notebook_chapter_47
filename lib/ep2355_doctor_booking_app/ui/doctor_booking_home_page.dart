@@ -133,7 +133,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                               "Dr, Dream Walker",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 18,
+                                                fontSize: 24,
                                               ),
                                             ),
                                             Spacer(),
@@ -163,9 +163,13 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               ],
                             ),
                           ),
+                          Column(
+                            children: [
+                              Text("Specialist"),
+                              Container(height: 62, child: Placeholder()),
+                            ],
+                          ),
 
-                          Text("Specialist"),
-                          Container(height: 62, child: Placeholder()),
                           Container(height: 180, child: Placeholder()),
                           Row(
                             children: [
