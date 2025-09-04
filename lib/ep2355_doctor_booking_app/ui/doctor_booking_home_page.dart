@@ -222,7 +222,15 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               padding: EdgeInsets.only(
                                 left: 16
                               ),
-                              height: 180, child: Placeholder()),
+                              height: 180, child: ListView.builder(itemBuilder: (context,index){
+                                return Container(
+                                  width: 180,
+                                  margin: EdgeInsets.only(
+                                    right: 16
+                                  ),
+                                  child: Placeholder(),
+                                );
+                          })),
                           Row(
                             children: [
                               Text("Upcoming Appointment"),
