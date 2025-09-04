@@ -233,10 +233,11 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 16),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   "Upcoming Appointment",
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(fontSize: 16),
                                 ),
                                 Icon(Icons.chevron_right),
                               ],
