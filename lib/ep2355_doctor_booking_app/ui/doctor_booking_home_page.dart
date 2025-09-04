@@ -183,9 +183,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                     itemBuilder: (context, index) {
                                       final title = tabLists[index];
                                       return Container(
-                                        margin: EdgeInsets.only(
-                                          right: 16
-                                        ),
+                                        margin: EdgeInsets.only(right: 16),
                                         padding: EdgeInsets.symmetric(
                                           horizontal: 42,
                                         ),
@@ -219,18 +217,19 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                           ),
 
                           Container(
-                              padding: EdgeInsets.only(
-                                left: 16
-                              ),
-                              height: 180, child: ListView.builder(itemBuilder: (context,index){
+                            padding: EdgeInsets.only(left: 16),
+                            height: 180,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
                                 return Container(
                                   width: 180,
-                                  margin: EdgeInsets.only(
-                                    right: 16
-                                  ),
+                                  margin: EdgeInsets.only(right: 16),
                                   child: Placeholder(),
                                 );
-                          })),
+                              },
+                            ),
+                          ),
                           Row(
                             children: [
                               Text("Upcoming Appointment"),
