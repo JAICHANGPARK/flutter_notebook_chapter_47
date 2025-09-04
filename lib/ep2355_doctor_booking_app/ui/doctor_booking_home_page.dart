@@ -218,7 +218,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
 
                           Container(
                             padding: EdgeInsets.only(left: 16),
-                            height: 190,
+                            height: 180,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
@@ -230,11 +230,14 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               },
                             ),
                           ),
-                          Row(
-                            children: [
-                              Text("Upcoming Appointment"),
-                              Icon(Icons.chevron_right),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Text("Upcoming Appointment"),
+                                Icon(Icons.chevron_right),
+                              ],
+                            ),
                           ),
                         ],
                       ),
