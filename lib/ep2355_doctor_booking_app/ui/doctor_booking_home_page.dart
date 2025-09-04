@@ -243,6 +243,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               ],
                             ),
                           ),
+                          List.generate(10, (idx){}),
                         ],
                       ),
                     ),
