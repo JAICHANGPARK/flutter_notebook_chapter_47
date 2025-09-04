@@ -187,7 +187,11 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                           horizontal: 42,
                                         ),
                                         decoration: ShapeDecoration(
-                                          shape: StadiumBorder(),
+                                          shape: StadiumBorder(
+                                            side: BorderSide(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
                                           color: index == 0
                                               ? Color.fromRGBO(16, 165, 192, 1)
                                               : Colors.transparent,
