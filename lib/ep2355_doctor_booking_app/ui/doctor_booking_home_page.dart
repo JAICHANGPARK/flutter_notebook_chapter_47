@@ -178,6 +178,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                 Container(
                                   height: 62,
                                   child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
                                     itemCount: tabLists.length,
                                     itemBuilder: (context, index) {
                                       final title = tabLists[index];
