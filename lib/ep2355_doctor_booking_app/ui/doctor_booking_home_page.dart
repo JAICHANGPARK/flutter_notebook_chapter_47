@@ -230,10 +230,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Row(
+                                        spacing: 12,
                                         children: [
                                           CircleAvatar(),
                                           Expanded(
                                             child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Text("Dr. Dream Walker"),
                                                 Text("Flutter Surgeon"),
