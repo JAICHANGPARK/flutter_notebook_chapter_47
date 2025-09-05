@@ -275,6 +275,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                         ],
                                       ),
                                       Row(
+                                        spacing: 8,
                                         children: [
                                           Expanded(
                                             child: Container(
