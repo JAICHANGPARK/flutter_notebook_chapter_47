@@ -244,7 +244,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                     fontSize: 18,
                                                   ),
                                                 ),
-                                                Text("Flutter Surgeon"),
+                                                Text(
+                                                  "Flutter Surgeon",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           ),
