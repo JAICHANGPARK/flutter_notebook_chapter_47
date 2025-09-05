@@ -267,7 +267,24 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                           Icon(Icons.star, color: Colors.red),
                                           Icon(Icons.star, color: Colors.red),
                                           Icon(Icons.star, color: Colors.red),
-                                          Icon(Icons.star_outline, color: Colors.grey),
+                                          Icon(
+                                            Icons.star_outline,
+                                            color: Colors.grey,
+                                          ),
+                                          Text("4.0"),
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ],
