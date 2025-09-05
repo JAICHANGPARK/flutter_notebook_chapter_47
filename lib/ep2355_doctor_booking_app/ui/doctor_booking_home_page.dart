@@ -286,9 +286,11 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                     BorderRadius.circular(16),
                                               ),
                                               child: Column(
+                                                mainAxisAlignment: MainAxisAlignment.center,
                                                 children: [
                                                   Text("Sep 12"),
                                                   Row(
+                                                    mainAxisAlignment: MainAxisAlignment.center,
                                                     children: [
                                                       Icon(
                                                         Icons.check_circle,
