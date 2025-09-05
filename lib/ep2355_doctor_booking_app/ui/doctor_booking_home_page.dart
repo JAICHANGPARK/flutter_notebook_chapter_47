@@ -282,6 +282,8 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                 border: Border.all(
                                                   color: Colors.grey,
                                                 ),
+                                                borderRadius:
+                                                    BorderRadius.circular(16),
                                               ),
                                             ),
                                           ),
