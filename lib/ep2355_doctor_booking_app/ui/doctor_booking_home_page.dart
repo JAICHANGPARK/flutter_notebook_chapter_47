@@ -225,7 +225,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                 return Container(
                                   width: 280,
                                   margin: EdgeInsets.only(right: 16),
-                                  child: Placeholder(),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+
+                                    ],
+                                  )
                                 );
                               },
                             ),
