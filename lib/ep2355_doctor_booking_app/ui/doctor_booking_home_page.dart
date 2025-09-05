@@ -226,11 +226,28 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   width: 280,
                                   margin: EdgeInsets.only(right: 16),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
-
+                                      Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Expanded(
+                                            child: Column(
+                                              children: [
+                                                Text("Dr. Dream Walker"),
+                                                Text("Flutter Surgeon"),
+                                              ],
+                                            ),
+                                          ),
+                                          IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(Icons.arrow_forward),
+                                          ),
+                                        ],
+                                      ),
                                     ],
-                                  )
+                                  ),
                                 );
                               },
                             ),
@@ -248,7 +265,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               ],
                             ),
                           ),
-                          ...List.generate(10, (idx){
+                          ...List.generate(10, (idx) {
                             return Placeholder();
                           }),
                         ],
