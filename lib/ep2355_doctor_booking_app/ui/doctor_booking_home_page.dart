@@ -259,6 +259,15 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                           ),
                                         ],
                                       ),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.star, color: Colors.red),
+                                          Icon(Icons.star, color: Colors.red),
+                                          Icon(Icons.star, color: Colors.red),
+                                          Icon(Icons.star, color: Colors.red),
+                                          Icon(Icons.star_outline, color: Colors.grey),
+                                        ],
+                                      ),
                                     ],
                                   ),
                                 );
