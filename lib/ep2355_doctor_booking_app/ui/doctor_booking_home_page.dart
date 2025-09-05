@@ -303,6 +303,60 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                               ),
                                             ),
                                           ),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey,
+                                                ),
+                                                borderRadius:
+                                                BorderRadius.circular(16),
+                                              ),
+                                              child: Column(
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                children: [
+                                                  Text("Sep 12"),
+                                                  Row(
+                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                    children: [
+                                                      Icon(
+                                                        Icons.check_circle,
+                                                        size: 12,
+                                                      ),
+                                                      Text("Available")
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey,
+                                                ),
+                                                borderRadius:
+                                                BorderRadius.circular(16),
+                                              ),
+                                              child: Column(
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                children: [
+                                                  Text("Sep 12"),
+                                                  Row(
+                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                    children: [
+                                                      Icon(
+                                                        Icons.check_circle,
+                                                        size: 12,
+                                                      ),
+                                                      Text("Available")
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ],
