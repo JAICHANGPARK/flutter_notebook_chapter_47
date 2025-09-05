@@ -223,7 +223,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 280,
+                                  width: 300,
                                   margin: EdgeInsets.only(right: 16),
                                   child: Column(
                                     spacing: 16,
@@ -279,6 +279,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                         children: [
                                           Expanded(
                                             child: Container(
+                                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                                               decoration: BoxDecoration(
                                                 border: Border.all(
                                                   color: Colors.grey,
