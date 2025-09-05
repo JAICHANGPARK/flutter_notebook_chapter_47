@@ -285,6 +285,20 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                 borderRadius:
                                                     BorderRadius.circular(16),
                                               ),
+                                              child: Column(
+                                                children: [
+                                                  Text("Sep 12"),
+                                                  Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.check_circle,
+                                                        size: 12,
+                                                      ),
+                                                      Text("Available")
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
                                             ),
                                           ),
                                         ],
