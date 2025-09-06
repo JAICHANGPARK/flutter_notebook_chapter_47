@@ -17,4 +17,3 @@
 
 <img src="https://cdn.dribbble.com/userupload/44665508/file/88bbfcafeab9ddeffb6d2409acadd90c.png?resize=1905x1429&vertical=center">
 
-A new Flutter project.
