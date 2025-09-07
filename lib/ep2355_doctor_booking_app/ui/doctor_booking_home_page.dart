@@ -319,6 +319,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                       Icon(
                                                         Icons.check_circle,
                                                         size: 12,
+                                                        color: Colors.green,
                                                       ),
                                                       Text(
                                                         "Available",
