@@ -13,6 +13,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          spacing: 16,
           children: [
             Row(children: [CircleAvatar()]),
             SizedBox(height: 100, child: Placeholder()),
