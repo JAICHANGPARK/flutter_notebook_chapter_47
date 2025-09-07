@@ -223,6 +223,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
+                                  padding: EdgeInsets.all(12),
                                   width: 300,
                                   margin: EdgeInsets.only(right: 16),
                                   decoration: BoxDecoration(
