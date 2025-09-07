@@ -20,7 +20,17 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         SizedBox(
           height: 100,
           child: Placeholder(),
-        )
+        ),
+        Row(
+          children: [
+
+          ],
+        ),
+        SizedBox(
+          height: 200,
+          child: Placeholder(),
+        ),
+        Expanded(child: ListView.builder(itemBuilder: (context,index){},))
       ])),
       bottomNavigationBar: Container(
         height: 80,
