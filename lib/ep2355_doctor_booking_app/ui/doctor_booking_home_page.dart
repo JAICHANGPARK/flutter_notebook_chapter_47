@@ -461,22 +461,25 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               decoration: ShapeDecoration(
                                 shape: StadiumBorder(),
                                 gradient: LinearGradient(
-                                  colors: [Color.fromRGBO(226, 238, 232, 1),
-                                    Color.fromRGBO(223, 239, 236, 1)
+                                  colors: [
+                                    Color.fromRGBO(226, 238, 232, 1),
+                                    Color.fromRGBO(223, 239, 236, 1),
                                   ],
                                 ),
                               ),
                               padding: EdgeInsets.all(6),
                               child: Row(
-                                
                                 children: [
-                                  CircleAvatar(
-                                    radius: 24,
-                                  ),
+                                  CircleAvatar(radius: 24),
                                   Expanded(
                                     child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
-                                        Text("Dr Dreamwalker"),
+                                        Text(
+                                          "Dr Dreamwalker",
+                                          style: TextStyle(fontSize: 16),
+                                        ),
                                         Text("Flutter "),
                                       ],
                                     ),
