@@ -3,7 +3,7 @@
 
 - Social Media App UI Design
 - UI Mostofa Ibrahim ⭐️
-- https://dribbble.com/shots/26469660-Doctor-Appointment-Booking-App
+- https://dribbble.com/shots/26493316-Social-Media-App-UI-Design
 
 <img src="https://cdn.dribbble.com/userupload/44729381/file/530a4923477cccfc1069e6e800e137f9.png?resize=1905x1429&vertical=center">
 
