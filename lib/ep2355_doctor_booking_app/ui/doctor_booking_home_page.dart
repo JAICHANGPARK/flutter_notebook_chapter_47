@@ -190,7 +190,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                         decoration: ShapeDecoration(
                                           shape: StadiumBorder(
                                             side: BorderSide(
-                                              color: Colors.grey[400]!,
+                                              color: Colors.grey[300]!,
                                             ),
                                           ),
                                           color: index == 0
@@ -416,7 +416,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                     children: [
                                                       Icon(
                                                         Icons.check_circle,
-                                                        size: 12,
+                                                        size: 12, color: Colors.green,
                                                       ),
                                                       Text(
                                                         "Available",
