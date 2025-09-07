@@ -457,6 +457,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                           ),
                           ...List.generate(10, (idx) {
                             return Container(
+                              margin: EdgeInsets.symmetric(horizontal: 12),
                               decoration: ShapeDecoration(
                                 shape: StadiumBorder(),
                                 gradient: LinearGradient(
@@ -465,7 +466,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   ],
                                 ),
                               ),
-                              padding: EdgeInsets.all(4),
+                              padding: EdgeInsets.all(6),
                               child: Row(
                                 
                                 children: [
