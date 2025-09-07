@@ -11,7 +11,17 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: Column(children: [])),
+      body: SafeArea(child: Column(children: [
+        Row(
+          children: [
+            CircleAvatar()
+          ],
+        ),
+        SizedBox(
+          height: 100,
+          child: Placeholder(),
+        )
+      ])),
       bottomNavigationBar: Container(
         height: 80,
         decoration: BoxDecoration(color: Colors.blue),
