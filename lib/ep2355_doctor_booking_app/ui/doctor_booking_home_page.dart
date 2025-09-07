@@ -419,6 +419,9 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                         "Available",
                                                         style: TextStyle(
                                                           fontSize: 12,
+                                                          color: Colors.green,
+                                                          fontWeight:
+                                                          FontWeight.bold,
                                                         ),
                                                       ),
                                                     ],
