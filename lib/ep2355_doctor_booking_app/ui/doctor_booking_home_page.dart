@@ -465,9 +465,13 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   ],
                                 ),
                               ),
+                              padding: EdgeInsets.all(4),
                               child: Row(
+                                
                                 children: [
-                                  CircleAvatar(),
+                                  CircleAvatar(
+                                    radius: 24,
+                                  ),
                                   Expanded(
                                     child: Column(
                                       children: [
