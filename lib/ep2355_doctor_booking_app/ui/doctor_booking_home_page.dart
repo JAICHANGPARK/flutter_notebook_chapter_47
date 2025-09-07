@@ -469,6 +469,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               ),
                               padding: EdgeInsets.all(6),
                               child: Row(
+                                spacing: 12,
                                 children: [
                                   CircleAvatar(radius: 24),
                                   Expanded(
@@ -478,7 +479,10 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                       children: [
                                         Text(
                                           "Dr Dreamwalker",
-                                          style: TextStyle(fontSize: 16),
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
                                         Text("Flutter "),
                                       ],
