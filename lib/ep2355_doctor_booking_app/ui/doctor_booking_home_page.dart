@@ -367,6 +367,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                       Icon(
                                                         Icons.check_circle,
                                                         size: 12,
+                                                        color: Colors.green,
                                                       ),
                                                       Text(
                                                         "Available",
@@ -404,6 +405,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                     "Sep 12",
                                                     style: TextStyle(
                                                       fontSize: 12,
+                                                      color: Colors.green,
                                                     ),
                                                   ),
                                                   Row(
