@@ -1,7 +1,7 @@
 # flutter_notebook_chapter_47
 ## EP2360
 
-- Doctor Appointment Booking App
+- Social Media App UI Design
 - Fahim
 - https://dribbble.com/shots/26469660-Doctor-Appointment-Booking-App
 
