@@ -461,6 +461,15 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                 shape: StadiumBorder(),
                                 gradient: LinearGradient(colors: []),
                               ),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(),
+                                  Expanded(child: Column(children: [
+                                    Text("Dr Dreamwalker"),
+                                    Text("Flutter ")
+                                  ],))
+                                ],
+                              ),
                             );
                           }),
                         ],
