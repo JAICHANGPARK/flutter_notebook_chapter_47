@@ -227,7 +227,8 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   margin: EdgeInsets.only(right: 16),
                                   decoration: BoxDecoration(
                                     gradient: LinearGradient(
-                                      
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
                                       colors: [
 
                                         Color.fromRGBO(223, 239, 236, 1),
