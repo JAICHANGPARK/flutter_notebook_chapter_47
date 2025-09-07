@@ -459,7 +459,11 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                             return Container(
                               decoration: ShapeDecoration(
                                 shape: StadiumBorder(),
-                                gradient: LinearGradient(colors: []),
+                                gradient: LinearGradient(
+                                  colors: [Color.fromRGBO(226, 238, 232, 1),
+                                    Color.fromRGBO(223, 239, 236, 1)
+                                  ],
+                                ),
                               ),
                               child: Row(
                                 children: [
