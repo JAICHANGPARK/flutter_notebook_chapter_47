@@ -376,7 +376,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                           fontSize: 12,
                                                           color: Colors.green,
                                                           fontWeight:
-                                                          FontWeight.bold,
+                                                              FontWeight.bold,
                                                         ),
                                                       ),
                                                     ],
@@ -416,7 +416,8 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                     children: [
                                                       Icon(
                                                         Icons.check_circle,
-                                                        size: 12, color: Colors.green,
+                                                        size: 12,
+                                                        color: Colors.green,
                                                       ),
                                                       Text(
                                                         "Available",
@@ -424,7 +425,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                           fontSize: 12,
                                                           color: Colors.green,
                                                           fontWeight:
-                                                          FontWeight.bold,
+                                                              FontWeight.bold,
                                                         ),
                                                       ),
                                                     ],
@@ -447,7 +448,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "Upcoming Appointment",
+                                  "Recent Appointment",
                                   style: TextStyle(fontSize: 16),
                                 ),
                                 Icon(Icons.chevron_right),
@@ -455,7 +456,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                             ),
                           ),
                           ...List.generate(10, (idx) {
-                            return Placeholder();
+                            return Container(
+                              decoration: ShapeDecoration(
+                                shape: StadiumBorder(),
+                                gradient: LinearGradient(colors: []),
+                              ),
+                            );
                           }),
                         ],
                       ),
