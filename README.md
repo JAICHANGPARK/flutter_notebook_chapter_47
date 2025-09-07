@@ -2,7 +2,7 @@
 ## EP2360
 
 - Social Media App UI Design
-- Fahim
+- UI Mostofa Ibrahim ⭐️
 - https://dribbble.com/shots/26469660-Doctor-Appointment-Booking-App
 
 <img src="https://cdn.dribbble.com/userupload/44729381/file/530a4923477cccfc1069e6e800e137f9.png?resize=1905x1429&vertical=center">
