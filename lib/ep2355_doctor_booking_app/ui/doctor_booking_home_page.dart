@@ -493,8 +493,10 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                       shape: StadiumBorder(),
                                       color: Colors.white,
                                     ),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                                     child: Text("Details"),
                                   ),
+                                  SizedBox(width: 9,),
                                 ],
                               ),
                             );
