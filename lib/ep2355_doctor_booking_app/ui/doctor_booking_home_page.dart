@@ -225,6 +225,9 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                 return Container(
                                   width: 300,
                                   margin: EdgeInsets.only(right: 16),
+                                  decoration: BoxDecoration(
+                                    
+                                  ),
                                   child: Column(
                                     spacing: 16,
                                     crossAxisAlignment:
