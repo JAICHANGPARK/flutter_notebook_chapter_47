@@ -481,10 +481,13 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                           "Dr Dreamwalker",
                                           style: TextStyle(
                                             fontSize: 16,
-                                            fontWeight: FontWeight.bold,
+                                            // fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        Text("Flutter "),
+                                        Text(
+                                          "Flutter ",
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
                                       ],
                                     ),
                                   ),
@@ -493,10 +496,13 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                       shape: StadiumBorder(),
                                       color: Colors.white,
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 16,
+                                      vertical: 5,
+                                    ),
                                     child: Text("Details"),
                                   ),
-                                  SizedBox(width: 9,),
+                                  SizedBox(width: 9),
                                 ],
                               ),
                             );
