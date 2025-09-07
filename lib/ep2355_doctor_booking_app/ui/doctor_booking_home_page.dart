@@ -306,7 +306,9 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
-                                                  Text("Sep 12"),
+                                                  Text("Sep 12",style: TextStyle(
+                                                    fontSize: 12,
+                                                  ),),
                                                   Row(
                                                     mainAxisAlignment:
                                                         MainAxisAlignment
@@ -316,7 +318,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                         Icons.check_circle,
                                                         size: 12,
                                                       ),
-                                                      Text("Available"),
+                                                      Text("Available",),
                                                     ],
                                                   ),
                                                 ],
