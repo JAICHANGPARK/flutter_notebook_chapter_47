@@ -185,7 +185,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                       return Container(
                                         margin: EdgeInsets.only(right: 8),
                                         padding: EdgeInsets.symmetric(
-                                          horizontal: 42,
+                                          horizontal: 32,
                                         ),
                                         decoration: ShapeDecoration(
                                           shape: StadiumBorder(
