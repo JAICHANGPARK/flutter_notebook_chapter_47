@@ -231,7 +231,6 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                       begin: Alignment.topLeft,
                                       end: Alignment.bottomRight,
                                       colors: [
-
                                         Color.fromRGBO(223, 239, 236, 1),
                                         Color.fromRGBO(232, 241, 224, 1),
                                       ],
@@ -306,9 +305,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
-                                                  Text("Sep 12",style: TextStyle(
-                                                    fontSize: 12,
-                                                  ),),
+                                                  Text(
+                                                    "Sep 12",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
                                                   Row(
                                                     mainAxisAlignment:
                                                         MainAxisAlignment
@@ -318,7 +320,12 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                         Icons.check_circle,
                                                         size: 12,
                                                       ),
-                                                      Text("Available",),
+                                                      Text(
+                                                        "Available",
+                                                        style: TextStyle(
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
                                                 ],
@@ -342,7 +349,10 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
-                                                  Text("Sep 12"),
+                                                  Text("Sep 12",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),),
                                                   Row(
                                                     mainAxisAlignment:
                                                         MainAxisAlignment
