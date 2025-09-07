@@ -272,7 +272,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                         ],
                                       ),
                                       Row(
-                                        spacing: 6,
+                                        spacing: 3,
                                         children: [
                                           Icon(Icons.star, color: Colors.red),
                                           Icon(Icons.star, color: Colors.red),
