@@ -464,10 +464,21 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                               child: Row(
                                 children: [
                                   CircleAvatar(),
-                                  Expanded(child: Column(children: [
-                                    Text("Dr Dreamwalker"),
-                                    Text("Flutter ")
-                                  ],))
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Text("Dr Dreamwalker"),
+                                        Text("Flutter "),
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                      color: Colors.white,
+                                    ),
+                                    child: Text("Details"),
+                                  ),
                                 ],
                               ),
                             );
