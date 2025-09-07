@@ -227,6 +227,7 @@ class _DoctorBookingHomePageState extends State<DoctorBookingHomePage> {
                                   width: 300,
                                   margin: EdgeInsets.only(right: 16),
                                   decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
                                     gradient: LinearGradient(
                                       begin: Alignment.topLeft,
                                       end: Alignment.bottomRight,
