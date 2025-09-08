@@ -44,15 +44,33 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Stack(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.grey,
+                  Container(
+                    height: 80,
+                    width: 80,
+                    child: Stack(
+                      children: [
+                        Positioned.fill(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.grey,
+                            ),
+                          ),
                         ),
-                      ),
-                    ],
+                        Positioned(
+                          bottom: 0,
+                          right: 0,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.blue,
+                              border: Border.all(color: Colors.white),
+                            ),
+                            child: Icon(Icons.add),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
