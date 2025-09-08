@@ -43,15 +43,15 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(HugeIcons.strokeRoundedHome01),
-            label: "Reels",
+            label: "Friends",
           ),
           BottomNavigationBarItem(
             icon: Icon(HugeIcons.strokeRoundedHome01),
-            label: "Reels",
+            label: "Notifications",
           ),
           BottomNavigationBarItem(
-            icon: Icon(HugeIcons.strokeRoundedHome01),
-            label: "Reels",
+            icon: Icon(HugeIcons.strokeRoundedMenu01),
+            label: "Menu",
           ),
         ],
       ),
