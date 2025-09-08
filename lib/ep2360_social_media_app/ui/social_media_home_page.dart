@@ -40,7 +40,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
               ),
             ),
             SizedBox(
-              height: 100,
+              height: 80,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -55,11 +55,24 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                               shape: BoxShape.circle,
                               gradient: LinearGradient(
                                 begin: Alignment.bottomLeft,
+                                end: Alignment.topRight,
                                 colors: [
                                   Colors.yellow,
                                   Colors.orange,
                                   Colors.red,
+                                  Colors.red,
                                 ],
+                              ),
+                            ),
+                            padding: EdgeInsets.all(4),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.black,
+                                  width: 1.5,
+                                ),
+                                color: Colors.grey,
                               ),
                             ),
                           ),
@@ -73,7 +86,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                               color: Colors.blue,
                               border: Border.all(color: Colors.white),
                             ),
-                            child: Icon(Icons.add),
+                            child: Icon(Icons.add, size: 18),
                           ),
                         ),
                       ],
