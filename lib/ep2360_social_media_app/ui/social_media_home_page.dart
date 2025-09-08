@@ -105,304 +105,67 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       ],
                     ),
                   ),
-                  Container(
-                    height: 100,
-                    width: 80,
-                    margin: EdgeInsets.only(right: 8),
-                    child: Column(
-                      spacing: 12,
-                      children: [
-                        Expanded(
-                          child: Stack(
-                            children: [
-                              Positioned.fill(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    gradient: LinearGradient(
-                                      begin: Alignment.bottomLeft,
-                                      end: Alignment.topRight,
-                                      colors: [
-                                        Colors.yellow,
-                                        Colors.orange,
-                                        Colors.red,
-                                        Colors.red,
-                                      ],
-                                    ),
-                                  ),
-                                  padding: EdgeInsets.all(3),
+                  ...List.generate(
+                    8,
+                    (idx) => Container(
+                      height: 100,
+                      width: 80,
+                      margin: EdgeInsets.only(right: 8),
+                      child: Column(
+                        spacing: 12,
+                        children: [
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                Positioned.fill(
                                   child: Container(
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color: Colors.black,
-                                        width: 1.5,
+                                      gradient: LinearGradient(
+                                        begin: Alignment.bottomLeft,
+                                        end: Alignment.topRight,
+                                        colors: [
+                                          Colors.yellow,
+                                          Colors.orange,
+                                          Colors.red,
+                                          Colors.red,
+                                        ],
                                       ),
-                                      color: Colors.grey,
+                                    ),
+                                    padding: EdgeInsets.all(3),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        border: Border.all(
+                                          color: Colors.black,
+                                          width: 1.5,
+                                        ),
+                                        color: Colors.grey,
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              // Positioned(
-                              //   bottom: 0,
-                              //   right: 0,
-                              //   child: Container(
-                              //     decoration: BoxDecoration(
-                              //       shape: BoxShape.circle,
-                              //       color: Colors.blue,
-                              //       border: Border.all(
-                              //         color: Colors.white,
-                              //         width: 1.5,
-                              //       ),
-                              //     ),
-                              //     child: Icon(Icons.add, size: 20),
-                              //   ),
-                              // ),
-                            ],
+                                // Positioned(
+                                //   bottom: 0,
+                                //   right: 0,
+                                //   child: Container(
+                                //     decoration: BoxDecoration(
+                                //       shape: BoxShape.circle,
+                                //       color: Colors.blue,
+                                //       border: Border.all(
+                                //         color: Colors.white,
+                                //         width: 1.5,
+                                //       ),
+                                //     ),
+                                //     child: Icon(Icons.add, size: 20),
+                                //   ),
+                                // ),
+                              ],
+                            ),
                           ),
-                        ),
-                        Text("Dream", style: TextStyle(color: Colors.grey)),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 100,
-                    width: 80,
-                    margin: EdgeInsets.only(right: 12),
-                    child: Column(
-                      spacing: 12,
-                      children: [
-                        Expanded(
-                          child: Stack(
-                            children: [
-                              Positioned.fill(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    gradient: LinearGradient(
-                                      begin: Alignment.bottomLeft,
-                                      end: Alignment.topRight,
-                                      colors: [
-                                        Colors.yellow,
-                                        Colors.orange,
-                                        Colors.red,
-                                        Colors.red,
-                                      ],
-                                    ),
-                                  ),
-                                  padding: EdgeInsets.all(3),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color: Colors.black,
-                                        width: 1.5,
-                                      ),
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              // Positioned(
-                              //   bottom: 0,
-                              //   right: 0,
-                              //   child: Container(
-                              //     decoration: BoxDecoration(
-                              //       shape: BoxShape.circle,
-                              //       color: Colors.blue,
-                              //       border: Border.all(
-                              //         color: Colors.white,
-                              //         width: 1.5,
-                              //       ),
-                              //     ),
-                              //     child: Icon(Icons.add, size: 20),
-                              //   ),
-                              // ),
-                            ],
-                          ),
-                        ),
-                        Text("Dream", style: TextStyle(color: Colors.grey)),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 100,
-                    width: 80,
-                    margin: EdgeInsets.only(right: 12),
-                    child: Column(
-                      spacing: 12,
-                      children: [
-                        Expanded(
-                          child: Stack(
-                            children: [
-                              Positioned.fill(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    gradient: LinearGradient(
-                                      begin: Alignment.bottomLeft,
-                                      end: Alignment.topRight,
-                                      colors: [
-                                        Colors.yellow,
-                                        Colors.orange,
-                                        Colors.red,
-                                        Colors.red,
-                                      ],
-                                    ),
-                                  ),
-                                  padding: EdgeInsets.all(3),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color: Colors.black,
-                                        width: 1.5,
-                                      ),
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              // Positioned(
-                              //   bottom: 0,
-                              //   right: 0,
-                              //   child: Container(
-                              //     decoration: BoxDecoration(
-                              //       shape: BoxShape.circle,
-                              //       color: Colors.blue,
-                              //       border: Border.all(
-                              //         color: Colors.white,
-                              //         width: 1.5,
-                              //       ),
-                              //     ),
-                              //     child: Icon(Icons.add, size: 20),
-                              //   ),
-                              // ),
-                            ],
-                          ),
-                        ),
-                        Text("Dream", style: TextStyle(color: Colors.grey)),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 100,
-                    width: 80,
-                    margin: EdgeInsets.only(right: 12),
-                    child: Column(
-                      spacing: 12,
-                      children: [
-                        Expanded(
-                          child: Stack(
-                            children: [
-                              Positioned.fill(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    gradient: LinearGradient(
-                                      begin: Alignment.bottomLeft,
-                                      end: Alignment.topRight,
-                                      colors: [
-                                        Colors.yellow,
-                                        Colors.orange,
-                                        Colors.red,
-                                        Colors.red,
-                                      ],
-                                    ),
-                                  ),
-                                  padding: EdgeInsets.all(3),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color: Colors.black,
-                                        width: 1.5,
-                                      ),
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              // Positioned(
-                              //   bottom: 0,
-                              //   right: 0,
-                              //   child: Container(
-                              //     decoration: BoxDecoration(
-                              //       shape: BoxShape.circle,
-                              //       color: Colors.blue,
-                              //       border: Border.all(
-                              //         color: Colors.white,
-                              //         width: 1.5,
-                              //       ),
-                              //     ),
-                              //     child: Icon(Icons.add, size: 20),
-                              //   ),
-                              // ),
-                            ],
-                          ),
-                        ),
-                        Text("Dream", style: TextStyle(color: Colors.grey)),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 100,
-                    width: 80,
-                    margin: EdgeInsets.only(right: 12),
-                    child: Column(
-                      spacing: 12,
-                      children: [
-                        Expanded(
-                          child: Stack(
-                            children: [
-                              Positioned.fill(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    gradient: LinearGradient(
-                                      begin: Alignment.bottomLeft,
-                                      end: Alignment.topRight,
-                                      colors: [
-                                        Colors.yellow,
-                                        Colors.orange,
-                                        Colors.red,
-                                        Colors.red,
-                                      ],
-                                    ),
-                                  ),
-                                  padding: EdgeInsets.all(3),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color: Colors.black,
-                                        width: 1.5,
-                                      ),
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              // Positioned(
-                              //   bottom: 0,
-                              //   right: 0,
-                              //   child: Container(
-                              //     decoration: BoxDecoration(
-                              //       shape: BoxShape.circle,
-                              //       color: Colors.blue,
-                              //       border: Border.all(
-                              //         color: Colors.white,
-                              //         width: 1.5,
-                              //       ),
-                              //     ),
-                              //     child: Icon(Icons.add, size: 20),
-                              //   ),
-                              // ),
-                            ],
-                          ),
-                        ),
-                        Text("Dream", style: TextStyle(color: Colors.grey)),
-                      ],
+                          Text("Dream", style: TextStyle(color: Colors.grey)),
+                        ],
+                      ),
                     ),
                   ),
                 ],
