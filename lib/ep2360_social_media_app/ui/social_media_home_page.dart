@@ -31,40 +31,37 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: SizedBox(
-        height: 100,
-        child: ClipRRect(
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(24),
-            topRight: Radius.circular(24),
-          ),
-          child: BottomNavigationBar(
-            selectedItemColor: Colors.blueAccent,
-            unselectedItemColor: Colors.grey,
-            type: BottomNavigationBarType.fixed,
-            items: [
-              BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedHome01),
-                label: "Home",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedCamera01),
-                label: "Reels",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedUserGroup),
-                label: "Friends",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedNotification01),
-                label: "Notifications",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedMenu01),
-                label: "Menu",
-              ),
-            ],
-          ),
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(24),
+          topRight: Radius.circular(24),
+        ),
+        child: BottomNavigationBar(
+          selectedItemColor: Colors.blueAccent,
+          unselectedItemColor: Colors.grey,
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedHome01),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedCamera01),
+              label: "Reels",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedUserGroup),
+              label: "Friends",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedNotification01),
+              label: "Notifications",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedMenu01),
+              label: "Menu",
+            ),
+          ],
         ),
       ),
     );
