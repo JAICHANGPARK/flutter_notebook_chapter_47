@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class SocialMediaHomePage extends StatefulWidget {
@@ -17,7 +18,22 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         child: Column(
           spacing: 16,
           children: [
-            Row(children: [CircleAvatar()]),
+            Row(
+              children: [
+                CircleAvatar(),
+                Gap(16),
+                Text("How's it Going?"),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.add_circle_outline),
+                ),
+                IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                Badge(
+                  child: Icon(HugeIcons.strokeRoundedBubbleChat),
+                  backgroundColor: Colors.red,
+                ),
+              ],
+            ),
             SizedBox(height: 100, child: Placeholder()),
             Row(children: []),
             SizedBox(height: 200, child: Placeholder()),
