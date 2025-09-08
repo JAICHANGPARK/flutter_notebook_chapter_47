@@ -22,8 +22,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             Expanded(
               child: ListView.builder(
                 itemBuilder: (context, index) {
-                  return Container(height: 320,
-                  child: Placeholder(),);
+                  return Container(height: 320, child: Placeholder());
                 },
               ),
             ),
