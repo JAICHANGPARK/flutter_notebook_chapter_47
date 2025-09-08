@@ -22,7 +22,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Row(
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(radius: 22),
                   Gap(16),
                   Text("How's it Going?"),
                   Spacer(),
@@ -39,7 +39,24 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 ],
               ),
             ),
-            SizedBox(height: 100, child: Placeholder()),
+            SizedBox(
+              height: 100,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Stack(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
             Row(children: []),
             SizedBox(height: 200, child: Placeholder()),
             Expanded(
