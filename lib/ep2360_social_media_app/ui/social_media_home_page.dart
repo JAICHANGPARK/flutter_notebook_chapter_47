@@ -53,7 +53,14 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: Colors.grey,
+                              gradient: LinearGradient(
+                                begin: Alignment.bottomLeft,
+                                colors: [
+                                  Colors.yellow,
+                                  Colors.orange,
+                                  Colors.red,
+                                ],
+                              ),
                             ),
                           ),
                         ),
