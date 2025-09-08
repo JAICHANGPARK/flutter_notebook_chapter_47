@@ -31,29 +31,33 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(HugeIcons.strokeRoundedHome01),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(HugeIcons.strokeRoundedHome01),
-            label: "Reels",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(HugeIcons.strokeRoundedHome01),
-            label: "Friends",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(HugeIcons.strokeRoundedHome01),
-            label: "Notifications",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(HugeIcons.strokeRoundedMenu01),
-            label: "Menu",
-          ),
-        ],
+      bottomNavigationBar: Container(
+        height: 100,
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedHome01),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedHome01),
+              label: "Reels",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedHome01),
+              label: "Friends",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedHome01),
+              label: "Notifications",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(HugeIcons.strokeRoundedMenu01),
+              label: "Menu",
+            ),
+          ],
+        ),
       ),
     );
   }
