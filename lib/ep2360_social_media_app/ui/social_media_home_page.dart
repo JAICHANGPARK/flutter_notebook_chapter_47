@@ -18,21 +18,26 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         child: Column(
           spacing: 16,
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Gap(16),
-                Text("How's it Going?"),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.add_circle_outline),
-                ),
-                IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-                Badge(
-                  child: Icon(HugeIcons.strokeRoundedBubbleChat),
-                  backgroundColor: Colors.red,
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Gap(16),
+                  Text("How's it Going?"),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.add_circle_outline),
+                  ),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                  Gap(16),
+                  Badge(
+                    child: Icon(HugeIcons.strokeRoundedBubbleChat),
+                    backgroundColor: Colors.red,
+                  ),
+                ],
+              ),
             ),
             SizedBox(height: 100, child: Placeholder()),
             Row(children: []),
