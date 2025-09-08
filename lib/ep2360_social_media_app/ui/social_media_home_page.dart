@@ -40,7 +40,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           ),
           child: BottomNavigationBar(
             selectedItemColor: Colors.blueAccent,
-            unselectedItemColor: Colors.white,
+            unselectedItemColor: Colors.grey,
             type: BottomNavigationBarType.fixed,
             items: [
               BottomNavigationBarItem(
@@ -48,11 +48,11 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 label: "Home",
               ),
               BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedHome01),
+                icon: Icon(HugeIcons.strokeRoundedCamera01),
                 label: "Reels",
               ),
               BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedHome01),
+                icon: Icon(HugeIcons.strokeRoundedUserGroup),
                 label: "Friends",
               ),
               BottomNavigationBarItem(
