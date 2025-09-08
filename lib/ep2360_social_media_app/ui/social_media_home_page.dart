@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class SocialMediaHomePage extends StatefulWidget {
   const SocialMediaHomePage({super.key});
@@ -11,6 +12,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
           spacing: 16,
@@ -29,9 +31,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: Container(
-        height: 80,
-        decoration: BoxDecoration(color: Colors.blue),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(HugeIcons.strokeRoundedHome01)),
+        ],
       ),
     );
   }
