@@ -36,32 +36,37 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           topLeft: Radius.circular(24),
           topRight: Radius.circular(24),
         ),
-        child: BottomNavigationBar(
-          selectedItemColor: Colors.blueAccent,
-          unselectedItemColor: Colors.grey,
-          type: BottomNavigationBarType.fixed,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(HugeIcons.strokeRoundedHome01),
-              label: "Home",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(HugeIcons.strokeRoundedCamera01),
-              label: "Reels",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(HugeIcons.strokeRoundedUserGroup),
-              label: "Friends",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(HugeIcons.strokeRoundedNotification01),
-              label: "Notifications",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(HugeIcons.strokeRoundedMenu01),
-              label: "Menu",
-            ),
-          ],
+
+        child: SizedBox(
+          height: 100,
+          child: BottomNavigationBar(
+            // backgroundColor: Colors.transparent,
+            selectedItemColor: Colors.blueAccent,
+            unselectedItemColor: Colors.grey,
+            type: BottomNavigationBarType.fixed,
+            items: [
+              BottomNavigationBarItem(
+                icon: Icon(HugeIcons.strokeRoundedHome01),
+                label: "Home",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(HugeIcons.strokeRoundedCamera01),
+                label: "Reels",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(HugeIcons.strokeRoundedUserGroup),
+                label: "Friends",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(HugeIcons.strokeRoundedNotification01),
+                label: "Notifications",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(HugeIcons.strokeRoundedMenu01),
+                label: "Menu",
+              ),
+            ],
+          ),
         ),
       ),
     );
