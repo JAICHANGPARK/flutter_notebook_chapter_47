@@ -19,7 +19,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           spacing: 16,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               child: Row(
                 children: [
                   CircleAvatar(radius: 22),
@@ -41,7 +41,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             ),
             Container(
               padding: EdgeInsets.only(
-                left: 16
+                left: 8
               ),
               height: 100,
               child: ListView(
