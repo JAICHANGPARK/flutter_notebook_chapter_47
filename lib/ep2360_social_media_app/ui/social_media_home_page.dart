@@ -34,9 +34,13 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
       bottomNavigationBar: SizedBox(
         height: 100,
         child: ClipRRect(
-          borderRadius: BorderRadius.only(topLeft: Radius.circular(24)),
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(24),
+            topRight: Radius.circular(24),
+          ),
           child: BottomNavigationBar(
-            
+            selectedItemColor: Colors.blueAccent,
+            unselectedItemColor: Colors.white,
             type: BottomNavigationBarType.fixed,
             items: [
               BottomNavigationBarItem(
