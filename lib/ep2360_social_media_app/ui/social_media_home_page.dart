@@ -112,7 +112,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       width: 80,
                       margin: EdgeInsets.only(right: 8),
                       child: Column(
-                        spacing: 12,
+                        spacing: 6,
                         children: [
                           Expanded(
                             child: Stack(
