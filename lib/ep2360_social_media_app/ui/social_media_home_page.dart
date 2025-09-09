@@ -206,6 +206,16 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                     ),
                     margin: EdgeInsets.only(right: 12),
                     width: 140,
+                    child: Center(
+                      child: Container(
+                        height: 32,
+                        width: 32,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white12,
+                        ),
+                      ),
+                    ),
                   );
                 },
               ),
