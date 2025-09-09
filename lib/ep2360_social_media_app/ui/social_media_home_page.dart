@@ -197,7 +197,9 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       color: Colors.blue,
                       image: DecorationImage(
                         image: NetworkImage(
-                          "https://cdn.pixabay.com/photo/2019/08/07/23/21/harness-paragliding-4391666_1280.jpg",
+                          index % 2 == 0
+                              ? "https://cdn.pixabay.com/photo/2019/08/07/23/21/harness-paragliding-4391666_1280.jpg"
+                              : "https://cdn.pixabay.com/photo/2021/10/13/07/43/couple-6705694_1280.jpg",
                         ),
                         fit: BoxFit.cover,
                       ),
