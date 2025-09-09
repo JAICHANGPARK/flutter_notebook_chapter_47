@@ -185,10 +185,15 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
               ),
             ),
             SizedBox(
-              height: 200,
+              height: 240,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {}),
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 140,
+                      child: Placeholder(),
+                    );
+                  }),
             ),
             Expanded(
               child: ListView.builder(
