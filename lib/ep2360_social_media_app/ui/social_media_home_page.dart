@@ -171,7 +171,13 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 ],
               ),
             ),
+
             Gap(6),
+            Expanded(child: SingleChildScrollView(child: Column(
+              children: [
+                
+              ],
+            ),))
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Row(
@@ -221,12 +227,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 },
               ),
             ),
-            Expanded(
-              child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return Container(height: 320, child: Placeholder());
-                },
-              ),
+            ListView.builder(
+              itemBuilder: (context, index) {
+                return Container(height: 320, child: Placeholder());
+              },
             ),
           ],
         ),
