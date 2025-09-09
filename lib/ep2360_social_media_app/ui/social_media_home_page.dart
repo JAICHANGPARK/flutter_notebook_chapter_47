@@ -173,64 +173,70 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             ),
 
             Gap(6),
-            Expanded(child: SingleChildScrollView(child: Column(
-              children: [
-                
-              ],
-            ),))
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: Row(
-                spacing: 8,
-                children: [
-                  Icon(HugeIcons.strokeRoundedCamera02),
-                  Text("Reels", style: TextStyle(fontSize: 16)),
-                  Spacer(),
-                  Icon(Icons.more_horiz),
-                ],
-              ),
-            ),
-            Container(
-              height: 220,
-              padding: EdgeInsets.only(left: 12),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: Row(
+                        spacing: 8,
+                        children: [
+                          Icon(HugeIcons.strokeRoundedCamera02),
+                          Text("Reels", style: TextStyle(fontSize: 16)),
+                          Spacer(),
+                          Icon(Icons.more_horiz),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      height: 220,
+                      padding: EdgeInsets.only(left: 12),
 
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                      color: Colors.blue,
-                      image: DecorationImage(
-                        image: NetworkImage(
-                          index % 2 == 0
-                              ? "https://cdn.pixabay.com/photo/2019/08/07/23/21/harness-paragliding-4391666_1280.jpg"
-                              : "https://cdn.pixabay.com/photo/2021/10/13/07/43/couple-6705694_1280.jpg",
-                        ),
-                        fit: BoxFit.cover,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              color: Colors.blue,
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  index % 2 == 0
+                                      ? "https://cdn.pixabay.com/photo/2019/08/07/23/21/harness-paragliding-4391666_1280.jpg"
+                                      : "https://cdn.pixabay.com/photo/2021/10/13/07/43/couple-6705694_1280.jpg",
+                                ),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            margin: EdgeInsets.only(right: 12),
+                            width: 140,
+                            child: Center(
+                              child: Container(
+                                height: 32,
+                                width: 32,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.black26,
+                                ),
+                                child: Icon(
+                                  Icons.play_arrow,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          );
+                        },
                       ),
                     ),
-                    margin: EdgeInsets.only(right: 12),
-                    width: 140,
-                    child: Center(
-                      child: Container(
-                        height: 32,
-                        width: 32,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.black26,
-                        ),
-                        child: Icon(Icons.play_arrow, color: Colors.white),
-                      ),
+                    ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(height: 320, child: Placeholder());
+                      },
                     ),
-                  );
-                },
+                  ],
+                ),
               ),
-            ),
-            ListView.builder(
-              itemBuilder: (context, index) {
-                return Container(height: 320, child: Placeholder());
-              },
             ),
           ],
         ),
