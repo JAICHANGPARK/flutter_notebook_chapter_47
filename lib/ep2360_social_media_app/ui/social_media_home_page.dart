@@ -212,8 +212,9 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                         width: 32,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: Colors.white12,
+                          color: Colors.black26,
                         ),
+                        child: Icon(Icons.play_arrow, color: Colors.white),
                       ),
                     ),
                   );
