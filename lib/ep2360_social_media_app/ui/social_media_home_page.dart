@@ -192,7 +192,6 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                     Container(
                       height: 220,
                       padding: EdgeInsets.only(left: 12),
-
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -229,11 +228,11 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                         },
                       ),
                     ),
-                    ListView.builder(
-                      itemBuilder: (context, index) {
-                        return Container(height: 320, child: Placeholder());
-                      },
-                    ),
+                    Column(
+                      children: List.generate(10, (idx){
+                        return Container();
+                      }),
+                    )
                   ],
                 ),
               ),
