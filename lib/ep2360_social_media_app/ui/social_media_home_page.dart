@@ -193,11 +193,11 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(24),
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.blue,
                     ),
                     margin: EdgeInsets.only(right: 12),
                     width: 140,
-                    child: Placeholder(),
                   );
                 },
               ),
