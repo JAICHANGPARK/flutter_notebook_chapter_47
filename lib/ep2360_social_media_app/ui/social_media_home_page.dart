@@ -178,7 +178,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 spacing: 8,
                 children: [
                   Icon(HugeIcons.strokeRoundedCamera02),
-                  Text("Reels"),
+                  Text("Reels", style: TextStyle(fontSize: 16)),
                   Spacer(),
                   Icon(Icons.more_horiz),
                 ],
