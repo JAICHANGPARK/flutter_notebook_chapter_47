@@ -171,7 +171,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 ],
               ),
             ),
-            Row(children: []),
+            Row(children: [
+              Icon(HugeIcons.strokeRoundedCamera02),
+              Text("Reels")
+            ]),
             SizedBox(height: 200, child: Placeholder()),
             Expanded(
               child: ListView.builder(
