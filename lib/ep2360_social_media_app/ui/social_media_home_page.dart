@@ -232,7 +232,8 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                     Column(
                       children: List.generate(10, (idx){
                         return Container(
-
+                            height: 320,
+                          child: Placeholder(),
                         );
                       }),
                     )
