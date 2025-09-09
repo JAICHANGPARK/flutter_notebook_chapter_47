@@ -195,6 +195,12 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.blue,
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2019/08/07/23/21/harness-paragliding-4391666_1280.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                     margin: EdgeInsets.only(right: 12),
                     width: 140,
