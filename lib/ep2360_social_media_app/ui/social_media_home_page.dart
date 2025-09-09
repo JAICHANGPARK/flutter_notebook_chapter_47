@@ -229,13 +229,20 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                         },
                       ),
                     ),
-                    Column(
-                      children: List.generate(10, (idx){
-                        return Container(
-                            height: 320,
-                          child: Placeholder(),
-                        );
-                      }),
+                    Gap(4),
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        children: List.generate(10, (idx){
+                          return Container(
+                              height: 320,
+                            margin: EdgeInsets.only(
+                              bottom: 12
+                            ),
+                            child: Placeholder(),
+                          );
+                        }),
+                      ),
                     )
                   ],
                 ),
