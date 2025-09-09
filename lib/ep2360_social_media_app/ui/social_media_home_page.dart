@@ -176,6 +176,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
+                  spacing: 12,
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -230,7 +231,9 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                     ),
                     Column(
                       children: List.generate(10, (idx){
-                        return Container();
+                        return Container(
+
+                        );
                       }),
                     )
                   ],
