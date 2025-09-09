@@ -191,7 +191,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       ),
                     ),
                     Container(
-                      height: 220,
+                      height: 184,
                       padding: EdgeInsets.only(left: 12),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
@@ -210,7 +210,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                               ),
                             ),
                             margin: EdgeInsets.only(right: 12),
-                            width: 140,
+                            width: 116,
                             child: Center(
                               child: Container(
                                 height: 32,
@@ -229,9 +229,9 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                         },
                       ),
                     ),
-                    Gap(4),
+
                     Padding(
-                      padding: const EdgeInsets.all(12.0),
+                      padding: const EdgeInsets.fromLTRB(12.0, 16, 12, 0),
                       child: Column(
                         children: List.generate(10, (idx){
                           return Container(
