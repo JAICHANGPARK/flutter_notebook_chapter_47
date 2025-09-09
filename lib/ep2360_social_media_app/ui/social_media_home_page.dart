@@ -171,6 +171,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 ],
               ),
             ),
+            Gap(6),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Row(
