@@ -171,14 +171,17 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 ],
               ),
             ),
-            Row(
-              spacing: 4,
-              children: [
-                Icon(HugeIcons.strokeRoundedCamera02),
-                Text("Reels"),
-                Spacer(),
-                Icon(Icons.more_horiz),
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: Row(
+                spacing: 8,
+                children: [
+                  Icon(HugeIcons.strokeRoundedCamera02),
+                  Text("Reels"),
+                  Spacer(),
+                  Icon(Icons.more_horiz),
+                ],
+              ),
             ),
             SizedBox(height: 200, child: Placeholder()),
             Expanded(
