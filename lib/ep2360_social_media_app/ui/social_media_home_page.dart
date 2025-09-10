@@ -271,9 +271,16 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                             children: [
                                               Text(
                                                 "Sponsored",
-                                                style: TextStyle(fontSize: 12),
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.grey,
+                                                ),
                                               ),
-                                              Icon(Icons.public, size: 16),
+                                              Icon(
+                                                Icons.public,
+                                                size: 16,
+                                                color: Colors.grey,
+                                              ),
                                             ],
                                           ),
                                         ],
@@ -297,7 +304,6 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                   ),
                                 ),
                                 Row(
-
                                   children: [
                                     Icon(Icons.favorite, color: Colors.red),
                                     Gap(8),
