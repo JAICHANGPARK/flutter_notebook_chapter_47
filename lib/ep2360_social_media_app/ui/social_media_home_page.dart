@@ -279,6 +279,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                         ],
                                       ),
                                     ),
+                                    Icon(Icons.more_horiz),
                                   ],
                                 ),
                               ],
