@@ -244,9 +244,8 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                             ),
                             margin: EdgeInsets.only(bottom: 12),
                             child: Column(
-                              children: [
-                                
-                              ],
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [Row(children: [])],
                             ),
                           );
                         }),
