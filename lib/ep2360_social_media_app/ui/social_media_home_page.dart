@@ -238,7 +238,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       child: Column(
                         children: List.generate(10, (idx) {
                           return Container(
-                            height: 380,
+                            height: 400,
                             decoration: BoxDecoration(
                               color: Color.fromRGBO(15, 15, 15, 1),
                             ),
