@@ -246,8 +246,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                             padding: EdgeInsets.all(12),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              spacing: 12,
                               children: [
                                 Row(
+                                  spacing: 12,
                                   children: [
                                     CircleAvatar(radius: 26),
                                     Expanded(
