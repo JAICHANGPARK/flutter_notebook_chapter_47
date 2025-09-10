@@ -199,7 +199,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                           return Container(
                             decoration: ShapeDecoration(
                               shape: RoundedSuperellipseBorder(
-                                borderRadius: BorderRadius.circular(16),
+                                borderRadius: BorderRadius.circular(18),
                               ),
 
                               color: Colors.blue,
@@ -239,8 +239,15 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                         children: List.generate(10, (idx) {
                           return Container(
                             height: 320,
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(15, 15, 15, 1),
+                            ),
                             margin: EdgeInsets.only(bottom: 12),
-                            child: Placeholder(),
+                            child: Column(
+                              children: [
+                                
+                              ],
+                            ),
                           );
                         }),
                       ),
