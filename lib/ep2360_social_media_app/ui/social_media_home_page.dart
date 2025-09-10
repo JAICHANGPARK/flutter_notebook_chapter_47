@@ -197,8 +197,11 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(16),
+                            decoration: ShapeDecoration(
+                              shape: RoundedSuperellipseBorder(
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+
                               color: Colors.blue,
                               image: DecorationImage(
                                 image: NetworkImage(
@@ -233,17 +236,15 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(12.0, 16, 12, 0),
                       child: Column(
-                        children: List.generate(10, (idx){
+                        children: List.generate(10, (idx) {
                           return Container(
-                              height: 320,
-                            margin: EdgeInsets.only(
-                              bottom: 12
-                            ),
+                            height: 320,
+                            margin: EdgeInsets.only(bottom: 12),
                             child: Placeholder(),
                           );
                         }),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
