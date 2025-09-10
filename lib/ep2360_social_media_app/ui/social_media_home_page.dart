@@ -300,15 +300,15 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
 
                                   children: [
                                     Icon(Icons.favorite, color: Colors.red),
-                                    Gap(2),
+                                    Gap(8),
                                     Text("1.2k"),
                                     Gap(16),
                                     Icon(Icons.chat_outlined),
-                                    Gap(2),
+                                    Gap(8),
                                     Text("325"),
                                     Gap(16),
                                     Icon(Icons.near_me_outlined),
-                                    Gap(2),
+                                    Gap(8),
                                     Text("550"),
                                   ],
                                 ),
