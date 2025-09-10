@@ -243,6 +243,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                               color: Color.fromRGBO(15, 15, 15, 1),
                             ),
                             margin: EdgeInsets.only(bottom: 12),
+                            padding: EdgeInsets.all(12),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
