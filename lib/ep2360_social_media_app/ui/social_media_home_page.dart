@@ -254,6 +254,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                     CircleAvatar(radius: 26),
                                     Expanded(
                                       child: Column(
+                                        spacing: 4,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
@@ -261,13 +262,18 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                             "Dream Walker",
                                             style: TextStyle(
                                               color: Colors.white,
-                                              fontWeight: FontWeight.bold,
+                                              // fontWeight: FontWeight.bold,
+                                              fontSize: 18,
                                             ),
                                           ),
                                           Row(
+                                            spacing: 5,
                                             children: [
-                                              Text("Sponsored"),
-                                              Icon(Icons.public),
+                                              Text(
+                                                "Sponsored",
+                                                style: TextStyle(fontSize: 12),
+                                              ),
+                                              Icon(Icons.public, size: 16),
                                             ],
                                           ),
                                         ],
