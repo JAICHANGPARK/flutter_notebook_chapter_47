@@ -251,7 +251,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                 Row(
                                   spacing: 12,
                                   children: [
-                                    CircleAvatar(radius: 26),
+                                    CircleAvatar(radius: 24),
                                     Expanded(
                                       child: Column(
                                         spacing: 4,
