@@ -245,7 +245,25 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                             margin: EdgeInsets.only(bottom: 12),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [Row(children: [])],
+                              children: [
+                                Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Expanded(
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            "Dream Walker",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
                             ),
                           );
                         }),
