@@ -302,6 +302,8 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                     Text("1.2k"),
                                     Icon(Icons.chat_outlined),
                                     Text("325"),
+                                    Icon(Icons.near_me_outlined),
+                                    Text("550"),
                                   ],
                                 ),
                               ],
