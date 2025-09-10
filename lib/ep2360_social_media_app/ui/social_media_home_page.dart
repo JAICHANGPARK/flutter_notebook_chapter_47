@@ -290,6 +290,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                       image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2023/11/28/20/43/girls-8418210_1280.jpg",
                                       ),
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
