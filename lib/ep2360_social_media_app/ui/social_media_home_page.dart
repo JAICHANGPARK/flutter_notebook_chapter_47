@@ -282,6 +282,12 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                     Icon(Icons.more_horiz),
                                   ],
                                 ),
+                                Text("Good vibes, great friend..."),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                )
                               ],
                             ),
                           );
