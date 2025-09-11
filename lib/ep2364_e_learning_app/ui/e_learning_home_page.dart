@@ -10,6 +10,12 @@ class ELearningHomePage extends StatefulWidget {
 class _ELearningHomePageState extends State<ELearningHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(bottomNavigationBar: BottomNavigationBar(items: []));
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+        ],
+      ),
+    );
   }
 }
