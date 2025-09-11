@@ -14,16 +14,31 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       body: Column(
         children: [
           Container(
+            height: 240,
+            width: double.infinity,
             decoration: BoxDecoration(
               color: Colors.green
             ),
             padding: EdgeInsets.fromLTRB(16, 42, 16, 16),
             child: Column(
               children: [
-                
               ],
             ),
-          )
+          ),
+          Expanded(child: SingleChildScrollView(child: Column(
+            children: [
+              Row(
+                children: [
+                  Text("Top Courses"),
+                  TextButton(onPressed: (){}, child: Text("View All")),
+                ],
+              ),
+              Container(
+                height: 62,
+                child: Placeholder(),
+              )
+            ],
+          ),))
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
