@@ -2,7 +2,7 @@
 
 ## EP2364
 
-- Social Media App UI Design
+- E-Learning Mobile App | Radiyal
 - UI Mostofa Ibrahim ⭐️
 - https://dribbble.com/shots/26493316-Social-Media-App-UI-Design
 
