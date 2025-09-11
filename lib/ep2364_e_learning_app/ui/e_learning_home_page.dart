@@ -14,6 +14,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Explore"),
         ],
       ),
     );
