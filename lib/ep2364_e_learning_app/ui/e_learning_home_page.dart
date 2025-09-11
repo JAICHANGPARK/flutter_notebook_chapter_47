@@ -11,6 +11,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
