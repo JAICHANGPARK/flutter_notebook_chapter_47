@@ -1,5 +1,14 @@
 # flutter_notebook_chapter_47
 
+## EP2364
+
+- Social Media App UI Design
+- UI Mostofa Ibrahim ⭐️
+- https://dribbble.com/shots/26493316-Social-Media-App-UI-Design
+
+<img src="https://cdn.dribbble.com/userupload/44805469/file/b79c838e98407ef9836a0fc411069c02.png?resize=2400x1800&vertical=center">
+
+
 ## EP2360-2363
 
 - Social Media App UI Design
