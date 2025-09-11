@@ -6,7 +6,7 @@
 - Radiyal
 - https://dribbble.com/shots/26509820-E-Learning-Mobile-App-Radiyal
 
-<img src="https://cdn.dribbble.com/userupload/44805469/file/b79c838e98407ef9836a0fc411069c02.png?resize=2400x1800&vertical=center">
+<img src="https://cdn.dribbble.com/userupload/44859194/file/9599af51dc6e2266dcd09229836f7c69.jpg?resize=1905x1429&vertical=center">
 
 
 ## EP2360-2363
