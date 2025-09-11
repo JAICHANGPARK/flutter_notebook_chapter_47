@@ -3,8 +3,8 @@
 ## EP2364
 
 - E-Learning Mobile App | Radiyal
-- UI Mostofa Ibrahim ⭐️
-- https://dribbble.com/shots/26493316-Social-Media-App-UI-Design
+- Radiyal
+- https://dribbble.com/shots/26509820-E-Learning-Mobile-App-Radiyal
 
 <img src="https://cdn.dribbble.com/userupload/44805469/file/b79c838e98407ef9836a0fc411069c02.png?resize=2400x1800&vertical=center">
 
