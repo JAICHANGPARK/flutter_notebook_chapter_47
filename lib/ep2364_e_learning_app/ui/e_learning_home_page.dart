@@ -36,7 +36,17 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
               Container(
                 height: 62,
                 child: Placeholder(),
-              )
+              ),
+              Container(
+                height: 240,
+                child: Placeholder(),
+              ),
+              Row(
+                children: [
+                  Text("Top Courses"),
+                  TextButton(onPressed: (){}, child: Text("View All")),
+                ],
+              ),
             ],
           ),))
         ],
