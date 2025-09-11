@@ -47,6 +47,10 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   TextButton(onPressed: (){}, child: Text("View All")),
                 ],
               ),
+              Container(
+                height: 240,
+                child: Placeholder(),
+              ),
             ],
           ),))
         ],
