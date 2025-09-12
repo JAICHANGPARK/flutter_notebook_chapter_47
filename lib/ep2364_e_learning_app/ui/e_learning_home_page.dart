@@ -21,9 +21,11 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
             child: Column(
               children: [
                 Container(
+                  height: 52,
+                  width: 52,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all(color: Colors.white),
+                    border: Border.all(color: Colors.white,),
                   ),
                 ),
               ],
