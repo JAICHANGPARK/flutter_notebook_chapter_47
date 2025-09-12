@@ -55,7 +55,10 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                         radius: 30,
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
-                        child: Icon(HugeIcons.strokeRoundedNotification01),
+                        child: HugeIcon(
+                          icon: HugeIcons.strokeRoundedNotification01,
+                          color: Colors.black,
+                        ),
                       ),
                     ],
                   ),
