@@ -22,6 +22,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
             child: Column(
               children: [
                 Row(
+                  spacing: 12,
                   children: [
                     Container(
                       height: 52,
@@ -42,6 +43,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       backgroundColor: Colors.white,
                       child: HugeIcon(
                         icon: HugeIcons.strokeRoundedNotification01,
+                        color: Colors.black,
                       ),
                     ),
                   ],
