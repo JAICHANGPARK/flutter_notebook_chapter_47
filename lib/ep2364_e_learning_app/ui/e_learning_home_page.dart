@@ -180,16 +180,21 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                   color: Colors.blue,
                                 ),
                               ),
-                              Row(
+                              Column(
                                 children: [
-                                  Text("\$300"),
-                                  Icon(Icons.play_circle_outline),
-                                  Text("5"),
-                                  Icon(Icons.star),
-                                  Text("4.8"),
+                                  Row(
+                                    children: [
+                                      Text("\$300"),
+                                      Icon(Icons.play_circle_outline),
+                                      Text("5"),
+                                      Icon(Icons.star),
+                                      Text("4.8"),
+                                    ],
+                                  ),
+                                  Text("Assessment & Effective Questioning"),
                                 ],
-                              ),
-                              Text("Assessment & Effective Questioning"),
+                              )
+
                             ],
                           ),
                         );
