@@ -179,6 +179,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                   Text("4.8"),
                                 ],
                               ),
+                              Text("Assessment & Effective Questioning",)
                             ],
                           ),
                         );
