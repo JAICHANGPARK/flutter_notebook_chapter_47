@@ -17,7 +17,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
           Container(
             width: double.infinity,
             decoration: BoxDecoration(color: Colors.green),
-            padding: EdgeInsets.fromLTRB(16, 62, 16, 16),
+            padding: EdgeInsets.fromLTRB(16, 62, 16, 24),
             child: Column(
               spacing: 16,
               children: [
@@ -120,7 +120,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   ),
                   Container(
                     // color: Colors.red,
-                    height: 52,
+                    height: 42,
                     padding: EdgeInsets.only(left: 16),
 
                     child: ListView(
