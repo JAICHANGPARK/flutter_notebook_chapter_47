@@ -168,9 +168,10 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             border: Border.all(color: Colors.grey),
                           ),
                           child: Column(
+                            spacing: 12,
                             children: [
                               Container(
-                                height: 120,
+                                height: 110,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(16),
