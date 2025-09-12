@@ -15,7 +15,6 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       body: Column(
         children: [
           Container(
-
             width: double.infinity,
             decoration: BoxDecoration(color: Colors.green),
             padding: EdgeInsets.fromLTRB(16, 62, 16, 16),
@@ -31,6 +30,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(color: Colors.white),
+                        color: Colors.brown,
                       ),
                     ),
                     Expanded(
@@ -67,16 +67,14 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     shape: StadiumBorder(),
                     color: Colors.white,
                   ),
-                  padding: EdgeInsets.only(
-                    left: 16
-                  ),
+                  padding: EdgeInsets.only(left: 16),
                   child: Row(
                     children: [
-                      Expanded(child: TextField(
-                        decoration: InputDecoration(
-                          icon: Icon(Icons.search)
+                      Expanded(
+                        child: TextField(
+                          decoration: InputDecoration(icon: Icon(Icons.search)),
                         ),
-                      )),
+                      ),
                       CircleAvatar(
                         radius: 24,
                         child: Icon(Icons.tune),
