@@ -94,7 +94,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                spacing: 16,
+                spacing: 12,
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
@@ -122,7 +122,6 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     // color: Colors.red,
                     height: 42,
                     padding: EdgeInsets.only(left: 16),
-
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
