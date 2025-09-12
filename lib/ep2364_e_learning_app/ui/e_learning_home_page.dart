@@ -16,43 +16,45 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
           Container(
             height: 240,
             width: double.infinity,
-            decoration: BoxDecoration(
-              color: Colors.green
-            ),
+            decoration: BoxDecoration(color: Colors.green),
             padding: EdgeInsets.fromLTRB(16, 42, 16, 16),
-            child: Column(
-              children: [
-              ],
+            child: Column(children: []),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 12,
+                    ),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Top Courses",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        TextButton(onPressed: () {}, child: Text("View All")),
+                      ],
+                    ),
+                  ),
+                  Container(height: 62, child: Placeholder()),
+                  Container(height: 240, child: Placeholder()),
+                  Row(
+                    children: [
+                      Text("Top Courses"),
+                      TextButton(onPressed: () {}, child: Text("View All")),
+                    ],
+                  ),
+                  Container(height: 240, child: Placeholder()),
+                ],
+              ),
             ),
           ),
-          Expanded(child: SingleChildScrollView(child: Column(
-            children: [
-              Row(
-                children: [
-                  Text("Top Courses"),
-                  TextButton(onPressed: (){}, child: Text("View All")),
-                ],
-              ),
-              Container(
-                height: 62,
-                child: Placeholder(),
-              ),
-              Container(
-                height: 240,
-                child: Placeholder(),
-              ),
-              Row(
-                children: [
-                  Text("Top Courses"),
-                  TextButton(onPressed: (){}, child: Text("View All")),
-                ],
-              ),
-              Container(
-                height: 240,
-                child: Placeholder(),
-              ),
-            ],
-          ),))
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
