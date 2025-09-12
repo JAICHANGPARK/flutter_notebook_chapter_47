@@ -28,7 +28,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 16,
-
+vertical: 4
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -51,6 +51,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     ),
                   ),
                   Container(
+                    color: Colors.red,
                     height: 62,
                     padding: EdgeInsets.only(
                       left: 16,
