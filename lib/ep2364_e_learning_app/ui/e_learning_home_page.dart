@@ -26,9 +26,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                 spacing: 16,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
-vertical: 4
+                    padding: const EdgeInsets.fromLTRB(
+                      16, 12, 16, 0
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
