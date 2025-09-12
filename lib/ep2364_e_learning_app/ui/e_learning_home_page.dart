@@ -26,9 +26,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                 spacing: 16,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(
-                      16, 12, 16, 0
-                    ),
+                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -52,49 +50,49 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   Container(
                     // color: Colors.red,
                     height: 52,
-                    padding: EdgeInsets.only(
-                      left: 16,
-                    ),
+                    padding: EdgeInsets.only(left: 16),
 
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           padding: EdgeInsets.symmetric(horizontal: 24),
-                          margin: EdgeInsets.only(
-                              right: 16
-                          ),
+                          margin: EdgeInsets.only(right: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.green,
                           ),
-                          child: Center(child: Text('All Courses'),),
+                          child: Center(child: Text('All Courses')),
                         ),
-                        ...["Popular", "Newest", "Teachers Spot"].map((e){
-                          return   Container(
-                            margin: EdgeInsets.only(
-                              right: 16
-                            ),
+                        ...["Popular", "Newest", "Teachers Spot"].map((e) {
+                          return Container(
+                            margin: EdgeInsets.only(right: 16),
                             padding: EdgeInsets.symmetric(horizontal: 24),
                             decoration: ShapeDecoration(
                               shape: StadiumBorder(
-                                  side: BorderSide(color: Colors.grey)
+                                side: BorderSide(color: Colors.grey),
                               ),
-
-
                             ),
-                            child: Center(child: Text(e),),
+                            child: Center(child: Text(e)),
                           );
-
-                        })
-
-
+                        }),
                       ],
                     ),
                   ),
-                  Container(height: 240, child: ListView.builder(itemBuilder: (context,index){
-                    return Container();
-                  })),
+                  Container(
+                    height: 240,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 180,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                   Row(
                     children: [
                       Text("Top Courses"),
