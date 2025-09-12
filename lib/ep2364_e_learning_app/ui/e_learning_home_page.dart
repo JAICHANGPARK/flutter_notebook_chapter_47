@@ -51,7 +51,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   ),
                   Container(
                     color: Colors.red,
-                    height: 62,
+                    height: 52,
                     padding: EdgeInsets.only(
                       left: 16,
                     ),
@@ -60,7 +60,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          padding: EdgeInsets.symmetric(horizontal: 24),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.green,
