@@ -169,16 +169,14 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           ),
                           child: Column(
                             children: [
-                              Container(
-                                height: 120,
-                                child: Placeholder(),
-                              ),
+                              Container(height: 120, child: Placeholder()),
                               Row(
                                 children: [
-                                  Text("\$300")
+                                  Text("\$300"),
+                                  Icon(Icons.play_circle_outline),
+                                  Text("5"),
                                 ],
-                              )
-
+                              ),
                             ],
                           ),
                         );
