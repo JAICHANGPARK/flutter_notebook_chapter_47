@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class ELearningHomePage extends StatefulWidget {
   const ELearningHomePage({super.key});
@@ -38,8 +39,11 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     ),
                     CircleAvatar(
                       radius: 26,
-                      
-                    )
+                      backgroundColor: Colors.white,
+                      child: HugeIcon(
+                        icon: HugeIcons.strokeRoundedNotification01,
+                      ),
+                    ),
                   ],
                 ),
               ],
