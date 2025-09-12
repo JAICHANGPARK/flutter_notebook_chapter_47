@@ -44,19 +44,25 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           child: Text("View All"),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.grey,
-
                           ),
-
                         ),
                       ],
                     ),
                   ),
-                  Container(height: 62, child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-
-                    ],
-                  )),
+                  Container(
+                    height: 62,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.green,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   Container(height: 240, child: Placeholder()),
                   Row(
                     children: [
