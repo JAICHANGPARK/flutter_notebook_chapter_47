@@ -44,7 +44,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           child: Text("View All"),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.grey,
+
                           ),
+                          
                         ),
                       ],
                     ),
