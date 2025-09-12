@@ -107,68 +107,66 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                   ),
                   ...List.generate(
                     8,
-                        (idx) =>
-                        Container(
-                          height: 100,
-                          width: 80,
-                          margin: EdgeInsets.only(right: 8),
-                          child: Column(
-                            spacing: 6,
-                            children: [
-                              Expanded(
-                                child: Stack(
-                                  children: [
-                                    Positioned.fill(
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          shape: BoxShape.circle,
-                                          gradient: LinearGradient(
-                                            begin: Alignment.bottomLeft,
-                                            end: Alignment.topRight,
-                                            colors: [
-                                              Colors.yellow,
-                                              Colors.orange,
-                                              Colors.red,
-                                              Colors.red,
-                                            ],
-                                          ),
-                                        ),
-                                        padding: EdgeInsets.all(3),
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            border: Border.all(
-                                              color: Colors.black,
-                                              width: 1.5,
-                                            ),
-                                            color: Colors.grey,
-                                          ),
-                                        ),
+                    (idx) => Container(
+                      height: 100,
+                      width: 80,
+                      margin: EdgeInsets.only(right: 8),
+                      child: Column(
+                        spacing: 6,
+                        children: [
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                Positioned.fill(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      gradient: LinearGradient(
+                                        begin: Alignment.bottomLeft,
+                                        end: Alignment.topRight,
+                                        colors: [
+                                          Colors.yellow,
+                                          Colors.orange,
+                                          Colors.red,
+                                          Colors.red,
+                                        ],
                                       ),
                                     ),
-                                    // Positioned(
-                                    //   bottom: 0,
-                                    //   right: 0,
-                                    //   child: Container(
-                                    //     decoration: BoxDecoration(
-                                    //       shape: BoxShape.circle,
-                                    //       color: Colors.blue,
-                                    //       border: Border.all(
-                                    //         color: Colors.white,
-                                    //         width: 1.5,
-                                    //       ),
-                                    //     ),
-                                    //     child: Icon(Icons.add, size: 20),
-                                    //   ),
-                                    // ),
-                                  ],
+                                    padding: EdgeInsets.all(3),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        border: Border.all(
+                                          color: Colors.black,
+                                          width: 1.5,
+                                        ),
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                  ),
                                 ),
-                              ),
-                              Text("Dream",
-                                  style: TextStyle(color: Colors.grey)),
-                            ],
+                                // Positioned(
+                                //   bottom: 0,
+                                //   right: 0,
+                                //   child: Container(
+                                //     decoration: BoxDecoration(
+                                //       shape: BoxShape.circle,
+                                //       color: Colors.blue,
+                                //       border: Border.all(
+                                //         color: Colors.white,
+                                //         width: 1.5,
+                                //       ),
+                                //     ),
+                                //     child: Icon(Icons.add, size: 20),
+                                //   ),
+                                // ),
+                              ],
+                            ),
                           ),
-                        ),
+                          Text("Dream", style: TextStyle(color: Colors.grey)),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -258,7 +256,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                       child: Column(
                                         spacing: 4,
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             "Dream Walker",
@@ -356,19 +354,30 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
               ),
               BottomNavigationBarItem(
                 icon: HugeIcon(
-                  icon: HugeIcons.strokeRoundedCamera01, color: Colors.grey,),
+                  icon: HugeIcons.strokeRoundedCamera01,
+                  color: Colors.grey,
+                ),
                 label: "Reels",
               ),
               BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedUserGroup),
+                icon: HugeIcon(
+                  icon: HugeIcons.strokeRoundedUserGroup,
+                  color: Colors.grey,
+                ),
                 label: "Friends",
               ),
               BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedNotification01),
+                icon: HugeIcon(
+                  icon: HugeIcons.strokeRoundedNotification01,
+                  color: Colors.grey,
+                ),
                 label: "Notifications",
               ),
               BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedMenu01),
+                icon: HugeIcon(
+                  icon: HugeIcons.strokeRoundedMenu01,
+                  color: Colors.grey,
+                ),
                 label: "Menu",
               ),
             ],
