@@ -86,18 +86,29 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 180,
+                          margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16),
+                            border: Border.all(color: Colors.grey),
                           ),
                         );
                       },
                     ),
                   ),
-                  Row(
-                    children: [
-                      Text("Top Courses"),
-                      TextButton(onPressed: () {}, child: Text("View All")),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Featured Services",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   Container(height: 240, child: Placeholder()),
                 ],
