@@ -36,6 +36,10 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         children: [Text("Welcome Back!"), Text("Dream Walker")],
                       ),
                     ),
+                    CircleAvatar(
+                      radius: 26,
+                      
+                    )
                   ],
                 ),
               ],
