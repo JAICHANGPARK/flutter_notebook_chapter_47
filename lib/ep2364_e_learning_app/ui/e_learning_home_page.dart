@@ -169,12 +169,16 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           ),
                           child: Column(
                             children: [
-                              Container(height: 120, decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(16),
-                                  topLeft:  Radius.circular(16),
-                                )
-                              ),),
+                              Container(
+                                height: 120,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(16),
+                                    topLeft: Radius.circular(16),
+                                  ),
+                                  color: Colors.blue,
+                                ),
+                              ),
                               Row(
                                 children: [
                                   Text("\$300"),
@@ -184,7 +188,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                   Text("4.8"),
                                 ],
                               ),
-                              Text("Assessment & Effective Questioning",)
+                              Text("Assessment & Effective Questioning"),
                             ],
                           ),
                         );
