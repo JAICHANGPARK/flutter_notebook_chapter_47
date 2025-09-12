@@ -20,13 +20,20 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
             padding: EdgeInsets.fromLTRB(16, 42, 16, 16),
             child: Column(
               children: [
-                Container(
-                  height: 52,
-                  width: 52,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.white,),
-                  ),
+                Row(
+                  children: [
+                    Container(
+                      height: 52,
+                      width: 52,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.white,),
+                      ),
+                    ),
+                    Expanded(child: Column(children: [
+                      
+                    ],))
+                  ],
                 ),
               ],
             ),
