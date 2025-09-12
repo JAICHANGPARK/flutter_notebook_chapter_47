@@ -155,7 +155,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     ),
                   ),
                   Container(
-                    height: 220,
+                    height: 240,
                     padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -169,7 +169,16 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           ),
                           child: Column(
                             children: [
-                              
+                              Container(
+                                height: 120,
+                                child: Placeholder(),
+                              ),
+                              Row(
+                                children: [
+                                  Text("\$300")
+                                ],
+                              )
+
                             ],
                           ),
                         );
