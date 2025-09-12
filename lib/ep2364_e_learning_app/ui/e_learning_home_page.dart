@@ -59,6 +59,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.green,
                           ),
+                          child: Center(child: Text('All Courses'),),
                         ),
                       ],
                     ),
