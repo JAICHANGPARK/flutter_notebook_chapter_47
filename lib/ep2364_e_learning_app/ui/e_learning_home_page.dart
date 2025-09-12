@@ -169,7 +169,12 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           ),
                           child: Column(
                             children: [
-                              Container(height: 120, child: Placeholder()),
+                              Container(height: 120, decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(16),
+                                  topLeft:  Radius.circular(16),
+                                )
+                              ),),
                               Row(
                                 children: [
                                   Text("\$300"),
