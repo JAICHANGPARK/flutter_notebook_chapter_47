@@ -61,6 +61,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       children: [
                         Container(
                           padding: EdgeInsets.symmetric(horizontal: 24),
+                          margin: EdgeInsets.only(
+                              right: 16
+                          ),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.green,
@@ -69,6 +72,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         ),
                         ...["Popular", "Newest", "Teachers Spot"].map((e){
                           return   Container(
+                            margin: EdgeInsets.only(
+                              right: 16
+                            ),
                             padding: EdgeInsets.symmetric(horizontal: 24),
                             decoration: ShapeDecoration(
                               shape: StadiumBorder(
