@@ -18,7 +18,16 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
             width: double.infinity,
             decoration: BoxDecoration(color: Colors.green),
             padding: EdgeInsets.fromLTRB(16, 42, 16, 16),
-            child: Column(children: []),
+            child: Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.white),
+                  ),
+                ),
+              ],
+            ),
           ),
           Expanded(
             child: SingleChildScrollView(
