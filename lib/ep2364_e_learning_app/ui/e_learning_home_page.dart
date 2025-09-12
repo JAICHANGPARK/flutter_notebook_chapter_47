@@ -170,7 +170,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           child: Column(
                             children: [
                               Container(
-                                height: 110,
+                                height: 106,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(16),
@@ -182,12 +182,16 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                               Padding(
                                 padding: const EdgeInsets.all(12.0),
                                 child: Column(
-                                  spacing: 8,
+                                  spacing: 16,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
                                       spacing: 6,
                                       children: [
-                                        Text("\$300"),
+                                        Text(
+                                          "\$300",
+                                          style: TextStyle(fontSize: 18),
+                                        ),
                                         Spacer(),
                                         Icon(
                                           Icons.play_circle_outline,
@@ -198,7 +202,10 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                         Text("4.8"),
                                       ],
                                     ),
-                                    Text("Assessment &\nEffective Questioning"),
+                                    Text(
+                                      "Assessment &\nEffective\nQuestioning",
+                                      style: TextStyle(fontSize: 14),
+                                    ),
                                   ],
                                 ),
                               ),
