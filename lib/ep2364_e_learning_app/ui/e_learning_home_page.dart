@@ -30,6 +30,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       vertical: 12,
                     ),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           "Top Courses",
@@ -38,7 +39,13 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        TextButton(onPressed: () {}, child: Text("View All")),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("View All"),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.grey,
+                          ),
+                        ),
                       ],
                     ),
                   ),
