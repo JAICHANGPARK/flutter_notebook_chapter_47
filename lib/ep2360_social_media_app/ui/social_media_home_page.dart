@@ -33,7 +33,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                   IconButton(onPressed: () {}, icon: Icon(Icons.search)),
                   Gap(16),
                   Badge(
-                    child: Icon(HugeIcons.strokeRoundedBubbleChat),
+                    child: HugeIcon(
+                      icon: HugeIcons.strokeRoundedBubbleChat,
+                      color: Colors.black,
+                    ),
                     backgroundColor: Colors.red,
                   ),
                 ],
