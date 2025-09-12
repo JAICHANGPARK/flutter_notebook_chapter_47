@@ -183,7 +183,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       child: Row(
                         spacing: 8,
                         children: [
-                          Icon(HugeIcons.strokeRoundedCamera02),
+                          HugeIcon(
+                            icon: HugeIcons.strokeRoundedCamera02,
+                            color: Colors.black,
+                          ),
                           Text("Reels", style: TextStyle(fontSize: 16)),
                           Spacer(),
                           Icon(Icons.more_horiz),
