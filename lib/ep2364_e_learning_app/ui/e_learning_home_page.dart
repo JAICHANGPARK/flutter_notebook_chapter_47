@@ -168,7 +168,6 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             border: Border.all(color: Colors.grey),
                           ),
                           child: Column(
-                            spacing: 12,
                             children: [
                               Container(
                                 height: 110,
@@ -180,19 +179,25 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                   color: Colors.blue,
                                 ),
                               ),
-                              Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Text("\$300"),
-                                      Icon(Icons.play_circle_outline),
-                                      Text("5"),
-                                      Icon(Icons.star),
-                                      Text("4.8"),
-                                    ],
-                                  ),
-                                  Text("Assessment & Effective Questioning"),
-                                ],
+                              Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Column(
+                                  spacing: 8,
+                                  children: [
+                                    Row(
+                                      spacing: 6,
+                                      children: [
+                                        Text("\$300"),
+                                        Spacer(),
+                                        Icon(Icons.play_circle_outline),
+                                        Text("5"),
+                                        Icon(Icons.star),
+                                        Text("4.8"),
+                                      ],
+                                    ),
+                                    Text("Assessment & Effective Questioning"),
+                                  ],
+                                ),
                               )
 
                             ],
