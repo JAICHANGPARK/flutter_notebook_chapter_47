@@ -75,6 +75,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           decoration: InputDecoration(
                             icon: Icon(Icons.search),
                             hintText: "Search",
+                            border: InputBorder.none,
                           ),
                         ),
                       ),
