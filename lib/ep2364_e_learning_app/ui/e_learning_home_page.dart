@@ -127,7 +127,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 24),
+                          padding: EdgeInsets.symmetric(horizontal: 20 ),
                           margin: EdgeInsets.only(right: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
