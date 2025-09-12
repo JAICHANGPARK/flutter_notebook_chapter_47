@@ -18,7 +18,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
             height: 240,
             width: double.infinity,
             decoration: BoxDecoration(color: Colors.green),
-            padding: EdgeInsets.fromLTRB(16, 42, 16, 16),
+            padding: EdgeInsets.fromLTRB(16, 62, 16, 16),
             child: Column(
               children: [
                 Row(
@@ -35,7 +35,20 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [Text("Welcome Back!"), Text("Dream Walker")],
+                        children: [
+                          Text(
+                            "Welcome Back!",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          Text(
+                            "Dream Walker",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     CircleAvatar(
@@ -48,6 +61,16 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     ),
                   ],
                 ),
+                Container(
+                  decoration: BoxDecoration(
+                    
+                  ),
+                  child: Row(
+                    children: [
+
+                    ],
+                  ),
+                )
               ],
             ),
           ),
