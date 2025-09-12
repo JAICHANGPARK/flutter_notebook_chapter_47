@@ -27,12 +27,15 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       width: 52,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        border: Border.all(color: Colors.white,),
+                        border: Border.all(color: Colors.white),
                       ),
                     ),
-                    Expanded(child: Column(children: [
-                      
-                    ],))
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [Text("Welcome Back!"), Text("Dream Walker")],
+                      ),
+                    ),
                   ],
                 ),
               ],
