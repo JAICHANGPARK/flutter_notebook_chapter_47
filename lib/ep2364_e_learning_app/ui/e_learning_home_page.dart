@@ -110,10 +110,10 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("View All"),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.grey,
                           ),
+                          child: Text("View All"),
                         ),
                       ],
                     ),
@@ -127,13 +127,18 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 20 ),
+                          padding: EdgeInsets.symmetric(horizontal: 20),
                           margin: EdgeInsets.only(right: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.green,
                           ),
-                          child: Center(child: Text('All Courses')),
+                          child: Center(
+                            child: Text(
+                              'All Courses',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
                         ),
                         ...["Popular", "Newest", "Teachers Spot"].map((e) {
                           return Container(
