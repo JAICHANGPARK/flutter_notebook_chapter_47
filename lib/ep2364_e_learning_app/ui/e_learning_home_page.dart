@@ -62,14 +62,14 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   ],
                 ),
                 Container(
-                  decoration: BoxDecoration(),
+                  decoration: ShapeDecoration(shape: StadiumBorder()),
                   child: Row(
                     children: [
                       Icon(Icons.search),
                       Expanded(child: TextField()),
                       CircleAvatar(
                         child: Icon(Icons.tune),
-                        backgroundColor: Colors.green[100],
+                        backgroundColor: Colors.green[50],
                         foregroundColor: Colors.green,
                       ),
                     ],
