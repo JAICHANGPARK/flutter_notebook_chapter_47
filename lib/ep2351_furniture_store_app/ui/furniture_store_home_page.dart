@@ -312,7 +312,10 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                     radius: 32,
                     backgroundColor: Color.fromRGBO(172, 127, 85, 1),
                     foregroundColor: Colors.white,
-                    child: Icon(HugeIcons.strokeRoundedHome05),
+                    child: HugeIcon(
+                      icon: HugeIcons.strokeRoundedHome05,
+                      color: Colors.white,
+                    ),
                   ),
                   CircleAvatar(
                     radius: 32,
