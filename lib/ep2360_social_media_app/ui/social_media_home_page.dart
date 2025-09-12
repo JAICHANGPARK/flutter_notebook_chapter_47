@@ -346,7 +346,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             type: BottomNavigationBarType.fixed,
             items: [
               BottomNavigationBarItem(
-                icon: Icon(HugeIcons.strokeRoundedHome01),
+                icon: HugeIcon(
+                  icon: HugeIcons.strokeRoundedHome01,
+                  color: Colors.blueAccent,
+                ),
                 label: "Home",
               ),
               BottomNavigationBarItem(
