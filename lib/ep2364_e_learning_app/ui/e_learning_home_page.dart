@@ -175,6 +175,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                   Text("\$300"),
                                   Icon(Icons.play_circle_outline),
                                   Text("5"),
+                                  Icon(Icons.star),
+                                  Text("4.8"),
                                 ],
                               ),
                             ],
