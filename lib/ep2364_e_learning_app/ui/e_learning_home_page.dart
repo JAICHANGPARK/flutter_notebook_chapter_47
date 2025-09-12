@@ -72,7 +72,10 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     children: [
                       Expanded(
                         child: TextField(
-                          decoration: InputDecoration(icon: Icon(Icons.search)),
+                          decoration: InputDecoration(
+                            icon: Icon(Icons.search),
+                            hintText: "Search",
+                          ),
                         ),
                       ),
                       CircleAvatar(
