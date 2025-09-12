@@ -111,7 +111,23 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       ],
                     ),
                   ),
-                  Container(height: 240, child: Placeholder()),
+                  Container(
+                    height: 220,
+                    padding: EdgeInsets.only(left: 16),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 180,
+                          margin: EdgeInsets.only(right: 16),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(color: Colors.grey),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),
