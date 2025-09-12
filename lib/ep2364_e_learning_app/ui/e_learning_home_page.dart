@@ -52,8 +52,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     ),
                   ),
                   Container(height: 62, child: ListView(
+                    scrollDirection: Axis.horizontal,
                     children: [
-                      
+
                     ],
                   )),
                   Container(height: 240, child: Placeholder()),
