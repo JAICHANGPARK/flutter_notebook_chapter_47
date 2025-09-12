@@ -15,12 +15,12 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       body: Column(
         children: [
           Container(
-            height: 240,
+
             width: double.infinity,
             decoration: BoxDecoration(color: Colors.green),
             padding: EdgeInsets.fromLTRB(16, 62, 16, 16),
             child: Column(
-              spacing: 12,
+              spacing: 16,
               children: [
                 Row(
                   spacing: 12,
@@ -78,6 +78,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         ),
                       )),
                       CircleAvatar(
+                        radius: 24,
                         child: Icon(Icons.tune),
                         backgroundColor: Colors.green[50],
                         foregroundColor: Colors.green,
