@@ -50,7 +50,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     ),
                   ),
                   Container(
-                    color: Colors.red,
+                    // color: Colors.red,
                     height: 52,
                     padding: EdgeInsets.only(
                       left: 16,
@@ -92,7 +92,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       ],
                     ),
                   ),
-                  Container(height: 240, child: Placeholder()),
+                  Container(height: 240, child: ListView.builder(itemBuilder: (context,index){
+                    return Container();
+                  })),
                   Row(
                     children: [
                       Text("Top Courses"),
