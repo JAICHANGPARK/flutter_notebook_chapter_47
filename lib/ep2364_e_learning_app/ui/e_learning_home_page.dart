@@ -35,7 +35,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         Text(
                           "Top Courses",
                           style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 22,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -46,7 +46,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             foregroundColor: Colors.grey,
 
                           ),
-                          
+
                         ),
                       ],
                     ),
