@@ -189,17 +189,19 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                       children: [
                                         Text("\$300"),
                                         Spacer(),
-                                        Icon(Icons.play_circle_outline),
+                                        Icon(
+                                          Icons.play_circle_outline,
+                                          size: 16,
+                                        ),
                                         Text("5"),
-                                        Icon(Icons.star),
+                                        Icon(Icons.star, size: 16),
                                         Text("4.8"),
                                       ],
                                     ),
-                                    Text("Assessment & Effective Questioning"),
+                                    Text("Assessment &\nEffective Questioning"),
                                   ],
                                 ),
-                              )
-
+                              ),
                             ],
                           ),
                         );
