@@ -81,6 +81,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   ),
                   Container(
                     height: 240,
+                    padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
