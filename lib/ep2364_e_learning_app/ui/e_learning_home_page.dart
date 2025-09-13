@@ -231,7 +231,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     ),
                   ),
                   Container(
-                    height: 220,
+                    height: 200,
                     padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -264,6 +264,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                 style: TextStyle(fontSize: 16),
                               ),
                               Wrap(
+                                spacing: 12,
+                                runSpacing: 8,
                                 children: [
                                   Container(
                                     padding: EdgeInsets.symmetric(
