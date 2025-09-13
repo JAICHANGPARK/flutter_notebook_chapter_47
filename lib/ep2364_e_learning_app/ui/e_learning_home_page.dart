@@ -254,13 +254,19 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
         ],
       ),
       bottomNavigationBar: Container(
-        height: 80,
+        decoration: BoxDecoration(
+          border: Border(top: BorderSide(color: Colors.grey)),
+        ),
+        height: 100,
         child: BottomNavigationBar(
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.green,
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home",
+            ),
             BottomNavigationBarItem(
               icon: Icon(Icons.explore_outlined),
               label: "Explore",
