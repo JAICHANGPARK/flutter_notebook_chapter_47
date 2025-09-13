@@ -258,6 +258,16 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                   color: Colors.white,
                                 ),
                               ),
+                              Text("DI Training"),
+                              OverflowBar(
+                                children: [
+                                  Container(
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         );
