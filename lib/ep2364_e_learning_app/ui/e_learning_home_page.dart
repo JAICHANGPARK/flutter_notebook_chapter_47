@@ -262,9 +262,15 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                               OverflowBar(
                                 children: [
                                   Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                     decoration: ShapeDecoration(
-                                      shape: StadiumBorder(),
+                                      shape: StadiumBorder(
+                                        side: BorderSide(color: Colors.grey)
+                                      ),
                                     ),
+                                    child: Text("RMK",style: TextStyle(
+                                      fontSize: 12,
+                                    ),),
                                   ),
                                 ],
                               ),
