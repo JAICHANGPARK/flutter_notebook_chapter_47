@@ -246,11 +246,13 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                 ? Colors.green[100]!
                                 : Colors.orange[100],
                           ),
+                          padding: EdgeInsets.all(16),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                height: 42,
-                                width: 42,
+                                height: 54,
+                                width: 54,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Colors.white,
