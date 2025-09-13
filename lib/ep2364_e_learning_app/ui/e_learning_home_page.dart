@@ -270,6 +270,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.home_filled,
               size: 28,),
+              
+
 
               label: "Home",
             ),
