@@ -256,9 +256,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           // border: Border(top: BorderSide(color: Colors.grey)),
-          boxShadow: [BoxShadow(color: Colors.grey[100]!,
-          blurRadius: 4,
-          spreadRadius: 4)],
+          boxShadow: [
+            BoxShadow(color: Colors.grey[100]!, blurRadius: 4, spreadRadius: 4),
+          ],
         ),
         height: 100,
         child: BottomNavigationBar(
@@ -266,25 +266,23 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.green,
+          unselectedItemColor: Colors.grey[300]!,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home_filled,
-              size: 32,),
-
-
+              icon: Icon(Icons.home_filled, size: 32),
 
               label: "Home",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.explore_outlined),
+              icon: Icon(Icons.explore_outlined, size: 32),
               label: "Explore",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.bookmark_border),
+              icon: Icon(Icons.bookmark_border, size: 32),
               label: 'Bookmark',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person_2_outlined),
+              icon: Icon(Icons.person_2_outlined, size: 32),
               label: 'Profile',
             ),
           ],
