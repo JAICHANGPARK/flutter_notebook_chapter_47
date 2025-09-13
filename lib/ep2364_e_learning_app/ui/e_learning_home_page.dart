@@ -243,8 +243,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(color: Colors.grey),
                             color: index % 2 == 0
-                                ? Colors.green[300]!
-                                : Colors.orangeAccent[100],
+                                ? Colors.green[100]!
+                                : Colors.orange[100],
                           ),
                         );
                       },
