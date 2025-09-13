@@ -207,16 +207,23 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                         Icon(
                                           Icons.play_circle_outline,
                                           size: 16,
+                                          color: Colors.green,
                                         ),
                                         Text("5"),
-                                        Icon(Icons.star, size: 16),
+                                        Icon(
+                                          Icons.star,
+                                          size: 16,
+                                          color: Colors.orange,
+                                        ),
                                         Text("4.8"),
                                       ],
                                     ),
                                     Text(
                                       "Assessment &\nEffective\nQuestioning",
-                                      style: TextStyle(fontSize: 15,
-                                      fontWeight: FontWeight.w600,),
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w600,
+                                      ),
                                     ),
                                   ],
                                 ),
