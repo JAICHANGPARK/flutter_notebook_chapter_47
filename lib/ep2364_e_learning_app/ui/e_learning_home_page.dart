@@ -242,6 +242,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(color: Colors.grey),
+                            color: index % 2 == 0
+                                ? Colors.green[300]!
+                                : Colors.orangeAccent[100],
                           ),
                         );
                       },
