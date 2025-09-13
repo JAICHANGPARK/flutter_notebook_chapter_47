@@ -193,7 +193,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                               Padding(
                                 padding: const EdgeInsets.all(12.0),
                                 child: Column(
-                                  spacing: 16,
+                                  spacing: 12,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
@@ -215,7 +215,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                     ),
                                     Text(
                                       "Assessment &\nEffective\nQuestioning",
-                                      style: TextStyle(fontSize: 14),
+                                      style: TextStyle(fontSize: 15,
+                                      fontWeight: FontWeight.w600,),
                                     ),
                                   ],
                                 ),
