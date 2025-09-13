@@ -255,8 +255,10 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          border: Border(top: BorderSide(color: Colors.grey)),
-          boxShadow: [BoxShadow(color: Colors.grey[100])],
+          // border: Border(top: BorderSide(color: Colors.grey)),
+          boxShadow: [BoxShadow(color: Colors.grey[100]!,
+          blurRadius: 4,
+          spreadRadius: 4)],
         ),
         height: 100,
         child: BottomNavigationBar(
