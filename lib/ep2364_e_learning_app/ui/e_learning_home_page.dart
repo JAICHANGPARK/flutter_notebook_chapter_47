@@ -268,7 +268,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
           selectedItemColor: Colors.green,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home_filled),
+              icon: Icon(Icons.home_filled,
+              size: 28,),
+
               label: "Home",
             ),
             BottomNavigationBarItem(
