@@ -180,6 +180,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                     image: NetworkImage(
                                       "https://cdn.pixabay.com/photo/2025/08/26/17/58/barn-swallow-9798461_1280.jpg",
                                     ),
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
                               ),
