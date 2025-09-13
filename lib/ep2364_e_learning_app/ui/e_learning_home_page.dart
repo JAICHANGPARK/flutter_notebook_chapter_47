@@ -246,6 +246,18 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                 ? Colors.green[100]!
                                 : Colors.orange[100],
                           ),
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         );
                       },
                     ),
