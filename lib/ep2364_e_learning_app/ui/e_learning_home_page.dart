@@ -255,10 +255,11 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          border: Border(top: BorderSide(color: Colors.grey)),
+          border: Border(top: BorderSide(color: Colors.grey,)),
         ),
         height: 100,
         child: BottomNavigationBar(
+          elevation: 6,
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.green,
