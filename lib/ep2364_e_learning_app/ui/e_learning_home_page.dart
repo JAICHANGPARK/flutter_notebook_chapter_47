@@ -248,6 +248,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           ),
                           padding: EdgeInsets.all(16),
                           child: Column(
+                            spacing: 12,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
@@ -258,19 +259,71 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                   color: Colors.white,
                                 ),
                               ),
-                              Text("DI Training"),
-                              OverflowBar(
+                              Text(
+                                "DI Training",
+                                style: TextStyle(fontSize: 16),
+                              ),
+                              Wrap(
                                 children: [
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 12,
+                                      vertical: 4,
+                                    ),
                                     decoration: ShapeDecoration(
                                       shape: StadiumBorder(
-                                        side: BorderSide(color: Colors.grey)
+                                        side: BorderSide(color: Colors.grey),
                                       ),
                                     ),
-                                    child: Text("RMK",style: TextStyle(
-                                      fontSize: 12,
-                                    ),),
+                                    child: Text(
+                                      "RMK",
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 12,
+                                      vertical: 4,
+                                    ),
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(
+                                        side: BorderSide(color: Colors.grey),
+                                      ),
+                                    ),
+                                    child: Text(
+                                      "RMK",
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 12,
+                                      vertical: 4,
+                                    ),
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(
+                                        side: BorderSide(color: Colors.grey),
+                                      ),
+                                    ),
+                                    child: Text(
+                                      "RM2-5",
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 12,
+                                      vertical: 4,
+                                    ),
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(
+                                        side: BorderSide(color: Colors.grey),
+                                      ),
+                                    ),
+                                    child: Text(
+                                      "RM2-5",
+                                      style: TextStyle(fontSize: 12),
+                                    ),
                                   ),
                                 ],
                               ),
