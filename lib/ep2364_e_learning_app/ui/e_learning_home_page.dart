@@ -100,7 +100,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                spacing: 12,
+                spacing: 16,
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
@@ -162,7 +162,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   ),
                   Container(
                     height: 240,
-                    padding: EdgeInsets.only(left: 16),
+                    padding: EdgeInsets.only(left: 16,),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
