@@ -176,7 +176,11 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                     topRight: Radius.circular(16),
                                     topLeft: Radius.circular(16),
                                   ),
-                                  color: Colors.blue,
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2025/08/26/17/58/barn-swallow-9798461_1280.jpg",
+                                    ),
+                                  ),
                                 ),
                               ),
                               Padding(
