@@ -241,7 +241,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16),
-                            border: Border.all(color: Colors.grey),
+                            border: Border.all(color: Colors.grey[200]!),
                             color: index % 2 == 0
                                 ? Colors.green[100]!
                                 : Colors.orange[100],
