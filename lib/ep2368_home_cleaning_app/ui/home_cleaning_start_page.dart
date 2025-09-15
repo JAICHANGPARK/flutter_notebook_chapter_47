@@ -70,7 +70,13 @@ class HomeCleaningStartPage extends StatelessWidget {
                         "I already have an account?",
                         style: TextStyle(color: Colors.white),
                       ),
-                      TextButton(onPressed: () {}, child: Text("Sign in")),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("Sign in"),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.white,
+                        ),
+                      ),
                     ],
                   ),
                 ],
