@@ -42,7 +42,7 @@ class HomeCleaningStartPage extends StatelessWidget {
                   ),
                   Text(
                     "one place",
-                    style: TextStyle(  fontSize: 28, color: Colors.white),
+                    style: TextStyle(fontSize: 28, color: Colors.white),
                   ),
                   Text(
                     "From plumbing to electrical work, find the perfact expert for your home.",
@@ -66,7 +66,10 @@ class HomeCleaningStartPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("I already have an account?"),
+                      Text(
+                        "I already have an account?",
+                        style: TextStyle(color: Colors.white),
+                      ),
                       TextButton(onPressed: () {}, child: Text("Sign in")),
                     ],
                   ),
