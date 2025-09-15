@@ -39,8 +39,9 @@ class HomeCleaningStartPage extends StatelessWidget {
                   Container(
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
-                      color: Colors.purple,
+                      color: Colors.deepPurple,
                     ),
+                    padding: EdgeInsets.symmetric(vertical: 12),
                     child: Center(
                       child: Text(
                         "Continue",
