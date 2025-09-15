@@ -25,9 +25,10 @@ class HomeCleaningStartPage extends StatelessWidget {
                   topRight: Radius.circular(24),
                 ),
               ),
-
+              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 16,
+                // mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text("Fine all your home\nupgrade projects in"),
