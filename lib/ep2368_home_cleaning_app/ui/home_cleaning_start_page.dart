@@ -37,8 +37,19 @@ class HomeCleaningStartPage extends StatelessWidget {
                       shape: StadiumBorder(),
                       color: Colors.purple,
                     ),
+                    child: Center(
+                      child: Text(
+                        "Continue",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
-                  
+                  Row(
+                    children: [
+                      Text("I already have an account?"),
+                      TextButton(onPressed: (){}, child: Text("Sign in"),),
+                    ],
+                  )
                 ],
               ),
             ),
