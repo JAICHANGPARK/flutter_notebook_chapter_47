@@ -31,10 +31,16 @@ class HomeCleaningStartPage extends StatelessWidget {
                 // mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text("Fine all your home\nupgrade projects in"),
-                  Text("one place"),
+                  Text(
+                    "Fine all your home\nupgrade projects in",
+                    style: TextStyle(fontSize: 16, color: Colors.white),
+                  ),
+                  Text("one place",
+                    style: TextStyle(fontSize: 16, color: Colors.white),),
                   Text(
                     "From plumbing to electrical work, find the perfact expert for your home.",
+
+                    style: TextStyle(fontSize: 16, color: Colors.grey),
                   ),
                   Container(
                     decoration: ShapeDecoration(
@@ -53,9 +59,9 @@ class HomeCleaningStartPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("I already have an account?"),
-                      TextButton(onPressed: (){}, child: Text("Sign in"),),
+                      TextButton(onPressed: () {}, child: Text("Sign in")),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
