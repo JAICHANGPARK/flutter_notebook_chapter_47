@@ -34,14 +34,21 @@ class HomeCleaningStartPage extends StatelessWidget {
                 children: [
                   Text(
                     "Fine all your home\nupgrade projects in",
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+                    style: TextStyle(
+                      fontSize: 28,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                  Text("one place",
-                    style: TextStyle(fontSize: 16, color: Colors.white),),
+                  Text(
+                    "one place",
+                    style: TextStyle(  fontSize: 28, color: Colors.white),
+                  ),
                   Text(
                     "From plumbing to electrical work, find the perfact expert for your home.",
 
                     style: TextStyle(fontSize: 16, color: Colors.grey),
+                    textAlign: TextAlign.center,
                   ),
                   Container(
                     decoration: ShapeDecoration(
