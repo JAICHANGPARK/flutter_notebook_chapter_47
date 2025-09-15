@@ -26,7 +26,7 @@ class HomeCleaningStartPage extends StatelessWidget {
                   topRight: Radius.circular(24),
                 ),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
               child: Column(
                 spacing: 16,
                 // mainAxisAlignment: MainAxisAlignment.center,
