@@ -8,9 +8,11 @@ class HomeCleaningStartPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Image.network(
-            "https://cdn.pixabay.com/photo/2025/06/16/12/52/cleaning-services-9663247_1280.jpg",
-            fit: BoxFit.cover,
+          Positioned.fill(
+            child: Image.network(
+              "https://cdn.pixabay.com/photo/2025/06/16/12/52/cleaning-services-9663247_1280.jpg",
+              fit: BoxFit.cover,
+            ),
           ),
         ],
       ),
