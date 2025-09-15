@@ -20,7 +20,7 @@ class HomeCleaningStartPage extends StatelessWidget {
             right: 0,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.black26,
+                color: Colors.black38,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
                   topRight: Radius.circular(24),
@@ -34,7 +34,7 @@ class HomeCleaningStartPage extends StatelessWidget {
                 children: [
                   Text(
                     "Fine all your home\nupgrade projects in",
-                    style: TextStyle(fontSize: 16, color: Colors.white),
+                    style: TextStyle(fontSize: 24, color: Colors.white),
                   ),
                   Text("one place",
                     style: TextStyle(fontSize: 16, color: Colors.white),),
