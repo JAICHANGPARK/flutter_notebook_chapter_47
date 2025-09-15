@@ -6,7 +6,7 @@
 - UIX Maruf Hossen
 - https://dribbble.com/shots/26525326-Home-Cleaning-Service-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/44859194/file/9599af51dc6e2266dcd09229836f7c69.jpg?resize=1905x1429&vertical=center">
+<img src="https://cdn.dribbble.com/userupload/44908749/file/81dcbc1005989ac7b3ebb770e427d8ec.png?resize=1905x1429&vertical=center">
 
 ## EP2364-2367
 
