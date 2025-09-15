@@ -25,6 +25,22 @@ class HomeCleaningStartPage extends StatelessWidget {
                   topRight: Radius.circular(24),
                 ),
               ),
+              child: Column(
+                children: [
+                  Text("Fine all your home\nupgrade projects in"),
+                  Text("one place"),
+                  Text(
+                    "From plumbing to electrical work, find the perfact expert for your home.",
+                  ),
+                  Container(
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.purple,
+                    ),
+                  ),
+                  
+                ],
+              ),
             ),
           ),
         ],
