@@ -19,13 +19,14 @@ class HomeCleaningStartPage extends StatelessWidget {
             left: 0,
             right: 0,
             child: Container(
-decoration: BoxDecoration(
-  borderRadius: BorderRadius.only(
-    topLeft: Radius.circular(24)
-  )
-),
-
-          ),),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(24),
+                  topRight: Radius.circular(24),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
