@@ -41,7 +41,7 @@ class HomeCleaningStartPage extends StatelessWidget {
                       shape: StadiumBorder(),
                       color: Colors.deepPurple,
                     ),
-                    padding: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.symmetric(vertical: 14),
                     child: Center(
                       child: Text(
                         "Continue",
@@ -50,6 +50,7 @@ class HomeCleaningStartPage extends StatelessWidget {
                     ),
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("I already have an account?"),
                       TextButton(onPressed: (){}, child: Text("Sign in"),),
