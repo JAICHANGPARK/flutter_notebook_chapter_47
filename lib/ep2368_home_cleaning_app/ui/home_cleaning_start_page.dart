@@ -10,6 +10,7 @@ class HomeCleaningStartPage extends StatelessWidget {
         children: [
           Image.network(
             "https://cdn.pixabay.com/photo/2025/06/16/12/52/cleaning-services-9663247_1280.jpg",
+            fit: BoxFit.cover,
           ),
         ],
       ),
