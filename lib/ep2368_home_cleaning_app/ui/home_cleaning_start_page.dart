@@ -28,22 +28,27 @@ class HomeCleaningStartPage extends StatelessWidget {
               ),
               padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
               child: Column(
-                spacing: 16,
+                spacing: 20,
                 // mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
-                    "Fine all your home\nupgrade projects in",
-                    style: TextStyle(
-                      fontSize: 28,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Column(
+                    children: [
+                      Text(
+                        "Fine all your home\nupgrade projects in",
+                        style: TextStyle(
+                          fontSize: 28,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        "one place",
+                        style: TextStyle(fontSize: 28, color: Colors.white),
+                      ),
+                    ],
                   ),
-                  Text(
-                    "one place",
-                    style: TextStyle(fontSize: 28, color: Colors.white),
-                  ),
+
                   Text(
                     "From plumbing to electrical work, find the perfact expert for your home.",
 
