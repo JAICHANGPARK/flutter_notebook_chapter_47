@@ -20,6 +20,7 @@ class HomeCleaningStartPage extends StatelessWidget {
             right: 0,
             child: Container(
               decoration: BoxDecoration(
+                color: Colors.black26,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
                   topRight: Radius.circular(24),
