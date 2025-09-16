@@ -77,10 +77,10 @@ class HomeCleaningStartPage extends StatelessWidget {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text("Sign in"),
                         style: TextButton.styleFrom(
                           foregroundColor: Colors.white,
                         ),
+                        child: Text("Sign in"),
                       ),
                     ],
                   ),
