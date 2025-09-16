@@ -55,16 +55,25 @@ class HomeCleaningStartPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16, color: Colors.grey),
                     textAlign: TextAlign.center,
                   ),
-                  Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.deepPurple,
-                    ),
-                    padding: EdgeInsets.symmetric(vertical: 14),
-                    child: Center(
-                      child: Text(
-                        "Continue",
-                        style: TextStyle(color: Colors.white),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => HomeCleaningHomePage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.deepPurple,
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 14),
+                      child: Center(
+                        child: Text(
+                          "Continue",
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
                   ),
