@@ -11,6 +11,12 @@ class HomeCleaningHomePage extends StatefulWidget {
 class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
