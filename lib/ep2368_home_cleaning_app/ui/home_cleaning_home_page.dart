@@ -14,26 +14,35 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(244, 246, 248, 1),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              CircleAvatar(),
-              CircleAvatar(
-                child: Badge(
-                  child: HugeIcon(
-                    icon: HugeIcons.strokeRoundedNotification01,
-                    color: Colors.black,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    CircleAvatar(),
+                    CircleAvatar(
+                      child: Badge(
+                        child: HugeIcon(
+                          icon: HugeIcons.strokeRoundedNotification01,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Container(
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(),
+                    color: Colors.white,
                   ),
                 ),
-              ),
-            ],
-          ),
-          Container(
-            decoration: ShapeDecoration(
-              shape: StadiumBorder(),
-              color: Colors.white,
+              ],
             ),
-          ),
+          )
+
         ],
       ),
     );
