@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -25,7 +26,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CircleAvatar(radius: 24, backgroundColor: Colors.white),
+                      CircleAvatar(radius: 24, backgroundColor: Colors.grey),
                       CircleAvatar(
                         radius: 25,
                         backgroundColor: Colors.white,
@@ -34,7 +35,6 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                             icon: HugeIcons.strokeRoundedNotification01,
                             color: Colors.black,
                           ),
-
                         ),
                       ),
                     ],
@@ -43,6 +43,12 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
                       color: Colors.white,
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: "Search",
+                        icon: Icon(CupertinoIcons.search),
+                      ),
                     ),
                   ),
                 ],
