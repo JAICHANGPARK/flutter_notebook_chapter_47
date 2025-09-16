@@ -20,7 +20,10 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
               CircleAvatar(),
               CircleAvatar(
                 child: Badge(
-                  child: 
+                  child: HugeIcon(
+                    icon: HugeIcons.strokeRoundedNotification01,
+                    color: Colors.black,
+                  ),
                 ),
               ),
             ],
