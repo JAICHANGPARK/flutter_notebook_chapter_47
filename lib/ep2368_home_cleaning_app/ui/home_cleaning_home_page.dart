@@ -15,7 +15,6 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(244, 246, 248, 1),
       body: Stack(
-        
         children: [
           SafeArea(
             bottom: false,
@@ -24,14 +23,20 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 8,
+                  ),
                   child: Column(
                     spacing: 24,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          CircleAvatar(radius: 24, backgroundColor: Colors.grey),
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundColor: Colors.grey,
+                          ),
                           CircleAvatar(
                             radius: 25,
                             backgroundColor: Colors.white,
@@ -67,10 +72,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     TextButton(onPressed: () {}, child: Text("See All")),
                   ],
                 ),
-                Container(
-                  height: 100,
-                  child: Placeholder(),
-                ),
+                Container(height: 100, child: Placeholder()),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -78,10 +80,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     TextButton(onPressed: () {}, child: Text("See All")),
                   ],
                 ),
-                Container(
-                  height: 180,
-                  child: Placeholder(),
-                ),
+                Container(height: 180, child: Placeholder()),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -89,10 +88,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     TextButton(onPressed: () {}, child: Text("See All")),
                   ],
                 ),
-                Container(
-                  height: 180,
-                  child: Placeholder(),
-                )
+                Container(height: 180, child: Placeholder()),
               ],
             ),
           ),
