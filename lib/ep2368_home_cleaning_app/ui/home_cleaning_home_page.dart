@@ -67,7 +67,16 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
               height: 100,
               child: Placeholder(),
             ),
-            
+            Row(
+              children: [
+                Text("Cleaning Services"),
+                TextButton(onPressed: () {}, child: Text("See All")),
+              ],
+            ),
+            Container(
+              height: 180,
+              child: Placeholder(),
+            )
           ],
         ),
       ),
