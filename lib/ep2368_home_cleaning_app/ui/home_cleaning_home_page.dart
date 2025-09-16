@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class HomeCleaningHomePage extends StatefulWidget {
   const HomeCleaningHomePage({super.key});
@@ -12,7 +13,23 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(244, 246, 248, 1),
-      body: Column(children: []),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              CircleAvatar(),
+              CircleAvatar(
+                child: Badge(
+                  child: HugeIcon(
+                    icon: [HugeIcons.strokeRoundedNotification01],
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
