@@ -28,6 +28,12 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
               ),
             ],
           ),
+          Container(
+            decoration: ShapeDecoration(
+              shape: StadiumBorder(),
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     );
