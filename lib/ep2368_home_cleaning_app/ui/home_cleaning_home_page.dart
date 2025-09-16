@@ -47,7 +47,8 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Search",
-                        icon: Icon(CupertinoIcons.search),
+                        border: InputBorder.none,
+                        icon: Icon(Icons.search),
                       ),
                     ),
                   ),
