@@ -78,6 +78,17 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
             Container(
               height: 180,
               child: Placeholder(),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Cleaning Services"),
+                TextButton(onPressed: () {}, child: Text("See All")),
+              ],
+            ),
+            Container(
+              height: 180,
+              child: Placeholder(),
             )
           ],
         ),
