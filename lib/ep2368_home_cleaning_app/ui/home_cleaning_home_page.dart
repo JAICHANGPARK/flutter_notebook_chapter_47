@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HomeCleaningHomePage extends StatefulWidget {
   const HomeCleaningHomePage({super.key});
 
@@ -12,11 +11,8 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
-        ],
-      ),
+      backgroundColor: Color.fromRGBO(244, 246, 248, 1),
+      body: Column(children: []),
     );
   }
 }
