@@ -17,11 +17,13 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
       body: SafeArea(
         bottom: false,
         child: Column(
+          spacing: 16,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Column(
+                spacing: 24,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -55,6 +57,16 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                 ],
               ),
             ),
+            Row(
+              children: [
+                Text("Categories"),
+                TextButton(onPressed: () {}, child: Text("See All")),
+              ],
+            ),
+            Container(
+              height: 100,
+              child: Placeholder(),
+            )
           ],
         ),
       ),
