@@ -23,15 +23,18 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CircleAvatar(radius: 24),
+                      CircleAvatar(radius: 24, backgroundColor: Colors.white),
                       CircleAvatar(
                         radius: 25,
+                        backgroundColor: Colors.white,
                         child: Badge(
                           child: HugeIcon(
                             icon: HugeIcons.strokeRoundedNotification01,
                             color: Colors.black,
                           ),
+
                         ),
                       ),
                     ],
