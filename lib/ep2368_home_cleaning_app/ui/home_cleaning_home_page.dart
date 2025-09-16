@@ -58,6 +58,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
               ),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Categories"),
                 TextButton(onPressed: () {}, child: Text("See All")),
@@ -68,6 +69,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
               child: Placeholder(),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Cleaning Services"),
                 TextButton(onPressed: () {}, child: Text("See All")),
