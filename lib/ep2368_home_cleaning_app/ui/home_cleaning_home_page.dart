@@ -83,7 +83,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                           onPressed: () {},
                           child: Text("See All"),
                           style: TextButton.styleFrom(
-                            foregroundColor: Colors.purpleAccent,
+                            foregroundColor: Colors.purple,
                             textStyle: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
