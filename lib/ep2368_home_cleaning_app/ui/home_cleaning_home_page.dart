@@ -164,20 +164,22 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                           ),
                           padding: EdgeInsets.all(16),
                           child: Column(
+                            spacing: 12,
                             children: [
                               Expanded(
                                 child: Container(
                                   decoration: ShapeDecoration(
                                     shape: RoundedSuperellipseBorder(
                                       borderRadius: BorderRadius.only(
-                                        topRight: Radius.circular(32),
-                                        topLeft: Radius.circular(32),
+                                        topRight: Radius.circular(24),
+                                        topLeft: Radius.circular(24),
                                       ),
                                     ),
                                     color: Colors.orange,
                                   ),
                                 ),
                               ),
+                              Text("Home Cleaning")
                             ],
                           ),
                         );
