@@ -119,12 +119,15 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                       },
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Cleaning Services"),
-                      TextButton(onPressed: () {}, child: Text("See All")),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Cleaning Services"),
+                        TextButton(onPressed: () {}, child: Text("See All")),
+                      ],
+                    ),
                   ),
                   Container(height: 180, child: Placeholder()),
                   Row(
