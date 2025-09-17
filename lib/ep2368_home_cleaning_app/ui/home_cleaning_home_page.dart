@@ -100,8 +100,11 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
 
                       itemBuilder: (context, index) {
                         return Padding(
-                          padding: const EdgeInsets.only(right: 16),
-                          child: Column(children: [CircleAvatar(radius: 32)]),
+                          padding: const EdgeInsets.only(right: 12),
+                          child: Column(
+                              spacing: 12,
+                              children: [CircleAvatar(radius: 32),
+                          Text("Cleaning")]),
                         );
                       },
                     ),
