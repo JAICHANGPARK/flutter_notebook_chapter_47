@@ -155,14 +155,14 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           margin: EdgeInsets.only(right: 12),
-                          width: 160,
+                          width: 150,
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
                               borderRadius: BorderRadius.circular(24),
                             ),
                             color: Colors.white,
                           ),
-                          padding: EdgeInsets.all(16),
+                          padding: EdgeInsets.all(12),
                           child: Column(
                             spacing: 16,
                             children: [
@@ -212,7 +212,47 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                       ],
                     ),
                   ),
-                  Container(height: 180, child: Placeholder()),
+                  Container(
+                    height: 200,
+                    padding: EdgeInsets.only(
+                        left: 16
+                    ),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin: EdgeInsets.only(right: 12),
+                          width: 150,
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.all(12),
+                          child: Column(
+                            spacing: 16,
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedSuperellipseBorder(
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(24),
+                                        topLeft: Radius.circular(24),
+                                      ),
+                                    ),
+                                    color: Colors.orange,
+                                  ),
+                                ),
+                              ),
+                              Text("Home Cleaning")
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),
