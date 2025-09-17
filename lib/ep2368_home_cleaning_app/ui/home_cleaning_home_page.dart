@@ -72,8 +72,24 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Categories"),
-                        TextButton(onPressed: () {}, child: Text("See All")),
+                        Text(
+                          "Categories",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See All"),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.purpleAccent,
+                            textStyle: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
