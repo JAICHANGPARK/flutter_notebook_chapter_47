@@ -151,20 +151,25 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: 180,
+                          width: 160,
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
                               borderRadius: BorderRadius.circular(24),
                             ),
                           ),
+                          padding: EdgeInsets.all(12),
                           child: Column(
                             children: [
                               Expanded(
                                 child: Container(
                                   decoration: ShapeDecoration(
                                     shape: RoundedSuperellipseBorder(
-                                      borderRadius: BorderRadius.only(),
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(32),
+                                        topLeft: Radius.circular(32),
+                                      ),
                                     ),
+                                    color: Colors.orange
                                   ),
                                 ),
                               ),
