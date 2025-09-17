@@ -146,7 +146,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     ),
                   ),
                   Container(
-                    height: 180,
+                    height: 200,
                     padding: EdgeInsets.only(
                       left: 16
                     ),
@@ -164,7 +164,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                           ),
                           padding: EdgeInsets.all(16),
                           child: Column(
-                            spacing: 12,
+                            spacing: 16,
                             children: [
                               Expanded(
                                 child: Container(
