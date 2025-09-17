@@ -51,6 +51,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                           ],
                         ),
                         Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.white,
