@@ -147,11 +147,14 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                   ),
                   Container(
                     height: 180,
+                    padding: EdgeInsets.only(
+                      left: 16
+                    ),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: EdgeInsets.only(right: 12),
+                          margin: EdgeInsets.only(right: 23),
                           width: 160,
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
