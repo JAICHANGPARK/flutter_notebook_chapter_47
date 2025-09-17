@@ -156,8 +156,9 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                             shape: RoundedSuperellipseBorder(
                               borderRadius: BorderRadius.circular(24),
                             ),
+                            color: Colors.white
                           ),
-                          padding: EdgeInsets.all(12),
+                          padding: EdgeInsets.all(16),
                           child: Column(
                             children: [
                               Expanded(
