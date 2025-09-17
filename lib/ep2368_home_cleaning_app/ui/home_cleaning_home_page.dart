@@ -145,9 +145,24 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                       ],
                     ),
                   ),
-                  Container(height: 180, child: Placeholder()),
+                  Container(
+                    height: 180,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 180,
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
