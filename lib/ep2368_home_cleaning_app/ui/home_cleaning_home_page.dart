@@ -131,7 +131,14 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                             fontSize: 18,
                           ),
                         ),
-                        TextButton(onPressed: () {}, child: Text("See All")),
+                        TextButton(onPressed: () {}, style: TextButton.styleFrom(
+                          foregroundColor: Colors.purple,
+                          textStyle: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                          child: Text("See All"),),
                       ],
                     ),
                   ),
@@ -140,7 +147,14 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Home Repairs"),
-                      TextButton(onPressed: () {}, child: Text("See All")),
+                      TextButton(onPressed: () {},  style: TextButton.styleFrom(
+                        foregroundColor: Colors.purple,
+                        textStyle: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                        child: Text("See All"),),
                     ],
                   ),
                   Container(height: 180, child: Placeholder()),
