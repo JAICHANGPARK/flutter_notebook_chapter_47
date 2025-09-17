@@ -97,8 +97,12 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                     height: 100,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
+
                       itemBuilder: (context, index) {
-                        return Column(children: [CircleAvatar(radius: 32)]);
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Column(children: [CircleAvatar(radius: 32)]),
+                        );
                       },
                     ),
                   ),
