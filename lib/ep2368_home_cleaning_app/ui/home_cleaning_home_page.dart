@@ -157,6 +157,19 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                               borderRadius: BorderRadius.circular(24),
                             ),
                           ),
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedSuperellipseBorder(
+                                      borderRadius: BorderRadius.only(),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         );
                       },
                     ),
