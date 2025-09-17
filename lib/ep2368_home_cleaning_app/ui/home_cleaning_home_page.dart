@@ -154,7 +154,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: EdgeInsets.only(right: 23),
+                          margin: EdgeInsets.only(right: 12),
                           width: 160,
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
