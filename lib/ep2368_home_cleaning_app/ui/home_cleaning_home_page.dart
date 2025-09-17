@@ -93,7 +93,15 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                       ],
                     ),
                   ),
-                  Container(height: 100, child: Placeholder()),
+                  Container(
+                    height: 100,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Column(children: [CircleAvatar(radius: 32)]);
+                      },
+                    ),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
