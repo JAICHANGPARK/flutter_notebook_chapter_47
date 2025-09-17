@@ -81,7 +81,6 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("See All"),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.purple,
                             textStyle: TextStyle(
@@ -89,6 +88,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+                          child: Text("See All"),
                         ),
                       ],
                     ),
