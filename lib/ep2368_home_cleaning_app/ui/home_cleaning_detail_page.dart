@@ -11,6 +11,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(244, 246, 248, 1),
       body: Column(
         children: [
           Container(
