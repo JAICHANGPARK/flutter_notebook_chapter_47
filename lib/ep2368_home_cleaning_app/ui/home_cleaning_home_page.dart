@@ -277,7 +277,12 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
 
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    radius: 24,
+                    child: HugeIcon(icon: HugeIcons.strokeRoundedHome01, color:
+
+                    Colors.white),
+                  ),
                   IconButton(onPressed: () {}, icon: Icon(Icons.chat_outlined)),
                   IconButton(
                     onPressed: () {},
