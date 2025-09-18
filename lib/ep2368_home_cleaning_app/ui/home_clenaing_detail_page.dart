@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HomeClenaingDetailPage extends StatefulWidget {
+class HomeCleingDetailPage extends StatefulWidget {
   const HomeClenaingDetailPage({super.key});
 
   @override
@@ -10,6 +10,12 @@ class HomeClenaingDetailPage extends StatefulWidget {
 class _HomeClenaingDetailPageState extends State<HomeClenaingDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
