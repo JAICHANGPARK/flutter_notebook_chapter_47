@@ -186,6 +186,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                                               image: NetworkImage(
                                                 "https://cdn.pixabay.com/photo/2024/03/28/05/50/cleaning-8660309_1280.jpg",
                                               ),
+                                              fit: BoxFit.cover,
                                             ),
                                             color: Colors.orange,
                                           ),
