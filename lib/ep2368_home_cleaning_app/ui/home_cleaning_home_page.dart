@@ -270,10 +270,12 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                 shape: StadiumBorder(),
                 color: Color.fromRGBO(238, 238, 238, 1),
               ),
-              padding: EdgeInsets.symmetric(),
+              padding: EdgeInsets.symmetric(
+                horizontal: 16, vertical: 12
+              ),
               child: Row(
 
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CircleAvatar(),
                   IconButton(onPressed: () {}, icon: Icon(Icons.chat_outlined)),
