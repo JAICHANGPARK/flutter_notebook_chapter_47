@@ -14,10 +14,16 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
       backgroundColor: Color.fromRGBO(244, 246, 248, 1),
       body: Column(
         children: [
-          Container(
-            height: 250,
-            child: Placeholder(),
-          )
+          Container(height: 380, child: Placeholder()),
+          Expanded(
+            child: Column(
+              children: [
+                Row(children: [Text("Fix my house"), Text("\$60.00"),
+                Text("")
+                ]),
+              ],
+            ),
+          ),
         ],
       ),
     );
