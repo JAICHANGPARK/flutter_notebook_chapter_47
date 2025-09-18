@@ -270,18 +270,18 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                 shape: StadiumBorder(),
                 color: Color.fromRGBO(238, 238, 238, 1),
               ),
-              padding: EdgeInsets.symmetric(
-                horizontal: 16, vertical: 12
-              ),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Row(
-
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CircleAvatar(
                     radius: 24,
-                    child: HugeIcon(icon: HugeIcons.strokeRoundedHome01, color:
-
-                    Colors.white),
+                    backgroundColor: Colors.purple,
+                    foregroundColor: Colors.white,
+                    child: HugeIcon(
+                      icon: HugeIcons.strokeRoundedHome01,
+                      color: Colors.white,
+                    ),
                   ),
                   IconButton(onPressed: () {}, icon: Icon(Icons.chat_outlined)),
                   IconButton(
