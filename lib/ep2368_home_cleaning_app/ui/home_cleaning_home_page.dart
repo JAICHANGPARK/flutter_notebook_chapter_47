@@ -270,7 +270,9 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                 shape: StadiumBorder(),
                 color: Color.fromRGBO(238, 238, 238, 1),
               ),
+              padding: EdgeInsets.symmetric(),
               child: Row(
+
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   CircleAvatar(),
