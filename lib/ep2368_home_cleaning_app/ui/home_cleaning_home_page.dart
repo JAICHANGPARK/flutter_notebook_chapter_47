@@ -275,8 +275,8 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CircleAvatar(
-                    radius: 24,
-                    backgroundColor: Colors.purple[600],
+                    radius: 26,
+                    backgroundColor: Colors.purple[400],
                     foregroundColor: Colors.white,
                     child: HugeIcon(
                       icon: HugeIcons.strokeRoundedHome01,
