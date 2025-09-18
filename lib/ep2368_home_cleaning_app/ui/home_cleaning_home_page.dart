@@ -160,40 +160,50 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
-                                return Container(
-                                  margin: EdgeInsets.only(right: 12),
-                                  width: 150,
-                                  decoration: ShapeDecoration(
-                                    shape: RoundedSuperellipseBorder(
-                                      borderRadius: BorderRadius.circular(24),
+                                return GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            HomeCleaningDetailPage(),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 12),
+                                    width: 150,
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedSuperellipseBorder(
+                                        borderRadius: BorderRadius.circular(24),
+                                      ),
+                                      color: Colors.white,
                                     ),
-                                    color: Colors.white,
-                                  ),
-                                  padding: EdgeInsets.all(12),
-                                  child: Column(
-                                    spacing: 16,
-                                    children: [
-                                      Expanded(
-                                        child: Container(
-                                          decoration: ShapeDecoration(
-                                            shape: RoundedSuperellipseBorder(
-                                              borderRadius: BorderRadius.only(
-                                                topRight: Radius.circular(24),
-                                                topLeft: Radius.circular(24),
+                                    padding: EdgeInsets.all(12),
+                                    child: Column(
+                                      spacing: 16,
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            decoration: ShapeDecoration(
+                                              shape: RoundedSuperellipseBorder(
+                                                borderRadius: BorderRadius.only(
+                                                  topRight: Radius.circular(24),
+                                                  topLeft: Radius.circular(24),
+                                                ),
                                               ),
-                                            ),
-                                            image: DecorationImage(
-                                              image: NetworkImage(
-                                                "https://cdn.pixabay.com/photo/2024/03/28/05/50/cleaning-8660309_1280.jpg",
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2024/03/28/05/50/cleaning-8660309_1280.jpg",
+                                                ),
+                                                fit: BoxFit.cover,
                                               ),
-                                              fit: BoxFit.cover,
+                                              color: Colors.orange,
                                             ),
-                                            color: Colors.orange,
                                           ),
                                         ),
-                                      ),
-                                      Text("Home Cleaning"),
-                                    ],
+                                        Text("Home Cleaning"),
+                                      ],
+                                    ),
                                   ),
                                 );
                               },
