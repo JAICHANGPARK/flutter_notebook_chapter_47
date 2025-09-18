@@ -265,7 +265,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 32),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
                 color: Color.fromRGBO(238, 238, 238, 1),
