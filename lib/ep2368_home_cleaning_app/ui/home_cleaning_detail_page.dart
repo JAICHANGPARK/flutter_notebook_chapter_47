@@ -25,17 +25,14 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                 ),
                 Container(height: 200, child: Placeholder()),
                 Text("Tags"),
-                SizedBox(
-                  height: 52,
-                  child: Placeholder(),
-                ),
+                SizedBox(height: 52, child: Placeholder()),
                 Row(
                   spacing: 16,
                   children: [
-                    Expanded(child: Container(color: Colors.black,)),
-                    Expanded(child: Container(color: Colors.purple,)),
+                    Expanded(child: Container(color: Colors.black)),
+                    Expanded(child: Container(color: Colors.purple)),
                   ],
-                )
+                ),
               ],
             ),
           ),
