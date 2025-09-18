@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -110,7 +109,12 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                                   child: Column(
                                     spacing: 12,
                                     children: [
-                                      CircleAvatar(radius: 32),
+                                      CircleAvatar(
+                                        radius: 32,
+                                        backgroundImage: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2014/05/12/18/21/cleanup-342706_1280.jpg",
+                                        ),
+                                      ),
                                       Text(
                                         "Cleaning",
                                         style: TextStyle(
