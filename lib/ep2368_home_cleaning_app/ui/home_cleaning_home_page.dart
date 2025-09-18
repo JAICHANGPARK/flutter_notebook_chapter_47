@@ -276,7 +276,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                 children: [
                   CircleAvatar(
                     radius: 24,
-                    backgroundColor: Colors.purple,
+                    backgroundColor: Colors.purple[600],
                     foregroundColor: Colors.white,
                     child: HugeIcon(
                       icon: HugeIcons.strokeRoundedHome01,
