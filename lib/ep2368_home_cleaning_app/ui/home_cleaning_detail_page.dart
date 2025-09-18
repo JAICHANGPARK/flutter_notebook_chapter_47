@@ -16,6 +16,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
         children: [
           Container(
             height: 250,
+            child: Placeholder(),
           )
         ],
       ),
