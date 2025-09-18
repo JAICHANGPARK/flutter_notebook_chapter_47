@@ -253,6 +253,11 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
                                                 topLeft: Radius.circular(24),
                                               ),
                                             ),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2021/11/07/08/44/woman-6775052_1280.jpg",
+                                              ),
+                                            ),
                                             color: Colors.orange,
                                           ),
                                         ),
