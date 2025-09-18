@@ -265,9 +265,7 @@ class _HomeCleaningHomePageState extends State<HomeCleaningHomePage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              decoration: BoxDecoration(
-                
-              ),
+              decoration: ShapeDecoration(shape: StadiumBorder()),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
