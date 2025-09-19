@@ -17,6 +17,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
           Container(height: 380, decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(24),
+              bottomRight: Radius.circular(24),
               
             )
           ),child: Stack(
