@@ -167,7 +167,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                         color: Colors.purple,
                         child: Center(
                           child: Text(
-                            "Start Owner",
+                            "Start Bid Now",
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
