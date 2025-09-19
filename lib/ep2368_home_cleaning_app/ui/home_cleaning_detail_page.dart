@@ -160,7 +160,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     children: [
                       Expanded(
                         child: Container(
-                          padding: EdgeInsets.symmetric(vertical: 12, ),
+                          padding: EdgeInsets.symmetric(vertical: 12),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.black,
@@ -175,7 +175,12 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                       ),
                       Expanded(
                         child: Container(
-                          color: Colors.purple,
+                          padding: EdgeInsets.symmetric(vertical: 12),
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.purple,
+                          ),
+
                           child: Center(
                             child: Text(
                               "Start Bid Now",
