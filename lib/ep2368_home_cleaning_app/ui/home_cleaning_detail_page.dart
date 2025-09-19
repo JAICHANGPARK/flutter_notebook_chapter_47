@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class HomeCleaningDetailPage extends StatefulWidget {
   const HomeCleaningDetailPage({super.key});
@@ -60,6 +61,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
           ),
           Expanded(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -91,7 +93,46 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     maxLines: 3,
                   ),
                 ),
-                Container(height: 200, child: Placeholder()),
+                Gap(16),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 16),
+                  height: 180,
+                  child: Row(
+                    spacing: 16,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            color: Colors.purple,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 Text("Tags"),
                 SizedBox(height: 52, child: Placeholder()),
                 Row(
