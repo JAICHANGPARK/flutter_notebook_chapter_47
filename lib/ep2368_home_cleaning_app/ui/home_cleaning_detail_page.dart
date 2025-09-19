@@ -16,7 +16,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
       body: Column(
         children: [
           Container(
-            height: 380,
+            height: 400,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(24),
@@ -205,68 +205,71 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
-                SizedBox(
-                  height: 38,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(right: 12),
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.white,
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(
-                            "Design",
-                            style: TextStyle(color: Colors.grey),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16),
+                  child: SizedBox(
+                    height: 38,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(right: 12),
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Design",
+                              style: TextStyle(color: Colors.grey),
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 12),
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.white,
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(
-                            "Design",
-                            style: TextStyle(color: Colors.grey),
+                        Container(
+                          margin: EdgeInsets.only(right: 12),
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.purple,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Budget",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 12),
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.white,
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(
-                            "Design",
-                            style: TextStyle(color: Colors.grey),
+                        Container(
+                          margin: EdgeInsets.only(right: 12),
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Inspirate",
+                              style: TextStyle(color: Colors.grey),
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 12),
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.white,
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(
-                            "Design",
-                            style: TextStyle(color: Colors.grey),
+                        Container(
+                          margin: EdgeInsets.only(right: 12),
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Materials",
+                              style: TextStyle(color: Colors.grey),
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 Spacer(),
