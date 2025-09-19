@@ -148,32 +148,36 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     children: [Container(child: Placeholder())],
                   ),
                 ),
-                Row(
-                  spacing: 16,
-                  children: [
-                    Expanded(
-                      child: Container(
-                        color: Colors.black,
-                        child: Center(
-                          child: Text(
-                            "Contact Owner",
-                            style: TextStyle(color: Colors.white),
+                Spacer(),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    spacing: 16,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          color: Colors.black,
+                          child: Center(
+                            child: Text(
+                              "Contact Owner",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        color: Colors.purple,
-                        child: Center(
-                          child: Text(
-                            "Start Bid Now",
-                            style: TextStyle(color: Colors.white),
+                      Expanded(
+                        child: Container(
+                          color: Colors.purple,
+                          child: Center(
+                            child: Text(
+                              "Start Bid Now",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),
