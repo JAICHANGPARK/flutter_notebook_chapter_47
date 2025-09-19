@@ -216,9 +216,11 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                           shape: StadiumBorder(),
                           color: Colors.white,
                         ),
-                        child: Text(
-                          "Design",
-                          style: TextStyle(color: Colors.grey),
+                        child: Center(
+                          child: Text(
+                            "Design",
+                            style: TextStyle(color: Colors.grey),
+                          ),
                         ),
                       ),
                       Container(child: Text("Design")),
