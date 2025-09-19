@@ -32,6 +32,8 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
               child: Stack(
                 children: [
                   Positioned(
+                    left: 16,
+                    top: 8,
                     child: CircleAvatar(
                       radius: 24,
                       backgroundColor: Colors.white,
