@@ -206,7 +206,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 52,
+                  height: 38,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
@@ -216,6 +216,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                           shape: StadiumBorder(),
                           color: Colors.white,
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
                           child: Text(
                             "Design",
