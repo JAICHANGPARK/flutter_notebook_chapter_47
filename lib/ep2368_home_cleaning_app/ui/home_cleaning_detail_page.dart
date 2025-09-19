@@ -145,7 +145,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.grey[200],
                                 radius: 28,
                                 child: CircleAvatar(
                                   radius: 18,
@@ -155,7 +155,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                               Text(
                                 "Place",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  // color: Colors.white,
                                   fontSize: 18,
                                 ),
                               ),
@@ -176,7 +176,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.grey[200],
                                 radius: 28,
                                 child: CircleAvatar(
                                   radius: 18,
@@ -186,7 +186,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                               Text(
                                 "Place",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  // color: Colors.white,
                                   fontSize: 18,
                                 ),
                               ),
