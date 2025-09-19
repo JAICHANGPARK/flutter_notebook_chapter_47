@@ -150,7 +150,11 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                 ),
                 Spacer(),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.only(
+                    left: 16,
+                    right: 16,
+                    bottom: 32,
+                  ),
                   child: Row(
                     spacing: 16,
                     children: [
