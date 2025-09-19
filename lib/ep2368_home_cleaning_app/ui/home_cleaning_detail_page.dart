@@ -160,6 +160,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     children: [
                       Expanded(
                         child: Container(
+                          padding: EdgeInsets.symmetric(vertical: 12, ),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.black,
