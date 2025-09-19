@@ -37,6 +37,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     child: CircleAvatar(
                       radius: 24,
                       backgroundColor: Colors.white,
+                      child: Icon(Icons.keyboard_arrow_left),
                     ),
                   ),
                   Align(
@@ -60,7 +61,22 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
           Expanded(
             child: Column(
               children: [
-                Row(children: [Text("Fix my house"), Text("\$60.00")]),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Fix my house",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text("\$60.00"),
+                    ],
+                  ),
+                ),
                 Text(
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   maxLines: 3,
