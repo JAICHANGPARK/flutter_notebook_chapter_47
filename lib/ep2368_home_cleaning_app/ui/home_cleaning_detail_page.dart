@@ -153,7 +153,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                                 ),
                               ),
                               Text(
-                                "Place",
+                                "Proposal",
                                 style: TextStyle(
                                   // color: Colors.white,
                                   fontSize: 18,
@@ -184,7 +184,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                                 ),
                               ),
                               Text(
-                                "Place",
+                                "Deadline",
                                 style: TextStyle(
                                   // color: Colors.white,
                                   fontSize: 18,
@@ -209,7 +209,12 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                   height: 52,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
-                    children: [Container(child: Placeholder())],
+                    children: [
+                      Container(child: Text("Design")),
+                      Container(child: Text("Design")),
+                      Container(child: Text("Design")),
+                      Container(child: Text("Design")),
+                    ],
                   ),
                 ),
                 Spacer(),
