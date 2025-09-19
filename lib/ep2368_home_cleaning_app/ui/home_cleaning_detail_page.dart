@@ -108,15 +108,26 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                             ),
                             color: Colors.purple,
                           ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          decoration: ShapeDecoration(
-                            shape: RoundedSuperellipseBorder(
-                              borderRadius: BorderRadius.circular(24),
-                            ),
-                            color: Colors.white,
+                          child: Column(
+                            spacing: 24,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 28,
+                                child: CircleAvatar(
+                                  radius: 18,
+                                  backgroundColor: Colors.blue,
+                                ),
+                              ),
+                              Text(
+                                "Place",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -127,6 +138,59 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                               borderRadius: BorderRadius.circular(24),
                             ),
                             color: Colors.white,
+                          ),
+
+                          child: Column(
+                            spacing: 24,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 28,
+                                child: CircleAvatar(
+                                  radius: 18,
+                                  backgroundColor: Colors.blue,
+                                ),
+                              ),
+                              Text(
+                                "Place",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            color: Colors.white,
+                          ),
+                          child: Column(
+                            spacing: 24,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 28,
+                                child: CircleAvatar(
+                                  radius: 18,
+                                  backgroundColor: Colors.blue,
+                                ),
+                              ),
+                              Text(
+                                "Place",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
