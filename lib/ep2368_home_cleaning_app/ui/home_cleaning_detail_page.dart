@@ -96,7 +96,7 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                 Gap(16),
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 16),
-                  height: 180,
+                  height: 160,
                   child: Row(
                     spacing: 16,
                     children: [
