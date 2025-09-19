@@ -160,7 +160,10 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     children: [
                       Expanded(
                         child: Container(
-                          color: Colors.black,
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.black,
+                          ),
                           child: Center(
                             child: Text(
                               "Contact Owner",
