@@ -28,15 +28,17 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                 fit: BoxFit.cover,
               ),
             ),
-            child: Stack(
-              children: [
-                Positioned(
-                  child: CircleAvatar(
-                    radius: 24,
-                    backgroundColor: Colors.white,
+            child: SafeArea(
+              child: Stack(
+                children: [
+                  Positioned(
+                    child: CircleAvatar(
+                      radius: 24,
+                      backgroundColor: Colors.white,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Expanded(
