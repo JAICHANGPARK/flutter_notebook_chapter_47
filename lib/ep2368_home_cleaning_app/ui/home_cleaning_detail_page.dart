@@ -14,17 +14,22 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
       backgroundColor: Color.fromRGBO(244, 246, 248, 1),
       body: Column(
         children: [
-          Container(height: 380, decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(24),
-              bottomRight: Radius.circular(24),
-              
-            )
-          ),child: Stack(
-            children: [
-
-            ],
-          )),
+          Container(
+            height: 380,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(24),
+                bottomRight: Radius.circular(24),
+              ),
+              image: DecorationImage(
+                image: NetworkImage(
+                  "https://cdn.pixabay.com/photo/2015/06/26/09/03/dad-822294_1280.jpg",
+                ),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Stack(children: []),
+          ),
           Expanded(
             child: Column(
               children: [
