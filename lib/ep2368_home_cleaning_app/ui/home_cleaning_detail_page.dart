@@ -210,7 +210,17 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      Container(child: Text("Design")),
+                      Container(
+                        margin: EdgeInsets.only(right: 12),
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.white,
+                        ),
+                        child: Text(
+                          "Design",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ),
                       Container(child: Text("Design")),
                       Container(child: Text("Design")),
                       Container(child: Text("Design")),
