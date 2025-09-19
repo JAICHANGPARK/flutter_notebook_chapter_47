@@ -224,9 +224,48 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                           ),
                         ),
                       ),
-                      Container(child: Text("Design")),
-                      Container(child: Text("Design")),
-                      Container(child: Text("Design")),
+                      Container(
+                        margin: EdgeInsets.only(right: 12),
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.white,
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Text(
+                            "Design",
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 12),
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.white,
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Text(
+                            "Design",
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 12),
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.white,
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Text(
+                            "Design",
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
