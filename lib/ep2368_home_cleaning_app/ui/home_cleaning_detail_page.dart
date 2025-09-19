@@ -136,14 +136,43 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                 Gap(8),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Text("Tags"),
+                  child: Text(
+                    "Tags",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ),
-                SizedBox(height: 52, child: Placeholder()),
+                SizedBox(
+                  height: 52,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [Container(child: Placeholder())],
+                  ),
+                ),
                 Row(
                   spacing: 16,
                   children: [
-                    Expanded(child: Container(color: Colors.black)),
-                    Expanded(child: Container(color: Colors.purple)),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        child: Center(
+                          child: Text(
+                            "Contact Owner",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.purple,
+                        child: Center(
+                          child: Text(
+                            "Start Owner",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],
