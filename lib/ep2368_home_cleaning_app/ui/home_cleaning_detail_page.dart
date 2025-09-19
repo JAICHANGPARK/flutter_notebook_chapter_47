@@ -39,6 +39,12 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                       backgroundColor: Colors.white,
                     ),
                   ),
+                  Align(
+                    child: Text(
+                      "Bid in progress",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
                 ],
               ),
             ),
