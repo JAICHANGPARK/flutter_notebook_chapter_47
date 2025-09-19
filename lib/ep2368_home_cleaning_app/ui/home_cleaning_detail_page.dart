@@ -133,7 +133,11 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     ],
                   ),
                 ),
-                Text("Tags"),
+                Gap(8),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text("Tags"),
+                ),
                 SizedBox(height: 52, child: Placeholder()),
                 Row(
                   spacing: 16,
