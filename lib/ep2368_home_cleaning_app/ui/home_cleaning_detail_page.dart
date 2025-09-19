@@ -40,9 +40,17 @@ class _HomeCleaningDetailPageState extends State<HomeCleaningDetailPage> {
                     ),
                   ),
                   Align(
-                    child: Text(
-                      "Bid in progress",
-                      style: TextStyle(color: Colors.white),
+                    alignment: Alignment.topCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 16),
+                      child: Text(
+                        "Bid in progress",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
                 ],
