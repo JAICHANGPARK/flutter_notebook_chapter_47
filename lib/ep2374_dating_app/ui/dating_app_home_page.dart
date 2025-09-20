@@ -26,6 +26,44 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 shape: StadiumBorder(),
                 color: Colors.grey[200]!,
               ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.transparent,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Expanded(child: Placeholder()),
+            Container(
+              height: 42,
+              child: Stack(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        child: Row(
+                          children: [Icon(Icons.home_filled), Text("Home")],
+                        ),
+                      ),
+                      CircleAvatar(child: IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ],
         ),
