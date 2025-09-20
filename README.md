@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_47
 
-## EP2368
+## EP2374
+
+- HeartSync - Dating App UI
+- Pota Design for Potara Studio
+- https://dribbble.com/shots/26548306-HeartSync-Dating-App-UI
+
+<img src="https://cdn.dribbble.com/userupload/44981968/file/4b188f00efea69a600c8695f960c01e2.png?resize=1905x1430&vertical=center">
+
+## EP2368-2373
 
 - Home Cleaning Service Mobile App
 - UIX Maruf Hossen
