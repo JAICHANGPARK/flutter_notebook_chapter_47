@@ -59,7 +59,27 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           children: [Icon(Icons.home_filled), Text("Home")],
                         ),
                       ),
-                      CircleAvatar(child: IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),),
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.favorite_border),
+                        ),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.chat_bubble_outline),
+                        ),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.person_2_outlined),
+                        ),
+                      ),
                     ],
                   ),
                 ],
