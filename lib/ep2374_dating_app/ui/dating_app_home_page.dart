@@ -12,80 +12,84 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(child: Column(children: [])),
-                Container(decoration: BoxDecoration(shape: BoxShape.circle)),
-              ],
-            ),
-            Container(
-              decoration: ShapeDecoration(
-                shape: StadiumBorder(),
-                color: Colors.grey[200]!,
-              ),
-              child: Row(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            spacing: 24,
+            children: [
+              Row(
                 children: [
-                  Expanded(
-                    child: Container(
-                      decoration: ShapeDecoration(
-                        shape: StadiumBorder(),
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      decoration: ShapeDecoration(
-                        shape: StadiumBorder(),
-                        color: Colors.transparent,
-                      ),
-                    ),
-                  ),
+                  CircleAvatar(),
+                  Expanded(child: Column(children: [])),
+                  Container(decoration: BoxDecoration(shape: BoxShape.circle)),
                 ],
               ),
-            ),
-            Expanded(child: Placeholder()),
-            Container(
-              height: 42,
-              child: Stack(
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        child: Row(
-                          children: [Icon(Icons.home_filled), Text("Home")],
+              Container(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.grey[200]!,
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.black,
                         ),
                       ),
-                      CircleAvatar(
-                        backgroundColor: Colors.black,
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.favorite_border),
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.transparent,
                         ),
                       ),
-                      CircleAvatar(
-                        backgroundColor: Colors.black,
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.chat_bubble_outline),
-                        ),
-                      ),
-                      CircleAvatar(
-                        backgroundColor: Colors.black,
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.person_2_outlined),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+              Expanded(child: Placeholder()),
+              Container(
+                height: 42,
+                child: Stack(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          child: Row(
+                            children: [Icon(Icons.home_filled), Text("Home")],
+                          ),
+                        ),
+                        CircleAvatar(
+                          backgroundColor: Colors.black,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.favorite_border),
+                          ),
+                        ),
+                        CircleAvatar(
+                          backgroundColor: Colors.black,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.chat_bubble_outline),
+                          ),
+                        ),
+                        CircleAvatar(
+                          backgroundColor: Colors.black,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.person_2_outlined),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
