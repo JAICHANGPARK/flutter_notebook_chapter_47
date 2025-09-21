@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'ui/dating_app_home_page.dart';
 
-
 class DatingApp extends StatelessWidget {
   const DatingApp({super.key});
 
