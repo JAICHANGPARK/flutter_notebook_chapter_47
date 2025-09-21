@@ -59,7 +59,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       children: [
                         Container(
                           child: Row(
-                            children: [Icon(Icons.home_filled), Text("Home")],
+                            children: [Icon(Icons.home_filled), Text("Home"),],
                           ),
                         ),
                         CircleAvatar(
