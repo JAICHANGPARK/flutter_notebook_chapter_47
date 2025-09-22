@@ -126,7 +126,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 ),
               ),
               Container(
-                height: 42,
+                height: 48,
                 child: Stack(
                   children: [
                     Align(
@@ -145,10 +145,8 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.black,
                           ),
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 12,
-                            vertical: 16,
-                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 12,vertical: 12),
+
                           child: Row(
                             children: [
                               Icon(Icons.home_filled,
