@@ -19,10 +19,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
             spacing: 24,
             children: [
               Row(
+                spacing: 16,
                 children: [
                   CircleAvatar(),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [Text("Welcome back!!"), Text("Dream Walker")],
                     ),
                   ),
