@@ -97,7 +97,17 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                   ],
                 ),
               ),
-              Expanded(child: Placeholder()),
+              Expanded(
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               Container(
                 height: 42,
                 child: Stack(
