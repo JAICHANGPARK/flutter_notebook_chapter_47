@@ -102,7 +102,21 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                   children: [
                     Positioned.fill(
                       child: Container(
-                        decoration: BoxDecoration(color: Colors.white),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey[200]!,
+                              blurRadius: 8,
+                              spreadRadius: 4,
+                            ),
+                          ],
+
+                        ),
+                        padding: Edge,
+                        child: Container(
+                          decoration: BoxDecoration(color: Colors.black),
+                        ),
                       ),
                     ),
                   ],
