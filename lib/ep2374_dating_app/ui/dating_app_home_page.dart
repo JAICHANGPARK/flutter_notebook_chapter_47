@@ -129,7 +129,14 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 height: 42,
                 child: Stack(
                   children: [
+                    Align(child: Container(
+                      width: 200,
+                      height: 6,
+                      color: Colors.black,
+                    ),),
                     Row(
+                      spacing: 6,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
                           child: Row(
