@@ -35,12 +35,20 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(shape: BoxShape.circle),
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(color: Colors.grey[200]!, spreadRadius: 4, blurRadius: 6),
+                      ],
+                    ),
                     child: Badge(
                       child: HugeIcon(
                         icon: HugeIcons.strokeRoundedNotification01,
                         color: Colors.black,
                       ),
+                      label: Text("2"),
                     ),
                   ),
                 ],
