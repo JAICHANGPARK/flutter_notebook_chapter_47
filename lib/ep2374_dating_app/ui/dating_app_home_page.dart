@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class DatingAppHomePage extends StatefulWidget {
   const DatingAppHomePage({super.key});
@@ -20,8 +21,20 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
               Row(
                 children: [
                   CircleAvatar(),
-                  Expanded(child: Column(children: [])),
-                  Container(decoration: BoxDecoration(shape: BoxShape.circle)),
+                  Expanded(
+                    child: Column(
+                      children: [Text("Welcome back!!"), Text("Dream Walker")],
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(shape: BoxShape.circle),
+                    child: Badge(
+                      child: HugeIcon(
+                        icon: HugeIcons.strokeRoundedNotification01,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
                 ],
               ),
               Container(
