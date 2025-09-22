@@ -40,7 +40,11 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       shape: BoxShape.circle,
                       color: Colors.white,
                       boxShadow: [
-                        BoxShadow(color: Colors.grey[200]!, spreadRadius: 4, blurRadius: 6),
+                        BoxShadow(
+                          color: Colors.grey[200]!,
+                          spreadRadius: 4,
+                          blurRadius: 6,
+                        ),
                       ],
                     ),
                     child: Badge(
@@ -65,6 +69,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                         decoration: ShapeDecoration(
                           shape: StadiumBorder(),
                           color: Colors.black,
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Discovery",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
