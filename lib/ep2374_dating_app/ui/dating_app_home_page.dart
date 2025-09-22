@@ -137,7 +137,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       ),
                     ),
                     Row(
-                      spacing: 6,
+                      spacing: 4,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
