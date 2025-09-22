@@ -21,11 +21,17 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
               Row(
                 spacing: 16,
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(radius: 22),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [Text("Welcome back!!"), Text("Dream Walker")],
+                      children: [
+                        Text("Welcome back!!"),
+                        Text(
+                          "Dream Walker",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                   Container(
