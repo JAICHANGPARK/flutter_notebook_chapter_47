@@ -129,35 +129,42 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 height: 42,
                 child: Stack(
                   children: [
-                    Align(child: Container(
-                      width: 200,
-                      height: 6,
-                      color: Colors.black,
-                    ),),
+                    Align(
+                      child: Container(
+                        width: 200,
+                        height: 6,
+                        color: Colors.black,
+                      ),
+                    ),
                     Row(
                       spacing: 6,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.black,
+                          ),
                           child: Row(
                             children: [Icon(Icons.home_filled), Text("Home")],
                           ),
                         ),
                         CircleAvatar(
+                          radius: 24,
                           backgroundColor: Colors.black,
                           child: IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.favorite_border),
                           ),
                         ),
-                        CircleAvatar(
+                        CircleAvatar(radius: 24,
                           backgroundColor: Colors.black,
                           child: IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.chat_bubble_outline),
                           ),
                         ),
-                        CircleAvatar(
+                        CircleAvatar(radius: 24,
                           backgroundColor: Colors.black,
                           child: IconButton(
                             onPressed: () {},
