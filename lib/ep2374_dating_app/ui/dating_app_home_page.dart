@@ -58,6 +58,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 ],
               ),
               Container(
+                height: 48,
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.grey[200]!,
