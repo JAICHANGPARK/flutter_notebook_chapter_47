@@ -145,8 +145,19 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.black,
                           ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 16,
+                          ),
                           child: Row(
-                            children: [Icon(Icons.home_filled), Text("Home")],
+                            children: [
+                              Icon(Icons.home_filled,
+                              color: Colors.white,),
+                              Text(
+                                "Home",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
                           ),
                         ),
                         CircleAvatar(
@@ -158,7 +169,8 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             color: Colors.white,
                           ),
                         ),
-                        CircleAvatar(radius: 24,
+                        CircleAvatar(
+                          radius: 24,
                           backgroundColor: Colors.black,
                           child: IconButton(
                             onPressed: () {},
@@ -166,7 +178,8 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             color: Colors.white,
                           ),
                         ),
-                        CircleAvatar(radius: 24,
+                        CircleAvatar(
+                          radius: 24,
                           backgroundColor: Colors.black,
                           child: IconButton(
                             onPressed: () {},
