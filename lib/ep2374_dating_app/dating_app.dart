@@ -7,6 +7,9 @@ class DatingApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: DatingAppHomePage());
+    return MaterialApp(
+      home: DatingAppHomePage(),
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+    );
   }
 }
