@@ -155,6 +155,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           child: IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.favorite_border),
+                            color: Colors.white,
                           ),
                         ),
                         CircleAvatar(radius: 24,
@@ -162,6 +163,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           child: IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.chat_bubble_outline),
+                            color: Colors.white,
                           ),
                         ),
                         CircleAvatar(radius: 24,
@@ -169,6 +171,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           child: IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.person_2_outlined),
+                            color: Colors.white,
                           ),
                         ),
                       ],
