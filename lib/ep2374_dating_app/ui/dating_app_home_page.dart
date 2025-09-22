@@ -111,9 +111,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                               spreadRadius: 4,
                             ),
                           ],
+                          borderRadius: BorderRadius.circular(16),
 
                         ),
-                        padding: Edge,
+                        padding: EdgeInsets.all(8),
                         child: Container(
                           decoration: BoxDecoration(color: Colors.black),
                         ),
