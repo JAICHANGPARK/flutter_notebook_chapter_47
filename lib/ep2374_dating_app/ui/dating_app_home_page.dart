@@ -59,6 +59,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
               ),
               Container(
                 height: 48,
+                padding: EdgeInsets.all(4),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.grey[200]!,
@@ -84,6 +85,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                         decoration: ShapeDecoration(
                           shape: StadiumBorder(),
                           color: Colors.transparent,
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Matched",
+                            style: TextStyle(color: Colors.grey),
+                          ),
                         ),
                       ),
                     ),
