@@ -182,7 +182,6 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                           "Matched 5 * Preferences",
                                           style: TextStyle(color: Colors.white),
                                         ),
-
                                       ],
                                     ),
                                     Text(
@@ -192,7 +191,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                         color: Colors.white,
                                       ),
                                     ),
-                                    Text(""),
+                                    Text(
+                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   ],
                                 ),
                               ),
