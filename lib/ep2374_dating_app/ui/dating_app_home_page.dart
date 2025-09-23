@@ -126,7 +126,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                 Container(
                                   padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
                                   decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
-                                  child: Text("👩🏼‍🤝‍🧑🏼 Looking for friends"),
+                                  child: Text("👩🏼‍🤝‍🧑🏼  Looking for friends"),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
+                                  decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
+                                  child: Text("📍 1.4KM"),
                                 )
                               ],)
                             ],
