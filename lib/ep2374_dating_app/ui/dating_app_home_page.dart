@@ -78,7 +78,9 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                         child: Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
-                            color: Colors.black,
+                            color: tabNum == 0
+                                ? Colors.black
+                                : Colors.transparent,
                           ),
                           child: Center(
                             child: Text(
@@ -96,7 +98,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             tabNum = 1;
                           });
                         },
-                       
+
                         child: Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
