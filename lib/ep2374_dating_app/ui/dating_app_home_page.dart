@@ -85,7 +85,11 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           child: Center(
                             child: Text(
                               "Discovery",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                color: tabNum == 0
+                                    ? Colors.white
+                                    : Colors.transparent,
+                              ),
                             ),
                           ),
                         ),
