@@ -128,28 +128,48 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                 left: 0,
                                 child: Wrap(
                                   runAlignment: WrapAlignment.end,
-                                  spacing: 6,
-                                  runSpacing: 6,
+                                  spacing: 8,
+                                  runSpacing: 8,
                                   alignment: WrapAlignment.end,
                                   children: [
-                                  Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
-                                    decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
-                                    child: Text("👩🏼‍🤝‍🧑🏼  Looking for friends"),
-                                  ),
-                                  Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
-                                    decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
-                                    child: Text("📍 1.4KM"),
-                                  ),
-                                  Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
-                                    decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
-                                    child: Text("🎶 Digital Artist"),
-                                
-                                  )
-                                ],),
-                              )
+                                    Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
+                                        color: Colors.white,
+                                      ),
+                                      child: Text(
+                                        "👩🏼‍🤝‍🧑🏼  Looking for friends",
+                                      ),
+                                    ),
+                                    Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
+                                        color: Colors.white,
+                                      ),
+                                      child: Text("📍 1.4KM"),
+                                    ),
+                                    Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
+                                        color: Colors.white,
+                                      ),
+                                      child: Text("🎶 Digital Artist"),
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -178,13 +198,15 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.black,
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16,vertical: 12),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 12,
+                          ),
 
                           child: Row(
                             spacing: 12,
                             children: [
-                              Icon(Icons.home_filled,
-                              color: Colors.white,),
+                              Icon(Icons.home_filled, color: Colors.white),
                               Text(
                                 "Home",
                                 style: TextStyle(color: Colors.white),
