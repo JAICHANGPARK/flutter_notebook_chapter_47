@@ -9,6 +9,8 @@ class DatingAppHomePage extends StatefulWidget {
 }
 
 class _DatingAppHomePageState extends State<DatingAppHomePage> {
+  int tabNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,29 +69,44 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.black,
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Discovery",
-                            style: TextStyle(color: Colors.white),
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            tabNum = 0;
+                          });
+                        },
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.black,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Discovery",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
                     ),
                     Expanded(
-                      child: Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.transparent,
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Matched",
-                            style: TextStyle(color: Colors.grey),
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            tabNum = 1;
+                          });
+                        },
+                       
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.transparent,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Matched",
+                              style: TextStyle(color: Colors.grey),
+                            ),
                           ),
                         ),
                       ),
