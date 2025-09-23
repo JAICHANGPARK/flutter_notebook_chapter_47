@@ -136,8 +136,8 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                 Container(
                                   padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
                                   decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
-                                  child: Text("📍 Digital Artist"),
-                                  
+                                  child: Text("🎶 Digital Artist"),
+
                                 )
                               ],)
                             ],
