@@ -145,7 +145,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.black,
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12,vertical: 12),
+                          padding: EdgeInsets.symmetric(horizontal: 16,vertical: 12),
 
                           child: Row(
                             spacing: 12,
