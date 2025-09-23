@@ -124,7 +124,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             children: [
                               Wrap(children: [
                                 Container(
-                                  
+                                  padding: EdgeInsets.symmetric(horizontal: 12,),
                                   decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
                                   child: Text("Looking for friends"),
                                 )
