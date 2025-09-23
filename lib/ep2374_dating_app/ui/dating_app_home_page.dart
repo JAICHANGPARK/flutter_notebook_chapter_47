@@ -170,14 +170,23 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                   ],
                                 ),
                               ),
-                              Positioned(child: Column(children: [
-                                Row(
+                              Positioned(
+                                left: 0,
+                                bottom: 0,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                   Text("Matched 5 * Preferences"),
-
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "Matched 5 * Preferences",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ],
+                                    ),
                                   ],
-                                )
-                              ],))
+                                ),
+                              ),
                             ],
                           ),
                         ),
