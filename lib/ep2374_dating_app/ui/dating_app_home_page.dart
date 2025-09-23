@@ -99,13 +99,13 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       child: GestureDetector(
                         onTap: () {
                           setState(() {
-                            tabNum = 0;
+                            tabNum = 1;
                           });
                         },
                         child: Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
-                            color: tabNum == 0
+                            color: tabNum == 1
                                 ? Colors.black
                                 : Colors.transparent,
                           ),
@@ -113,7 +113,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             child: Text(
                               "Matched",
                               style: TextStyle(
-                                color: tabNum == 0
+                                color: tabNum == 1
                                     ? Colors.white
                                     : Colors.grey,
                               ),
