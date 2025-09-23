@@ -148,6 +148,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           padding: EdgeInsets.symmetric(horizontal: 12,vertical: 12),
 
                           child: Row(
+                            spacing: 12,
                             children: [
                               Icon(Icons.home_filled,
                               color: Colors.white,),
