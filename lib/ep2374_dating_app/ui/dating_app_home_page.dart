@@ -88,7 +88,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                               style: TextStyle(
                                 color: tabNum == 0
                                     ? Colors.white
-                                    : Colors.transparent,
+                                    : Colors.grey,
                               ),
                             ),
                           ),
