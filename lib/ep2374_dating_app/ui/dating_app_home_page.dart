@@ -188,8 +188,9 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                     Text(
                                       "Dreamwalker, 100",
                                       style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 24,
                                         color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     Text(
