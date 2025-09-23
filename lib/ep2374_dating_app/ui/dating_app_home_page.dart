@@ -119,32 +119,34 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(16),
                           ),
-                          padding: EdgeInsets.all(24),
+                          padding: EdgeInsets.fromLTRB(16, 24, 16, 24),
                           child: Stack(
                             children: [
-                              Wrap(
-                                runAlignment: WrapAlignment.end,
-                                spacing: 6,
-                                runSpacing: 6,
-                                alignment: WrapAlignment.end,
-                                children: [
-                                Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
-                                  decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
-                                  child: Text("👩🏼‍🤝‍🧑🏼  Looking for friends"),
-                                ),
-                                Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
-                                  decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
-                                  child: Text("📍 1.4KM"),
-                                ),
-                                Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
-                                  decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
-                                  child: Text("🎶 Digital Artist"),
-
-                                )
-                              ],)
+                              Positioned(
+                                child: Wrap(
+                                  runAlignment: WrapAlignment.end,
+                                  spacing: 6,
+                                  runSpacing: 6,
+                                  alignment: WrapAlignment.end,
+                                  children: [
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
+                                    decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
+                                    child: Text("👩🏼‍🤝‍🧑🏼  Looking for friends"),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
+                                    decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
+                                    child: Text("📍 1.4KM"),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
+                                    decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
+                                    child: Text("🎶 Digital Artist"),
+                                
+                                  )
+                                ],),
+                              )
                             ],
                           ),
                         ),
