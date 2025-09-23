@@ -182,8 +182,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                           "Matched 5 * Preferences",
                                           style: TextStyle(color: Colors.white),
                                         ),
+
                                       ],
                                     ),
+                                    
                                   ],
                                 ),
                               ),
