@@ -122,7 +122,11 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           padding: EdgeInsets.all(24),
                           child: Stack(
                             children: [
-                              Wrap(children: [
+                              Wrap(
+                                runAlignment: WrapAlignment.end,
+                                spacing: 6,
+                                
+                                children: [
                                 Container(
                                   padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
                                   decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
