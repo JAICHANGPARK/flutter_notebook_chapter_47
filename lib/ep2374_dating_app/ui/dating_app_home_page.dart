@@ -48,11 +48,11 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       ],
                     ),
                     child: Badge(
+                      label: Text("2"),
                       child: HugeIcon(
                         icon: HugeIcons.strokeRoundedNotification01,
                         color: Colors.black,
                       ),
-                      label: Text("2"),
                     ),
                   ),
                 ],
