@@ -123,6 +123,9 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           child: Stack(
                             children: [
                               Positioned(
+                                right: 0,
+                                top: 0,
+                                left: 0,
                                 child: Wrap(
                                   runAlignment: WrapAlignment.end,
                                   spacing: 6,
