@@ -119,10 +119,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(16),
                           ),
+                          padding: EdgeInsets.all(24),
                           child: Stack(
                             children: [
                               Wrap(children: [
                                 Container(
+                                  
                                   decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white,),
                                   child: Text("Looking for friends"),
                                 )
