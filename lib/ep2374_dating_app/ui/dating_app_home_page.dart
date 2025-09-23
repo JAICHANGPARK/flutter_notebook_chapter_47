@@ -67,6 +67,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                   color: Colors.grey[200]!,
                 ),
                 child: Row(
+                  spacing: 8,
                   children: [
                     Expanded(
                       child: GestureDetector(
