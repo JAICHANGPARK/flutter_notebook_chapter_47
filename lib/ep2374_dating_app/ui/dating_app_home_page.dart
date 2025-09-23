@@ -125,7 +125,8 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                               Wrap(
                                 runAlignment: WrapAlignment.end,
                                 spacing: 6,
-                                
+                                runSpacing: 6,
+                                alignment: WrapAlignment.end,
                                 children: [
                                 Container(
                                   padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
