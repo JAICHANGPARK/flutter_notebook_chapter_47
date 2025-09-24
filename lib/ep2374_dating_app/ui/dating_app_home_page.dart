@@ -10,7 +10,7 @@ class DatingAppHomePage extends StatefulWidget {
 
 class _DatingAppHomePageState extends State<DatingAppHomePage> {
   int tabNum = 0;
-  Offset _position = Offset.zero;
+  Offset _cardPosition = Offset.zero;
 
   @override
   Widget build(BuildContext context) {
