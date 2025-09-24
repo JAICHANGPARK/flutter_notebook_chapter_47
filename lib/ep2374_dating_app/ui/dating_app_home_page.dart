@@ -12,8 +12,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
   int tabNum = 0;
   Offset _cardPosition = Offset.zero;
 
-  Widget _buildDraggableCard(){
-    final screenSize = MediaQuery.of(context).size;
+  Widget _buildDraggableCard() {
+    final screenSize = MediaQuery
+        .of(context)
+        .size;
     return Container(
       width: screenSize.width * 0.9,
       decoration: BoxDecoration(
@@ -118,6 +120,23 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
         ),
       ),
     );
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final screenSize = MediaQuery
+          .of(context)
+          .size;
+      final cardSize = context.size;
+      if (cardSize != null) {
+        _cardPosition = Offset((screenSize.width - cardSize.width) / 2,
+          (screenSize.height - cardSize.height) / 4,
+        );
+      }
+    });
   }
 
   @override
@@ -240,10 +259,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                   children: [
                     Positioned(
                       child: Draggable(
-                        feedback: Container(
-                          color: Colors.red,
-                        ),
-                        child:
+                          feedback: Container(
+                            color: Colors.red,
+                          ),
+                          child:
                       ),
                     ),
                   ],
