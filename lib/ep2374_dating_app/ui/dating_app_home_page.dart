@@ -10,6 +10,7 @@ class DatingAppHomePage extends StatefulWidget {
 
 class _DatingAppHomePageState extends State<DatingAppHomePage> {
   int tabNum = 0;
+  Offset _position = Offset.zero;
 
   @override
   Widget build(BuildContext context) {
@@ -129,10 +130,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
               Expanded(
                 child: Stack(
                   children: [
-                    Positioned.fill(
+                    Positioned(
                       child: Draggable(
                         feedback: Container(
-                          
+                          color: Colors.red,
                         ),
                         child: Container(
                           decoration: BoxDecoration(
