@@ -130,106 +130,111 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 child: Stack(
                   children: [
                     Positioned.fill(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey[200]!,
-                              blurRadius: 8,
-                              spreadRadius: 4,
-                            ),
-                          ],
-                          borderRadius: BorderRadius.circular(16),
+                      child: Draggable(
+                        feedback: Container(
+                          
                         ),
-                        padding: EdgeInsets.all(8),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          padding: EdgeInsets.fromLTRB(16, 24, 16, 24),
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                right: 0,
-                                top: 0,
-                                left: 0,
-                                child: Wrap(
-                                  runAlignment: WrapAlignment.end,
-                                  spacing: 8,
-                                  runSpacing: 8,
-                                  alignment: WrapAlignment.end,
-                                  children: [
-                                    Container(
-                                      padding: EdgeInsets.symmetric(
-                                        horizontal: 12,
-                                        vertical: 4,
-                                      ),
-                                      decoration: ShapeDecoration(
-                                        shape: StadiumBorder(),
-                                        color: Colors.white,
-                                      ),
-                                      child: Text(
-                                        "👩🏼‍🤝‍🧑🏼  Looking for friends",
-                                      ),
-                                    ),
-                                    Container(
-                                      padding: EdgeInsets.symmetric(
-                                        horizontal: 12,
-                                        vertical: 4,
-                                      ),
-                                      decoration: ShapeDecoration(
-                                        shape: StadiumBorder(),
-                                        color: Colors.white,
-                                      ),
-                                      child: Text("📍 1.4KM"),
-                                    ),
-                                    Container(
-                                      padding: EdgeInsets.symmetric(
-                                        horizontal: 12,
-                                        vertical: 4,
-                                      ),
-                                      decoration: ShapeDecoration(
-                                        shape: StadiumBorder(),
-                                        color: Colors.white,
-                                      ),
-                                      child: Text("🎶 Digital Artist"),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                bottom: 0,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  spacing: 12,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Text(
-                                          "Matched 5 * Preferences",
-                                          style: TextStyle(color: Colors.white),
-                                        ),
-                                      ],
-                                    ),
-                                    Text(
-                                      "Dreamwalker, 100",
-                                      style: TextStyle(
-                                        fontSize: 24,
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    Text(
-                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U",
-                                      style: TextStyle(color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey[200]!,
+                                blurRadius: 8,
+                                spreadRadius: 4,
                               ),
                             ],
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: EdgeInsets.all(8),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            padding: EdgeInsets.fromLTRB(16, 24, 16, 24),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  right: 0,
+                                  top: 0,
+                                  left: 0,
+                                  child: Wrap(
+                                    runAlignment: WrapAlignment.end,
+                                    spacing: 8,
+                                    runSpacing: 8,
+                                    alignment: WrapAlignment.end,
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 12,
+                                          vertical: 4,
+                                        ),
+                                        decoration: ShapeDecoration(
+                                          shape: StadiumBorder(),
+                                          color: Colors.white,
+                                        ),
+                                        child: Text(
+                                          "👩🏼‍🤝‍🧑🏼  Looking for friends",
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 12,
+                                          vertical: 4,
+                                        ),
+                                        decoration: ShapeDecoration(
+                                          shape: StadiumBorder(),
+                                          color: Colors.white,
+                                        ),
+                                        child: Text("📍 1.4KM"),
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 12,
+                                          vertical: 4,
+                                        ),
+                                        decoration: ShapeDecoration(
+                                          shape: StadiumBorder(),
+                                          color: Colors.white,
+                                        ),
+                                        child: Text("🎶 Digital Artist"),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 0,
+                                  bottom: 0,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    spacing: 12,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Matched 5 * Preferences",
+                                            style: TextStyle(color: Colors.white),
+                                          ),
+                                        ],
+                                      ),
+                                      Text(
+                                        "Dreamwalker, 100",
+                                        style: TextStyle(
+                                          fontSize: 24,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
