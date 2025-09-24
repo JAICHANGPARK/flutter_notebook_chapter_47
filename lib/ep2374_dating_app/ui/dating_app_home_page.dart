@@ -114,10 +114,13 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
       final screenSize = MediaQuery.of(context).size;
       final cardSize = context.size;
       if (cardSize != null) {
-        _cardPosition = Offset(
-          (screenSize.width - cardSize.width) / 2,
-          (screenSize.height - cardSize.height) / 4,
-        );
+        setState(() {
+          _cardPosition = Offset(
+            (screenSize.width - cardSize.width) / 2,
+            (screenSize.height - cardSize.height) / 4,
+          );
+        });
+
       }
     });
   }
@@ -240,10 +243,32 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       left: _cardPosition.dx,
                       top: _cardPosition.dx,
                       child: Draggable(
-                        feedback: _buildDraggableCard(),
-                        child: _buildDraggableCard(),
+                        feedback: Material(child: _buildDraggableCard()),
                         childWhenDragging: Container(),
-                        onDraggableCanceled: (velo, offset) {},
+                        onDraggableCanceled: (velo, offset) {
+                          print(velo);
+                          print(offset);
+                          setState(() {
+
+                          });
+                        },
+                        child: _buildDraggableCard(),
+                      ),
+                    ),
+                    Positioned(
+                      left: _cardPosition.dx,
+                      top: _cardPosition.dx,
+                      child: Draggable(
+                        feedback: Material(child: _buildDraggableCard()),
+                        childWhenDragging: Container(),
+                        onDraggableCanceled: (velo, offset) {
+                          print(velo);
+                          print(offset);
+                          setState(() {
+
+                          });
+                        },
+                        child: _buildDraggableCard(),
                       ),
                     ),
                   ],
