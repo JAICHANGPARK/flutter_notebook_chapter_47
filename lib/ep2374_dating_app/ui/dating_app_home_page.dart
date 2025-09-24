@@ -261,10 +261,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       left: _cardPosition.dx,
                       top: _cardPosition.dx,
                       child: Draggable(
-                          feedback: Container(
-                            color: Colors.red,
-                          ),
-                          child: _buildDraggableCard()
+                          feedback: _buildDraggableCard(),
+                          child: _buildDraggableCard(),
+                        childWhenDragging: Container(),
+                        onDraggableCanceled: (velo, offset){
+
+                        },
                       ),
                     ),
                   ],
