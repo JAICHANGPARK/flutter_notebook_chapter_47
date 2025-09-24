@@ -18,6 +18,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
         .size;
     return Container(
       width: screenSize.width * 0.9,
+      height: screenSize.height * 0.8,
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
