@@ -12,9 +12,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
   int tabNum = 0;
   Offset _cardPosition = Offset.zero;
 
-  Widget _buildDraggalbeCard(){
+  Widget _buildDraggableCard(){
     final screenSize = MediaQuery.of(context).size;
     return Container(
+      width: screenSize.width * 0.9,
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
