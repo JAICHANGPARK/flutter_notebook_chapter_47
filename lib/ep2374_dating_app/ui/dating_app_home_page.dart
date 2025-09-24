@@ -13,20 +13,14 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
   Offset _cardPosition = Offset.zero;
 
   Widget _buildDraggableCard() {
-    final screenSize = MediaQuery
-        .of(context)
-        .size;
+    final screenSize = MediaQuery.of(context).size;
     return Container(
       width: screenSize.width * 0.9,
-      height: screenSize.height * 0.8,
+      height: screenSize.height * 0.65,
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
-          BoxShadow(
-            color: Colors.grey[200]!,
-            blurRadius: 8,
-            spreadRadius: 4,
-          ),
+          BoxShadow(color: Colors.grey[200]!, blurRadius: 8, spreadRadius: 4),
         ],
         borderRadius: BorderRadius.circular(16),
       ),
@@ -50,23 +44,15 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 alignment: WrapAlignment.end,
                 children: [
                   Container(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 4,
-                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
                       color: Colors.white,
                     ),
-                    child: Text(
-                      "👩🏼‍🤝‍🧑🏼  Looking for friends",
-                    ),
+                    child: Text("👩🏼‍🤝‍🧑🏼  Looking for friends"),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 4,
-                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
                       color: Colors.white,
@@ -74,10 +60,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                     child: Text("📍 1.4KM"),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 4,
-                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
                       color: Colors.white,
@@ -128,12 +111,11 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
     // TODO: implement initState
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      final screenSize = MediaQuery
-          .of(context)
-          .size;
+      final screenSize = MediaQuery.of(context).size;
       final cardSize = context.size;
       if (cardSize != null) {
-        _cardPosition = Offset((screenSize.width - cardSize.width) / 2,
+        _cardPosition = Offset(
+          (screenSize.width - cardSize.width) / 2,
           (screenSize.height - cardSize.height) / 4,
         );
       }
@@ -216,9 +198,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             child: Text(
                               "Discovery",
                               style: TextStyle(
-                                color: tabNum == 0
-                                    ? Colors.white
-                                    : Colors.grey,
+                                color: tabNum == 0 ? Colors.white : Colors.grey,
                               ),
                             ),
                           ),
@@ -243,9 +223,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             child: Text(
                               "Matched",
                               style: TextStyle(
-                                color: tabNum == 1
-                                    ? Colors.white
-                                    : Colors.grey,
+                                color: tabNum == 1 ? Colors.white : Colors.grey,
                               ),
                             ),
                           ),
@@ -262,12 +240,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       left: _cardPosition.dx,
                       top: _cardPosition.dx,
                       child: Draggable(
-                          feedback: _buildDraggableCard(),
-                          child: _buildDraggableCard(),
+                        feedback: _buildDraggableCard(),
+                        child: _buildDraggableCard(),
                         childWhenDragging: Container(),
-                        onDraggableCanceled: (velo, offset){
-
-                        },
+                        onDraggableCanceled: (velo, offset) {},
                       ),
                     ),
                   ],
