@@ -350,11 +350,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                     Column(
                       children: [
                         Container(
-                          height: 48,
+                          height: 42,
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
                               Container(
+                                margin: EdgeInsets.only(right: 15),
                                 padding: EdgeInsets.all(12),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
@@ -383,6 +384,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                     ),
                                   ],
                                 ),
+                                margin: EdgeInsets.only(right: 15),
                                 padding: EdgeInsets.symmetric(
                                   horizontal: 16,
                                   vertical: 2,
