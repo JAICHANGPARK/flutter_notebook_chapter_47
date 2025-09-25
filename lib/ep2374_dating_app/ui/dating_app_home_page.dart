@@ -486,6 +486,17 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             ],
                           ),
                         ),
+                        Expanded(
+                          child: GridView.builder(
+                            gridDelegate:
+                                SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2,
+                                ),
+                            itemBuilder: (context, index){
+                              
+                            },
+                          ),
+                        ),
                       ],
                     ),
                   ],
