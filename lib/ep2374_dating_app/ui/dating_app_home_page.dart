@@ -355,15 +355,17 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             scrollDirection: Axis.horizontal,
                             children: [
                               Container(
+                                padding: EdgeInsets.all(8),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   shape: BoxShape.circle,
+                                  
                                   boxShadow: [
                                     BoxShadow(
                                       color: Colors.grey[200]!,
 
                                       blurRadius: 4,
-                                      spreadRadius: 4
+                                      spreadRadius: 2
                                     ),
                                   ],
                                 ),
