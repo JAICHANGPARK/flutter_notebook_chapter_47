@@ -425,9 +425,10 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                   gridDelegate:
                                       SliverGridDelegateWithFixedCrossAxisCount(
                                         crossAxisCount: 2,
-                                        crossAxisSpacing: 16,
-                                        mainAxisSpacing: 16,
-                                        
+                                        crossAxisSpacing: 20,
+                                        mainAxisSpacing: 20,
+                                        childAspectRatio: .65
+
                                       ),
                                   itemBuilder: (context, index) {
                                     return Placeholder();
