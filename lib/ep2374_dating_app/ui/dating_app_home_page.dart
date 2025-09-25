@@ -237,112 +237,115 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 ),
               ),
               Expanded(
-                child: Stack(
-                  children: [
-                    Positioned(
-                      left: _cardPosition.dx,
-                      top: _cardPosition.dx,
-                      child: Draggable(
-                        feedback: Material(child: _buildDraggableCard()),
-                        childWhenDragging: Container(),
-                        onDraggableCanceled: (velo, offset) {
-                          print(velo);
-                          print(offset);
-                          setState(() {
+                child: IndexedStack(
+                  index: tabNum,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: _cardPosition.dx,
+                        top: _cardPosition.dx,
+                        child: Draggable(
+                          feedback: Material(child: _buildDraggableCard()),
+                          childWhenDragging: Container(),
+                          onDraggableCanceled: (velo, offset) {
+                            print(velo);
+                            print(offset);
+                            setState(() {
 
-                          });
-                        },
-                        child: _buildDraggableCard(),
-                      ),
-                    ),
-                    Positioned(
-                      left: _cardPosition.dx,
-                      top: _cardPosition.dx,
-                      child: Draggable(
-                        feedback: Material(child: _buildDraggableCard()),
-                        childWhenDragging: Container(),
-                        onDraggableCanceled: (velo, offset) {
-                          print(velo);
-                          print(offset);
-                          setState(() {
-
-                          });
-                        },
-                        child: _buildDraggableCard(),
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Container(
-                        height: 48,
-                        child: Stack(
-                          children: [
-                            Align(
-                              child: Container(
-                                width: 200,
-                                height: 6,
-                                color: Colors.black,
-                              ),
-                            ),
-                            Row(
-                              spacing: 4,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  decoration: ShapeDecoration(
-                                    shape: StadiumBorder(),
-                                    color: Colors.black,
-                                  ),
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: 16,
-                                    vertical: 12,
-                                  ),
-
-                                  child: Row(
-                                    spacing: 12,
-                                    children: [
-                                      Icon(Icons.home_filled, color: Colors.white),
-                                      Text(
-                                        "Home",
-                                        style: TextStyle(color: Colors.white),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                CircleAvatar(
-                                  radius: 24,
-                                  backgroundColor: Colors.black,
-                                  child: IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.favorite_border),
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                CircleAvatar(
-                                  radius: 24,
-                                  backgroundColor: Colors.black,
-                                  child: IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.chat_bubble_outline),
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                CircleAvatar(
-                                  radius: 24,
-                                  backgroundColor: Colors.black,
-                                  child: IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.person_2_outlined),
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
+                            });
+                          },
+                          child: _buildDraggableCard(),
                         ),
                       ),
-                    ),
-                  ],
+                      Positioned(
+                        left: _cardPosition.dx,
+                        top: _cardPosition.dx,
+                        child: Draggable(
+                          feedback: Material(child: _buildDraggableCard()),
+                          childWhenDragging: Container(),
+                          onDraggableCanceled: (velo, offset) {
+                            print(velo);
+                            print(offset);
+                            setState(() {
+
+                            });
+                          },
+                          child: _buildDraggableCard(),
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Container(
+                          height: 48,
+                          child: Stack(
+                            children: [
+                              Align(
+                                child: Container(
+                                  width: 200,
+                                  height: 6,
+                                  color: Colors.black,
+                                ),
+                              ),
+                              Row(
+                                spacing: 4,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                      color: Colors.black,
+                                    ),
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 16,
+                                      vertical: 12,
+                                    ),
+
+                                    child: Row(
+                                      spacing: 12,
+                                      children: [
+                                        Icon(Icons.home_filled, color: Colors.white),
+                                        Text(
+                                          "Home",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  CircleAvatar(
+                                    radius: 24,
+                                    backgroundColor: Colors.black,
+                                    child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.favorite_border),
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  CircleAvatar(
+                                    radius: 24,
+                                    backgroundColor: Colors.black,
+                                    child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.chat_bubble_outline),
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  CircleAvatar(
+                                    radius: 24,
+                                    backgroundColor: Colors.black,
+                                    child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.person_2_outlined),
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
