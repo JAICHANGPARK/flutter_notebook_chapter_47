@@ -236,268 +236,276 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                 ),
               ),
               Expanded(
-                child: IndexedStack(
-                  index: tabNum,
+                child: Stack(
                   children: [
-                    Stack(
-                      children: [
-                        Positioned(
-                          left: _cardPosition.dx,
-                          top: _cardPosition.dx,
-                          child: Draggable(
-                            feedback: Material(child: _buildDraggableCard()),
-                            childWhenDragging: Container(),
-                            onDraggableCanceled: (velo, offset) {
-                              print(velo);
-                              print(offset);
-                              setState(() {});
-                            },
-                            child: _buildDraggableCard(),
-                          ),
-                        ),
-                        Positioned(
-                          left: _cardPosition.dx,
-                          top: _cardPosition.dx,
-                          child: Draggable(
-                            feedback: Material(child: _buildDraggableCard()),
-                            childWhenDragging: Container(),
-                            onDraggableCanceled: (velo, offset) {
-                              print(velo);
-                              print(offset);
-                              setState(() {});
-                            },
-                            child: _buildDraggableCard(),
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment.bottomCenter,
-                          child: Container(
-                            height: 48,
-                            child: Stack(
-                              children: [
-                                Align(
-                                  child: Container(
-                                    width: 200,
-                                    height: 6,
-                                    color: Colors.black,
-                                  ),
+                    Positioned.fill(
+                      child: IndexedStack(
+                        index: tabNum,
+                        children: [
+                          Stack(
+                            children: [
+                              Positioned(
+                                left: _cardPosition.dx,
+                                top: _cardPosition.dx,
+                                child: Draggable(
+                                  feedback: Material(child: _buildDraggableCard()),
+                                  childWhenDragging: Container(),
+                                  onDraggableCanceled: (velo, offset) {
+                                    print(velo);
+                                    print(offset);
+                                    setState(() {});
+                                  },
+                                  child: _buildDraggableCard(),
                                 ),
-                                Row(
-                                  spacing: 4,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Container(
-                                      decoration: ShapeDecoration(
-                                        shape: StadiumBorder(),
-                                        color: Colors.black,
+                              ),
+                              Positioned(
+                                left: _cardPosition.dx,
+                                top: _cardPosition.dx,
+                                child: Draggable(
+                                  feedback: Material(child: _buildDraggableCard()),
+                                  childWhenDragging: Container(),
+                                  onDraggableCanceled: (velo, offset) {
+                                    print(velo);
+                                    print(offset);
+                                    setState(() {});
+                                  },
+                                  child: _buildDraggableCard(),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.bottomCenter,
+                                child: Container(
+                                  height: 48,
+                                  child: Stack(
+                                    children: [
+                                      Align(
+                                        child: Container(
+                                          width: 200,
+                                          height: 6,
+                                          color: Colors.black,
+                                        ),
                                       ),
-                                      padding: EdgeInsets.symmetric(
-                                        horizontal: 16,
-                                        vertical: 12,
-                                      ),
-
-                                      child: Row(
-                                        spacing: 12,
+                                      Row(
+                                        spacing: 4,
+                                        mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          Icon(
-                                            Icons.home_filled,
-                                            color: Colors.white,
+                                          Container(
+                                            decoration: ShapeDecoration(
+                                              shape: StadiumBorder(),
+                                              color: Colors.black,
+                                            ),
+                                            padding: EdgeInsets.symmetric(
+                                              horizontal: 16,
+                                              vertical: 12,
+                                            ),
+
+                                            child: Row(
+                                              spacing: 12,
+                                              children: [
+                                                Icon(
+                                                  Icons.home_filled,
+                                                  color: Colors.white,
+                                                ),
+                                                Text(
+                                                  "Home",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
-                                          Text(
-                                            "Home",
-                                            style: TextStyle(
+                                          CircleAvatar(
+                                            radius: 24,
+                                            backgroundColor: Colors.black,
+                                            child: IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(Icons.favorite_border),
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          CircleAvatar(
+                                            radius: 24,
+                                            backgroundColor: Colors.black,
+                                            child: IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(Icons.chat_bubble_outline),
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          CircleAvatar(
+                                            radius: 24,
+                                            backgroundColor: Colors.black,
+                                            child: IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(Icons.person_2_outlined),
                                               color: Colors.white,
                                             ),
                                           ),
                                         ],
                                       ),
-                                    ),
-                                    CircleAvatar(
-                                      radius: 24,
-                                      backgroundColor: Colors.black,
-                                      child: IconButton(
-                                        onPressed: () {},
-                                        icon: Icon(Icons.favorite_border),
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    CircleAvatar(
-                                      radius: 24,
-                                      backgroundColor: Colors.black,
-                                      child: IconButton(
-                                        onPressed: () {},
-                                        icon: Icon(Icons.chat_bubble_outline),
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    CircleAvatar(
-                                      radius: 24,
-                                      backgroundColor: Colors.black,
-                                      child: IconButton(
-                                        onPressed: () {},
-                                        icon: Icon(Icons.person_2_outlined),
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Container(
-                          height: 42,
-                          child: ListView(
-                            scrollDirection: Axis.horizontal,
-                            children: [
-                              Container(
-                                margin: EdgeInsets.only(right: 15),
-                                padding: EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  shape: BoxShape.circle,
-
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey[200]!,
-
-                                      blurRadius: 4,
-                                      spreadRadius: 2,
-                                    ),
-                                  ],
-                                ),
-                                child: Icon(Icons.tune),
-                              ),
-                              Container(
-                                decoration: ShapeDecoration(
-                                  shape: StadiumBorder(),
-                                  color: Colors.white,
-                                  shadows: [
-                                    BoxShadow(
-                                      color: Colors.grey[200]!,
-                                      blurRadius: 4,
-                                      spreadRadius: 2,
-                                    ),
-                                  ],
-                                ),
-                                margin: EdgeInsets.only(right: 15),
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 16,
-                                  vertical: 2,
-                                ),
-                                child: Row(
-                                  spacing: 8,
-                                  children: [
-                                    Text(
-                                      "All",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.grey,
-                                      ),
-                                    ),
-                                    Text(
-                                      "16",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.grey,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Container(
-                                decoration: ShapeDecoration(
-                                  shape: StadiumBorder(),
-                                  color: Colors.black,
-                                  shadows: [
-                                    BoxShadow(
-                                      color: Colors.grey[200]!,
-                                      blurRadius: 4,
-                                      spreadRadius: 2,
-                                    ),
-                                  ],
-                                ),
-                                margin: EdgeInsets.only(right: 15),
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 16,
-                                  vertical: 2,
-                                ),
-                                child: Row(
-                                  spacing: 8,
-                                  children: [
-                                    Text(
-                                      "Preferences",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Text(
-                                      "6",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.grey,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Container(
-                                decoration: ShapeDecoration(
-                                  shape: StadiumBorder(),
-                                  color: Colors.white,
-                                  shadows: [
-                                    BoxShadow(
-                                      color: Colors.grey[200]!,
-                                      blurRadius: 4,
-                                      spreadRadius: 2,
-                                    ),
-                                  ],
-                                ),
-                                margin: EdgeInsets.only(right: 15),
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 16,
-                                  vertical: 2,
-                                ),
-                                child: Row(
-                                  spacing: 8,
-                                  children: [
-                                    Text(
-                                      "Nearby",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.grey,
-                                      ),
-                                    ),
-                                    Text(
-                                      "10",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.grey,
-                                      ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
                           ),
-                        ),
-                        Expanded(
-                          child: GridView.builder(
-                            gridDelegate:
-                                SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 2,
+                          Column(
+                            spacing: 20,
+                            children: [
+                              Container(
+                                height: 42,
+                                child: ListView(
+                                  scrollDirection: Axis.horizontal,
+                                  children: [
+                                    Container(
+                                      margin: EdgeInsets.only(right: 15),
+                                      padding: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        shape: BoxShape.circle,
+
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey[200]!,
+
+                                            blurRadius: 4,
+                                            spreadRadius: 2,
+                                          ),
+                                        ],
+                                      ),
+                                      child: Icon(Icons.tune),
+                                    ),
+                                    Container(
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
+                                        color: Colors.white,
+                                        shadows: [
+                                          BoxShadow(
+                                            color: Colors.grey[200]!,
+                                            blurRadius: 4,
+                                            spreadRadius: 2,
+                                          ),
+                                        ],
+                                      ),
+                                      margin: EdgeInsets.only(right: 15),
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 16,
+                                        vertical: 2,
+                                      ),
+                                      child: Row(
+                                        spacing: 8,
+                                        children: [
+                                          Text(
+                                            "All",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          Text(
+                                            "16",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
+                                        color: Colors.black,
+                                        shadows: [
+                                          BoxShadow(
+                                            color: Colors.grey[200]!,
+                                            blurRadius: 4,
+                                            spreadRadius: 2,
+                                          ),
+                                        ],
+                                      ),
+                                      margin: EdgeInsets.only(right: 15),
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 16,
+                                        vertical: 2,
+                                      ),
+                                      child: Row(
+                                        spacing: 8,
+                                        children: [
+                                          Text(
+                                            "Preferences",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          Text(
+                                            "6",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
+                                        color: Colors.white,
+                                        shadows: [
+                                          BoxShadow(
+                                            color: Colors.grey[200]!,
+                                            blurRadius: 4,
+                                            spreadRadius: 2,
+                                          ),
+                                        ],
+                                      ),
+                                      margin: EdgeInsets.only(right: 15),
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 16,
+                                        vertical: 2,
+                                      ),
+                                      child: Row(
+                                        spacing: 8,
+                                        children: [
+                                          Text(
+                                            "Nearby",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          Text(
+                                            "10",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                            itemBuilder: (context, index){
-                              
-                            },
+                              ),
+
+                              Expanded(
+                                child: GridView.builder(
+                                  gridDelegate:
+                                      SliverGridDelegateWithFixedCrossAxisCount(
+                                        crossAxisCount: 2,
+                                      ),
+                                  itemBuilder: (context, index){
+                                    return Placeholder();
+                                  },
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),
