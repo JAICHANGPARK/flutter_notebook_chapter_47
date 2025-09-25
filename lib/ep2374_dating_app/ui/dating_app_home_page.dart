@@ -409,6 +409,43 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                   ],
                                 ),
                               ),
+                              Container(
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                  color: Colors.black,
+                                  shadows: [
+                                    BoxShadow(
+                                      color: Colors.grey[200]!,
+                                      blurRadius: 4,
+                                      spreadRadius: 2,
+                                    ),
+                                  ],
+                                ),
+                                margin: EdgeInsets.only(right: 15),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 2,
+                                ),
+                                child: Row(
+                                  spacing: 8,
+                                  children: [
+                                    Text(
+                                      "Preferences",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                    Text(
+                                      "6",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
