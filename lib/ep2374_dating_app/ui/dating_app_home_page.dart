@@ -374,7 +374,13 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                               Container(
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
-                                  shadows: [],
+                                  shadows: [
+                                    BoxShadow(
+                                      color: Colors.grey[200]!,
+                                      blurRadius: 4,
+                                      spreadRadius: 2,
+                                    )
+                                  ],
                                 ),
                                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                                 child: Row(
