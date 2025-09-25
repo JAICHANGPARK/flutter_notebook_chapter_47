@@ -120,7 +120,6 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
             (screenSize.height - cardSize.height) / 4,
           );
         });
-
       }
     });
   }
@@ -239,7 +238,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
               Expanded(
                 child: IndexedStack(
                   index: tabNum,
-                  children:[
+                  children: [
                     Stack(
                       children: [
                         Positioned(
@@ -251,9 +250,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             onDraggableCanceled: (velo, offset) {
                               print(velo);
                               print(offset);
-                              setState(() {
-
-                              });
+                              setState(() {});
                             },
                             child: _buildDraggableCard(),
                           ),
@@ -267,9 +264,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             onDraggableCanceled: (velo, offset) {
                               print(velo);
                               print(offset);
-                              setState(() {
-
-                              });
+                              setState(() {});
                             },
                             child: _buildDraggableCard(),
                           ),
@@ -304,10 +299,15 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                       child: Row(
                                         spacing: 12,
                                         children: [
-                                          Icon(Icons.home_filled, color: Colors.white),
+                                          Icon(
+                                            Icons.home_filled,
+                                            color: Colors.white,
+                                          ),
                                           Text(
                                             "Home",
-                                            style: TextStyle(color: Colors.white),
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
                                           ),
                                         ],
                                       ),
@@ -354,16 +354,21 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
-
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Icon(Icons.tune),
+                              ),
                             ],
                           ),
-                        )
+                        ),
                       ],
-                    )
-                  ]
+                    ),
+                  ],
                 ),
               ),
-
             ],
           ),
         ),
