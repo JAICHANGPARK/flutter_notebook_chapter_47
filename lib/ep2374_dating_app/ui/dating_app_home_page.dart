@@ -249,7 +249,9 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                 left: _cardPosition.dx,
                                 top: _cardPosition.dx,
                                 child: Draggable(
-                                  feedback: Material(child: _buildDraggableCard()),
+                                  feedback: Material(
+                                    child: _buildDraggableCard(),
+                                  ),
                                   childWhenDragging: Container(),
                                   onDraggableCanceled: (velo, offset) {
                                     print(velo);
@@ -263,7 +265,9 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                 left: _cardPosition.dx,
                                 top: _cardPosition.dx,
                                 child: Draggable(
-                                  feedback: Material(child: _buildDraggableCard()),
+                                  feedback: Material(
+                                    child: _buildDraggableCard(),
+                                  ),
                                   childWhenDragging: Container(),
                                   onDraggableCanceled: (velo, offset) {
                                     print(velo);
@@ -273,7 +277,6 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                   child: _buildDraggableCard(),
                                 ),
                               ),
-
                             ],
                           ),
                           Column(
@@ -422,8 +425,11 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                   gridDelegate:
                                       SliverGridDelegateWithFixedCrossAxisCount(
                                         crossAxisCount: 2,
+                                        crossAxisSpacing: 16,
+                                        mainAxisSpacing: 16,
+                                        
                                       ),
-                                  itemBuilder: (context, index){
+                                  itemBuilder: (context, index) {
                                     return Placeholder();
                                   },
                                 ),
@@ -469,9 +475,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                       ),
                                       Text(
                                         "Home",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                        ),
+                                        style: TextStyle(color: Colors.white),
                                       ),
                                     ],
                                   ),
