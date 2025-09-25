@@ -356,7 +356,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             children: [
                               Container(
                                 margin: EdgeInsets.only(right: 15),
-                                padding: EdgeInsets.all(12),
+                                padding: EdgeInsets.all(8),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   shape: BoxShape.circle,
