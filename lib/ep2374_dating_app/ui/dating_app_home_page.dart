@@ -444,6 +444,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       alignment: Alignment.bottomCenter,
                       child: Container(
                         height: 48,
+                        margin: EdgeInsets.symmetric(vertical: 24),
                         child: Stack(
                           children: [
                             Align(
