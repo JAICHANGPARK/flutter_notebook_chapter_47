@@ -351,7 +351,11 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                       children: [
                         Container(
                           height: 52,
-                          child: Placeholder(),
+                          child: ListView(
+                            children: [
+
+                            ],
+                          ),
                         )
                       ],
                     )
