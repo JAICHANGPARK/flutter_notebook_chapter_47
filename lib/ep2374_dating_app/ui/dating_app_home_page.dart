@@ -358,6 +358,14 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey[200]!,
+
+                                      blurRadius: 4,
+                                      spreadRadius: 4
+                                    ),
+                                  ],
                                 ),
                                 child: Icon(Icons.tune),
                               ),
