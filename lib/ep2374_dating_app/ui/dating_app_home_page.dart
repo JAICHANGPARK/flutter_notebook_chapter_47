@@ -352,6 +352,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                         Container(
                           height: 52,
                           child: ListView(
+                            scrollDirection: Axis.horizontal,
                             children: [
 
                             ],
