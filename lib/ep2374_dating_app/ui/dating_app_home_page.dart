@@ -350,12 +350,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                     Column(
                       children: [
                         Container(
-                          height: 52,
+                          height: 48,
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
                               Container(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(12),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   shape: BoxShape.circle,
@@ -374,23 +374,29 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                               Container(
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
+                                  color: Colors.white,
                                   shadows: [
                                     BoxShadow(
                                       color: Colors.grey[200]!,
                                       blurRadius: 4,
                                       spreadRadius: 2,
-                                    )
+                                    ),
                                   ],
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 2,
+                                ),
                                 child: Row(
                                   spacing: 8,
                                   children: [
-                                    Text("All",
+                                    Text(
+                                      "All",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: Colors.grey,
-                                      ),),
+                                      ),
+                                    ),
                                     Text(
                                       "16",
                                       style: TextStyle(
