@@ -272,82 +272,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                   child: _buildDraggableCard(),
                                 ),
                               ),
-                              Align(
-                                alignment: Alignment.bottomCenter,
-                                child: Container(
-                                  height: 48,
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        child: Container(
-                                          width: 200,
-                                          height: 6,
-                                          color: Colors.black,
-                                        ),
-                                      ),
-                                      Row(
-                                        spacing: 4,
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            decoration: ShapeDecoration(
-                                              shape: StadiumBorder(),
-                                              color: Colors.black,
-                                            ),
-                                            padding: EdgeInsets.symmetric(
-                                              horizontal: 16,
-                                              vertical: 12,
-                                            ),
 
-                                            child: Row(
-                                              spacing: 12,
-                                              children: [
-                                                Icon(
-                                                  Icons.home_filled,
-                                                  color: Colors.white,
-                                                ),
-                                                Text(
-                                                  "Home",
-                                                  style: TextStyle(
-                                                    color: Colors.white,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                          CircleAvatar(
-                                            radius: 24,
-                                            backgroundColor: Colors.black,
-                                            child: IconButton(
-                                              onPressed: () {},
-                                              icon: Icon(Icons.favorite_border),
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                          CircleAvatar(
-                                            radius: 24,
-                                            backgroundColor: Colors.black,
-                                            child: IconButton(
-                                              onPressed: () {},
-                                              icon: Icon(Icons.chat_bubble_outline),
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                          CircleAvatar(
-                                            radius: 24,
-                                            backgroundColor: Colors.black,
-                                            child: IconButton(
-                                              onPressed: () {},
-                                              icon: Icon(Icons.person_2_outlined),
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
                             ],
                           ),
                           Column(
@@ -505,6 +430,82 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                             ],
                           ),
                         ],
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Container(
+                        height: 48,
+                        child: Stack(
+                          children: [
+                            Align(
+                              child: Container(
+                                width: 200,
+                                height: 6,
+                                color: Colors.black,
+                              ),
+                            ),
+                            Row(
+                              spacing: 4,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: Colors.black,
+                                  ),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+
+                                  child: Row(
+                                    spacing: 12,
+                                    children: [
+                                      Icon(
+                                        Icons.home_filled,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        "Home",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundColor: Colors.black,
+                                  child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.favorite_border),
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundColor: Colors.black,
+                                  child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.chat_bubble_outline),
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundColor: Colors.black,
+                                  child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.person_2_outlined),
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
