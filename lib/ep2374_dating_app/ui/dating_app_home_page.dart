@@ -433,7 +433,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                       "Preferences",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.grey,
+                                        color: Colors.white,
                                       ),
                                     ),
                                     Text(
