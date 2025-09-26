@@ -430,7 +430,12 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                         childAspectRatio: .65,
                                       ),
                                   itemBuilder: (context, index) {
-                                    return Placeholder();
+                                    return Container(
+                                      decoration: ShapeDecoration(shape: shape),
+                                      child: Stack(children: [
+                                        
+                                      ],),
+                                    )
                                   },
                                 ),
                               ),
