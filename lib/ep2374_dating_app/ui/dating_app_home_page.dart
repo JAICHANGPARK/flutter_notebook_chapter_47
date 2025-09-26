@@ -488,12 +488,14 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                                     "Matched 10 Preferences",
                                                     style: TextStyle(
                                                       color: Colors.white,
+                                                      fontSize: 12,
                                                     ),
                                                   ),
                                                   Text(
                                                     "Dream, 20",
                                                     style: TextStyle(
                                                       color: Colors.white,
+                                                      fontSize: 20,
                                                     ),
                                                   ),
                                                 ],
