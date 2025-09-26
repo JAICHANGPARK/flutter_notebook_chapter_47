@@ -436,17 +436,17 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                           borderRadius: BorderRadius.circular(
                                             24,
                                           ),
-
                                         ),
                                         color: Colors.white,
                                         shadows: [
                                           BoxShadow(
                                             color: Colors.grey[100]!,
-                                            
-                                          )
+                                            spreadRadius: 4,
+                                            blurRadius: 4,
+                                          ),
                                         ],
-
                                       ),
+                                      padding: EdgeInsets.all(12),
                                       child: Container(
                                         decoration: ShapeDecoration(
                                           shape: RoundedSuperellipseBorder(
@@ -462,12 +462,17 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                               right: 12,
                                               top: 12,
                                               child: Container(
-                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                                padding: EdgeInsets.symmetric(
+                                                  horizontal: 12,
+                                                  vertical: 4,
+                                                ),
                                                 decoration: ShapeDecoration(
                                                   shape: StadiumBorder(),
                                                   color: Colors.white,
                                                 ),
-                                                child: Text("🎶 Digital Artist"),
+                                                child: Text(
+                                                  "🎶 Digital Artist",
+                                                ),
                                               ),
                                             ),
                                           ],
