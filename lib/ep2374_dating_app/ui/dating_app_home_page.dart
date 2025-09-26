@@ -480,16 +480,24 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                               bottom: 12,
                                               left: 12,
                                               child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Icon(Icons.star_border),
-                                                    Text("Matched 10 Preferences",
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Icon(Icons.star_border),
+                                                  Text(
+                                                    "Matched 10 Preferences",
                                                     style: TextStyle(
-                                                      
+                                                      color: Colors.white,
                                                     ),
+                                                  ),
+                                                  Text(
+                                                    "Dream, 20",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
                                                     ),
-                                                    Text("Dream, 20")
-                                                  ]),
+                                                  ),
+                                                ],
+                                              ),
                                             ),
                                           ],
                                         ),
