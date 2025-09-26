@@ -479,7 +479,11 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                             Positioned(
                                               child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: []),
+                                                  children: [
+                                                    Icon(Icons.star_border),
+                                                    Text("Matched 10 Preferences"),
+                                                    Text("Dream, 20")
+                                                  ]),
                                             ),
                                           ],
                                         ),
