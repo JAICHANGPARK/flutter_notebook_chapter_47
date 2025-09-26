@@ -425,12 +425,13 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                   gridDelegate:
                                       SliverGridDelegateWithFixedCrossAxisCount(
                                         crossAxisCount: 2,
-                                        crossAxisSpacing: 20,
-                                        mainAxisSpacing: 20,
+                                        crossAxisSpacing: 16,
+                                        mainAxisSpacing: 16,
                                         childAspectRatio: .65,
                                       ),
                                   itemBuilder: (context, index) {
                                     return Container(
+                                      margin: EdgeInsets.all(3),
                                       decoration: ShapeDecoration(
                                         shape: RoundedSuperellipseBorder(
                                           borderRadius: BorderRadius.circular(
@@ -446,7 +447,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                           ),
                                         ],
                                       ),
-                                      padding: EdgeInsets.all(12),
+                                      padding: EdgeInsets.all(8),
                                       child: Container(
                                         decoration: ShapeDecoration(
                                           shape: RoundedSuperellipseBorder(
