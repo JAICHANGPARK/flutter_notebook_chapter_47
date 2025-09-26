@@ -445,11 +445,21 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                             borderRadius: BorderRadius.circular(
                                               24,
                                             ),
-
                                           ),
-                                          color: Colors.white
+                                          color: Colors.white,
                                         ),
-                                        child: Stack(children: []),
+                                        child: Stack(
+                                          children: [
+                                            Positioned.fill(
+                                              child: Container(
+                                                decoration: ShapeDecoration(
+                                                  shape: StadiumBorder(),
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     );
                                   },
