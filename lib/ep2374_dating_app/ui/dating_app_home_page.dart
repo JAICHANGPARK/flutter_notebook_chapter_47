@@ -445,7 +445,9 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                             borderRadius: BorderRadius.circular(
                                               24,
                                             ),
+
                                           ),
+                                          color: Colors.white
                                         ),
                                         child: Stack(children: []),
                                       ),
