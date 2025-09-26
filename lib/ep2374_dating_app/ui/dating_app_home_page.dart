@@ -447,7 +447,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                           ),
                                         ],
                                       ),
-                                      padding: EdgeInsets.all(8),
+                                      padding: EdgeInsets.all(6),
                                       child: Container(
                                         decoration: ShapeDecoration(
                                           shape: RoundedSuperellipseBorder(
