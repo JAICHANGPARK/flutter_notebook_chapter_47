@@ -446,11 +446,13 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                               24,
                                             ),
                                           ),
-                                          color: Colors.white,
+                                          color: Colors.black,
                                         ),
                                         child: Stack(
                                           children: [
-                                            Positioned.fill(
+                                            Positioned(
+                                              right: 12,
+                                              top: 12,
                                               child: Container(
                                                 padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                                 decoration: ShapeDecoration(
