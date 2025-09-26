@@ -483,7 +483,9 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Icon(Icons.star_border),
+                                                  Icon(Icons.star_border,
+                                                  color: Colors.white,
+                                                  size: 18,),
                                                   Text(
                                                     "Matched 10 Preferences",
                                                     style: TextStyle(
