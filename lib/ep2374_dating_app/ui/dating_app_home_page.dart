@@ -427,8 +427,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                         crossAxisCount: 2,
                                         crossAxisSpacing: 20,
                                         mainAxisSpacing: 20,
-                                        childAspectRatio: .65
-
+                                        childAspectRatio: .65,
                                       ),
                                   itemBuilder: (context, index) {
                                     return Placeholder();
