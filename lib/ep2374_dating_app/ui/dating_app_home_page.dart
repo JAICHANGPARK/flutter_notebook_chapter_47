@@ -480,6 +480,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                               bottom: 12,
                                               left: 12,
                                               child: Column(
+                                                spacing: 6,
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
