@@ -13,9 +13,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
   Offset _cardPosition = Offset.zero;
 
   Widget _buildDraggableCard() {
-    final screenSize = MediaQuery
-        .of(context)
-        .size;
+    final screenSize = MediaQuery.of(context).size;
     return Container(
       width: screenSize.width * 0.9,
       height: screenSize.height * 0.65,
@@ -113,9 +111,7 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
     // TODO: implement initState
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      final screenSize = MediaQuery
-          .of(context)
-          .size;
+      final screenSize = MediaQuery.of(context).size;
       final cardSize = context.size;
       if (cardSize != null) {
         setState(() {
@@ -427,21 +423,22 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                               Expanded(
                                 child: GridView.builder(
                                   gridDelegate:
-                                  SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 2,
-                                    crossAxisSpacing: 20,
-                                    mainAxisSpacing: 20,
-                                    childAspectRatio: .65,
-                                  ),
+                                      SliverGridDelegateWithFixedCrossAxisCount(
+                                        crossAxisCount: 2,
+                                        crossAxisSpacing: 20,
+                                        mainAxisSpacing: 20,
+                                        childAspectRatio: .65,
+                                      ),
                                   itemBuilder: (context, index) {
                                     return Container(
                                       decoration: ShapeDecoration(
-                                          shape: RoundedSuperellipseBorder(
-                                            borderRadius: BorderRadius.circular(
-                                                24),
-                                          )),
-                                      child: Stack(children: [
-                                      ],),
+                                        shape: RoundedSuperellipseBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            24,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Stack(children: []),
                                     );
                                   },
                                 ),
