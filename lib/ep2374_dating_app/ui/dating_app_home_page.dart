@@ -437,8 +437,18 @@ class _DatingAppHomePageState extends State<DatingAppHomePage> {
                                             24,
                                           ),
                                         ),
+                                        color: Colors.white,
                                       ),
-                                      child: Stack(children: []),
+                                      child: Container(
+                                        decoration: ShapeDecoration(
+                                          shape: RoundedSuperellipseBorder(
+                                            borderRadius: BorderRadius.circular(
+                                              24,
+                                            ),
+                                          ),
+                                        ),
+                                        child: Stack(children: []),
+                                      ),
                                     );
                                   },
                                 ),
