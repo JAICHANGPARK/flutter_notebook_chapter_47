@@ -33,9 +33,12 @@ class _NewsHomePageState extends State<NewsHomePage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 8,
+                    ),
                     child: Row(
-                      spacing: 12,
+                      spacing: 8,
                       children: [
                         Text("Explore News"),
                         Spacer(),
@@ -43,21 +46,33 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.white,
-
-
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8,vertical: 6),
-                          child: Row(
-                            children: [
-                              Text("⛈ 50℉")
-                            ],
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 6,
                           ),
+                          child: Row(children: [Text("⛈ 50℉")]),
                         ),
                         CircleAvatar(
                           backgroundColor: Colors.white,
                           child: Badge(
                             child: Icon(Icons.notifications_active_outlined),
                           ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.white,
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(child: TextField()),
+                        Container(
+                          decoration: BoxDecoration(),
+                          child: Icon(Icons.tune),
                         ),
                       ],
                     ),
