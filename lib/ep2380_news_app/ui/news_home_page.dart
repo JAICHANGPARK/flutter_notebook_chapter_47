@@ -35,8 +35,10 @@ class _NewsHomePageState extends State<NewsHomePage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Row(
+                      spacing: 12,
                       children: [
                         Text("Explore News"),
+                        Spacer(),
                         Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
@@ -52,6 +54,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           ),
                         ),
                         CircleAvatar(
+                          backgroundColor: Colors.white,
                           child: Badge(
                             child: Icon(Icons.notifications_active_outlined),
                           ),
