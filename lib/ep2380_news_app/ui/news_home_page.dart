@@ -63,6 +63,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     ),
                   ),
                   Container(
+                    margin: EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white,
@@ -77,6 +78,15 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       ],
                     ),
                   ),
+                  Container(
+
+                    height: 42,
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 160,
+                    child: Placeholder(),
+                  )
                 ],
               ),
             ),
