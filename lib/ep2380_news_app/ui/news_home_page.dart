@@ -32,29 +32,32 @@ class _NewsHomePageState extends State<NewsHomePage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Text("Explore News"),
-                      Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: Row(
+                      children: [
+                        Text("Explore News"),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
 
 
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8,vertical: 6),
+                          child: Row(
+                            children: [
+                              Text("⛈ 50℉")
+                            ],
+                          ),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 8,vertical: 6),
-                        child: Row(
-                          children: [
-                            Text("⛈ 50℉")
-                          ],
+                        CircleAvatar(
+                          child: Badge(
+                            child: Icon(Icons.notifications_active_outlined),
+                          ),
                         ),
-                      ),
-                      CircleAvatar(
-                        child: Badge(
-                          child: Icon(Icons.notifications_active_outlined),
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ],
               ),
