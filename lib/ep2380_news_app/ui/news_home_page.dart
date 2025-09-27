@@ -15,7 +15,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
         children: [
           Positioned.fill(
             child: Container(
-              decoration: BoxDecoration(gradient: LinearGradient(colors: [])),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Color.fromRGBO(239, 243, 255, 1)],
+                ),
+              ),
             ),
           ),
         ],
