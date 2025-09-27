@@ -1,6 +1,6 @@
 # flutter_notebook_chapter_47
 
-## EP2374
+## EP2374-2379
 
 - HeartSync - Dating App UI
 - Pota Design for Potara Studio
