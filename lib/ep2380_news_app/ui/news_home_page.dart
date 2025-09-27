@@ -39,10 +39,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                         decoration: ShapeDecoration(
                           shape: StadiumBorder(),
                           color: Colors.white,
+                          
                         ),
                         child: Row(
                           children: [
-                            
+                            Text("⛈ 50℉")
                           ],
                         ),
                       ),
