@@ -39,8 +39,10 @@ class _NewsHomePageState extends State<NewsHomePage> {
                         decoration: ShapeDecoration(
                           shape: StadiumBorder(),
                           color: Colors.white,
-                          
+
+
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 8,vertical: 6),
                         child: Row(
                           children: [
                             Text("⛈ 50℉")
