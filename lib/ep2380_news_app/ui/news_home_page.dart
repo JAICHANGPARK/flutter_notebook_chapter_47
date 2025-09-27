@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class NewsHomePage extends StatefulWidget {
   const NewsHomePage({super.key});
 
@@ -12,7 +11,15 @@ class _NewsHomePageState extends State<NewsHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(gradient: LinearGradient(colors: [])),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
