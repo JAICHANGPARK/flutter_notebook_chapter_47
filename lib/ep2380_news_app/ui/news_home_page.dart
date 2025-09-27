@@ -28,7 +28,35 @@ class _NewsHomePageState extends State<NewsHomePage> {
               ),
             ),
           ),
-          Positioned.fill(child: Column(children: [])),
+          Positioned.fill(
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Explore News"),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.white,
+                        ),
+                        child: Row(
+                          children: [
+                            
+                          ],
+                        ),
+                      ),
+                      CircleAvatar(
+                        child: Badge(
+                          child: Icon(Icons.notifications_active_outlined),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
