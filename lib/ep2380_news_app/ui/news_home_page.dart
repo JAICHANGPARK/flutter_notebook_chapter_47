@@ -28,6 +28,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
               ),
             ),
           ),
+          Positioned.fill(child: Column(children: [])),
         ],
       ),
     );
