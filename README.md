@@ -6,7 +6,7 @@
 - Muhammad Farhan
 - https://dribbble.com/shots/26579231-News-App-UI-Design
 
-<img src="https://cdn.dribbble.com/userupload/44981968/file/4b188f00efea69a600c8695f960c01e2.png?resize=1905x1430&vertical=center">
+<img src="https://cdn.dribbble.com/userupload/45078157/file/74587eeb164048bbbac732734c32dea9.png?resize=2400x1800&vertical=center">
 
 
 ## EP2374-2379
