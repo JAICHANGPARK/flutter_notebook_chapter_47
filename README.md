@@ -2,9 +2,9 @@
 
 ## EP2380
 
-- HeartSync - Dating App UI
-- Pota Design for Potara Studio
-- https://dribbble.com/shots/26548306-HeartSync-Dating-App-UI
+- News App UI Design
+- Muhammad Farhan
+- https://dribbble.com/shots/26579231-News-App-UI-Design
 
 <img src="https://cdn.dribbble.com/userupload/44981968/file/4b188f00efea69a600c8695f960c01e2.png?resize=1905x1430&vertical=center">
 
