@@ -78,20 +78,18 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       ],
                     ),
                   ),
-                  Container(
-
-                    height: 42,
-                    child: Placeholder(),
-                  ),
-                  Container(
-                    height: 160,
-                    child: Placeholder(),
-                  )
+                  Container(height: 42, child: Placeholder()),
+                  Container(height: 160, child: Placeholder()),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
           ),
         ],
+      ),
+      bottomNavigationBar: Container(
+        height: 80,
+        decoration: BoxDecoration(color: Colors.white),
       ),
     );
   }
