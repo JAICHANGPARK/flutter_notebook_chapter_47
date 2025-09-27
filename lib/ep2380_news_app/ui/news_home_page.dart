@@ -17,7 +17,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Color.fromRGBO(239, 243, 255, 1)],
+                  colors: [
+                    Color.fromRGBO(239, 243, 255, 1),
+                    Colors.white,
+                    Color.fromRGBO(243, 246, 254, 1),
+                  ],
                 ),
               ),
             ),
