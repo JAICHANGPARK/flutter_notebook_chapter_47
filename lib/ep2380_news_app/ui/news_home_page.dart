@@ -194,15 +194,20 @@ class _NewsHomePageState extends State<NewsHomePage> {
             ),
           ),
           Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: Container(child: Placeholder(),
-          height: 100,))
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              decoration: BoxDecoration(color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(16),
+                topRight: Radius.circular(16),
+              )),
+              height: 90,
+            ),
+          ),
         ],
       ),
-
-
     );
   }
 }
