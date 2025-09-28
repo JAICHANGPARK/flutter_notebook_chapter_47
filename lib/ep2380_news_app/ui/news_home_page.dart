@@ -182,6 +182,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                   ),
                   Expanded(
                     child: ListView.builder(
+                      itemCount: 10,
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
                         return Placeholder();
@@ -194,9 +195,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
           ),
         ],
       ),
-      bottomNavigationBar: Container(
-        height: 80,
-        decoration: BoxDecoration(color: Colors.white),
+      bottomNavigationBar: BottomAppBar(
+        
+
+        // height: 80,
+
       ),
     );
   }
