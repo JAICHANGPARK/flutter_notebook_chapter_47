@@ -100,6 +100,8 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
                             gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
                               colors: [
                                 Color.fromRGBO(49, 102, 223, 1),
                                 Color.fromRGBO(67, 118, 239, 1),
@@ -204,6 +206,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                 topRight: Radius.circular(16),
               )),
               height: 90,
+              child: Row(
+                children: [
+
+                ],
+              ),
             ),
           ),
         ],
