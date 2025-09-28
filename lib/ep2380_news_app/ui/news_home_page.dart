@@ -193,16 +193,16 @@ class _NewsHomePageState extends State<NewsHomePage> {
               ),
             ),
           ),
+          Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container(child: Placeholder(),
+          height: 100,))
         ],
       ),
-      bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.circular(16),
-        child: BottomAppBar(
-          color: Colors.blue,
 
-          // height: 80,
-        ),
-      ),
+
     );
   }
 }
