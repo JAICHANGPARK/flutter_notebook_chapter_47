@@ -127,15 +127,18 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             ],
                           ),
                         ),
-                        Column(
-                          children: [
-                            Text("Celebs"),
-                            CircleAvatar(
-                              radius: 4,
-                              backgroundColor: Colors.transparent,
-                            ),
-                          ],
-                        ),
+                        ["Celebs", "Politics", "Sports", "Educations", "History", "Music"].map((e){
+                          Column(
+                            children: [
+                              Text("Celebs"),
+                              CircleAvatar(
+                                radius: 4,
+                                backgroundColor: Colors.transparent,
+                              ),
+                            ],
+                          ),
+                        }),
+
                       ],
                     ),
                   ),
