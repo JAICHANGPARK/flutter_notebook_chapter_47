@@ -31,6 +31,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
           Positioned.fill(
             child: SafeArea(
               child: Column(
+                spacing: 12,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(
@@ -163,7 +164,9 @@ class _NewsHomePageState extends State<NewsHomePage> {
                   ),
                   Container(
                     height: 180,
-                    ,
+                    padding: EdgeInsets.only(
+                      left: 16
+                    ),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
