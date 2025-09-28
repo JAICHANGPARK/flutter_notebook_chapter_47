@@ -164,13 +164,14 @@ class _NewsHomePageState extends State<NewsHomePage> {
                   ),
                   Container(
                     height: 180,
-                    padding: EdgeInsets.only(left: 16),
+                    // padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: MediaQuery.sizeOf(context).width * .9,
+                          width: MediaQuery.sizeOf(context).width * .85,
+                          margin: EdgeInsets.only(left: 16),
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(16),
