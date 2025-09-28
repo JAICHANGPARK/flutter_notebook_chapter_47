@@ -198,11 +198,9 @@ class _NewsHomePageState extends State<NewsHomePage> {
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.circular(16),
         child: BottomAppBar(
-        
-        
-        
+          color: Colors.blue,
+
           // height: 80,
-        
         ),
       ),
     );
