@@ -40,7 +40,10 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     child: Row(
                       spacing: 8,
                       children: [
-                        Text("Explore News"),
+                        Text(
+                          "Explore News",
+                          style: TextStyle(fontWeight: FontWeight.bold,),
+                        ),
                         Spacer(),
                         Container(
                           decoration: ShapeDecoration(
