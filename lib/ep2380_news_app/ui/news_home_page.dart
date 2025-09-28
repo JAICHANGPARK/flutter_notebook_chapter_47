@@ -180,7 +180,9 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       },
                     ),
                   ),
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                    child: ListView.builder(itemBuilder: (context, index) {}),
+                  ),
                 ],
               ),
             ),
