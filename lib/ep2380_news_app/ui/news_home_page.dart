@@ -127,8 +127,15 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             ],
                           ),
                         ),
-                        ["Celebs", "Politics", "Sports", "Educations", "History", "Music"].map((e){
-                          Column(
+                        ...[
+                          "Celebs",
+                          "Politics",
+                          "Sports",
+                          "Educations",
+                          "History",
+                          "Music",
+                        ].map((e) {
+                          return Column(
                             children: [
                               Text("Celebs"),
                               CircleAvatar(
@@ -136,9 +143,8 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                 backgroundColor: Colors.transparent,
                               ),
                             ],
-                          ),
+                          );
                         }),
-
                       ],
                     ),
                   ),
