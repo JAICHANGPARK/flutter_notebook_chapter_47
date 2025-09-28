@@ -137,7 +137,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                         ].map((e) {
                           return Column(
                             children: [
-                              Text("Celebs"),
+                              Text("${e}"),
                               CircleAvatar(
                                 radius: 4,
                                 backgroundColor: Colors.transparent,
