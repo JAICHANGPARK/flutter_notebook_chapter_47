@@ -74,6 +74,10 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white,
                     ),
+                    padding: EdgeInsets.only(
+                      left: 16,
+                      right: 4
+                    ),
                     child: Row(
                       children: [
                         Expanded(
