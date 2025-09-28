@@ -106,6 +106,12 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     ),
                   ),
                   Container(
+                    margin: EdgeInsets.only(
+                      top: 16
+                    ),
+                    padding: EdgeInsets.only(
+                      left: 16,
+                    ),
                     height: 42,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
@@ -113,6 +119,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                         Padding(
                           padding: EdgeInsets.only(right: 16),
                           child: Column(
+                            spacing: 3,
                             children: [
                               Text("All News"),
                               CircleAvatar(
@@ -135,14 +142,18 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           "History",
                           "Music",
                         ].map((e) {
-                          return Column(
-                            children: [
-                              Text("${e}"),
-                              CircleAvatar(
-                                radius: 4,
-                                backgroundColor: Colors.transparent,
-                              ),
-                            ],
+                          return Padding(
+                            padding: EdgeInsets.only(right: 16),
+                            child: Column(
+                              spacing: 3,
+                              children: [
+                                Text("${e}"),
+                                CircleAvatar(
+                                  radius: 4,
+                                  backgroundColor: Colors.transparent,
+                                ),
+                              ],
+                            ),
                           );
                         }),
                       ],
