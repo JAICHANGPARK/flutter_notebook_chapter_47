@@ -161,7 +161,16 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       ],
                     ),
                   ),
-                  Container(height: 160, child: Placeholder()),
+                  Container(
+                    height: 160,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(width: 420, child: Placeholder());
+                      },
+                    ),
+                  ),
                   Expanded(child: Placeholder()),
                 ],
               ),
