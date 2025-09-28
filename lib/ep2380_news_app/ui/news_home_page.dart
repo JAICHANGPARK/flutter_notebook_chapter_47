@@ -171,7 +171,10 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: MediaQuery.sizeOf(context).width * .9,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
                         );
                       },
                     ),
