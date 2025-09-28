@@ -84,6 +84,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                               hintStyle: TextStyle(
                                 fontSize: 14,
                                 color: Colors.grey,
+                                fontWeight: FontWeight.bold,
                               ),
                               border: InputBorder.none,
                               icon: Icon(Icons.search),
