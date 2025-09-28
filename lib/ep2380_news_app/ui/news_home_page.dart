@@ -74,10 +74,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white,
                     ),
-                    padding: EdgeInsets.only(
-                      left: 16,
-                      right: 4
-                    ),
+                    padding: EdgeInsets.only(left: 16, right: 4),
                     child: Row(
                       children: [
                         Expanded(
@@ -89,13 +86,41 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(),
-                          child: Icon(Icons.tune),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 8,
+                          ),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            gradient: LinearGradient(
+                              colors: [
+                                Color.fromRGBO(49, 102, 223, 1),
+                                Color.fromRGBO(67, 118, 239, 1),
+                                Color.fromRGBO(49, 102, 223, 1),
+                              ],
+                            ),
+                          ),
+                          child: Icon(Icons.tune, color: Colors.white),
                         ),
                       ],
                     ),
                   ),
-                  Container(height: 42, child: Placeholder()),
+                  Container(
+                    height: 42,
+                    child: ListView(
+                      children: [
+                        Column(
+                          children: [
+                            Text("All News"),
+                            CircleAvatar(
+                              radius: 4,
+                              backgroundColor: Color.fromRGBO(57, 118, 246, 1),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                   Container(height: 160, child: Placeholder()),
                   Expanded(child: Placeholder()),
                 ],
