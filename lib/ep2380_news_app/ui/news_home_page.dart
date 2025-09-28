@@ -42,7 +42,10 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       children: [
                         Text(
                           "Explore News",
-                          style: TextStyle(fontWeight: FontWeight.bold,),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                         Spacer(),
                         Container(
@@ -73,7 +76,14 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     ),
                     child: Row(
                       children: [
-                        Expanded(child: TextField()),
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: "Search News and Channel...",
+                              icon: Icon(Icons.search),
+                            ),
+                          ),
+                        ),
                         Container(
                           decoration: BoxDecoration(),
                           child: Icon(Icons.tune),
