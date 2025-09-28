@@ -162,12 +162,13 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     ),
                   ),
                   Container(
-                    height: 160,
+                    height: 180,
+                    ,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Container(width: 420, child: Placeholder());
+                        return Container(width: MediaQuery.sizeOf(context).width * .9, child: Placeholder());
                       },
                     ),
                   ),
