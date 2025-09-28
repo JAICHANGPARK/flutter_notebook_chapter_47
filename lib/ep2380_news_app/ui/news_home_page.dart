@@ -108,13 +108,31 @@ class _NewsHomePageState extends State<NewsHomePage> {
                   Container(
                     height: 42,
                     child: ListView(
+                      scrollDirection: Axis.horizontal,
                       children: [
+                        Padding(
+                          padding: EdgeInsets.only(right: 16),
+                          child: Column(
+                            children: [
+                              Text("All News"),
+                              CircleAvatar(
+                                radius: 4,
+                                backgroundColor: Color.fromRGBO(
+                                  57,
+                                  118,
+                                  246,
+                                  1,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                         Column(
                           children: [
-                            Text("All News"),
+                            Text("Celebs"),
                             CircleAvatar(
                               radius: 4,
-                              backgroundColor: Color.fromRGBO(57, 118, 246, 1),
+                              backgroundColor: Colors.transparent,
                             ),
                           ],
                         ),
