@@ -195,11 +195,15 @@ class _NewsHomePageState extends State<NewsHomePage> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomAppBar(
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.circular(16),
+        child: BottomAppBar(
         
-
-        // height: 80,
-
+        
+        
+          // height: 80,
+        
+        ),
       ),
     );
   }
