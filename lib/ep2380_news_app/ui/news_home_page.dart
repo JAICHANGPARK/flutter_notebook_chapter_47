@@ -81,6 +81,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: "Search News and Channel...",
+                              hintStyle: TextStyle(
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                              border: InputBorder.none,
                               icon: Icon(Icons.search),
                             ),
                           ),
@@ -106,12 +111,8 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(
-                      top: 16
-                    ),
-                    padding: EdgeInsets.only(
-                      left: 16,
-                    ),
+                    margin: EdgeInsets.only(top: 16),
+                    padding: EdgeInsets.only(left: 16),
                     height: 42,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
