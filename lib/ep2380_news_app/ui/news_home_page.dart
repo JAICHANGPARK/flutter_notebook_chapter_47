@@ -113,7 +113,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 16),
+                    // margin: EdgeInsets.only(top: 16),
                     padding: EdgeInsets.only(left: 16),
                     height: 42,
                     child: ListView(
