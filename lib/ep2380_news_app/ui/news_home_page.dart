@@ -130,6 +130,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                 "All News",
                                 style: TextStyle(
                                   color: Color.fromRGBO(57, 118, 246, 1),
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                               CircleAvatar(
@@ -182,6 +183,17 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(),
+                                  Text("ABCD 10h ago"),
+                                ],
+                              ),
+                              Text("")
+                            ],
                           ),
                         );
                       },
