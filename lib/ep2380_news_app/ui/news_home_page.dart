@@ -232,11 +232,13 @@ class _NewsHomePageState extends State<NewsHomePage> {
                         return Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: Column(
+                            spacing: 8,
                             children: [
                               Row(
                                 children: [
                                   Expanded(
                                     child: Column(
+                                      spacing: 6,
                                       children: [
                                         Row(
                                           spacing: 6,
@@ -270,6 +272,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                       borderRadius: BorderRadius.circular(16),
                                     ),
                                   ),
+                                  Row(
+                                    children: [
+
+                                    ],
+                                  )
                                 ],
                               ),
                             ],
