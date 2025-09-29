@@ -235,6 +235,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             spacing: 8,
                             children: [
                               Row(
+                                spacing: 32,
                                 children: [
                                   Expanded(
                                     child: Column(
@@ -272,11 +273,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                       borderRadius: BorderRadius.circular(16),
                                     ),
                                   ),
-                                  Row(
-                                    children: [
 
-                                    ],
-                                  )
                                 ],
                               ),
                             ],
