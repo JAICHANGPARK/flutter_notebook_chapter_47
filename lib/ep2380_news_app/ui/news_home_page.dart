@@ -184,7 +184,9 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(16),
                           ),
+
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               Row(
                                 children: [
