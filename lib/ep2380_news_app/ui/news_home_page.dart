@@ -192,7 +192,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                               Row(
                                 spacing: 6,
                                 children: [
-                                  CircleAvatar(radius: 14),
+                                  CircleAvatar(radius: 12),
                                   Text(
                                     "ABCD 10h ago",
                                     style: TextStyle(
@@ -244,7 +244,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                         Row(
                                           spacing: 6,
                                           children: [
-                                            CircleAvatar(radius: 14),
+                                            CircleAvatar(radius: 12),
                                             Text(
                                               "ABCD 10h ago",
                                               style: TextStyle(
