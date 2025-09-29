@@ -273,16 +273,13 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                       borderRadius: BorderRadius.circular(16),
                                     ),
                                   ),
-
                                 ],
                               ),
                               IntrinsicHeight(
                                 child: Row(
                                   spacing: 12,
                                   children: [
-                                    VerticalDivider(
-                                      width: 0,
-                                    ),
+                                    VerticalDivider(width: 0),
                                     Expanded(
                                       child: Text(
                                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
@@ -297,7 +294,6 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                   ],
                                 ),
                               ),
-
                             ],
                           ),
                         );
@@ -324,7 +320,22 @@ class _NewsHomePageState extends State<NewsHomePage> {
                 ),
               ),
               height: 90,
-              child: Row(children: []),
+              child: Row(
+                children: [
+                  Column(children: [Icon(Icons.home_filled), Text('Home')]),
+                  Column(
+                    children: [Icon(Icons.all_out_outlined), Text('Explore')],
+                  ),
+                  Container(
+                    height: 52,
+                    width: 52,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.blueAccent,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
