@@ -188,11 +188,15 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(),
+                                  CircleAvatar(
+                                    radius: 14,
+                                  ),
                                   Text("ABCD 10h ago"),
                                 ],
                               ),
-                              Text("")
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                              ),
                             ],
                           ),
                         );
