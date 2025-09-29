@@ -242,10 +242,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                   ),
                                 ),
                                 Container(
-                                  height: 64,
-                                  width: 100,
+                                  height: 72,
+                                  width: 96,
                                   decoration: BoxDecoration(
                                     color: Colors.red,
+                                    borderRadius: BorderRadius.circular(16),
                                   ),
                                 )
                               ],
