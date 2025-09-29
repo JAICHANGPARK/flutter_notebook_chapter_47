@@ -225,11 +225,14 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     ),
                   ),
                   Expanded(
-                    child: ListView.builder(
+                    child: ListView.separated(
                       itemCount: 10,
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
                         return Placeholder();
+                      },
+                      separatorBuilder: (context, index) {
+                        return Divider();
                       },
                     ),
                   ),
