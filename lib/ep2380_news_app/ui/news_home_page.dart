@@ -184,11 +184,12 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(16),
                           ),
-
+                            padding: EdgeInsets.all(8),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               Row(
+                                spacing: 6,
                                 children: [
                                   CircleAvatar(
                                     radius: 14,
