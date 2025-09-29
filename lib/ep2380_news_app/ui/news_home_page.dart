@@ -184,23 +184,26 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(16),
                           ),
-                            padding: EdgeInsets.all(8),
+                          padding: EdgeInsets.all(8),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.end,
+                            spacing: 6,
                             children: [
                               Row(
                                 spacing: 6,
                                 children: [
-                                  CircleAvatar(
-                                    radius: 14,
+                                  CircleAvatar(radius: 14),
+                                  Text(
+                                    "ABCD 10h ago",
+                                    style: TextStyle(fontSize: 12),
                                   ),
-                                  Text("ABCD 10h ago",style: TextStyle(
-                                    fontSize: 12,
-                                  ),),
                                 ],
                               ),
                               Text(
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                maxLines: 2,
+                                style: TextStyle(color: Colors.white,
+                                fontSize: 12,),
                               ),
                             ],
                           ),
