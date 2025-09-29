@@ -321,7 +321,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
               ),
               height: 90,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -332,8 +332,8 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     children: [Icon(Icons.all_out_outlined), Text('Explore')],
                   ),
                   Container(
-                    height: 52,
-                    width: 52,
+                    height: 58,
+                    width: 58,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.blueAccent,
@@ -341,11 +341,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [Icon(Icons.all_out_outlined), Text('Explore')],
+                    children: [Icon(Icons.all_out_outlined), Text('Save')],
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [Icon(Icons.all_out_outlined), Text('Explore')],
+                    children: [Icon(Icons.all_out_outlined), Text('Profile')],
                   ),
                 ],
               ),
