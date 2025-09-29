@@ -231,28 +231,49 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       itemBuilder: (context, index) {
                         return Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Column(children: [
-                            Row(
-                              children: [
-                                Expanded(
-                                  child: Column(
-                                    children: [
-
-                                    ],
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          spacing: 6,
+                                          children: [
+                                            CircleAvatar(radius: 14),
+                                            Text(
+                                              "ABCD 10h ago",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                          maxLines: 3,
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                Container(
-                                  height: 72,
-                                  width: 96,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red,
-                                    borderRadius: BorderRadius.circular(16),
+                                  Container(
+                                    height: 72,
+                                    width: 96,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                   ),
-                                )
-                              ],
-                            )
-
-                          ]),
+                                ],
+                              ),
+                            ],
+                          ),
                         );
                       },
                       separatorBuilder: (context, index) {
