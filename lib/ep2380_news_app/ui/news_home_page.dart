@@ -194,7 +194,9 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                   CircleAvatar(
                                     radius: 14,
                                   ),
-                                  Text("ABCD 10h ago"),
+                                  Text("ABCD 10h ago",style: TextStyle(
+                                    fontSize: 12,
+                                  ),),
                                 ],
                               ),
                               Text(
