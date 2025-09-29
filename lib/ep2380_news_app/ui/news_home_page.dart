@@ -229,27 +229,30 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       itemCount: 10,
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
-                        return Column(children: [
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Column(
-                                  children: [
+                        return Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(children: [
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Column(
+                                    children: [
 
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              Container(
-                                height: 64,
-                                width: 100,
-                                decoration: BoxDecoration(
-                                  color: Colors.red,
-                                ),
-                              )
-                            ],
-                          )
+                                Container(
+                                  height: 64,
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                  ),
+                                )
+                              ],
+                            )
 
-                        ]);
+                          ]),
+                        );
                       },
                       separatorBuilder: (context, index) {
                         return Divider();
