@@ -276,6 +276,26 @@ class _NewsHomePageState extends State<NewsHomePage> {
 
                                 ],
                               ),
+                              IntrinsicHeight(
+                                child: Row(
+                                  spacing: 12,
+                                  children: [
+                                    VerticalDivider(
+                                      width: 0,
+                                    ),
+                                    Expanded(
+                                      child: Text(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                        maxLines: 3,
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
                             ],
                           ),
                         );
