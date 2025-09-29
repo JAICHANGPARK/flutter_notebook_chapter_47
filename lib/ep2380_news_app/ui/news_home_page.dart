@@ -285,17 +285,19 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                     ),
                                     Expanded(
                                       child: Text(
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                                         maxLines: 3,
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.bold,
+                                          color: Colors.grey,
                                         ),
                                       ),
                                     ),
                                   ],
                                 ),
-                              )
+                              ),
+
                             ],
                           ),
                         );
