@@ -126,7 +126,12 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           child: Column(
                             spacing: 3,
                             children: [
-                              Text("All News"),
+                              Text(
+                                "All News",
+                                style: TextStyle(
+                                  color: Color.fromRGBO(57, 118, 246, 1),
+                                ),
+                              ),
                               CircleAvatar(
                                 radius: 4,
                                 backgroundColor: Color.fromRGBO(
@@ -200,17 +205,15 @@ class _NewsHomePageState extends State<NewsHomePage> {
             left: 0,
             right: 0,
             child: Container(
-              decoration: BoxDecoration(color: Colors.white,
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(16),
-                topRight: Radius.circular(16),
-              )),
-              height: 90,
-              child: Row(
-                children: [
-
-                ],
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(16),
+                  topRight: Radius.circular(16),
+                ),
               ),
+              height: 90,
+              child: Row(children: []),
             ),
           ),
         ],
