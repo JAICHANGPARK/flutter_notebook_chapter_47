@@ -152,7 +152,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             // colors: Colors.black,
                             border: Border.all(color: Colors.red),
                           ),
-                          padding: EdgeInsets.all(2),
+                          padding: EdgeInsets.all(1),
                           child: CircleAvatar(backgroundColor: Colors.grey),
                         );
                       },
