@@ -128,7 +128,13 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       ],
                     ),
                   ),
-      
+                  Row(
+                    children: [
+                      Expanded(child: Column(children: [
+
+                      ],))
+                    ],
+                  ),
                   Container(
                     height: 180,
                     // padding: EdgeInsets.only(left: 16),
