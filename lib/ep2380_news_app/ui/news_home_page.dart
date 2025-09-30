@@ -123,7 +123,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                         Spacer(),
-                        TextButton(onPressed: () {}, child: Text("See all")),
+                        TextButton(onPressed: () {}, child: Text("See all"),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.black,
+                          ),
+                        ),
                         Icon(Icons.info_outline, size: 14),
                       ],
                     ),
