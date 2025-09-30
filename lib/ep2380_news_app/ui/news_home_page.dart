@@ -357,13 +357,16 @@ class _NewsHomePageState extends State<NewsHomePage> {
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [Icon(Icons.all_out_outlined), Text('Save')],
+                      children: [Icon(Icons.bookmark_border), Text('Save')],
                     ),
                   ),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [Icon(Icons.account_circle_outlined), Text('Profile')],
+                      children: [
+                        Icon(Icons.account_circle_outlined),
+                        Text('Profile'),
+                      ],
                     ),
                   ),
                 ],
