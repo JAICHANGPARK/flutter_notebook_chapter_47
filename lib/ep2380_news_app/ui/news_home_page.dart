@@ -120,7 +120,10 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       children: [
                         Text(
                           "Live News Channel",
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                         Spacer(),
                         TextButton(
@@ -132,6 +135,22 @@ class _NewsHomePageState extends State<NewsHomePage> {
                         ),
                         Icon(Icons.info_outline, size: 14),
                       ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 62,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 52,
+                          width: 52,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.black,
+                          ),
+                        )
+                      },
                     ),
                   ),
                   Padding(
@@ -179,7 +198,9 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: MediaQuery.sizeOf(context).width * .85,
+                          width: MediaQuery
+                              .sizeOf(context)
+                              .width * .85,
                           margin: EdgeInsets.only(left: 16),
                           decoration: BoxDecoration(
                             color: Colors.blue,
