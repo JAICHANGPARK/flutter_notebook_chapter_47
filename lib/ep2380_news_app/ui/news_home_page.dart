@@ -149,7 +149,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                             shape: BoxShape.circle,
                             color: Colors.black,
                           ),
-                        )
+                        );
                       },
                     ),
                   ),
