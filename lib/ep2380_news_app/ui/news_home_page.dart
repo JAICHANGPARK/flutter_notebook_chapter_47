@@ -352,6 +352,9 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           ],
                         ),
                       ),
+                      child: Center(
+                        child: Icon(Icons.podcasts, color: Colors.white,),
+                      ),
                     ),
                   ),
                   Expanded(
