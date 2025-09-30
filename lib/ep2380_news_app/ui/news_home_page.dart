@@ -137,8 +137,9 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  Container(
                     height: 62,
+                    padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
@@ -198,9 +199,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: MediaQuery
-                              .sizeOf(context)
-                              .width * .85,
+                          width: MediaQuery.sizeOf(context).width * .85,
                           margin: EdgeInsets.only(left: 16),
                           decoration: BoxDecoration(
                             color: Colors.blue,
