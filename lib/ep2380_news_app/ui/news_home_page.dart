@@ -114,6 +114,12 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       ],
                     ),
                   ),
+                  Row(
+                    children: [
+                      Text("Live News Channel"),
+
+                    ],
+                  ),
                   Container(
                     // margin: EdgeInsets.only(top: 16),
                     padding: EdgeInsets.only(left: 16),
