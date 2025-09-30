@@ -138,7 +138,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
                     ),
                   ),
                   Container(
-                    height: 62,
+                    height: 52,
                     padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -149,9 +149,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.black,
+                            // colors: Colors.black,
                             border: Border.all(color: Colors.red),
                           ),
+                          padding: EdgeInsets.all(2),
+                          child: CircleAvatar(backgroundColor: Colors.grey),
                         );
                       },
                     ),
