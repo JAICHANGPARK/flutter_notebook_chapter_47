@@ -143,10 +143,20 @@ class _NewsHomePageState extends State<NewsHomePage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Text("Sunday, 25 September"),
+                              Text(
+                                "Sunday, 25 September",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              ),
+
                             ],
                           ),
                         ),
+                        
+                        TextButton(onPressed: () {}, child: Text("See all")),
+                        Icon(Icons.info_outline, size: 14),
                       ],
                     ),
                   ),
