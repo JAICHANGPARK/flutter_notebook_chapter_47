@@ -128,6 +128,61 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       ],
                     ),
                   ),
+      
+                  Container(
+                    height: 180,
+                    // padding: EdgeInsets.only(left: 16),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: MediaQuery.sizeOf(context).width * .85,
+                          margin: EdgeInsets.only(left: 16),
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: EdgeInsets.all(8),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            spacing: 6,
+                            children: [
+                              Row(
+                                spacing: 6,
+                                children: [
+                                  CircleAvatar(radius: 12),
+                                  Text(
+                                    "ABCD 10h ago",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                maxLines: 2,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                ),
+                              ),
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                maxLines: 1,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                   Container(
                     // margin: EdgeInsets.only(top: 16),
                     padding: EdgeInsets.only(left: 16),
@@ -182,60 +237,6 @@ class _NewsHomePageState extends State<NewsHomePage> {
                           );
                         }),
                       ],
-                    ),
-                  ),
-                  Container(
-                    height: 180,
-                    // padding: EdgeInsets.only(left: 16),
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 10,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          width: MediaQuery.sizeOf(context).width * .85,
-                          margin: EdgeInsets.only(left: 16),
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          padding: EdgeInsets.all(8),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            spacing: 6,
-                            children: [
-                              Row(
-                                spacing: 6,
-                                children: [
-                                  CircleAvatar(radius: 12),
-                                  Text(
-                                    "ABCD 10h ago",
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Text(
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                                maxLines: 2,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12,
-                                ),
-                              ),
-                              Text(
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                                maxLines: 1,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ],
-                          ),
-                        );
-                      },
                     ),
                   ),
                   Expanded(
