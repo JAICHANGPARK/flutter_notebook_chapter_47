@@ -114,13 +114,16 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       ],
                     ),
                   ),
-                  Row(
-                    children: [
-                      Text("Live News Channel"),
-                      Spacer(),
-                      TextButton(onPressed: () {}, child: Text("See all")),
-                      Icon(Icons.info_outline, size: 14),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Text("Live News Channel"),
+                        Spacer(),
+                        TextButton(onPressed: () {}, child: Text("See all")),
+                        Icon(Icons.info_outline, size: 14),
+                      ],
+                    ),
                   ),
                   Container(
                     // margin: EdgeInsets.only(top: 16),
