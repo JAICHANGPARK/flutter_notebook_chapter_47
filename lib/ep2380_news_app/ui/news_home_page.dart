@@ -146,12 +146,11 @@ class _NewsHomePageState extends State<NewsHomePage> {
                         return Container(
                           height: 52,
                           width: 52,
-                          margin: EdgeInsets.only(
-                            right: 8
-                          ),
+                          margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.black,
+                            border: Border.all(color: Colors.red),
                           ),
                         );
                       },
