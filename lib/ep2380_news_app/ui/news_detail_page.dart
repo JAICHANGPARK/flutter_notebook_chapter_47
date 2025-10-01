@@ -200,6 +200,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                 shape: StadiumBorder(),
                 color: Colors.white,
               ),
+              padding: EdgeInsets.all(4),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
