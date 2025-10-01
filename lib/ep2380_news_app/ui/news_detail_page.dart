@@ -31,7 +31,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
           Positioned.fill(
             child: SafeArea(
               child: Column(
-                spacing: 12,
+                spacing: 16,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(
@@ -143,7 +143,6 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                     margin: EdgeInsets.symmetric(horizontal: 16,),
                     decoration: BoxDecoration(color: Colors.black),
                   ),
-                  SizedBox(height: 12,),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
                     child: Text(
