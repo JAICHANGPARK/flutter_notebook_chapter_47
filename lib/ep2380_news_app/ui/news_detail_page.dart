@@ -31,6 +31,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
           ),
           Positioned.fill(
             child: SafeArea(
+              bottom: false,
               child: Column(
                 spacing: 16,
                 children: [
@@ -146,7 +147,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                             ),
                           ),
                           Container(
-                            height: 240,
+                            height: 220,
                             margin: EdgeInsets.symmetric(horizontal: 16),
                             decoration: BoxDecoration(
                               color: Colors.black,
