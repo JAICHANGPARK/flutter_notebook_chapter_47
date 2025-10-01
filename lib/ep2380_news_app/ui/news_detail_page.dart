@@ -147,7 +147,10 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                           Container(
                             height: 240,
                             margin: EdgeInsets.symmetric(horizontal: 16),
-                            decoration: BoxDecoration(color: Colors.black),
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 24),
