@@ -68,12 +68,14 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                         ),
                         CircleAvatar(
                           backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
                           child: Badge(
                             child: Icon(Icons.bookmark_border),
                           ),
                         ),
                         CircleAvatar(
                           backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
                           child: Icon(Icons.share),
                         ),
                       ],
