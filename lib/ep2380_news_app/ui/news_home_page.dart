@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_47/ep2380_news_app/ui/news_detail_page.dart';
 
 class NewsHomePage extends StatefulWidget {
   const NewsHomePage({super.key});
@@ -203,8 +204,12 @@ class _NewsHomePageState extends State<NewsHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          onTap: (){
-                            
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => NewsDetailPage(),
+                              ),
+                            );
                           },
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * .85,
