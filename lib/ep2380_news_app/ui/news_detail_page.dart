@@ -119,11 +119,13 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                         spacing: 12,
                         children: [
                           SizedBox(
-                            height: 24,
-                            // width: 6,
+                            height: 32,
 
-                            child: VerticalDivider(width: 2, color: Colors.blue,
-                            thickness: 5,
+                            // width: 6,
+                            child: VerticalDivider(
+                              width: 2,
+                              color: Colors.blue,
+                              thickness: 4,
                             ),
                           ),
                           Expanded(
