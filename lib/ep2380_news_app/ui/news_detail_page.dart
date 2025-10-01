@@ -212,12 +212,14 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.grey[200]!,
+                    foregroundColor: Colors.black,
                     child: Icon(Icons.favorite_border),
                   ),
                   Gap(4),
                   Text("10.8K"),
                   Gap(4),
                   CircleAvatar(  backgroundColor: Colors.grey[200]!,
+                    foregroundColor: Colors.black,
                     child: Icon(Icons.chat_outlined),
                   ),
                   Gap(4),
