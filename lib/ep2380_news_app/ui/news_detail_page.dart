@@ -79,34 +79,37 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                       ],
                     ),
                   ),
-                  Row(
-                    children: [
-                      CircleAvatar(),
-                      Text("ABCD KOREA Sep 30 Politics"),
-                      Spacer(),
-                      Container(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 24,
-                          vertical: 8,
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4),
-                          gradient: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [
-                              Color.fromRGBO(49, 102, 223, 1),
-                              Color.fromRGBO(67, 118, 239, 1),
-                              Color.fromRGBO(49, 102, 223, 1),
-                            ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Text("ABCD KOREA Sep 30 Politics"),
+                        Spacer(),
+                        Container(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 24,
+                            vertical: 8,
+                          ),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(4),
+                            gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [
+                                Color.fromRGBO(49, 102, 223, 1),
+                                Color.fromRGBO(67, 118, 239, 1),
+                                Color.fromRGBO(49, 102, 223, 1),
+                              ],
+                            ),
+                          ),
+                          child: Text(
+                            "Follow",
+                            style: TextStyle(color: Colors.white),
                           ),
                         ),
-                        child: Text(
-                          "Follow",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ],
               ),
