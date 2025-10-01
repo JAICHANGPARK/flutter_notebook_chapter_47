@@ -192,6 +192,12 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
               ),
             ),
           ),
+          Align(
+            child: Container(
+              decoration: ShapeDecoration(shape: StadiumBorder(),
+              ),
+            ),
+          ),
         ],
       ),
     );
