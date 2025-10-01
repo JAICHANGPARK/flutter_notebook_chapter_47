@@ -202,7 +202,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              margin: EdgeInsets.symmetric(vertical: 32),
+              margin: EdgeInsets.only(bottom: 42),
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
                 color: Colors.white,
