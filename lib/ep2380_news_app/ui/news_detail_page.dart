@@ -151,6 +151,12 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                       style: TextStyle(fontSize: 10, color: Colors.grey),
                     ),
                   ),
+                  Column(
+                    children: [
+                      
+                    ],
+                  )
+
                 ],
               ),
             ),
