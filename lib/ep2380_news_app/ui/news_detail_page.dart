@@ -81,6 +81,19 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                       ],
                     ),
                   ),
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Text("ABCD KOREA Sep 30 Politics"),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          gradient: LinearGradient(colors: [],),
+
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
