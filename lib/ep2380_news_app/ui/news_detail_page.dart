@@ -210,9 +210,12 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    
+                  ),
                   Gap(4),
                   Text("10.8K"),
+                  Gap(4),
                   CircleAvatar(),
                   Gap(4),
                   Text("2.4K"),
