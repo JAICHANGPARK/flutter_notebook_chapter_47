@@ -194,7 +194,9 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
           ),
           Align(
             child: Container(
-              decoration: ShapeDecoration(shape: StadiumBorder(),
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+                color: Colors.white,
               ),
             ),
           ),
