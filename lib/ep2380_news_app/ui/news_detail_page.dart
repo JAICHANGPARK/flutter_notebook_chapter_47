@@ -203,6 +203,27 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                   CircleAvatar(),
                   Text("10.8K"),
                   CircleAvatar(),
+                  Text("2.4K"),
+                  Container(
+                    height: 32,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.blueAccent,
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [
+                          Color.fromRGBO(49, 102, 223, 1),
+                          Color.fromRGBO(67, 118, 239, .9),
+                          Color.fromRGBO(49, 102, 223, 1),
+                        ],
+                      ),
+                    ),
+                    child: Center(
+                      child: Icon(Icons.multitrack_audio, color: Colors.white),
+                    ),
+                  ),
                 ],
               ),
             ),
