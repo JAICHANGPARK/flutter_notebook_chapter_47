@@ -82,9 +82,10 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
+                      spacing: 8,
                       children: [
                         CircleAvatar(),
-                        Text("ABCD KOREA Sep 30 Politics"),
+                        Text("ABCD KOREA · Sep 30 · Politics"),
                         Spacer(),
                         Container(
                           padding: EdgeInsets.symmetric(
@@ -107,6 +108,20 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                             "Follow",
                             style: TextStyle(color: Colors.white),
                           ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  IntrinsicHeight(
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          height: 32,
+                          child: VerticalDivider(width: 2, color: Colors.blue),
+                        ),
+                        Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+                          maxLines: 1,
                         ),
                       ],
                     ),
