@@ -69,9 +69,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                         CircleAvatar(
                           backgroundColor: Colors.white,
                           foregroundColor: Colors.black,
-                          child: Badge(
-                            child: Icon(Icons.bookmark_border),
-                          ),
+                          child: Badge(child: Icon(Icons.bookmark_border)),
                         ),
                         CircleAvatar(
                           backgroundColor: Colors.white,
@@ -85,11 +83,13 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                     children: [
                       CircleAvatar(),
                       Text("ABCD KOREA Sep 30 Politics"),
+                      Spacer(),
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 32,
-                        vertical: 12),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 24,
+                          vertical: 8,
+                        ),
                         decoration: BoxDecoration(
-
                           borderRadius: BorderRadius.circular(4),
                           gradient: LinearGradient(
                             begin: Alignment.topLeft,
@@ -100,12 +100,14 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                               Color.fromRGBO(49, 102, 223, 1),
                             ],
                           ),
-
                         ),
-                        child: Text("Follow"),
-                      )
+                        child: Text(
+                          "Follow",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
