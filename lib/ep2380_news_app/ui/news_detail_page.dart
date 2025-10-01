@@ -198,6 +198,13 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                 shape: StadiumBorder(),
                 color: Colors.white,
               ),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Text("10.8K"),
+                  CircleAvatar(),
+                ],
+              ),
             ),
           ),
         ],
