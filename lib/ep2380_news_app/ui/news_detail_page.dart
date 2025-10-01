@@ -70,7 +70,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                       ],
                     ),
                   ),
-                
+
                 ],
               ),
             ),
