@@ -91,6 +91,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                           gradient: LinearGradient(colors: [],),
 
                         ),
+                        child: Text("Follow"),
                       )
                     ],
                   )
