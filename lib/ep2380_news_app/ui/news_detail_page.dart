@@ -42,8 +42,13 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                     child: Row(
                       spacing: 8,
                       children: [
+                        InkWell(
+                            onTap: (){
+                              Navigator.of(context).pop();
+                            },
+                            child: Icon(Icons.keyboard_arrow_left)),
                         Text(
-                          "Explore News",
+                          "Back",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
