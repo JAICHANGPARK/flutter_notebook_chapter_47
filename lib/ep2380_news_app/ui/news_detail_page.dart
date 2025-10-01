@@ -205,8 +205,8 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                   CircleAvatar(),
                   Text("2.4K"),
                   Container(
-                    height: 32,
-                    width: 32,
+                    height: 40,
+                    width: 40,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.blueAccent,
