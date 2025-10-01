@@ -211,12 +211,12 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   CircleAvatar(
-                    
+                    backgroundColor: Colors.grey[200]!,
                   ),
                   Gap(4),
                   Text("10.8K"),
                   Gap(4),
-                  CircleAvatar(),
+                  CircleAvatar(  backgroundColor: Colors.grey[200]!,),
                   Gap(4),
                   Text("2.4K"),
                   Gap(4),
