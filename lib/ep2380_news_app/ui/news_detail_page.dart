@@ -114,14 +114,18 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                   ),
                   IntrinsicHeight(
                     child: Row(
+                      spacing: 12,
                       children: [
                         SizedBox(
                           height: 32,
+                          width: 2,
                           child: VerticalDivider(width: 2, color: Colors.blue),
                         ),
-                        Text(
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
-                          maxLines: 1,
+                        Expanded(
+                          child: Text(
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+                            maxLines: 1,
+                          ),
                         ),
                       ],
                     ),
