@@ -193,12 +193,14 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
             ),
           ),
           Align(
+            alignment: Alignment.bottomCenter,
             child: Container(
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
                 color: Colors.white,
               ),
               child: Row(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   CircleAvatar(),
                   Text("10.8K"),
