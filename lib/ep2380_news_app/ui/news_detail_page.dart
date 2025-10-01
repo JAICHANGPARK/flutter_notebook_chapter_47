@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class NewsDetailPage extends StatefulWidget {
   const NewsDetailPage({super.key});
@@ -210,9 +211,12 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   CircleAvatar(),
+                  Gap(4),
                   Text("10.8K"),
                   CircleAvatar(),
+                  Gap(4),
                   Text("2.4K"),
+                  Gap(4),
                   Container(
                     height: 40,
                     width: 40,
