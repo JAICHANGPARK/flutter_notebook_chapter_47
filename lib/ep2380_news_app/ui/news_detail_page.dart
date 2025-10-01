@@ -178,6 +178,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                                   height: 240,
                                   decoration: BoxDecoration(
                                     color: Colors.black,
+                                    borderRadius: BorderRadius.circular(12),
                                   ),
                                 ),
                               ],
