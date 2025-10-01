@@ -86,9 +86,20 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                       CircleAvatar(),
                       Text("ABCD KOREA Sep 30 Politics"),
                       Container(
+                        padding: EdgeInsets.symmetric(horizontal: 32,
+                        vertical: 12),
                         decoration: BoxDecoration(
+
                           borderRadius: BorderRadius.circular(4),
-                          gradient: LinearGradient(colors: [],),
+                          gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              Color.fromRGBO(49, 102, 223, 1),
+                              Color.fromRGBO(67, 118, 239, 1),
+                              Color.fromRGBO(49, 102, 223, 1),
+                            ],
+                          ),
 
                         ),
                         child: Text("Follow"),
