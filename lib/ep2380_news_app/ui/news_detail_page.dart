@@ -140,13 +140,17 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                   ),
                   Container(
                     height: 240,
-                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    margin: EdgeInsets.symmetric(horizontal: 16,),
                     decoration: BoxDecoration(color: Colors.black),
                   ),
-                  Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 10, color: Colors.grey),
+                  SizedBox(height: 12,),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 10, color: Colors.grey),
+                    ),
                   ),
                 ],
               ),
