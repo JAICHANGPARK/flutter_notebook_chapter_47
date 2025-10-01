@@ -176,7 +176,6 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                                 ),
                                 Container(
                                   height: 240,
-                                  margin: EdgeInsets.symmetric(horizontal: 16),
                                   decoration: BoxDecoration(
                                     color: Colors.black,
                                   ),
