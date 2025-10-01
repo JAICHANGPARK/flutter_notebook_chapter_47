@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class NewsDetailPage extends StatefulWidget {
   const NewsDetailPage({super.key});
 
@@ -43,10 +42,11 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                       spacing: 8,
                       children: [
                         InkWell(
-                            onTap: (){
-                              Navigator.of(context).pop();
-                            },
-                            child: Icon(Icons.keyboard_arrow_left)),
+                          onTap: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: Icon(Icons.keyboard_arrow_left),
+                        ),
                         Text(
                           "Back",
                           style: TextStyle(
@@ -69,13 +69,16 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                         CircleAvatar(
                           backgroundColor: Colors.white,
                           child: Badge(
-                            child: Icon(Icons.notifications_active_outlined),
+                            child: Icon(Icons.bookmark_border),
                           ),
+                        ),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          child: Icon(Icons.share),
                         ),
                       ],
                     ),
                   ),
-
                 ],
               ),
             ),
