@@ -6,7 +6,7 @@
 - Bagus Fikri for Fikri Studio
 - https://dribbble.com/shots/26595905-Tiimi-Personal-Info-Contract-Payroll-of-Employee
 
-<img src="https://cdn.dribbble.com/userupload/45078157/file/74587eeb164048bbbac732734c32dea9.png?resize=2400x1800&vertical=center">
+<img src="https://cdn.dribbble.com/userupload/45131924/file/eb02612151ce1b562b4cde79887ee3a2.png?resize=2048x1536&vertical=center">
 
 
 ## EP2380-2385
