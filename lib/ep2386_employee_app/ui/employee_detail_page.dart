@@ -58,21 +58,24 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
 
                     TabBar(tabs: [
                       Tab(
-
+                        text: "Personal info",
                       ),
                       Tab(
-
+                        text: "Personal info",
                       ),
                       Tab(
-
+                        text: "Personal info",
                       ),
                       Tab(
-
+                        text: "Personal info",
                       ),
 
                     ]),
 
                     Expanded(child: TabBarView(children: [
+                      Placeholder(),
+                      Placeholder(),
+                      Placeholder(),
                       Placeholder(),
 
                     ])),
