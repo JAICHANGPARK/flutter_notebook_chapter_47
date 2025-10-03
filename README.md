@@ -1,6 +1,6 @@
 # flutter_notebook_chapter_47
 
-## EP2380
+## EP2380-2385
 
 - News App UI Design
 - Muhammad Farhan
