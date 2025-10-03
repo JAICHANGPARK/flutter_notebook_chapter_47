@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/employee_personal_page.dart';
+
 class EmployeeDetailPage extends StatefulWidget {
   const EmployeeDetailPage({super.key});
 
