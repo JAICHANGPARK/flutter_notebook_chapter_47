@@ -56,7 +56,9 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                 child: Column(
                   children: [
 
-                    TabBar(tabs: [
+                    TabBar(
+                        isScrollable: true,
+                        tabs: [
                       Tab(
                         text: "Personal info",
                       ),
