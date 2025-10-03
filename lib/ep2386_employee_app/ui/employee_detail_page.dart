@@ -74,7 +74,7 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                     Expanded(
                       child: TabBarView(
                         children: [
-                          Placeholder(),
+                          EmployeePersonalPage(),
                           Placeholder(),
                           Placeholder(),
                           Placeholder(),
