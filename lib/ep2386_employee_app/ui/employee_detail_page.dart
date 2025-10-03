@@ -55,32 +55,26 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                 length: 4,
                 child: Column(
                   children: [
-
                     TabBar(
-                        isScrollable: true,
-                        tabs: [
-                      Tab(
-                        text: "Personal info",
-                      ),
-                      Tab(
-                        text: "Personal info",
-                      ),
-                      Tab(
-                        text: "Personal info",
-                      ),
-                      Tab(
-                        text: "Personal info",
-                      ),
+                      isScrollable: true,
+                      tabs: [
+                        Tab(text: "Personal info"),
+                        Tab(text: "Contract"),
+                        Tab(text: "Payroll"),
+                        Tab(text: "Time management"),
+                      ],
+                    ),
 
-                    ]),
-
-                    Expanded(child: TabBarView(children: [
-                      Placeholder(),
-                      Placeholder(),
-                      Placeholder(),
-                      Placeholder(),
-
-                    ])),
+                    Expanded(
+                      child: TabBarView(
+                        children: [
+                          Placeholder(),
+                          Placeholder(),
+                          Placeholder(),
+                          Placeholder(),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
