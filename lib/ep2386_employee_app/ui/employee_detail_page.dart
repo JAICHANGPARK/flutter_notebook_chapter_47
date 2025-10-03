@@ -29,26 +29,29 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Dream Walker"),
-                      Row(
-                        children: [
-                          Icon(Icons.timer_outlined),
-                          Text("Fulltime ·"),
-                          Icon(Icons.business_center_outlined),
-                          Text("Onsite"),
-                        ],
-                      ),
-                    ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Dream Walker"),
+                        Row(
+                          children: [
+                            Icon(Icons.timer_outlined),
+                            Text("Fulltime ·"),
+                            Icon(Icons.business_center_outlined),
+                            Text("Onsite"),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             Expanded(
               child: DefaultTabController(
@@ -56,6 +59,7 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                 child: Column(
                   children: [
                     TabBar(
+                      tabAlignment: TabAlignment.start,
                       isScrollable: true,
                       tabs: [
                         Tab(text: "Personal info"),
