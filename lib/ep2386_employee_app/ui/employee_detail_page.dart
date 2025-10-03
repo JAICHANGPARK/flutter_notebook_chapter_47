@@ -32,10 +32,12 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
+                spacing: 12,
                 children: [
                   CircleAvatar(),
                   Expanded(
                     child: Column(
+                      spacing: 12,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Dream Walker"),
