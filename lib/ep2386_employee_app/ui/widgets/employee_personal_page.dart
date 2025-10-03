@@ -11,8 +11,10 @@ class EmployeePersonalPage extends StatefulWidget {
 class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      
+    return Column(
+      children: [
+        Text("Basic Information")
+      ],
     );
   }
 }
