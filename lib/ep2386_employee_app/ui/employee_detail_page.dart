@@ -25,6 +25,26 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
             topRight: Radius.circular(12),
             topLeft: Radius.circular(12),
           ),
+
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Expanded(child: Column(children: [
+                  Text("Dream Walker"),
+                  Row(
+                    children: [
+                      Icon(Icons.timer_outlined),
+                      Text("Fulltime"),
+                    ],
+                  )
+                ],))
+              ],
+            )
+          ],
         ),
       ),
     );
