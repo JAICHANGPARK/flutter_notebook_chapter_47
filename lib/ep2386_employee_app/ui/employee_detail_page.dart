@@ -12,7 +12,7 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
