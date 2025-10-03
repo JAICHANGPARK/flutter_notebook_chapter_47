@@ -37,7 +37,7 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                   CircleAvatar(),
                   Expanded(
                     child: Column(
-                      spacing: 12,
+                      spacing: 8,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Dream Walker"),
