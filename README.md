@@ -4,7 +4,7 @@
 
 - Tiimi - Personal Info, Contract & Payroll of Employee
 - Bagus Fikri for Fikri Studio
-- https://dribbble.com/shots/26579231-News-App-UI-Design
+- https://dribbble.com/shots/26595905-Tiimi-Personal-Info-Contract-Payroll-of-Employee
 
 <img src="https://cdn.dribbble.com/userupload/45078157/file/74587eeb164048bbbac732734c32dea9.png?resize=2400x1800&vertical=center">
 
