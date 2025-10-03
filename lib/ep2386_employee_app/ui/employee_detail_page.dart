@@ -60,9 +60,22 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                       Tab(
 
                       ),
+                      Tab(
+
+                      ),
+                      Tab(
+
+                      ),
+                      Tab(
+
+                      ),
+
                     ]),
 
-                    Expanded(child: TabBarView(children: [])),
+                    Expanded(child: TabBarView(children: [
+                      Placeholder(),
+
+                    ])),
                   ],
                 ),
               ),
