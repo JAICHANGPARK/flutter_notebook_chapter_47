@@ -50,6 +50,23 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                 ),
               ],
             ),
+            Expanded(
+              child: DefaultTabController(
+                length: 4,
+                child: Column(
+                  children: [
+
+                    TabBar(tabs: [
+                      Tab(
+
+                      ),
+                    ]),
+
+                    Expanded(child: TabBarView(children: [])),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
