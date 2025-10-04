@@ -26,7 +26,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
               Row(
                 spacing: 8,
                 children: [
-                  Icon(Icons.phone_android, size: 20),
+                  Icon(Icons.phone_android, size: 20, color: Colors.grey),
                   Text("Phone number"),
                   Spacer(),
                   Container(
@@ -68,7 +68,10 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                     decoration: ShapeDecoration(shape: StadiumBorder()),
                     child: Text(
                       "Dream Walker",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                 ],
