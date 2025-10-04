@@ -13,26 +13,36 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Basic Information"),
-        Row(
-          children: [
-            Icon(Icons.phone_android),
-            Text("Phone number"),
-            Container(
-              decoration: ShapeDecoration(shape: StadiumBorder()),
-              child: Text("+00-123-456-789"),
-            ),
-          ],
-        ),
-        Row(
-          children: [
-            Icon(Icons.email_outlined, size: 16),
-            Text("Email"),
-            Container(
-              decoration: ShapeDecoration(shape: StadiumBorder()),
-              child: Text("example@sample.com"),
-            ),
-          ],
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Basic Information"),
+              Row(
+                spacing: 8,
+                children: [
+                  Icon(Icons.phone_android, size: 20),
+                  Text("Phone number"),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    child: Text("+00-123-456-789"),
+                  ),
+                ],
+              ),
+              Row(
+                spacing: 8,
+                children: [
+                  Icon(Icons.email_outlined, size: 20),
+                  Text("Email"),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    child: Text("example@sample.com"),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ],
     );
