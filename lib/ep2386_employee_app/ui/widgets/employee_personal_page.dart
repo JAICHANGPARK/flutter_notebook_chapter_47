@@ -162,6 +162,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            spacing: 12,
             children: [
               Text(
                 "Address Information",
