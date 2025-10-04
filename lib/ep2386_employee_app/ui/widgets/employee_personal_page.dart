@@ -180,6 +180,20 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                       maxLines: 1,
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                      maxLines: 3,
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "View on Map",
+                          style: TextStyle(
+                            decoration: TextDecoration.underline,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
