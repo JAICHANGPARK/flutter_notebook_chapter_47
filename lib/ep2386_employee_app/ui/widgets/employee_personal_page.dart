@@ -22,6 +22,14 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
             Container(decoration: ShapeDecoration(shape: StadiumBorder()),
             child: Text("+00-123-456-789"),)
           ],
+        ),
+        Row(
+          children: [
+            Icon(Icons.email_outlined),
+            Text("Email"),
+            Container(decoration: ShapeDecoration(shape: StadiumBorder()),
+              child: Text("example@sample.com"),)
+          ],
         )
       ],
     );
