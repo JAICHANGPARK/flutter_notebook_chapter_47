@@ -30,7 +30,8 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                   Text("Phone number"),
                   Spacer(),
                   Container(
-                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                    decoration: ShapeDecoration(shape: StadiumBorder(),),
                     child: Text(
                       "+00-123-456-789",
                       style: TextStyle(color: Colors.blue),
