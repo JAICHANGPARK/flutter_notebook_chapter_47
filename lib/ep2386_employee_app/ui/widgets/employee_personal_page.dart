@@ -130,6 +130,25 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                   ),
                 ],
               ),
+              Row(
+                spacing: 8,
+                children: [
+                  Icon(Icons.cake_outlined, size: 20, color: Colors.grey),
+                  Text("Birthday", style: TextStyle(color: Colors.grey)),
+                  Spacer(),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    child: Text(
+                      textAlign: TextAlign.right,
+                      "1234 Washington Ave.\nManchester, Kentucky 12345",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
