@@ -45,8 +45,8 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
               Row(
                 spacing: 8,
                 children: [
-                  Icon(Icons.email_outlined, size: 20),
-                  Text("Email"),
+                  Icon(Icons.email_outlined, size: 20, color: Colors.grey),
+                  Text("Email", style: TextStyle(color: Colors.grey)),
                   Spacer(),
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
@@ -61,8 +61,8 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
               Row(
                 spacing: 8,
                 children: [
-                  Icon(Icons.person, size: 20),
-                  Text("Full name"),
+                  Icon(Icons.person, size: 20,color: Colors.grey),
+                  Text("Full name", style: TextStyle(color: Colors.grey)),
                   Spacer(),
                   Container(
                     decoration: ShapeDecoration(shape: StadiumBorder()),
