@@ -94,6 +94,42 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                   ),
                 ],
               ),
+              Row(
+                spacing: 8,
+                children: [
+                  Icon(Icons.group, size: 20, color: Colors.grey),
+                  Text("Gender", style: TextStyle(color: Colors.grey)),
+                  Spacer(),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    child: Text(
+                      "Male",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                spacing: 8,
+                children: [
+                  Icon(Icons.cake_outlined, size: 20, color: Colors.grey),
+                  Text("Birthday", style: TextStyle(color: Colors.grey)),
+                  Spacer(),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    child: Text(
+                      "01 Jan 1900",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
