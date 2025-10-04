@@ -19,7 +19,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
             spacing: 16,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Basic Information"),
+              Text("Basic Information", style: TextStyle(fontSize: 18)),
               Row(
                 spacing: 8,
                 children: [
