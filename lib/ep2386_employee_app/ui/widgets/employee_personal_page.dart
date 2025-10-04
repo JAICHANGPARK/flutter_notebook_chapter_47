@@ -28,9 +28,13 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                 children: [
                   Icon(Icons.phone_android, size: 20),
                   Text("Phone number"),
+                  Spacer(),
                   Container(
                     decoration: ShapeDecoration(shape: StadiumBorder()),
-                    child: Text("+00-123-456-789"),
+                    child: Text(
+                      "+00-123-456-789",
+                      style: TextStyle(color: Colors.blue),
+                    ),
                   ),
                 ],
               ),
@@ -39,6 +43,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                 children: [
                   Icon(Icons.email_outlined, size: 20),
                   Text("Email"),
+                  Spacer(),
                   Container(
                     decoration: ShapeDecoration(shape: StadiumBorder()),
                     child: Text("example@sample.com"),
