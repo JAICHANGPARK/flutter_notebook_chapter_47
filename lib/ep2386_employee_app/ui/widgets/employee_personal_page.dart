@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class EmployeePersonalPage extends StatefulWidget {
   const EmployeePersonalPage({super.key});
@@ -184,6 +185,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                       maxLines: 3,
                     ),
+                    Gap(12),
                     Row(
                       children: [
                         Text(
