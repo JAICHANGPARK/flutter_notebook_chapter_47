@@ -134,7 +134,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                 spacing: 8,
                 children: [
                   Icon(Icons.location_on_outlined, size: 20, color: Colors.grey),
-                  Text("Birthday", style: TextStyle(color: Colors.grey)),
+                  Text("Living Address", style: TextStyle(color: Colors.grey)),
                   Spacer(),
                   Container(
                     decoration: ShapeDecoration(shape: StadiumBorder()),
