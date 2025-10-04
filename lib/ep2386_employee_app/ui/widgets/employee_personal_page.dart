@@ -133,7 +133,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
               Row(
                 spacing: 8,
                 children: [
-                  Icon(Icons.cake_outlined, size: 20, color: Colors.grey),
+                  Icon(Icons.location_on_outlined, size: 20, color: Colors.grey),
                   Text("Birthday", style: TextStyle(color: Colors.grey)),
                   Spacer(),
                   Container(
