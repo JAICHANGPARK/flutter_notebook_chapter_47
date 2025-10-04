@@ -152,6 +152,8 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
             ],
           ),
         ),
+        Divider(),
+        
       ],
     );
   }
