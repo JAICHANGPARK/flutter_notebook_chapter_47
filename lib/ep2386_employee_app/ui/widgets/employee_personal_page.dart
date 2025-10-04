@@ -133,7 +133,11 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
               Row(
                 spacing: 8,
                 children: [
-                  Icon(Icons.location_on_outlined, size: 20, color: Colors.grey),
+                  Icon(
+                    Icons.location_on_outlined,
+                    size: 20,
+                    color: Colors.grey,
+                  ),
                   Text("Living Address", style: TextStyle(color: Colors.grey)),
                   Spacer(),
                   Container(
@@ -160,6 +164,11 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
               Text(
                 "Address Information",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                ),
               ),
             ],
           ),
