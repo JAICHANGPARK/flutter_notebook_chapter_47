@@ -75,6 +75,7 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
 
                     Expanded(
                       child: TabBarView(
+                        physics: NeverScrollableScrollPhysics(),
                         children: [
                           EmployeePersonalPage(),
                           Placeholder(),
