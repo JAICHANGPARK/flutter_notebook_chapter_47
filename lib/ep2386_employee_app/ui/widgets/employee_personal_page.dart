@@ -175,6 +175,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                   border: Border.all(color: Colors.grey),
                 ),
                 child: Column(
+                  spacing: 4,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
@@ -185,6 +186,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                     Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                       maxLines: 3,
+                      style: TextStyle(color: Colors.grey),
                     ),
                     Gap(24),
                     Row(
