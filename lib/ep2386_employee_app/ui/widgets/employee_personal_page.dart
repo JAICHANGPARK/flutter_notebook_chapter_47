@@ -194,6 +194,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                             decoration: TextDecoration.underline,
                           ),
                         ),
+                        Icon(Icons.keyboard_arrow_right),
                       ],
                     ),
                   ],
