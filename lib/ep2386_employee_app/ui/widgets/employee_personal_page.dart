@@ -170,6 +170,14 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                 ),
+                child: Column(
+                  children: [
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                      maxLines: 1,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
