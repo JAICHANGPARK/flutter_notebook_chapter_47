@@ -61,7 +61,25 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
               Row(
                 spacing: 8,
                 children: [
-                  Icon(Icons.person, size: 20,color: Colors.grey),
+                  Icon(Icons.person, size: 20, color: Colors.grey),
+                  Text("Full name", style: TextStyle(color: Colors.grey)),
+                  Spacer(),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    child: Text(
+                      "Dream Walker",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                spacing: 8,
+                children: [
+                  Icon(Icons.person, size: 20, color: Colors.grey),
                   Text("Full name", style: TextStyle(color: Colors.grey)),
                   Spacer(),
                   Container(
