@@ -185,7 +185,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                       maxLines: 3,
                     ),
-                    Gap(12),
+                    Gap(24),
                     Row(
                       children: [
                         Text(
