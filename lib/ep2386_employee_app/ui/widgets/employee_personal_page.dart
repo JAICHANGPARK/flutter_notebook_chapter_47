@@ -70,7 +70,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                       "Dream Walker",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                        fontSize: 15,
                       ),
                     ),
                   ),
@@ -88,7 +88,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                       "Single",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                        fontSize: 15,
                       ),
                     ),
                   ),
