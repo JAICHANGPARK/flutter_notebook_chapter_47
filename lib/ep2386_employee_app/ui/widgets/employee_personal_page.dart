@@ -27,7 +27,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                 spacing: 8,
                 children: [
                   Icon(Icons.phone_android, size: 20, color: Colors.grey),
-                  Text("Phone number"),
+                  Text("Phone number", style: TextStyle(color: Colors.grey)),
                   Spacer(),
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
