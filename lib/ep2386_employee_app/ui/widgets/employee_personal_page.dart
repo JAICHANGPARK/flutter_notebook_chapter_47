@@ -65,12 +65,11 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                   Text("Full name"),
                   Spacer(),
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.blue,
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    child: Text(
+                      "Dream Walker",
+                      style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    child: Text("Dream Walker"),
                   ),
                 ],
               ),
