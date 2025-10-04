@@ -49,8 +49,28 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                   Text("Email"),
                   Spacer(),
                   Container(
-                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.blue,
+                    ),
                     child: Text("example@sample.com"),
+                  ),
+                ],
+              ),
+              Row(
+                spacing: 8,
+                children: [
+                  Icon(Icons.person, size: 20),
+                  Text("Full name"),
+                  Spacer(),
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.blue,
+                    ),
+                    child: Text("Dream Walker"),
                   ),
                 ],
               ),
