@@ -167,8 +167,11 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               Container(
+                
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: Colors.grey),
+
                 ),
                 child: Column(
                   children: [
