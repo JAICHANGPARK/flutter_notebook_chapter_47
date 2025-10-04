@@ -153,7 +153,17 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
           ),
         ),
         Divider(),
-        
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Text(
+                "Address Information",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
