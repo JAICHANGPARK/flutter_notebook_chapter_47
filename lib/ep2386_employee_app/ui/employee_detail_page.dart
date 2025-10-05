@@ -52,9 +52,9 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                         Row(
                           spacing: 6,
                           children: [
-                            Icon(Icons.timer_outlined),
+                            Icon(Icons.timer_outlined, size: 18),
                             Text("Fulltime ·"),
-                            Icon(Icons.business_center_outlined),
+                            Icon(Icons.business_center_outlined, size: 18),
                             Text("Onsite"),
                           ],
                         ),
