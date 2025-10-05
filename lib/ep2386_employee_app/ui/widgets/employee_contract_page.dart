@@ -33,7 +33,7 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                 LinearPercentIndicator(
                   padding: EdgeInsets.zero,
                   backgroundColor: Colors.grey[300]!,
-                  fillColor: Colors.red,
+                  fillColor: Color.fromRGBO(158, 190, 130, 1),
                   percent: .4,
                 ),
                 Row(
