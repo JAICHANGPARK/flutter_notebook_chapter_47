@@ -75,6 +75,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
+
                       ),
                     ),
                   ),
