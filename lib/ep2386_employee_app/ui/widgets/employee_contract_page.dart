@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/flutter_percent_indicator.dart';
 
 class EmployeeContractPage extends StatefulWidget {
   const EmployeeContractPage({super.key});
@@ -28,6 +29,10 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                 Text(
                   "Contract Duration",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                ),
+                LinearPercentIndicator(
+                  padding: EdgeInsets.zero,
+                  
                 ),
                 Row(
                   spacing: 16,
