@@ -60,7 +60,7 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                         ],
                       ),
                     ),
-                    Icon(Icons.arrow_forward, size: 18, color: Colors.grey),
+                    Icon(Icons.arrow_forward, size: 20, color: Colors.grey),
                     Expanded(
                       child: Column(
                         spacing: 12,
