@@ -34,11 +34,11 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
-                      color: Colors.blue,
+                      color: Color.fromRGBO(236, 244, 247, 1),
                     ),
                     child: Text(
                       "+00-123-456-789",
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Color.fromRGBO(63, 138, 181, 1)),
                     ),
                   ),
                 ],
