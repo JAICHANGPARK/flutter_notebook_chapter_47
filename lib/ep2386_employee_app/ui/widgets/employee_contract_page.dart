@@ -92,10 +92,22 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               spacing: 16,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Contract Position Details"),
+                Text(
+                  "Contract Position Details",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("Job Role"), Text("Project Manager")],
+                  children: [
+                    Text(
+                      "Job Role",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey[500]!,
+                      ),
+                    ),
+                    Text("Project Manager"),
+                  ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
