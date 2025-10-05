@@ -27,7 +27,7 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               children: [
                 Text(
                   "Contract Duration",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
                 Row(
                   spacing: 16,
