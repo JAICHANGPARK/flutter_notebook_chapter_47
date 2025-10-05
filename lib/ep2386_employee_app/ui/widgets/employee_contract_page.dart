@@ -63,7 +63,28 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
             ),
           ),
           Divider(),
-          Text("Contract Position Details"),
+          Column(
+            children: [
+              Text("Contract Position Details"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("Job Role"), Text("Project Manager")],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("Job Role"), Text("Project Manager")],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("Job Role"), Text("Project Manager")],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("Job Role"), Text("Project Manager")],
+              ),
+            ],
+          )
+
         ],
       ),
     );
