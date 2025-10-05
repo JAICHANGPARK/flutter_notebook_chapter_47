@@ -38,7 +38,7 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                   percent: .4,
                 ),
                 Row(
-                  spacing: 16,
+                  spacing: 24,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Expanded(
