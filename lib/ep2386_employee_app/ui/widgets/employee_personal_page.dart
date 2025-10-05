@@ -53,7 +53,7 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
-                      color: Colors.blue,
+                      color: Color.fromRGBO(236, 244, 247, 1),
                     ),
                     child: Text("example@sample.com"),
                   ),
