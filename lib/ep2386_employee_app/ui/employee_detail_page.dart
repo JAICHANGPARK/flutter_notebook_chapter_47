@@ -36,14 +36,20 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
               child: Row(
                 spacing: 12,
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    radius: 24,
+                  ),
                   Expanded(
                     child: Column(
                       spacing: 8,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Dream Walker"),
+                        Text("Dream Walker",style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),),
                         Row(
+                          spacing: 6,
                           children: [
                             Icon(Icons.timer_outlined),
                             Text("Fulltime ·"),
