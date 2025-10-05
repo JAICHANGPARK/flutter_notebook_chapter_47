@@ -21,21 +21,27 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               borderRadius: BorderRadius.circular(6),
             ),
             child: Column(
+
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Contract Duration"),
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Expanded(
                       child: Column(
+                        spacing: 12,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Contract Start"),
                           Text("17 September 2023"),
                         ],
                       ),
                     ),
-                    Icon(Icons.arrow_forward),
+                    Icon(Icons.arrow_forward,size: 18,),
                     Expanded(child: Column(
+                      spacing: 12,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Contract Start"),
                         Text("17 September 2023"),
