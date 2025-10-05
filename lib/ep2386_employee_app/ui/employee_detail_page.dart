@@ -79,6 +79,8 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                         Tab(text: "Time management"),
                       ],
                       indicatorColor: Colors.black,
+                      labelColor: Colors.black,
+                      unselectedLabelColor: Colors.grey,
                     ),
 
                     Expanded(
