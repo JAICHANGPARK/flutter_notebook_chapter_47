@@ -15,9 +15,16 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
+            margin: EdgeInsets.all(16),
             decoration: BoxDecoration(
               border: Border.all(color: Colors.grey),
               borderRadius: BorderRadius.circular(6),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Contract Duration"),
+              ],
             ),
           ),
         ],
