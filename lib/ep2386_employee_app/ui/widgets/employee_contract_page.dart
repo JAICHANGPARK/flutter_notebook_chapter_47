@@ -46,7 +46,13 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                         spacing: 12,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Contract Start"),
+                          Text(
+                            "Contract Start",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey[400]!,
+                            ),
+                          ),
                           Text(
                             "17 September 2023",
                             style: TextStyle(fontWeight: FontWeight.bold),
