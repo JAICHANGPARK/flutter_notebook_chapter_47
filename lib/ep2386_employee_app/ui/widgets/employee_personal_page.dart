@@ -55,7 +55,10 @@ class _EmployeePersonalPageState extends State<EmployeePersonalPage> {
                       shape: StadiumBorder(),
                       color: Color.fromRGBO(236, 244, 247, 1),
                     ),
-                    child: Text("example@sample.com"),
+                    child: Text(
+                      "example@sample.com",
+                      style: TextStyle(color: Color.fromRGBO(63, 138, 181, 1)),
+                    ),
                   ),
                 ],
               ),
