@@ -62,6 +62,8 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               ],
             ),
           ),
+          Divider(),
+          Text("Contract Position Details"),
         ],
       ),
     );
