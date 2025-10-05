@@ -36,18 +36,19 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
               child: Row(
                 spacing: 12,
                 children: [
-                  CircleAvatar(
-                    radius: 24,
-                  ),
+                  CircleAvatar(radius: 24),
                   Expanded(
                     child: Column(
                       spacing: 8,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Dream Walker",style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),),
+                        Text(
+                          "Dream Walker",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Row(
                           spacing: 6,
                           children: [
@@ -77,6 +78,7 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                         Tab(text: "Payroll"),
                         Tab(text: "Time management"),
                       ],
+                      indicatorColor: Colors.black,
                     ),
 
                     Expanded(
