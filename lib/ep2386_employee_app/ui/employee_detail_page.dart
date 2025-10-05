@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/employee_contract_page.dart';
 import 'widgets/employee_personal_page.dart';
 
 class EmployeeDetailPage extends StatefulWidget {
@@ -88,7 +89,7 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                         physics: NeverScrollableScrollPhysics(),
                         children: [
                           EmployeePersonalPage(),
-                          Placeholder(),
+                          EmployeeContractPage(),
                           Placeholder(),
                           Placeholder(),
                         ],
