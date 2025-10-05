@@ -24,6 +24,13 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Contract Duration"),
+                Row(
+                  children: [
+                    Expanded(child: Column()),
+                    Icon(Icons.arrow_forward),
+                    Expanded(child: Column()),
+                  ],
+                )
               ],
             ),
           ),
