@@ -20,12 +20,14 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               border: Border.all(color: Colors.grey),
               borderRadius: BorderRadius.circular(6),
             ),
+            padding: EdgeInsets.all(12),
             child: Column(
-
+              spacing: 16,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Contract Duration"),
                 Row(
+                  spacing: 16,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Expanded(
@@ -34,19 +36,27 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Contract Start"),
-                          Text("17 September 2023"),
+                          Text(
+                            "17 September 2023",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
                         ],
                       ),
                     ),
-                    Icon(Icons.arrow_forward,size: 18,),
-                    Expanded(child: Column(
-                      spacing: 12,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Contract Start"),
-                        Text("17 September 2023"),
-                      ],
-                    )),
+                    Icon(Icons.arrow_forward, size: 18),
+                    Expanded(
+                      child: Column(
+                        spacing: 12,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Contract Start"),
+                          Text(
+                            "17 September 2023",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ],
