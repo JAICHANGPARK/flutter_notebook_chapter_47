@@ -85,7 +85,9 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               ],
             ),
           ),
-          Divider(),
+          Divider(
+            height: 32,
+          ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -106,7 +108,13 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                         color: Colors.grey[500]!,
                       ),
                     ),
-                    Text("Project Manager"),
+                    Text(
+                      "Project Manager",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
                   ],
                 ),
                 Row(
