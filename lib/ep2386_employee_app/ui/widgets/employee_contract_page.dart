@@ -25,9 +25,10 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               spacing: 16,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Contract Duration",style: TextStyle(
-                  
-                ),),
+                Text(
+                  "Contract Duration",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 Row(
                   spacing: 16,
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -144,8 +145,7 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                 ),
               ],
             ),
-          )
-
+          ),
         ],
       ),
     );
