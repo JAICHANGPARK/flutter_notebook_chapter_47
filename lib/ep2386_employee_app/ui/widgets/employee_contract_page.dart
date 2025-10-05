@@ -26,11 +26,23 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                 Text("Contract Duration"),
                 Row(
                   children: [
-                    Expanded(child: Column()),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text("Contract Start"),
+                          Text("17 September 2023"),
+                        ],
+                      ),
+                    ),
                     Icon(Icons.arrow_forward),
-                    Expanded(child: Column()),
+                    Expanded(child: Column(
+                      children: [
+                        Text("Contract Start"),
+                        Text("17 September 2023"),
+                      ],
+                    )),
                   ],
-                )
+                ),
               ],
             ),
           ),
