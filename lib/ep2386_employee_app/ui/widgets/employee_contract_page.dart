@@ -247,6 +247,24 @@ class _InformationWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          "$title",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.grey[500]!,
+          ),
+        ),
+        Text(
+          "$detail",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 15,
+          ),
+        ),
+      ],
+    );
   }
 }
