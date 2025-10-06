@@ -96,25 +96,11 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                   "Contract Position Details",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Job Role",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey[500]!,
-                      ),
-                    ),
-                    Text(
-                      "Project Manager",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ],
+                _InformationWidget(
+                  title: "Job Role",
+                  detail: "Project Manager",
                 ),
+                
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -259,10 +245,7 @@ class _InformationWidget extends StatelessWidget {
         ),
         Text(
           "$detail",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 15,
-          ),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
         ),
       ],
     );
