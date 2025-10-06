@@ -100,7 +100,27 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                   title: "Job Role",
                   detail: "Project Manager",
                 ),
-                
+                _InformationWidget(
+                  title: "Job Level",
+                  detail: "Manager Level",
+                ),
+                _InformationWidget(
+                  title: "Expected Work Hours per Week",
+                  detail:"30 hours",
+                ),
+                _InformationWidget(
+                  title: "Supervisor",
+                  detail:"Dream",
+                ),
+                _InformationWidget(
+                  title: "Emplotment Status",
+                  detail:"Fulltime",
+                ),
+                _InformationWidget(
+                  title: "Department",
+                  detail:"Project Department",
+                ),
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
