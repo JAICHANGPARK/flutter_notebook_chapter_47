@@ -96,32 +96,30 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                   "Contract Position Details",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
+                ...{"Job Role": "Project Manager"}.entries.map((v) {
+                  return _InformationWidget(
+                    title: "Job Role",
+                    detail: "Project Manager",
+                  );
+                }),
                 _InformationWidget(
                   title: "Job Role",
                   detail: "Project Manager",
                 ),
-                _InformationWidget(
-                  title: "Job Level",
-                  detail: "Manager Level",
-                ),
+                _InformationWidget(title: "Job Level", detail: "Manager Level"),
                 _InformationWidget(
                   title: "Expected Work Hours per Week",
-                  detail:"30 hours",
+                  detail: "30 hours",
                 ),
-                _InformationWidget(
-                  title: "Supervisor",
-                  detail:"Dream",
-                ),
+                _InformationWidget(title: "Supervisor", detail: "Dream"),
                 _InformationWidget(
                   title: "Emplotment Status",
-                  detail:"Fulltime",
+                  detail: "Fulltime",
                 ),
                 _InformationWidget(
                   title: "Department",
-                  detail:"Project Department",
+                  detail: "Project Department",
                 ),
-
-
               ],
             ),
           ),
