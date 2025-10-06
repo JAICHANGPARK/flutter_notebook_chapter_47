@@ -97,6 +97,7 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
                 ...{"Job Role": "Project Manager"}.entries.map((v) {
+                  print(v.key);
                   return _InformationWidget(
                     title: "Job Role",
                     detail: "Project Manager",
