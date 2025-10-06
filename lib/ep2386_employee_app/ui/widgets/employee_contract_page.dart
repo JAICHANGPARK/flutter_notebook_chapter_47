@@ -85,9 +85,7 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
               ],
             ),
           ),
-          Divider(
-            height: 32,
-          ),
+          Divider(height: 32),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -241,11 +239,14 @@ class _InformationWidget extends StatelessWidget {
   final String title;
   final String detail;
 
-  const _InformationWidget({super.key});
+  const _InformationWidget({
+    super.key,
+    required this.title,
+    required this.detail,
+  });
 
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
   }
 }
-
