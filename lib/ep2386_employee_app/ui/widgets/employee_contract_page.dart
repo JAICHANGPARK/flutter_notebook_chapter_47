@@ -236,3 +236,16 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
     );
   }
 }
+
+class _InformationWidget extends StatelessWidget {
+  final String title;
+  final String detail;
+
+  const _InformationWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
