@@ -104,56 +104,34 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                   "Emplotment Status": "Fulltime",
                   "Department": "Project Department",
                 }.entries.map((v) {
-                  return _InformationWidget(
-                    title: v.key,
-                    detail: v.value,
-                  );
+                  return _InformationWidget(title: v.key, detail: v.value);
                 }),
-                _InformationWidget(
-                  title: "Job Role",
-                  detail: "Project Manager",
-                ),
-                _InformationWidget(title: "Job Level", detail: "Manager Level"),
-                _InformationWidget(
-                  title: "Expected Work Hours per Week",
-                  detail: "30 hours",
-                ),
-                _InformationWidget(title: "Supervisor", detail: "Dream"),
-                _InformationWidget(
-                  title: "Emplotment Status",
-                  detail: "Fulltime",
-                ),
-                _InformationWidget(
-                  title: "Department",
-                  detail: "Project Department",
-                ),
               ],
             ),
           ),
-          Divider(),
+          Divider(
+
+          ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
               spacing: 16,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Contract Position Details"),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("Job Role"), Text("Project Manager")],
+                Text(
+                  "Compensation & Benefit",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("Job Role"), Text("Project Manager")],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("Job Role"), Text("Project Manager")],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("Job Role"), Text("Project Manager")],
-                ),
+                ...{
+                  "Job Role": "Project Manager",
+                  "Job Level": "Manager Level",
+                  "Expected Work Hours per Week": "30 hours",
+                  "Supervisor": "Dream",
+                  "Emplotment Status": "Fulltime",
+                  "Department": "Project Department",
+                }.entries.map((v) {
+                  return _InformationWidget(title: v.key, detail: v.value);
+                }),
               ],
             ),
           ),
