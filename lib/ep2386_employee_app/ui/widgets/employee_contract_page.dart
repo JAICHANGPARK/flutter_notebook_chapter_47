@@ -121,63 +121,7 @@ class _EmployeeContractPageState extends State<EmployeeContractPage> {
                   detail:"Project Department",
                 ),
 
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Job Level",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey[500]!,
-                      ),
-                    ),
-                    Text(
-                      "Project Manager",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Job Role",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey[500]!,
-                      ),
-                    ),
-                    Text(
-                      "Project Manager",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Job Role",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey[500]!,
-                      ),
-                    ),
-                    Text(
-                      "Project Manager",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ],
-                ),
+
               ],
             ),
           ),
