@@ -12,10 +12,13 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Column(
-        children: [
-          
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+
+          ],
+        ),
       ),
     );
   }
