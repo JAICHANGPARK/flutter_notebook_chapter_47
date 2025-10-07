@@ -65,7 +65,10 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                     padding: const EdgeInsets.only(left: 12),
                                     child: Align(
                                       alignment: Alignment.centerLeft,
-                                      child: Text("Benefit", style: TextStyle()),
+                                      child: Text(
+                                        "Benefit",
+                                        style: TextStyle(),
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -73,8 +76,10 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                             ),
                             Text(
                               "\$1,000.00",
-                              style: TextStyle(fontWeight: FontWeight.bold,
-                                  fontSize: 16),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
                             ),
                           ],
                         ),
@@ -92,7 +97,7 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                     top: 0,
                                     left: 0,
                                     bottom: 0,
-                                   right: 32,
+                                    right: 32,
                                     child: Container(
                                       // width: ,
                                       decoration: BoxDecoration(
@@ -104,7 +109,10 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                     padding: const EdgeInsets.only(left: 12),
                                     child: Align(
                                       alignment: Alignment.centerLeft,
-                                      child: Text("Benefit", style: TextStyle()),
+                                      child: Text(
+                                        "Benefit",
+                                        style: TextStyle(),
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -112,8 +120,10 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                             ),
                             Text(
                               "\$1,000.00",
-                              style: TextStyle(fontWeight: FontWeight.bold,
-                                  fontSize: 16),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
                             ),
                           ],
                         ),
@@ -143,7 +153,10 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                     padding: const EdgeInsets.only(left: 12),
                                     child: Align(
                                       alignment: Alignment.centerLeft,
-                                      child: Text("Benefit", style: TextStyle()),
+                                      child: Text(
+                                        "Benefit",
+                                        style: TextStyle(),
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -151,8 +164,10 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                             ),
                             Text(
                               "\$1,000.00",
-                              style: TextStyle(fontWeight: FontWeight.bold,
-                                  fontSize: 16),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
                             ),
                           ],
                         ),
@@ -173,9 +188,9 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                     bottom: 0,
 
                                     child: Container(
-                                      width: 230,
+                                      width: 100,
                                       decoration: BoxDecoration(
-                                        color: Colors.blue[50]!,
+                                        color: Colors.green[50]!,
                                       ),
                                     ),
                                   ),
@@ -183,7 +198,10 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                     padding: const EdgeInsets.only(left: 12),
                                     child: Align(
                                       alignment: Alignment.centerLeft,
-                                      child: Text("Benefit", style: TextStyle()),
+                                      child: Text(
+                                        "Expenses",
+                                        style: TextStyle(),
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -191,15 +209,16 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                             ),
                             Text(
                               "\$1,000.00",
-                              style: TextStyle(fontWeight: FontWeight.bold,
-                                  fontSize: 16),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ],
-                  )
-
+                  ),
                 ],
               ),
             ),
