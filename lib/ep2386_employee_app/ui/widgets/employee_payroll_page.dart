@@ -36,46 +36,170 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                     "\$12,345.67",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
-                  Container(
-                    height: 42,
+                  Column(
+                    spacing: 8,
+                    children: [
+                      Container(
+                        height: 38,
 
-                    // color: Colors.black,
-                    child: Row(
-                      spacing: 8,
-                      children: [
-                        Expanded(
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                top: 0,
-                                left: 0,
-                                bottom: 0,
-
-                                child: Container(
-                                  width: 230,
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue[50]!,
+                        // color: Colors.black,
+                        child: Row(
+                          spacing: 8,
+                          children: [
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    top: 0,
+                                    left: 0,
+                                    bottom: 0,
+                                    right: 100,
+                                    child: Container(
+                                      // width: 230,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[50]!,
+                                      ),
+                                    ),
                                   ),
-                                ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 12),
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text("Benefit", style: TextStyle()),
+                                    ),
+                                  ),
+                                ],
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 12),
-                                child: Align(
-                                  alignment: Alignment.centerLeft,
-                                  child: Text("Benefit", style: TextStyle()),
-                                ),
+                            ),
+                            Text(
+                              "\$1,000.00",
+                              style: TextStyle(fontWeight: FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 38,
+                        // color: Colors.black,
+                        child: Row(
+                          spacing: 8,
+                          children: [
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    top: 0,
+                                    left: 0,
+                                    bottom: 0,
+                                   right: 32,
+                                    child: Container(
+                                      // width: ,
+                                      decoration: BoxDecoration(
+                                        color: Colors.pink[50]!,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 12),
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text("Benefit", style: TextStyle()),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
+                            ),
+                            Text(
+                              "\$1,000.00",
+                              style: TextStyle(fontWeight: FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
                         ),
-                        Text(
-                          "\$1,000.00",
-                          style: TextStyle(fontWeight: FontWeight.bold,
-                          fontSize: 16),
+                      ),
+                      Container(
+                        height: 38,
+
+                        // color: Colors.black,
+                        child: Row(
+                          spacing: 8,
+                          children: [
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    top: 0,
+                                    left: 0,
+                                    bottom: 0,
+                                    child: Container(
+                                      width: 60,
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange[50]!,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 12),
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text("Benefit", style: TextStyle()),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Text(
+                              "\$1,000.00",
+                              style: TextStyle(fontWeight: FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
-                  ),
+                      ),
+                      Container(
+                        height: 38,
+
+                        // color: Colors.black,
+                        child: Row(
+                          spacing: 8,
+                          children: [
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    top: 0,
+                                    left: 0,
+                                    bottom: 0,
+
+                                    child: Container(
+                                      width: 230,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[50]!,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 12),
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text("Benefit", style: TextStyle()),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Text(
+                              "\$1,000.00",
+                              style: TextStyle(fontWeight: FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+
                 ],
               ),
             ),
