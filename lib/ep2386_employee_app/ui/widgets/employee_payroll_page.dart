@@ -22,7 +22,7 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
               padding: EdgeInsets.all(16),
               width: double.infinity,
               child: Column(
-                spacing: 12,
+                spacing: 8,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
