@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class EmployeePayrollPage extends StatefulWidget {
   const EmployeePayrollPage({super.key});
 
@@ -16,7 +15,8 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-
+            Container(decoration: BoxDecoration(color: Colors.grey[200]!,
+            )),
           ],
         ),
       ),
