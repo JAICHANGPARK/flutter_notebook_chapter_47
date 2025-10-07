@@ -59,18 +59,20 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 8),
+                                padding: const EdgeInsets.only(left: 12),
                                 child: Align(
                                   alignment: Alignment.centerLeft,
-                                  child: Text("Benefit",style: TextStyle(
-
-                                  ),),
+                                  child: Text("Benefit", style: TextStyle()),
                                 ),
-                              )
+                              ),
                             ],
                           ),
                         ),
-                        Text("\$1,000.00"),
+                        Text(
+                          "\$1,000.00",
+                          style: TextStyle(fontWeight: FontWeight.bold,
+                          fontSize: 16),
+                        ),
                       ],
                     ),
                   ),
