@@ -39,7 +39,7 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                   Container(
                     height: 42,
 
-                    color: Colors.black,
+                    // color: Colors.black,
                     child: Row(
                       spacing: 8,
                       children: [
@@ -58,6 +58,15 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                   ),
                                 ),
                               ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 8),
+                                child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Text("Benefit",style: TextStyle(
+
+                                  ),),
+                                ),
+                              )
                             ],
                           ),
                         ),
