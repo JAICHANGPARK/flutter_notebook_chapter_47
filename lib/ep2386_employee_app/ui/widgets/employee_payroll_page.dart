@@ -50,8 +50,9 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                                 top: 0,
                                 left: 0,
                                 bottom: 0,
-                                child: Container(
 
+                                child: Container(
+                                  width: 230,
                                   decoration: BoxDecoration(
                                     color: Colors.blue[50]!,
                                   ),
@@ -60,7 +61,7 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                             ],
                           ),
                         ),
-                        Text(""),
+                        Text("\$1,000.00"),
                       ],
                     ),
                   ),
