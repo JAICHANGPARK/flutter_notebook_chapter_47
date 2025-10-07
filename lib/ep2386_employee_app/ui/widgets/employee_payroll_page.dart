@@ -15,8 +15,11 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Container(decoration: BoxDecoration(color: Colors.grey[200]!,
-            )),
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey[200]!),
+              ),
+            ),
           ],
         ),
       ),
