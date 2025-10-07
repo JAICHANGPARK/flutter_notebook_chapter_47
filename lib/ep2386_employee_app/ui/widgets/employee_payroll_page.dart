@@ -217,6 +217,96 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
                           ],
                         ),
                       ),
+                      Container(
+                        height: 38,
+
+                        // color: Colors.black,
+                        child: Row(
+                          spacing: 8,
+                          children: [
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    top: 0,
+                                    left: 0,
+                                    bottom: 0,
+
+                                    child: Container(
+                                      width: 100,
+                                      decoration: BoxDecoration(
+                                        color: Colors.green[50]!,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 12),
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text(
+                                        "Other",
+                                        style: TextStyle(),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Text(
+                              "\$1,000.00",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 38,
+
+                        // color: Colors.black,
+                        child: Row(
+                          spacing: 8,
+                          children: [
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    top: 0,
+                                    left: 0,
+                                    bottom: 0,
+
+                                    child: Container(
+                                      width: 100,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[100]!,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 12),
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text(
+                                        "Empoyler Constributions",
+                                        style: TextStyle(),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Text(
+                              "\$1,000.00",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ],
