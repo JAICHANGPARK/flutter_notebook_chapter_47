@@ -19,6 +19,7 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.grey[200]!),
               ),
+              padding: EdgeInsets.all(16),
               width: double.infinity,
               child: Column(
 
