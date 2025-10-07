@@ -19,6 +19,16 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.grey[200]!),
               ),
+              width: double.infinity,
+              child: Column(
+
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Total Sallary"),
+                  Text("\$12,345.67")
+
+                ],
+              ),
             ),
           ],
         ),
