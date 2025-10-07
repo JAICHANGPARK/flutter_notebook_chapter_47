@@ -22,12 +22,48 @@ class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
               padding: EdgeInsets.all(16),
               width: double.infinity,
               child: Column(
-
+                spacing: 12,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Total Sallary"),
-                  Text("\$12,345.67")
+                  Text(
+                    "Total Sallary",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Text(
+                    "\$12,345.67",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  Container(
+                    height: 42,
 
+                    color: Colors.black,
+                    child: Row(
+                      spacing: 8,
+                      children: [
+                        Expanded(
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                child: Container(
+
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue[50]!,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Text(""),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
