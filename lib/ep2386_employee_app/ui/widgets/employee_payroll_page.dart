@@ -11,6 +11,12 @@ class EmployeePayrollPage extends StatefulWidget {
 class _EmployeePayrollPageState extends State<EmployeePayrollPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
