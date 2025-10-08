@@ -35,6 +35,12 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   ),
                 ],
               ),
+              Container(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.white,
+                ),
+              ),
             ],
           ),
         ),
