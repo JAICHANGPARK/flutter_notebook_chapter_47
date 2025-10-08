@@ -16,6 +16,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
       backgroundColor: Color.fromRGBO(241, 244, 255, 1),
 
       body: SafeArea(
+        bottom: false,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
