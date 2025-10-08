@@ -19,7 +19,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Doctor List"),
+                Text(
+                  "Doctor List",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
                 CircleAvatar(
                   backgroundColor: Colors.white,
                   child: HugeIcon(icon: HugeIcons.strokeRoundedNotification01),
