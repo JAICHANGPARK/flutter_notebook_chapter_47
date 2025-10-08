@@ -21,7 +21,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
               children: [
                 Text(
                   "Doctor List",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
                 CircleAvatar(
                   backgroundColor: Colors.white,
