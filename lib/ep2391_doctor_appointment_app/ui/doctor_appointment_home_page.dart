@@ -44,8 +44,15 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                 ),
                 child: Row(
                   children: [
-                    Expanded(child: TextField()),
-                    CircleAvatar(backgroundColor: Colors.blueAccent),
+                    Expanded(child: TextField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.search),
+                        hintText: "Search",
+                      ),
+                    )),
+                    CircleAvatar(
+                        radius: 24,
+                        backgroundColor: Colors.blueAccent),
                   ],
                 ),
               ),
