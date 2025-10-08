@@ -62,6 +62,8 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     CircleAvatar(
                       radius: 24,
                       backgroundColor: Colors.blueAccent,
+                      foregroundColor: Colors.white,
+                      child: Icon(Icons.tune),
                     ),
                   ],
                 ),
