@@ -14,22 +14,26 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Doctor List",
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  child: HugeIcon(icon: HugeIcons.strokeRoundedNotification01),
-                ),
-              ],
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Doctor List",
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  CircleAvatar(
+                    radius: 24,
+                    backgroundColor: Colors.white,
+                    child: HugeIcon(icon: HugeIcons.strokeRoundedNotification01),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
