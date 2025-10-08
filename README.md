@@ -6,7 +6,7 @@
 - Mehedi Hasan
 - https://dribbble.com/shots/26618468-Online-Doctor-Appointment-App
 
-<img src="https://cdn.dribbble.com/userupload/45131924/file/eb02612151ce1b562b4cde79887ee3a2.png?resize=2048x1536&vertical=center" alt="">
+<img src="https://cdn.dribbble.com/userupload/45207812/file/3d88d90e96c6d894f54cb7bfa77247f5.png?resize=1905x1513&vertical=center" alt="">
 
 
 ## EP2386-2390
