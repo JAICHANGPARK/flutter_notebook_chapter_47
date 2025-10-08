@@ -67,6 +67,8 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                 child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
+                    crossAxisSpacing: 12,
+                    mainAxisSpacing: 12,
                   ),
                   itemBuilder: (context, index) {
                     return Placeholder();
