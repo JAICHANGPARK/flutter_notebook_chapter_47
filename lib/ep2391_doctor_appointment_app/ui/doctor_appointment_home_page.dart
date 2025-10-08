@@ -42,17 +42,27 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   shape: StadiumBorder(),
                   color: Colors.white,
                 ),
+                padding: EdgeInsets.only(
+                  left: 16
+                ),
                 child: Row(
                   children: [
-                    Expanded(child: TextField(
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.search),
-                        hintText: "Search",
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 16),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            icon: Icon(Icons.search),
+                            hintText: "Search",
+                            border: InputBorder.none,
+                          ),
+                        ),
                       ),
-                    )),
+                    ),
                     CircleAvatar(
-                        radius: 24,
-                        backgroundColor: Colors.blueAccent),
+                      radius: 24,
+                      backgroundColor: Colors.blueAccent,
+                    ),
                   ],
                 ),
               ),
