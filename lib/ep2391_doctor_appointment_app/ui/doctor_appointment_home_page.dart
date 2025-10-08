@@ -42,12 +42,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   shape: StadiumBorder(),
                   color: Colors.white,
                 ),
-                padding: EdgeInsets.only(
-                  left: 16,
-                  bottom: 4,
-                  top: 4,
-                  right: 4
-                ),
+                padding: EdgeInsets.only(left: 16, bottom: 4, top: 4, right: 4),
                 child: Row(
                   children: [
                     Expanded(
@@ -68,7 +63,16 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   ],
                 ),
               ),
-              Expanded(child: Placeholder(),),
+              Expanded(
+                child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                  ),
+                  itemBuilder: (context, index) {
+                    return Placeholder();
+                  },
+                ),
+              ),
             ],
           ),
         ),
