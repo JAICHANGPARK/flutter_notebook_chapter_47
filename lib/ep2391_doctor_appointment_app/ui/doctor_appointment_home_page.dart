@@ -43,7 +43,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   color: Colors.white,
                 ),
                 padding: EdgeInsets.only(
-                  left: 16
+                  left: 16,
+                  bottom: 4,
+                  top: 4,
+                  right: 4
                 ),
                 child: Row(
                   children: [
