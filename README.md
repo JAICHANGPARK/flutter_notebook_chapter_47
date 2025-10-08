@@ -8,7 +8,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/45131924/file/eb02612151ce1b562b4cde79887ee3a2.png?resize=2048x1536&vertical=center" alt="">
 
-
 ## EP2380-2385
 
 - News App UI Design
@@ -16,7 +15,6 @@
 - https://dribbble.com/shots/26579231-News-App-UI-Design
 
 <img src="https://cdn.dribbble.com/userupload/45078157/file/74587eeb164048bbbac732734c32dea9.png?resize=2400x1800&vertical=center" alt="">
-
 
 ## EP2374-2379
 
@@ -41,7 +39,6 @@
 - https://dribbble.com/shots/26509820-E-Learning-Mobile-App-Radiyal
 
 <img src="https://cdn.dribbble.com/userupload/44859194/file/9599af51dc6e2266dcd09229836f7c69.jpg?resize=1905x1429&vertical=center">
-
 
 ## EP2360-2363
 
