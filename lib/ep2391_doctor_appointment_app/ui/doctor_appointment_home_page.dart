@@ -12,6 +12,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: SafeArea(
         child: Column(
           children: [
