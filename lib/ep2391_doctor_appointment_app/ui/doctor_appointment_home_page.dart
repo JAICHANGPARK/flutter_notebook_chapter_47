@@ -48,14 +48,11 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 16),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            icon: Icon(Icons.search),
-                            hintText: "Search",
-                            border: InputBorder.none,
-                          ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.search),
+                          hintText: "Search",
+                          border: InputBorder.none,
                         ),
                       ),
                     ),
