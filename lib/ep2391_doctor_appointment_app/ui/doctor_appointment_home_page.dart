@@ -14,10 +14,12 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(241, 244, 255, 1),
+
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            spacing: 16,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -39,6 +41,12 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.white,
+                ),
+                child: Row(
+                  children: [
+                    Expanded(child: TextField()),
+                    CircleAvatar(backgroundColor: Colors.blueAccent),
+                  ],
                 ),
               ),
             ],
