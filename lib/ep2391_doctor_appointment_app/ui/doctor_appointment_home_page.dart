@@ -68,6 +68,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                   ],
                 ),
               ),
+              Expanded(child: Placeholder(),),
             ],
           ),
         ),
