@@ -58,7 +58,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     ),
                     CircleAvatar(
                       radius: 24,
-                      backgroundColor:accentColor,
+                      backgroundColor: accentColor,
                       foregroundColor: Colors.white,
                       child: Icon(Icons.tune),
                     ),
@@ -85,6 +85,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
         height: 100,
         child: BottomNavigationBar(
           selectedItemColor: accentColor,
+          unselectedItemColor: Colors.black,
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           items: [
