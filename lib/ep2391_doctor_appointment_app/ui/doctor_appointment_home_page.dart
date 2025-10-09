@@ -82,12 +82,21 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                       ),
                       padding: EdgeInsets.all(12),
                       child: Column(
+                        spacing: 16,
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             children: [
                               CircleAvatar(),
-                              Text("Dr. Dream Walker"),
+                              Text(
+                                "Dr. Dream Walker",
+                                style: TextStyle(
+                                  color: index == 0
+                                      ? Colors.white
+                                      : Colors.black,
+                                ),
+                              ),
                             ],
                           ),
                           Text("General Physician"),
