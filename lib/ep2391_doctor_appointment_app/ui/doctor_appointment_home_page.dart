@@ -97,6 +97,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
               icon: Icon( Icons.access_time_filled),
               label: "Appointment",
             ),
+            BottomNavigationBarItem(
+              icon: Icon( Icons.person),
+              label: "Profile",
+            ),
           ],
         ),
       ),
