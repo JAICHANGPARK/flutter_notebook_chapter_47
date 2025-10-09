@@ -14,7 +14,6 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(241, 244, 255, 1),
-
       body: SafeArea(
         bottom: false,
         child: Padding(
