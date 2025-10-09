@@ -89,7 +89,9 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           Row(
                             spacing: 12,
                             children: [
-                              CircleAvatar(),
+                              CircleAvatar(
+                                radius: 24,
+                              ),
                               Expanded(
                                 child: Text(
                                   "Dr. Dream Walker",
@@ -98,12 +100,22 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         ? Colors.white
                                         : Colors.black,
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 16
                                   ),
                                 ),
                               ),
                             ],
                           ),
-                          Text("General Physician"),
+                          Text("General Physician",
+                            style: TextStyle(
+                                color: index == 0
+                                    ? Colors.white
+                                    : Colors.black,
+                                // fontWeight: FontWeight.bold,
+                              fontSize: 16,
+
+                            ),
+                          ),
                           Row(
                             children: [
                               Expanded(
