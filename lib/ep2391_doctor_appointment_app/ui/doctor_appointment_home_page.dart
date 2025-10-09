@@ -80,6 +80,17 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                         ),
                         color: index == 0 ? accentColor : Colors.white,
                       ),
+                      padding: EdgeInsets.all(16),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(),
+                              Text("Dr. Dream Walker")
+                            ],
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
