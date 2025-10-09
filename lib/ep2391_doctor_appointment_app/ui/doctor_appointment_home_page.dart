@@ -79,7 +79,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: []),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home_filled),label: "Home",),
+        
+      ]),
     );
   }
 }
