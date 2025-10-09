@@ -79,14 +79,18 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          BottomNavigationBarItem(
-            icon: HugeIcon(icon: HugeIcons.strokeRoundedDoctor01),
-            label: "Doctor",
-          ),
-        ],
+      bottomNavigationBar: SizedBox(
+        child: BottomNavigationBar(
+          backgroundColor: Colors.white,
+
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+            BottomNavigationBarItem(
+              icon: HugeIcon(icon: HugeIcons.strokeRoundedDoctor01),
+              label: "Doctor",
+            ),
+          ],
+        ),
       ),
     );
   }
