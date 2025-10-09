@@ -84,6 +84,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(
             icon: HugeIcon(icon: HugeIcons.strokeRoundedDoctor01),
+            label: "Doctor",
           ),
         ],
       ),
