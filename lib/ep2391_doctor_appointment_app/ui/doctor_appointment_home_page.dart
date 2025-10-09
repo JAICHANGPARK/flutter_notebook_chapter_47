@@ -92,11 +92,29 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           ),
                           Text("General Physician"),
                           Row(
-                            children: [Expanded(child: Column(children: [])),
-                            CircleAvatar(
-                              radius: 28,
-                              backgroundColor: Colors.white,
-                            )],
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(Icons.star, color: Colors.orange),
+                                        Text("5.0"),
+                                      ],
+                                    ),
+                                    Text(
+                                      "133 Reviews",
+                                      style: TextStyle(color: Colors.white54),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              CircleAvatar(
+                                radius: 28,
+                                backgroundColor: Colors.white,
+                              ),
+                            ],
                           ),
                         ],
                       ),
