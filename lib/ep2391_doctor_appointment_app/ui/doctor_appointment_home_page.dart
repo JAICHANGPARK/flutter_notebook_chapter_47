@@ -123,8 +123,10 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
+                                      spacing: 5,
                                       children: [
-                                        Icon(Icons.star, color: Colors.orange),
+                                        Icon(Icons.star, color: Colors.orange,
+                                        size: 16,),
                                         Text("5.0"),
                                       ],
                                     ),
