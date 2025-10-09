@@ -13,11 +13,12 @@ class DoctorAppointmentHomePage extends StatefulWidget {
 
 class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
   Color accentColor = Color.fromRGBO(37, 106, 254, 1);
+  Color backgroundColor = Color.fromRGBO(241, 244, 255, 1);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(241, 244, 255, 1),
+      backgroundColor: backgroundColor,
       body: SafeArea(
         bottom: false,
         child: Padding(
