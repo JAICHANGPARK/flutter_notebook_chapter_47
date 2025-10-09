@@ -73,7 +73,14 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     mainAxisSpacing: 12,
                   ),
                   itemBuilder: (context, index) {
-                    return Placeholder();
+                    return Container(
+                      decoration: ShapeDecoration(
+                        shape: RoundedSuperellipseBorder(
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        color: index == 0 ? accentColor : Colors.white,
+                      ),
+                    );
                   },
                 ),
               ),
