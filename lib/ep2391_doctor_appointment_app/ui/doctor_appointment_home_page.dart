@@ -17,7 +17,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
       body: SafeArea(
         bottom: false,
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
           child: Column(
             spacing: 16,
             children: [
@@ -80,11 +80,15 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
         ),
       ),
       bottomNavigationBar: SizedBox(
+        height: 100,
         child: BottomNavigationBar(
           backgroundColor: Colors.white,
 
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home",
+            ),
             BottomNavigationBarItem(
               icon: HugeIcon(icon: HugeIcons.strokeRoundedDoctor01),
               label: "Doctor",
