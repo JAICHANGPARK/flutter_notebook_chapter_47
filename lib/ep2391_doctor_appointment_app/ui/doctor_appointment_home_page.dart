@@ -150,8 +150,12 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               ),
                               CircleAvatar(
                                 radius: 28,
-                                backgroundColor: Colors.white,
-                                child: Transform.rotate(angle: - 2 / pi,child: Icon(Icons.arrow_forward_rounded),),
+                                backgroundColor: backgroundColor,
+                                foregroundColor: Colors.black,
+                                child: Transform.rotate(
+                                  angle: -2 / pi,
+                                  child: Icon(Icons.arrow_forward_rounded),
+                                ),
                               ),
                             ],
                           ),
