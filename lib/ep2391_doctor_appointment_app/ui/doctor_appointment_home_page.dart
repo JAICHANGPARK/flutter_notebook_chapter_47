@@ -80,7 +80,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                         ),
                         color: index == 0 ? accentColor : Colors.white,
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: EdgeInsets.all(12),
                       child: Column(
                         children: [
                           Row(
@@ -88,7 +88,8 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               CircleAvatar(),
                               Text("Dr. Dream Walker")
                             ],
-                          )
+                          ),
+                          Text("General Physician")
                         ],
                       ),
                     );
