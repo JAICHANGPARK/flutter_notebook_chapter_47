@@ -10,6 +10,8 @@ class DoctorAppointmentHomePage extends StatefulWidget {
 }
 
 class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
+  Color accentColor = Color.fromRGBO(37, 106, 254, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,8 +84,9 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
       bottomNavigationBar: SizedBox(
         height: 100,
         child: BottomNavigationBar(
+          selectedItemColor:,
           backgroundColor: Colors.white,
-
+          type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home_filled),
@@ -94,11 +97,11 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
               label: "Doctor",
             ),
             BottomNavigationBarItem(
-              icon: Icon( Icons.access_time_filled),
+              icon: Icon(Icons.access_time_filled),
               label: "Appointment",
             ),
             BottomNavigationBarItem(
-              icon: Icon( Icons.person),
+              icon: Icon(Icons.person),
               label: "Profile",
             ),
           ],
