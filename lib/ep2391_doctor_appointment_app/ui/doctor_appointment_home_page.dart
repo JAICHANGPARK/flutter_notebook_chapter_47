@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -89,9 +91,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           Row(
                             spacing: 12,
                             children: [
-                              CircleAvatar(
-                                radius: 24,
-                              ),
+                              CircleAvatar(radius: 24),
                               Expanded(
                                 child: Text(
                                   "Dr. Dream Walker",
@@ -100,20 +100,18 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                         ? Colors.white
                                         : Colors.black,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 16
+                                    fontSize: 16,
                                   ),
                                 ),
                               ),
                             ],
                           ),
-                          Text("General Physician",
+                          Text(
+                            "General Physician",
                             style: TextStyle(
-                                color: index == 0
-                                    ? Colors.white
-                                    : Colors.black,
-                                // fontWeight: FontWeight.bold,
+                              color: index == 0 ? Colors.white : Colors.black,
+                              // fontWeight: FontWeight.bold,
                               fontSize: 16,
-
                             ),
                           ),
                           Row(
@@ -125,9 +123,21 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                     Row(
                                       spacing: 5,
                                       children: [
-                                        Icon(Icons.star, color: Colors.orange,
-                                        size: 16,),
-                                        Text("5.0"),
+                                        Icon(
+                                          Icons.star,
+                                          color: Colors.orange,
+                                          size: 16,
+                                        ),
+                                        Text(
+                                          "5.0",
+                                          style: TextStyle(
+                                            color: index == 0
+                                                ? Colors.white
+                                                : Colors.black,
+                                            // fontWeight: FontWeight.bold,
+                                            fontSize: 16,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                     Text(
@@ -140,6 +150,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                               CircleAvatar(
                                 radius: 28,
                                 backgroundColor: Colors.white,
+                                child: Transform.rotate(angle: - 2 / pi,child: Icon(Icons.arrow_forward_rounded),),
                               ),
                             ],
                           ),
