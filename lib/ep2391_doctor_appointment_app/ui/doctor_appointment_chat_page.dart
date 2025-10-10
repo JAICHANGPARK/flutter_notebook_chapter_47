@@ -13,7 +13,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
 
