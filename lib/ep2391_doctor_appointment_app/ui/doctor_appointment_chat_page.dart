@@ -37,6 +37,20 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
               ],
             ),
           ),
+          Expanded(child: Placeholder()),
+          Container(
+            decoration: BoxDecoration(color: Colors.white),
+            padding: EdgeInsets.all(16),
+            child: Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.attach_file, color: Colors.blue),
+                ),
+                Expanded(child: TextField(decoration: InputDecoration(hintText: "Wirte a message"),))
+              ],
+            ),
+          ),
         ],
       ),
     );
