@@ -19,7 +19,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
               Icon(Icons.arrow_back_ios_new_sharp),
               CircleAvatar(),
               Expanded(
-                child: Column(children: [Text("Dream Walker"), Text("Online")]),
+                child: Column(children: [Text("Dream Walker"), Text("Online")],),
               ),
             ],
           ),
