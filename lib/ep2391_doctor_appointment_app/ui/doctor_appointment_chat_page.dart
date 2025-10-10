@@ -58,6 +58,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                 Container(decoration: BoxDecoration(
                   color: Colors.blue,
                 ),
+                  child: IconButton(onPressed: (){}, icon: Icon(Icons.send)),
 
                 )
               ],
