@@ -21,23 +21,19 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
               spacing: 12,
               children: [
                 Icon(Icons.arrow_back_ios_new_sharp),
-                CircleAvatar(
-                  radius: 26,
-                ),
+                CircleAvatar(radius: 26),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     spacing: 4,
-                    children: [Text("Dream Walker",
-                    style: TextStyle(
-                      fontSize: 18
-                    ),), Text("Online")],
+                    children: [
+                      Text("Dream Walker", style: TextStyle(fontSize: 18)),
+                      Text("Online"),
+                    ],
                   ),
                 ),
-                Icon(Icons.phone),
-                Icon(Icons.more_vert),
-              
-
+                Icon(Icons.phone, color: Colors.blue),
+                Icon(Icons.more_vert, color: Colors.grey),
               ],
             ),
           ),
