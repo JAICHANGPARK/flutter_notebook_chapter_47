@@ -14,24 +14,29 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
     return Scaffold(
       body: Column(
         children: [
-          Row(
-            children: [
-              Icon(Icons.arrow_back_ios_new_sharp),
-              CircleAvatar(),
-              Expanded(
-                child: Column(children: [Text("Dream Walker"), Text("Online")]),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.phone),
-                color: Colors.blue,
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.more_vert),
-                color: Colors.grey,
-              ),
-            ],
+          Container(
+            decoration: BoxDecoration(color: Colors.white),
+            child: Row(
+              children: [
+                Icon(Icons.arrow_back_ios_new_sharp),
+                CircleAvatar(),
+                Expanded(
+                  child: Column(
+                    children: [Text("Dream Walker"), Text("Online")],
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.phone),
+                  color: Colors.blue,
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.more_vert),
+                  color: Colors.grey,
+                ),
+              ],
+            ),
           ),
         ],
       ),
