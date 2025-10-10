@@ -16,8 +16,9 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
         children: [
           Container(
             decoration: BoxDecoration(color: Colors.white),
-            padding: EdgeInsets.only(left: 16, top: 42, right: 16, bottom: 12),
+            padding: EdgeInsets.only(left: 16, top: 62, right: 16, bottom: 12),
             child: Row(
+              spacing: 12,
               children: [
                 Icon(Icons.arrow_back_ios_new_sharp),
                 CircleAvatar(),
