@@ -76,90 +76,100 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     mainAxisSpacing: 12,
                   ),
                   itemBuilder: (context, index) {
-                    return Container(
-                      decoration: ShapeDecoration(
-                        shape: RoundedSuperellipseBorder(
-                          borderRadius: BorderRadius.circular(24),
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => DoctorAppointmentChatPage(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        decoration: ShapeDecoration(
+                          shape: RoundedSuperellipseBorder(
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          color: index == 0 ? accentColor : Colors.white,
                         ),
-                        color: index == 0 ? accentColor : Colors.white,
-                      ),
-                      padding: EdgeInsets.all(12),
-                      child: Column(
-                        spacing: 16,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            spacing: 12,
-                            children: [
-                              CircleAvatar(radius: 24),
-                              Expanded(
-                                child: Text(
-                                  "Dr. Dream Walker",
-                                  style: TextStyle(
-                                    color: index == 0
-                                        ? Colors.white
-                                        : Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          spacing: 16,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              spacing: 12,
+                              children: [
+                                CircleAvatar(radius: 24),
+                                Expanded(
+                                  child: Text(
+                                    "Dr. Dream Walker",
+                                    style: TextStyle(
+                                      color: index == 0
+                                          ? Colors.white
+                                          : Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Text(
-                            "General Physician",
-                            style: TextStyle(
-                              color: index == 0 ? Colors.white : Colors.black,
-                              // fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                              ],
                             ),
-                          ),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      spacing: 5,
-                                      children: [
-                                        Icon(
-                                          Icons.star,
-                                          color: Colors.orange,
-                                          size: 16,
-                                        ),
-                                        Text(
-                                          "5.0",
-                                          style: TextStyle(
-                                            color: index == 0
-                                                ? Colors.white
-                                                : Colors.black,
-                                            // fontWeight: FontWeight.bold,
-                                            fontSize: 16,
+                            Text(
+                              "General Physician",
+                              style: TextStyle(
+                                color: index == 0 ? Colors.white : Colors.black,
+                                // fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        spacing: 5,
+                                        children: [
+                                          Icon(
+                                            Icons.star,
+                                            color: Colors.orange,
+                                            size: 16,
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                    Text(
-                                      "133 Reviews",
-                                      style: TextStyle(color: Colors.white54),
-                                    ),
-                                  ],
+                                          Text(
+                                            "5.0",
+                                            style: TextStyle(
+                                              color: index == 0
+                                                  ? Colors.white
+                                                  : Colors.black,
+                                              // fontWeight: FontWeight.bold,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Text(
+                                        "133 Reviews",
+                                        style: TextStyle(color: Colors.white54),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              CircleAvatar(
-                                radius: 28,
-                                backgroundColor: backgroundColor,
-                                foregroundColor: Colors.black,
-                                child: Transform.rotate(
-                                  angle: -2 / pi,
-                                  child: Icon(Icons.arrow_forward_rounded),
+                                CircleAvatar(
+                                  radius: 28,
+                                  backgroundColor: backgroundColor,
+                                  foregroundColor: Colors.black,
+                                  child: Transform.rotate(
+                                    angle: -2 / pi,
+                                    child: Icon(Icons.arrow_forward_rounded),
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        ],
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     );
                   },
