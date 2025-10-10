@@ -4,7 +4,8 @@ class DoctorAppointmentChatPage extends StatefulWidget {
   const DoctorAppointmentChatPage({super.key});
 
   @override
-  State<DoctorAppointmentChatPage> createState() => _DoctorAppointmentChatPageState();
+  State<DoctorAppointmentChatPage> createState() =>
+      _DoctorAppointmentChatPageState();
 }
 
 class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
@@ -13,10 +14,17 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Row(
+            children: [
+              Icon(Icons.arrow_back_ios_new_sharp),
+              CircleAvatar(),
+              Expanded(
+                child: Column(children: [Text("Dream Walker"), Text("Online")]),
+              ),
+            ],
+          ),
         ],
       ),
-
     );
   }
 }
