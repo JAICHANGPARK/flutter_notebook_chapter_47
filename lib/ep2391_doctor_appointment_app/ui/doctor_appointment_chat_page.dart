@@ -57,15 +57,20 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                               horizontal: 16,
                               vertical: 8,
                             ),
-                            decoration: BoxDecoration(color: Colors.white,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(8),
-                              topRight: Radius.circular(8),
-                              bottomRight: Radius.circular(8),
-                            )),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(8),
+                                topRight: Radius.circular(8),
+                                bottomRight: Radius.circular(8),
+                              ),
+                            ),
                             child: Text("Yes"),
                           ),
-                          Text("10:15"),
+                          Text(
+                            "10:15",
+                            style: TextStyle(fontSize: 10, color: Colors.grey),
+                          ),
                         ],
                       ),
                     );
