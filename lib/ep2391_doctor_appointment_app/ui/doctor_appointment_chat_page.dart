@@ -47,7 +47,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                 itemBuilder: (context, index) {
                   if (index % 2 == 0) {
                     return Padding(
-                      padding: const EdgeInsets.only(bottom: 12),
+                      padding: const EdgeInsets.only(bottom: 8),
                       child: Column(
                         spacing: 4,
                         crossAxisAlignment: CrossAxisAlignment.start,
