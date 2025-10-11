@@ -88,6 +88,11 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                           ),
                           decoration: BoxDecoration(
                             color: DoctorAppTheme.accentColor,
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(8),
+                              topRight: Radius.circular(8),
+                              bottomLeft: Radius.circular(8),
+                            ),
                           ),
                           child: Text(
                             "Yes",
