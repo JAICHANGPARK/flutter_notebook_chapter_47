@@ -69,7 +69,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                           ),
                           Text(
                             "10:15",
-                            style: TextStyle(fontSize: 10, color: Colors.grey),
+                            style: TextStyle(fontSize: 11, color: Colors.grey),
                           ),
                         ],
                       ),
@@ -94,7 +94,10 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
-                        Text("10:15"),
+                        Text(
+                          "10:15",
+                          style: TextStyle(fontSize: 11, color: Colors.grey),
+                        ),
                       ],
                     ),
                   );
