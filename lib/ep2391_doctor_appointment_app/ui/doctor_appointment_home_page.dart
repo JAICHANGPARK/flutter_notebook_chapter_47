@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:hugeicons/hugeicons.dart';
 import 'doctor_appointment_chat_page.dart';
-
+import '../theme.dart';
 class DoctorAppointmentHomePage extends StatefulWidget {
   const DoctorAppointmentHomePage({super.key});
 
@@ -14,13 +14,11 @@ class DoctorAppointmentHomePage extends StatefulWidget {
 }
 
 class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
-  Color accentColor = Color.fromRGBO(37, 106, 254, 1);
-  Color backgroundColor = Color.fromRGBO(241, 244, 255, 1);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: DoctorAppTheme.backgroundColor,
       body: SafeArea(
         bottom: false,
         child: Padding(
@@ -63,7 +61,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                     ),
                     CircleAvatar(
                       radius: 24,
-                      backgroundColor: accentColor,
+                      backgroundColor: DoctorAppTheme.accentColor,
                       foregroundColor: Colors.white,
                       child: Icon(Icons.tune),
                     ),
@@ -91,7 +89,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                           shape: RoundedSuperellipseBorder(
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          color: index == 0 ? accentColor : Colors.white,
+                          color: index == 0 ? DoctorAppTheme.accentColor : Colors.white,
                         ),
                         padding: EdgeInsets.all(12),
                         child: Column(
@@ -161,7 +159,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
                                 ),
                                 CircleAvatar(
                                   radius: 28,
-                                  backgroundColor: backgroundColor,
+                                  backgroundColor: DoctorAppTheme.backgroundColor,
                                   foregroundColor: Colors.black,
                                   child: Transform.rotate(
                                     angle: -2 / pi,
@@ -184,7 +182,7 @@ class _DoctorAppointmentHomePageState extends State<DoctorAppointmentHomePage> {
       bottomNavigationBar: SizedBox(
         height: 100,
         child: BottomNavigationBar(
-          selectedItemColor: accentColor,
+          selectedItemColor: DoctorAppTheme.accentColor,
           unselectedItemColor: Colors.black,
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
