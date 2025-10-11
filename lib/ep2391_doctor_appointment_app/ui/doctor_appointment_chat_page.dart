@@ -49,6 +49,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 12),
                       child: Column(
+                        spacing: 4,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
@@ -65,6 +66,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                     padding: const EdgeInsets.only(bottom: 12),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
+                      spacing: 4,
                       children: [
                         Container(
                           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
