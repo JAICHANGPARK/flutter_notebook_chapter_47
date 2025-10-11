@@ -47,7 +47,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                 itemBuilder: (context, index) {
                   if (index % 2 == 0) {
                     return Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.only(bottom: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -61,7 +61,20 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                       ),
                     );
                   }
-                  return Container();
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          decoration: BoxDecoration(color: Colors.white),
+                          child: Text("Yes"),
+                        ),
+                        Text("10:15"),
+                      ],
+                    ),
+                  );
                 },
               ),
             ),
