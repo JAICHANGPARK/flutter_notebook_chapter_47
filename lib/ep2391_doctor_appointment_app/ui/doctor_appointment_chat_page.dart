@@ -10,10 +10,11 @@ class DoctorAppointmentChatPage extends StatefulWidget {
 
 class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
   Color backgroundColor = Color.fromRGBO(241, 244, 255, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      backgroundColor: backgroundColor,
       body: Column(
         children: [
           Container(
