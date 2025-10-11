@@ -53,7 +53,10 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 8,
+                            ),
                             decoration: BoxDecoration(color: Colors.white),
                             child: Text("Yes"),
                           ),
@@ -69,9 +72,17 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                       spacing: 4,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          decoration: BoxDecoration(color: Colors.white),
-                          child: Text("Yes"),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 8,
+                          ),
+                          decoration: BoxDecoration(
+                            color: DoctorAppTheme.accentColor,
+                          ),
+                          child: Text(
+                            "Yes",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                         Text("10:15"),
                       ],
