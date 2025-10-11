@@ -40,7 +40,25 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
               ],
             ),
           ),
-          Expanded(child: Placeholder()),
+          Expanded(
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                if (index % 2 == 0) {
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                        child: Text("Yes"),
+                      ),
+                      Text("10:15"),
+                    ],
+                  );
+                }
+                return Container();
+              },
+            ),
+          ),
           Container(
             decoration: BoxDecoration(color: Colors.white),
             padding: EdgeInsets.all(16),
