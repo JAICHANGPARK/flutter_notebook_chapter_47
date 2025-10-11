@@ -44,6 +44,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: ListView.builder(
+                padding: EdgeInsets.zero,
                 itemBuilder: (context, index) {
                   if (index % 2 == 0) {
                     return Padding(
