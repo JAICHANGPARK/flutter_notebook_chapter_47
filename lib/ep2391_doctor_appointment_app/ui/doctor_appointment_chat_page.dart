@@ -10,6 +10,7 @@ class DoctorAppointmentChatPage extends StatefulWidget {
 
 class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
   Color backgroundColor = Color.fromRGBO(241, 244, 255, 1);
+  Color accentColor = Color.fromRGBO(37, 106, 254, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -59,11 +60,14 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(color: Colors.blue),
+                  decoration: BoxDecoration(
+                    color: accentColor,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   child: IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.send),
-                    color: Colors.white,
+                 color: Colors.white,
                   ),
                 ),
               ],
