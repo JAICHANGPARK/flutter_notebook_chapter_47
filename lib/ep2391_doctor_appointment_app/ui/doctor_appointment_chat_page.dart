@@ -12,19 +12,20 @@ class DoctorAppointmentChatPage extends StatefulWidget {
 }
 
 class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
-
   List<ChatMessage> messages = [
     /// using gemini
     // 1. Patient describes the primary issue.
     ChatMessage(
-      msg: "I have a sudden sharp pain in my lower back, and it seems to be getting worse.",
+      msg:
+          "I have a sudden sharp pain in my lower back, and it seems to be getting worse.",
       isRead: true,
       isSender: true,
     ),
 
     // 2. Clinic asks for necessary booking information.
     ChatMessage(
-      msg: "I'm sorry to hear that. For better assistance, what is your date of birth and preferred time to visit?",
+      msg:
+          "I'm sorry to hear that. For better assistance, what is your date of birth and preferred time to visit?",
       isRead: true,
       isSender: false,
     ),
@@ -38,53 +39,59 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
 
     // 4. Clinic suggests the available slot.
     ChatMessage(
-      msg: "We can fit you in with Dr. Green at 1:15 PM. Please arrive 15 minutes early for paperwork.",
+      msg:
+          "We can fit you in with Dr. Green at 1:15 PM. Please arrive 15 minutes early for paperwork.",
       isRead: true,
       isSender: false,
     ),
 
     // 5. Patient confirms the time and asks about prerequisites.
     ChatMessage(
-      msg: "1:15 PM works for me. Will I need to bring any recent X-rays or reports related to this?",
+      msg:
+          "1:15 PM works for me. Will I need to bring any recent X-rays or reports related to this?",
       isRead: true,
       isSender: true,
     ),
 
     // 6. Clinic clarifies the need for documentation.
     ChatMessage(
-      msg: "If you have any, yes, please bring them. Otherwise, we can take new ones here if needed during your examination.",
+      msg:
+          "If you have any, yes, please bring them. Otherwise, we can take new ones here if needed during your examination.",
       isRead: true,
       isSender: false,
     ),
 
     // 7. Patient confirms they have a report.
     ChatMessage(
-      msg: "Okay, I'll make sure to bring the report from my previous visit to a chiropractor last month.",
+      msg:
+          "Okay, I'll make sure to bring the report from my previous visit to a chiropractor last month.",
       isRead: true,
       isSender: true,
     ),
 
     // 8. Clinic confirms the appointment and expresses anticipation.
     ChatMessage(
-      msg: "Excellent. Your appointment is confirmed for 1:15 PM. We look forward to seeing you then.",
+      msg:
+          "Excellent. Your appointment is confirmed for 1:15 PM. We look forward to seeing you then.",
       isRead: true,
       isSender: false,
     ),
 
     // 9. Patient asks a final, logistical question (Unread by Doctor).
     ChatMessage(
-      msg: "Just a quick question: Is parking available near the clinic, or should I take public transport?",
+      msg:
+          "Just a quick question: Is parking available near the clinic, or should I take public transport?",
       isRead: false, // simulating a message just sent
       isSender: true,
     ),
 
     // 10. Clinic answers the logistical question (Unread by Patient).
     ChatMessage(
-      msg: "Yes, there is a dedicated patient lot across the street from the main entrance. You should be fine.",
+      msg:
+          "Yes, there is a dedicated patient lot across the street from the main entrance. You should be fine.",
       isRead: false, // simulating a message just received
       isSender: false,
     ),
-
   ];
 
   @override
@@ -124,7 +131,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                 itemCount: messages.length,
                 itemBuilder: (context, index) {
                   final item = messages[index];
-                  if (item.isSender) {
+                  if (!item.isSender) {
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 8),
                       child: Column(
@@ -174,7 +181,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                             ),
                           ),
                           child: Text(
-                            "Yes",
+                            item.msg,
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
