@@ -14,6 +14,7 @@ class DoctorAppointmentChatPage extends StatefulWidget {
 class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
 
   List<ChatMessage> messages = [
+    /// using gemini
     // 1. Patient describes the primary issue.
     ChatMessage(
       msg: "I have a sudden sharp pain in my lower back, and it seems to be getting worse.",
@@ -120,8 +121,10 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
               padding: const EdgeInsets.all(16.0),
               child: ListView.builder(
                 padding: EdgeInsets.zero,
+                itemCount: messages.length,
                 itemBuilder: (context, index) {
-                  if (index % 2 == 0) {
+                  final item = messages[index];
+                  if (item.isSender) {
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 8),
                       child: Column(
@@ -141,7 +144,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                                 bottomRight: Radius.circular(8),
                               ),
                             ),
-                            child: Text("Yes"),
+                            child: Text(item.msg),
                           ),
                           Text(
                             "10:15",
