@@ -14,8 +14,10 @@ class DoctorAppointmentChatPage extends StatefulWidget {
 class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
 
   List<ChatMessage> messages = [
-    
+
+
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
