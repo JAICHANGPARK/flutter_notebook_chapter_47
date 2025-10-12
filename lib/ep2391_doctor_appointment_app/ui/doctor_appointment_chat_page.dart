@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_47/ep2391_doctor_appointment_app/model/chat_message.dart';
 
 import '../theme.dart';
 
@@ -11,6 +12,10 @@ class DoctorAppointmentChatPage extends StatefulWidget {
 }
 
 class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
+
+  List<ChatMessage> messages = [
+    
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
