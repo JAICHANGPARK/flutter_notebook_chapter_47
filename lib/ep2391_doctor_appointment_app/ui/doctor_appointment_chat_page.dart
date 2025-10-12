@@ -177,23 +177,33 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       spacing: 4,
                       children: [
-                        Container(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 16,
-                            vertical: 8,
-                          ),
-                          decoration: BoxDecoration(
-                            color: DoctorAppTheme.accentColor,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(8),
-                              topRight: Radius.circular(8),
-                              bottomLeft: Radius.circular(8),
+                        Stack(
+                          children: [
+                            Container(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
+                              decoration: BoxDecoration(
+                                color: DoctorAppTheme.accentColor,
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(8),
+                                  topRight: Radius.circular(8),
+                                  bottomLeft: Radius.circular(8),
+                                ),
+                              ),
+                              child: Text(
+                                item.msg,
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ),
-                          ),
-                          child: Text(
-                            item.msg,
-                            style: TextStyle(color: Colors.white),
-                          ),
+                            if (item.isRead)
+                              Positioned(
+                                right: 8,
+                                bottom: 4,
+                                child: Icon(Icons.done_all, size: 18),
+                              ),
+                          ],
                         ),
                         Text(
                           "10:15",
