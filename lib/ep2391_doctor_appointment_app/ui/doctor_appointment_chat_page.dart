@@ -156,8 +156,9 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                                 child: Text(item.msg),
                               ),
                               if (item.isRead)
-                                Align(
-                                  alignment: Alignment.bottomRight,
+                                Positioned(
+                                  right: 4,
+                                  bottom: 4,
                                   child: Icon(Icons.done_all),
                                 ),
                             ],
