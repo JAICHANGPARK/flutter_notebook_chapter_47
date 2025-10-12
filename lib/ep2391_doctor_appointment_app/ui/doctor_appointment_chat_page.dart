@@ -133,25 +133,29 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                   final item = messages[index];
                   if (!item.isSender) {
                     return Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.only(bottom: 8, right: 72),
                       child: Column(
                         spacing: 4,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 8,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(8),
-                                topRight: Radius.circular(8),
-                                bottomRight: Radius.circular(8),
+                          Stack(
+                            children: [
+                              Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 8,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(8),
+                                    topRight: Radius.circular(8),
+                                    bottomRight: Radius.circular(8),
+                                  ),
+                                ),
+                                child: Text(item.msg),
                               ),
-                            ),
-                            child: Text(item.msg),
+                            ],
                           ),
                           Text(
                             "10:15",
@@ -162,7 +166,7 @@ class _DoctorAppointmentChatPageState extends State<DoctorAppointmentChatPage> {
                     );
                   }
                   return Padding(
-                    padding: const EdgeInsets.only(bottom: 12),
+                    padding: const EdgeInsets.only(bottom: 8, left: 72),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       spacing: 4,
