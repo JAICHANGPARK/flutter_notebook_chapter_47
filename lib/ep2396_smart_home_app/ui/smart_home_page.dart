@@ -37,8 +37,17 @@ class _SmartHomePageState extends State<SmartHomePage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  Row(children: [CircleAvatar(radius: 28)]),
-                  Container(decoration: BoxDecoration(color: Colors.blue)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      CircleAvatar(radius: 28),
+                      Container(
+                        height: 56,
+                        width: 56,
+                        decoration: BoxDecoration(color: Colors.blue),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
