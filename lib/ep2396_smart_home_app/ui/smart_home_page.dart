@@ -56,7 +56,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                 backgroundColor: Colors.red,
                               ),
                             ),
-                            Positioned(
+                            Positioned.fill(
                               child: Container(
                                 decoration: BoxDecoration(
                                   border: Border.all(
@@ -65,8 +65,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                   ),
                                   shape: BoxShape.circle,
                                 ),
-                                child: HugeIcon(
-                                  icon: HugeIcons.strokeRoundedNotification01,
+                                child: Center(
+                                  child: HugeIcon(
+                                    icon: HugeIcons.strokeRoundedNotification01,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
@@ -75,6 +78,14 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       ),
                     ],
                   ),
+                  Container(height: 80, child: Placeholder()),
+                  Row(
+                    children: [
+                      Text("Rooms"),
+                      TextButton(onPressed: () {}, child: Text("view All")),
+                    ],
+                  ),
+                  Expanded(child: Placeholder())
                 ],
               ),
             ),
