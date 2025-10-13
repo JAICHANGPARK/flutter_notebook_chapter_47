@@ -37,6 +37,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
             top: 0,
             child: SafeArea(
               child: Column(
+                spacing: 12,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -80,6 +81,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   ),
                   Container(height: 80, child: Placeholder()),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Rooms"),
                       TextButton(onPressed: () {}, child: Text("view All")),
