@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SmartHomePage extends StatefulWidget {
   const SmartHomePage({super.key});
 
@@ -14,7 +13,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(gradient: RadialGradient(colors: [])),
+            ),
+          ),
         ],
       ),
     );
