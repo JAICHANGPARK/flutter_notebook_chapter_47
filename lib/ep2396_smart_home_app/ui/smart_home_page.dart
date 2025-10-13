@@ -15,7 +15,10 @@ class _SmartHomePageState extends State<SmartHomePage> {
         children: [
           Positioned.fill(
             child: Container(
-              decoration: BoxDecoration(gradient: RadialGradient(colors: [])),
+              decoration: BoxDecoration(
+                gradient: RadialGradient(colors: [Colors.black,
+                Colors.grey,]),
+              ),
             ),
           ),
         ],
