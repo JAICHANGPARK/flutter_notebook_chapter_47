@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class SmartHomePage extends StatefulWidget {
   const SmartHomePage({super.key});
@@ -44,7 +45,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       Container(
                         height: 56,
                         width: 56,
-                        decoration: BoxDecoration(color: Colors.blue),
+                        // decoration: BoxDecoration(color: Colors.blue),
                         child: Stack(
                           children: [
                             Positioned(
@@ -62,7 +63,10 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                     color: Colors.white30,
                                     width: 0.5,
                                   ),
-                                  shape: BoxShape.circle
+                                  shape: BoxShape.circle,
+                                ),
+                                child: HugeIcon(
+                                  icon: HugeIcons.strokeRoundedNotification01,
                                 ),
                               ),
                             ),
