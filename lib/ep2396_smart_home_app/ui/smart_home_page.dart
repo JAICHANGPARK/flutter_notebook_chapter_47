@@ -20,8 +20,8 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   colors: [Color.fromRGBO(60, 104, 103, 1),
 
                     Color.fromRGBO(32, 80, 79, 1) , Colors.black, ],
-                  center: Alignment(0.5, -0.9),
-                  radius: .6,
+                  center: Alignment(0.5, -0.8),
+                  radius: .65,
                 ),
               ),
             ),
