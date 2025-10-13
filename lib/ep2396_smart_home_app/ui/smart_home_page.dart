@@ -45,6 +45,29 @@ class _SmartHomePageState extends State<SmartHomePage> {
                         height: 56,
                         width: 56,
                         decoration: BoxDecoration(color: Colors.blue),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 0,
+                              right: 0,
+                              child: CircleAvatar(
+                                radius: 4,
+                                backgroundColor: Colors.red,
+                              ),
+                            ),
+                            Positioned(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 0.5,
+                                  ),
+                                  shape: BoxShape.circle
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
