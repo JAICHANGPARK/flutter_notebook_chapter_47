@@ -51,7 +51,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                               top: 0,
                               right: 0,
                               child: CircleAvatar(
-                                radius: 4,
+                                radius: 6,
                                 backgroundColor: Colors.red,
                               ),
                             ),
@@ -59,7 +59,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   border: Border.all(
-                                    color: Colors.white,
+                                    color: Colors.white30,
                                     width: 0.5,
                                   ),
                                   shape: BoxShape.circle
