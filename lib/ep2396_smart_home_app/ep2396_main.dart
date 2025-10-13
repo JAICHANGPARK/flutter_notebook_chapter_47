@@ -3,5 +3,5 @@ import 'package:flutter_notebook_chapter_47/ep2396_smart_home_app/smart_home_app
 
 
 void main() {
-  runApp(SmartHomeApp());
+  runApp(SmartHomeApp()); 
 }
