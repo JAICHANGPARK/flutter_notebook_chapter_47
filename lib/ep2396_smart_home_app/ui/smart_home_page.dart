@@ -17,8 +17,10 @@ class _SmartHomePageState extends State<SmartHomePage> {
             child: Container(
               decoration: BoxDecoration(
                 gradient: RadialGradient(
-                  colors: [Colors.white, Colors.teal , Colors.black, ],
-                  center: Alignment(0.4, -0.9),
+                  colors: [Color.fromRGBO(60, 104, 103, 1),
+
+                    Color.fromRGBO(32, 80, 79, 1) , Colors.black, ],
+                  center: Alignment(0.5, -0.9),
                   radius: .6,
                 ),
               ),
