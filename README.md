@@ -2,7 +2,7 @@
 
 ## EP2396
 
-- Online Doctor Appointment App
+- Smart Home App Design
 - Mehedi Hasan
 - https://dribbble.com/shots/26618468-Online-Doctor-Appointment-App
 
