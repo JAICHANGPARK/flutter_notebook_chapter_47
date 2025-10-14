@@ -41,7 +41,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
             top: 0,
             child: SafeArea(
               child: Column(
-                spacing: 16,
+                spacing: 24,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -155,6 +155,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
+                          fontSize: 20,
                         ),
                       ),
                       TextButton(
