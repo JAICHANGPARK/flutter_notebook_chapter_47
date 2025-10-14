@@ -9,6 +9,8 @@ class SmartHomePage extends StatefulWidget {
 }
 
 class _SmartHomePageState extends State<SmartHomePage> {
+  Color accentColor = Color.fromRGBO(33, 232, 225, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,9 +82,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       ),
                     ],
                   ),
-                  Container(height: 80, child: Row(children: [CircleAvatar(
-                    
-                  )])),
+                  Container(height: 80, child: Row(children: [CircleAvatar()])),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
