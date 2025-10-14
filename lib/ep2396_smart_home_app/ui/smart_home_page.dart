@@ -85,14 +85,25 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   Container(
                     height: 80,
                     child: Row(
-                      children: [CircleAvatar(
-                          radius: 30,
-                          backgroundColor: accentColor),
-                      Expanded(child: Column(
-
-                        children: [
-
-                      ],))],
+                      children: [
+                        CircleAvatar(radius: 30, backgroundColor: accentColor),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text.rich(
+                                TextSpan(
+                                  children: [
+                                    TextSpan(text: "952"),
+                                    TextSpan(text: 'Kwh'),
+                                  ],
+                                ),
+                              ),
+                              Text("Date updated 3 hours ago")
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   Row(
