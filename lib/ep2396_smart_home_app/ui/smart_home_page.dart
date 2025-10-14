@@ -65,6 +65,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                     width: 0.5,
                                   ),
                                   shape: BoxShape.circle,
+                                  color: Colors.white12,
                                 ),
                                 child: Center(
                                   child: HugeIcon(
