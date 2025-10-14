@@ -103,15 +103,20 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                         color: Colors.white,
                                       ),
                                     ),
-                                    TextSpan(text: 'Kwh',
+                                    TextSpan(
+                                      text: 'Kwh',
                                       style: TextStyle(
                                         fontSize: 12,
                                         color: Colors.white,
-                                      ),),
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
-                              Text("Date updated 3 hours ago"),
+                              Text(
+                                "Date updated 3 hours ago",
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ],
                           ),
                         ),
