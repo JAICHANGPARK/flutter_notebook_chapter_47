@@ -85,7 +85,14 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   Container(
                     height: 80,
                     child: Row(
-                      children: [CircleAvatar(backgroundColor: accentColor)],
+                      children: [CircleAvatar(
+                          radius: 30,
+                          backgroundColor: accentColor),
+                      Expanded(child: Column(
+
+                        children: [
+
+                      ],))],
                     ),
                   ),
                   Row(
