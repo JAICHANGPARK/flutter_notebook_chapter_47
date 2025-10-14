@@ -82,7 +82,12 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       ),
                     ],
                   ),
-                  Container(height: 80, child: Row(children: [CircleAvatar()])),
+                  Container(
+                    height: 80,
+                    child: Row(
+                      children: [CircleAvatar(backgroundColor: accentColor)],
+                    ),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
