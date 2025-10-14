@@ -91,7 +91,12 @@ class _SmartHomePageState extends State<SmartHomePage> {
                     child: Row(
                       spacing: 8,
                       children: [
-                        CircleAvatar(radius: 30, backgroundColor: accentColor),
+                        CircleAvatar(
+                          radius: 30,
+                          backgroundColor: accentColor,
+                          child: Icon(Icons.bolt),
+                          foregroundColor: Colors.black,
+                        ),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
