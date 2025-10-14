@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -82,61 +84,65 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       ),
                     ],
                   ),
-                  Container(
-                    height: 80,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white12),
-                      borderRadius: BorderRadius.circular(42),
-                    ),
-                    child: Row(
-                      spacing: 8,
-                      children: [
-                        CircleAvatar(
-                          radius: 30,
-                          backgroundColor: accentColor,
-                          foregroundColor: Colors.black,
-                          child: Icon(Icons.bolt,
-                          size: 28,),
+                  ClipRRect(
+                    child: BackdropFilter(
+                      filter: ImageFilter.blur(sigmaX: 3, sigmaY: 5),
+                      child: Container(
+                        height: 80,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white12),
+                          borderRadius: BorderRadius.circular(42),
                         ),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text.rich(
-                                TextSpan(
-                                  children: [
+                        child: Row(
+                          spacing: 8,
+                          children: [
+                            CircleAvatar(
+                              radius: 30,
+                              backgroundColor: accentColor,
+                              foregroundColor: Colors.black,
+                              child: Icon(Icons.bolt, size: 28),
+                            ),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text.rich(
                                     TextSpan(
-                                      text: "952",
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.white,
-                                      ),
+                                      children: [
+                                        TextSpan(
+                                          text: "952",
+                                          style: TextStyle(
+                                            fontSize: 20,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: 'Kwh',
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                    TextSpan(
-                                      text: 'Kwh',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
+                                  ),
+                                  Text(
+                                    "Date updated 3 hours ago",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ],
                               ),
-                              Text(
-                                "Date updated 3 hours ago",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.keyboard_arrow_down),
+                              color: Colors.white,
+                              iconSize: 36,
+                            ),
+                          ],
                         ),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.keyboard_arrow_down),
-                          color: Colors.white,
-                          iconSize: 36,
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                   Row(
