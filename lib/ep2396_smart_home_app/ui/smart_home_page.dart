@@ -22,14 +22,14 @@ class _SmartHomePageState extends State<SmartHomePage> {
             child: Container(
               decoration: BoxDecoration(
                 gradient: RadialGradient(
-                  radius: .65,
+                  radius: .58,
                   colors: [
                     Color.fromRGBO(60, 104, 103, 1),
                     Color.fromRGBO(32, 80, 79, 1),
                     Color.fromRGBO(8, 52, 51, 1),
                     Colors.black,
                   ],
-                  center: Alignment(0.5, -0.85),
+                  center: Alignment(0.48, -0.85),
                 ),
               ),
             ),
@@ -86,10 +86,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   ),
                   ClipRRect(
                     child: BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: 3, sigmaY: 5),
+                      filter: ImageFilter.blur(sigmaX: 2, sigmaY: 1),
                       child: Container(
                         height: 80,
                         decoration: BoxDecoration(
+                          color: Colors.white12.withValues(alpha: .2),
                           border: Border.all(color: Colors.white12),
                           borderRadius: BorderRadius.circular(42),
                         ),
