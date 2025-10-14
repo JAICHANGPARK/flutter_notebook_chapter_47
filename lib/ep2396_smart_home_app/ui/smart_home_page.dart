@@ -99,11 +99,15 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                     TextSpan(
                                       text: "952",
                                       style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 20,
                                         color: Colors.white,
                                       ),
                                     ),
-                                    TextSpan(text: 'Kwh'),
+                                    TextSpan(text: 'Kwh',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.white,
+                                      ),),
                                   ],
                                 ),
                               ),
