@@ -91,11 +91,18 @@ class _SmartHomePageState extends State<SmartHomePage> {
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text.rich(
                                 TextSpan(
                                   children: [
-                                    TextSpan(text: "952"),
+                                    TextSpan(
+                                      text: "952",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                      ),
+                                    ),
                                     TextSpan(text: 'Kwh'),
                                   ],
                                 ),
