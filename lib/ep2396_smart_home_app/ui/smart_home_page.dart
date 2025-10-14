@@ -88,12 +88,13 @@ class _SmartHomePageState extends State<SmartHomePage> {
                     child: BackdropFilter(
                       filter: ImageFilter.blur(sigmaX: 2, sigmaY: 1),
                       child: Container(
-                        height: 80,
+                        height: 72,
                         decoration: BoxDecoration(
                           color: Colors.white12.withValues(alpha: .2),
                           border: Border.all(color: Colors.white12),
                           borderRadius: BorderRadius.circular(42),
                         ),
+                        padding: EdgeInsets.only(left: 8),
                         child: Row(
                           spacing: 8,
                           children: [
