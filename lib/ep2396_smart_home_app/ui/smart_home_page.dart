@@ -169,9 +169,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   ),
                   Expanded(
                     child: ListView.builder(
+                      itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(color: Colors.blue),
+                          child: Placeholder(),
                         );
                       },
                     ),
