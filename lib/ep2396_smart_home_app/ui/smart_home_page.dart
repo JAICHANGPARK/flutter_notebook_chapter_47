@@ -94,8 +94,8 @@ class _SmartHomePageState extends State<SmartHomePage> {
                         CircleAvatar(
                           radius: 30,
                           backgroundColor: accentColor,
-                          child: Icon(Icons.bolt),
                           foregroundColor: Colors.black,
+                          child: Icon(Icons.bolt),
                         ),
                         Expanded(
                           child: Column(
