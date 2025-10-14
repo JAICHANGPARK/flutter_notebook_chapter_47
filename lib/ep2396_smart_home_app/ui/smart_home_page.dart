@@ -128,6 +128,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                           onPressed: () {},
                           icon: Icon(Icons.keyboard_arrow_down),
                           color: Colors.white,
+                          iconSize: 36,
                         ),
                       ],
                     ),
