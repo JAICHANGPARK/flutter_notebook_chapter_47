@@ -80,7 +80,9 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       ),
                     ],
                   ),
-                  Container(height: 80, child: Placeholder()),
+                  Container(height: 80, child: Row(children: [CircleAvatar(
+                    
+                  )])),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -88,7 +90,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       TextButton(onPressed: () {}, child: Text("view All")),
                     ],
                   ),
-                  Expanded(child: Placeholder())
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
