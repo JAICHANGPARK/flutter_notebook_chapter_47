@@ -39,7 +39,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
             top: 0,
             child: SafeArea(
               child: Column(
-                spacing: 12,
+                spacing: 16,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -84,6 +84,10 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   ),
                   Container(
                     height: 80,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.white12),
+                      borderRadius: BorderRadius.circular(42),
+                    ),
                     child: Row(
                       spacing: 8,
                       children: [
