@@ -85,6 +85,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   Container(
                     height: 80,
                     child: Row(
+                      spacing: 8,
                       children: [
                         CircleAvatar(radius: 30, backgroundColor: accentColor),
                         Expanded(
@@ -99,9 +100,13 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                   ],
                                 ),
                               ),
-                              Text("Date updated 3 hours ago")
+                              Text("Date updated 3 hours ago"),
                             ],
                           ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.keyboard_arrow_down),
                         ),
                       ],
                     ),
