@@ -150,8 +150,20 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Rooms", style: TextStyle(color: Colors.white)),
-                      TextButton(onPressed: () {}, child: Text("view All")),
+                      Text(
+                        "Rooms",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("view All"),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.grey,
+                        ),
+                      ),
                     ],
                   ),
                   Expanded(child: Placeholder()),
