@@ -95,7 +95,8 @@ class _SmartHomePageState extends State<SmartHomePage> {
                           radius: 30,
                           backgroundColor: accentColor,
                           foregroundColor: Colors.black,
-                          child: Icon(Icons.bolt),
+                          child: Icon(Icons.bolt,
+                          size: 28,),
                         ),
                         Expanded(
                           child: Column(
