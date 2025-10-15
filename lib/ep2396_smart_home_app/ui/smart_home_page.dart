@@ -172,6 +172,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
+                          padding: EdgeInsets.all(16),
                           decoration: BoxDecoration(color: Colors.black,
                           ),
                           child: Column(
