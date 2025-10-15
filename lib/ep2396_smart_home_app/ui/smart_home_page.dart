@@ -172,7 +172,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          padding: EdgeInsets.all(16),
+                          padding: EdgeInsets.all(12),
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
                               borderRadius: BorderRadius.circular(32),
@@ -184,8 +184,8 @@ class _SmartHomePageState extends State<SmartHomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                height: 62,
-                                width: 62,
+                                height: 58,
+                                width: 58,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Colors.white10,
