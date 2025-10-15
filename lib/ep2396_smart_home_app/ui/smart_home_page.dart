@@ -178,7 +178,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                             left: 16,
                             right: 16,
                             top: 16,
-                            bottom: 24
+                            bottom: 24,
                           ),
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
@@ -235,6 +235,15 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                       color: Colors.white,
                                       fontSize: 24,
                                       fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white12,
+                                    ),
+                                    child: Icon(
+                                      Icons.zoom_out_map,
+                                      color: Colors.white,
                                     ),
                                   ),
                                 ],
