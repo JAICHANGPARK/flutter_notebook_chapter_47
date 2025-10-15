@@ -174,8 +174,9 @@ class _SmartHomePageState extends State<SmartHomePage> {
                         return Container(
                           decoration: BoxDecoration(color: Colors.blue),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              
+
                             ],
                           ),
                         );
