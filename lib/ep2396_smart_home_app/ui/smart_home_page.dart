@@ -208,7 +208,10 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                       color: Colors.white10,
                                       border: Border.all(color: Colors.white12),
                                     ),
-                                    child: Icon(Icons.edit, color: Colors.white,),
+                                    child: Icon(
+                                      Icons.edit,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                   Container(
                                     height: 54,
@@ -217,6 +220,10 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                       shape: BoxShape.circle,
                                       color: Colors.white10,
                                       border: Border.all(color: Colors.white12),
+                                    ),
+                                    child: Icon(
+                                      Icons.delete_outline,
+                                      color: Colors.white,
                                     ),
                                   ),
                                   Spacer(),
