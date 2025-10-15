@@ -174,7 +174,12 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           height: 300,
-                          padding: EdgeInsets.all(12),
+                          padding: EdgeInsets.only(
+                            left: 16,
+                            right: 16,
+                            top: 16,
+                            bottom: 24
+                          ),
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
                               borderRadius: BorderRadius.circular(32),
