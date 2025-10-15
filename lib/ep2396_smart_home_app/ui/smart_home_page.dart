@@ -188,6 +188,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                 width: 62,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
+                                  color: Colors.white10,
                                   border: Border.all(color: Colors.white12),
                                 ),
                               ),
