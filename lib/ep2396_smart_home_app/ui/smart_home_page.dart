@@ -41,7 +41,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
             top: 0,
             child: SafeArea(
               child: Column(
-                spacing: 24,
+                spacing: 20,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
