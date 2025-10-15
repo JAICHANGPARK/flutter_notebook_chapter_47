@@ -189,6 +189,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                               image: NetworkImage(
                                 "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
                               ),
+                              fit: BoxFit.cover,
                             ),
                           ),
                           margin: EdgeInsets.only(bottom: 16),
