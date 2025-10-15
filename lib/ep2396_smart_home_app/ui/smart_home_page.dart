@@ -226,7 +226,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                 children: [
                                   Text(
                                     "Living Room",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ],
                               ),
