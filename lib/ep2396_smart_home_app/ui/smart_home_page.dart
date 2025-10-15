@@ -172,11 +172,14 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          decoration: BoxDecoration(color: Colors.blue),
+                          decoration: BoxDecoration(color: Colors.black,
+                          ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
+                                height: 462,
+                                width: 62,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   border: Border.all(color: Colors.white12)
