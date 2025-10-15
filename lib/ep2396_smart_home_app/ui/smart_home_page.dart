@@ -184,6 +184,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                           margin: EdgeInsets.only(bottom: 16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Row(
                                 spacing: 6,
@@ -211,7 +212,8 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                     height: 54,
                                     width: 54,
                                     decoration: BoxDecoration(
-                                      shape: BoxShape.circle, color: accentColor,
+                                      shape: BoxShape.circle,
+                                      color: accentColor,
                                       border: Border.all(color: Colors.white12),
                                     ),
                                     child: Center(
@@ -219,8 +221,15 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                     ),
                                   ),
                                 ],
-                              )
-
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Living Room",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         );
