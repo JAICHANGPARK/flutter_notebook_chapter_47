@@ -212,6 +212,9 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                       shape: BoxShape.circle, color: accentColor,
                                       border: Border.all(color: Colors.white12),
                                     ),
+                                    child: Center(
+                                      child: Icon(Icons.arrow_forward),
+                                    ),
                                   ),
                                 ],
                               )
