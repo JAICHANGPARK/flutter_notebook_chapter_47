@@ -177,12 +177,14 @@ class _SmartHomePageState extends State<SmartHomePage> {
                             shape: RoundedSuperellipseBorder(
                               borderRadius: BorderRadius.circular(32),
                             ),
+                            color: Colors.grey,
                           ),
+                          margin: EdgeInsets.only(bottom: 16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                height: 462,
+                                height: 62,
                                 width: 62,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
