@@ -173,7 +173,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(color: Colors.blue),
-                          child: Placeholder(),
+                          child: Column(
+                            children: [
+                              
+                            ],
+                          ),
                         );
                       },
                     ),
