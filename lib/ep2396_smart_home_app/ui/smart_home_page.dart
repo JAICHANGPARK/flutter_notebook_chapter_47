@@ -185,6 +185,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                               borderRadius: BorderRadius.circular(32),
                             ),
                             color: Colors.grey,
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
+                              ),
+                            ),
                           ),
                           margin: EdgeInsets.only(bottom: 16),
                           child: Column(
@@ -237,6 +242,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  Spacer(),
                                   Container(
                                     padding: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
