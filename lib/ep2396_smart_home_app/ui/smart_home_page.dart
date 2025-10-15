@@ -176,7 +176,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-
+                              Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
                             ],
                           ),
                         );
