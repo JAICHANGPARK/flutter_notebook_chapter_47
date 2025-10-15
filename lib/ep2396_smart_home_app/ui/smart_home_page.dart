@@ -208,6 +208,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                       color: Colors.white10,
                                       border: Border.all(color: Colors.white12),
                                     ),
+                                    child: Icon(Icons.edit, color: Colors.white,),
                                   ),
                                   Container(
                                     height: 54,
@@ -234,6 +235,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                 ],
                               ),
                               Row(
+                                spacing: 4,
                                 children: [
                                   Text(
                                     "Living Room",
