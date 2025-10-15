@@ -238,8 +238,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                     ),
                                   ),
                                   Container(
+                                    padding: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
                                       color: Colors.white12,
+                                      shape: BoxShape.circle,
+                                      border: Border.all(color: Colors.white12),
                                     ),
                                     child: Icon(
                                       Icons.zoom_out_map,
