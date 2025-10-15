@@ -170,7 +170,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   Expanded(
                     child: ListView.builder(
                       itemCount: 10,
-                      
+                      padding: EdgeInsets.zero,
                       itemBuilder: (context, index) {
                         return Container(
                           height: 300,
