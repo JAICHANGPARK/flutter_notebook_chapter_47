@@ -298,12 +298,12 @@ class _SmartHomePageState extends State<SmartHomePage> {
             alignment: Alignment.bottomCenter,
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
-              height: 72,
+              height: 76,
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
                 color: Colors.blue,
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: Row(
                 children: [
                   Container(
