@@ -306,9 +306,17 @@ class _SmartHomePageState extends State<SmartHomePage> {
               child: Row(
                 children: [
                   Container(
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.white12,
+                    ),
+                    padding: EdgeInsets.only(
+                      right: 12
+                    ),
                     child: Row(
-                        spacing: 6,
-                        children: [CircleAvatar(), Text("Home")]),
+                      spacing: 6,
+                      children: [CircleAvatar(), Text("Home")],
+                    ),
                   ),
                 ],
               ),
