@@ -306,7 +306,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                     height: 76,
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
-                      color: Colors.white,
+                      color: Colors.white30,
                     ),
 
                     padding: EdgeInsets.symmetric(horizontal: 12),
@@ -328,7 +328,10 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                 child: Icon(Icons.home_filled),
                                 radius: 24,
                               ),
-                              Text("Home", style: TextStyle(color: Colors.white)),
+                              Text(
+                                "Home",
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ],
                           ),
                         ),
