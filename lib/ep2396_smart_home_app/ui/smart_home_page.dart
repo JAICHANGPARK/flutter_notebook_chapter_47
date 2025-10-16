@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -236,7 +237,10 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                       border: Border.all(color: Colors.white12),
                                     ),
                                     child: Center(
-                                      child: Transform(child: Icon(Icons.arrow_forward)),
+                                      child: Transform.rotate(
+
+                                          angle: -1/pi,
+                                          child: Icon(Icons.arrow_forward)),
                                     ),
                                   ),
                                 ],
