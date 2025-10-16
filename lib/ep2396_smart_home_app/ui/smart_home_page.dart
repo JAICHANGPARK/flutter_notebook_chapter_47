@@ -294,7 +294,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
             ),
           ),
           Align(
-            alignment: Alignment, y),
+            alignment: Alignment.bottomCenter,
             child: Container(
               decoration: ShapeDecoration(shape: StadiumBorder()),
             ),
