@@ -301,7 +301,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(32),
                 child: BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 4, sigmaY: 6),
+                  filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
                   child: Container(
                     height: 76,
                     decoration: ShapeDecoration(
