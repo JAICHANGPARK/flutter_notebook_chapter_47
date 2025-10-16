@@ -297,7 +297,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: BackdropFilter(
-              
+              filter: ImageFilter.blur(sigmaX: 4, sigmaY: 65),
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
                 height: 76,
