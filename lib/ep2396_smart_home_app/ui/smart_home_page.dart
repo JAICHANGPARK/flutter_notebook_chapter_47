@@ -298,7 +298,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
             alignment: Alignment.bottomCenter,
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
-              height: 80,
+              height: 72,
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
                 color: Colors.blue,
@@ -315,7 +315,9 @@ class _SmartHomePageState extends State<SmartHomePage> {
                     ),
                     child: Row(
                       spacing: 6,
-                      children: [CircleAvatar(), Text("Home")],
+                      children: [CircleAvatar(
+                        radius: 24,
+                      ), Text("Home")],
                     ),
                   ),
                 ],
