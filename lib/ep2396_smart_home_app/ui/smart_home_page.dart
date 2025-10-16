@@ -311,14 +311,17 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       shape: StadiumBorder(),
                       color: Colors.white12,
                     ),
-                    padding: EdgeInsets.only(
-                      right: 12
-                    ),
+                    padding: EdgeInsets.only(right: 12),
                     child: Row(
                       spacing: 6,
-                      children: [CircleAvatar(
-                        radius: 24,
-                      ), Text("Home")],
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: accentColor,
+                          child: Icon(Icons.home_filled),
+                          radius: 24,
+                        ),
+                        Text("Home"),
+                      ],
                     ),
                   ),
                 ],
