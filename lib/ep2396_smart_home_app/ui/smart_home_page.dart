@@ -236,7 +236,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                       border: Border.all(color: Colors.white12),
                                     ),
                                     child: Center(
-                                      child: Icon(Icons.arrow_forward),
+                                      child: Transform(child: Icon(Icons.arrow_forward)),
                                     ),
                                   ),
                                 ],
