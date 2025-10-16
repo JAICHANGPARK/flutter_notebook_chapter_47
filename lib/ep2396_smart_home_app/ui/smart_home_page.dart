@@ -301,7 +301,6 @@ class _SmartHomePageState extends State<SmartHomePage> {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 4, sigmaY: 6),
                 child: Container(
-                  margin: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
                   height: 76,
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
@@ -309,6 +308,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 12),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Container(
                         decoration: ShapeDecoration(
