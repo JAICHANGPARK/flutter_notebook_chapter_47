@@ -303,6 +303,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                 shape: StadiumBorder(),
                 color: Colors.blue,
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Container(
