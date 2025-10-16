@@ -296,36 +296,39 @@ class _SmartHomePageState extends State<SmartHomePage> {
           ),
           Align(
             alignment: Alignment.bottomCenter,
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
-              height: 76,
-              decoration: ShapeDecoration(
-                shape: StadiumBorder(),
-                color: Colors.blue,
-              ),
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: Row(
-                children: [
-                  Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.white12,
+            child: BackdropFilter(
+              
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
+                height: 76,
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.white,
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 12),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.white12,
+                      ),
+                      padding: EdgeInsets.only(right: 12),
+                      child: Row(
+                        spacing: 6,
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: accentColor,
+                            foregroundColor: Colors.black,
+                            child: Icon(Icons.home_filled),
+                            radius: 24,
+                          ),
+                          Text("Home", style: TextStyle(color: Colors.white)),
+                        ],
+                      ),
                     ),
-                    padding: EdgeInsets.only(right: 12),
-                    child: Row(
-                      spacing: 6,
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: accentColor,
-                          foregroundColor: Colors.black,
-                          child: Icon(Icons.home_filled),
-                          radius: 24,
-                        ),
-                        Text("Home", style: TextStyle(color: Colors.white)),
-                      ],
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
