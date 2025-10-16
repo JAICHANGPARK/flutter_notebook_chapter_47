@@ -238,9 +238,9 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                     ),
                                     child: Center(
                                       child: Transform.rotate(
-
-                                          angle: -2.5/pi,
-                                          child: Icon(Icons.arrow_forward)),
+                                        angle: -2.5 / pi,
+                                        child: Icon(Icons.arrow_forward),
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -291,6 +291,12 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   ),
                 ],
               ),
+            ),
+          ),
+          Align(
+            alignment: Alignment, y),
+            child: Container(
+              decoration: ShapeDecoration(shape: StadiumBorder()),
             ),
           ),
         ],
