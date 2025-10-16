@@ -348,6 +348,30 @@ class _SmartHomePageState extends State<SmartHomePage> {
                             color: Colors.white,
                           ),
                         ),
+                        Container(
+                          padding: EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.white12,
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white12),
+                          ),
+                          child: Icon(
+                            Icons.mic_none,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.white12,
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white12),
+                          ),
+                          child: Icon(
+                            Icons.settings_outlined,
+                            color: Colors.white,
+                          ),
+                        ),
                       ],
                     ),
                   ),
