@@ -254,7 +254,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                   ),
                                   Spacer(),
                                   Container(
-                                    padding: EdgeInsets.all(4),
+                                    padding: EdgeInsets.all(8),
                                     decoration: BoxDecoration(
                                       color: Colors.white12,
                                       shape: BoxShape.circle,
