@@ -41,6 +41,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
             bottom: 0,
             top: 0,
             child: SafeArea(
+              bottom: false,
               child: Column(
                 spacing: 20,
                 children: [
