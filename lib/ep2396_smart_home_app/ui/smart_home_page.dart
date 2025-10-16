@@ -312,6 +312,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                     padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
+                      spacing: 16,
                       children: [
                         Container(
                           decoration: ShapeDecoration(
@@ -333,6 +334,18 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                 style: TextStyle(color: Colors.white),
                               ),
                             ],
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.white12,
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white12),
+                          ),
+                          child: Icon(
+                            Icons.zoom_out_map,
+                            color: Colors.white,
                           ),
                         ),
                       ],
