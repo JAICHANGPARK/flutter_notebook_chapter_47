@@ -296,6 +296,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 42, vertical: 24),
               height: 80,
               decoration: ShapeDecoration(shape: StadiumBorder(),
               color: Colors.blue,),
