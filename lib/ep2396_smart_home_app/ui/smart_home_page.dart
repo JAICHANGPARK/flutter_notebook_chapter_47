@@ -296,40 +296,44 @@ class _SmartHomePageState extends State<SmartHomePage> {
           ),
           Align(
             alignment: Alignment.bottomCenter,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(32),
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 4, sigmaY: 6),
-                child: Container(
-                  height: 76,
-                  decoration: ShapeDecoration(
-                    shape: StadiumBorder(),
-                    color: Colors.white,
-                  ),
-                  padding: EdgeInsets.symmetric(horizontal: 12),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.white12,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 32),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(32),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 4, sigmaY: 6),
+                  child: Container(
+                    height: 76,
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.white,
+                    ),
+
+                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white12,
+                          ),
+                          padding: EdgeInsets.only(right: 12),
+                          child: Row(
+                            spacing: 6,
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: accentColor,
+                                foregroundColor: Colors.black,
+                                child: Icon(Icons.home_filled),
+                                radius: 24,
+                              ),
+                              Text("Home", style: TextStyle(color: Colors.white)),
+                            ],
+                          ),
                         ),
-                        padding: EdgeInsets.only(right: 12),
-                        child: Row(
-                          spacing: 6,
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: accentColor,
-                              foregroundColor: Colors.black,
-                              child: Icon(Icons.home_filled),
-                              radius: 24,
-                            ),
-                            Text("Home", style: TextStyle(color: Colors.white)),
-                          ],
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
