@@ -9,6 +9,7 @@ class SmartHomeDevicePage extends StatefulWidget {
 
 class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
   Color accentColor = Color.fromRGBO(33, 232, 225, 1);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -29,12 +30,18 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
           ],
         ),
         SizedBox(
-          height: 62,
+          height: 52,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
-              Container(decoration: ShapeDecoration(shape: StadiumBorder(),
-              color: )),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 24),
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: accentColor,
+                ),
+                child: Center(child: Text("All")),
+              ),
             ],
           ),
         ),
