@@ -26,7 +26,9 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
               crossAxisSpacing: 12,
               mainAxisSpacing: 12,
             ),
-            itemBuilder: (context, index) {},
+            itemBuilder: (context, index) {
+              return Placeholder();
+            },
           ),
         ),
       ],
