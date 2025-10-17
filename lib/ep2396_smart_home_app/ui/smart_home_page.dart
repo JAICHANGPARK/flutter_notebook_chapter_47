@@ -53,6 +53,8 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       switch (pageNum) {
                         0 => CircleAvatar(radius: 28),
                         1 => Container(
+                          height: 56,
+                          width: 56,
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.white30,
@@ -61,9 +63,11 @@ class _SmartHomePageState extends State<SmartHomePage> {
                             shape: BoxShape.circle,
                             color: Colors.white12,
                           ),
-                          child: Center(child: Icon(Icons.add)),
+                          child: Center(
+                            child: Icon(Icons.add, color: Colors.white),
+                          ),
                         ),
-                        _ => CircleAvatar(),
+                        _ => CircleAvatar(radius: 28),
                       },
 
                       Container(
