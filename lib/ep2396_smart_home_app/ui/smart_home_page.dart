@@ -429,7 +429,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                         backgroundColor: accentColor,
                                         foregroundColor: Colors.black,
                                         radius: 24,
-                                        child: Icon(Icons.zoom_out_map),
+                                        child: Icon(Icons.app_registration),
                                       ),
                                       Text(
                                         "Device",
@@ -446,7 +446,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                                     border: Border.all(color: Colors.white12),
                                   ),
                                   child: Icon(
-                                    Icons.zoom_out_map,
+                                    Icons.app_registration,
                                     color: Colors.white,
                                   ),
                                 ),
