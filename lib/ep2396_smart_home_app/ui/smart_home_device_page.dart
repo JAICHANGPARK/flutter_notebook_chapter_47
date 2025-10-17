@@ -22,8 +22,8 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
             ),
             TextButton(
               onPressed: () {},
-              child: Text("view All"),
               style: TextButton.styleFrom(foregroundColor: Colors.grey),
+              child: Text("view All"),
             ),
           ],
         ),
