@@ -355,16 +355,23 @@ class _SmartHomePageState extends State<SmartHomePage> {
                             ),
                           ),
                         ),
-                        Container(
-                          padding: EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.white12,
-                            shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white12),
-                          ),
-                          child: Icon(
-                            Icons.zoom_out_map,
-                            color: Colors.white,
+                        GestureDetector(
+                          onTap: (){
+                            setState(() {
+                              pageNum = 1;
+                            });
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: Colors.white12,
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.white12),
+                            ),
+                            child: Icon(
+                              Icons.zoom_out_map,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                         Container(
