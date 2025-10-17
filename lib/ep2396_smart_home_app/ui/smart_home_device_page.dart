@@ -29,7 +29,12 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
         ),
         SizedBox(
           height: 62,
-          child: ListView(scrollDirection: Axis.horizontal, children: []),
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: [
+              Container(decoration: ShapeDecoration(shape: StadiumBorder())),
+            ],
+          ),
         ),
         Expanded(
           child: GridView.builder(
