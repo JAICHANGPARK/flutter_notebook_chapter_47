@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SmartHomeDevicePage extends StatefulWidget {
   const SmartHomeDevicePage({super.key});
 
@@ -13,7 +12,12 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
+        Row(
+          children: [
+            Text("My Devices"),
+            TextButton(onPressed: () {}, child: Text("view All")),
+          ],
+        ),
       ],
     );
   }
