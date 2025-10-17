@@ -35,6 +35,7 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
             scrollDirection: Axis.horizontal,
             children: [
               Container(
+                margin: EdgeInsets.only(right: 16),
                 padding: EdgeInsets.symmetric(horizontal: 28),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
@@ -43,14 +44,18 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                 child: Center(child: Text("All")),
               ),
               Container(
+                margin: EdgeInsets.only(right: 16),
                 padding: EdgeInsets.symmetric(horizontal: 28),
                 decoration: ShapeDecoration(
-                  shape: StadiumBorder(),
+                  shape: StadiumBorder(side: BorderSide(color: Colors.white12)),
                   // color: accentColor,
                 ),
-                child: Center(child: Text("Living Room",style: TextStyle(
-                  color: Colors.grey,
-                ),)),
+                child: Center(
+                  child: Text(
+                    "Living Room",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ),
               ),
             ],
           ),
