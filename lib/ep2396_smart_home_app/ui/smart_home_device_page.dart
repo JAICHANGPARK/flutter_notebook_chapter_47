@@ -18,10 +18,17 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
             TextButton(onPressed: () {}, child: Text("view All")),
           ],
         ),
-        SizedBox(
-          height: 62,
-          child: Placeholder(),
-        )
+        SizedBox(height: 62, child: Placeholder()),
+        Expanded(
+          child: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 12,
+              mainAxisSpacing: 12,
+            ),
+            itemBuilder: (context, index) {},
+          ),
+        ),
       ],
     );
   }
