@@ -34,8 +34,17 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
             itemBuilder: (context, index) {
               return Container(
                 decoration: ShapeDecoration(
-                  shape: RoundedSuperellipseBorder(),
+                  shape: RoundedSuperellipseBorder(
+                    borderRadius: BorderRadius.circular(24),
+                  ),
                   color: Color.fromRGBO(26, 26, 26, 1),
+                ),
+                child: Stack(
+                  children: [
+                    Positioned(child: Column(children: [
+                      Text.rich(TextSpan)
+                    ],))
+                  ],
                 ),
               );
             },
