@@ -373,28 +373,41 @@ class _SmartHomePageState extends State<SmartHomePage> {
                               pageNum = 0;
                             });
                           },
-                          child: Container(
-                            decoration: ShapeDecoration(
-                              shape: StadiumBorder(),
-                              color: Colors.white12,
-                            ),
-                            padding: EdgeInsets.only(right: 12),
-                            child: Row(
-                              spacing: 6,
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: accentColor,
-                                  foregroundColor: Colors.black,
-                                  radius: 24,
-                                  child: Icon(Icons.home_filled),
+                          child: pageNum == 0
+                              ? Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: Colors.white12,
+                                  ),
+                                  padding: EdgeInsets.only(right: 12),
+                                  child: Row(
+                                    spacing: 6,
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: accentColor,
+                                        foregroundColor: Colors.black,
+                                        radius: 24,
+                                        child: Icon(Icons.home_filled),
+                                      ),
+                                      Text(
+                                        "Home",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              : Container(
+                                  padding: EdgeInsets.all(12),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white12,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.white12),
+                                  ),
+                                  child: Icon(
+                                    Icons.home_filled,
+                                    color: Colors.white,
+                                  ),
                                 ),
-                                Text(
-                                  "Home",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ],
-                            ),
-                          ),
                         ),
                         GestureDetector(
                           onTap: () {
@@ -402,18 +415,41 @@ class _SmartHomePageState extends State<SmartHomePage> {
                               pageNum = 1;
                             });
                           },
-                          child: Container(
-                            padding: EdgeInsets.all(12),
-                            decoration: BoxDecoration(
-                              color: Colors.white12,
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.white12),
-                            ),
-                            child: Icon(
-                              Icons.zoom_out_map,
-                              color: Colors.white,
-                            ),
-                          ),
+                          child: pageNum == 1
+                              ? Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: Colors.white12,
+                                  ),
+                                  padding: EdgeInsets.only(right: 12),
+                                  child: Row(
+                                    spacing: 6,
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: accentColor,
+                                        foregroundColor: Colors.black,
+                                        radius: 24,
+                                        child: Icon(Icons.zoom_out_map),
+                                      ),
+                                      Text(
+                                        "Device",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              : Container(
+                                  padding: EdgeInsets.all(12),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white12,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.white12),
+                                  ),
+                                  child: Icon(
+                                    Icons.zoom_out_map,
+                                    color: Colors.white,
+                                  ),
+                                ),
                         ),
                         Container(
                           padding: EdgeInsets.all(12),
