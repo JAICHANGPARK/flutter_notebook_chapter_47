@@ -11,6 +11,10 @@ class SmartHomeDevicePage extends StatefulWidget {
 class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+
+      ],
+    );
   }
 }
