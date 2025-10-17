@@ -17,7 +17,11 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("My Devices", style: TextStyle(color: Colors.white)),
-            TextButton(onPressed: () {}, child: Text("view All")),
+            TextButton(
+              onPressed: () {},
+              child: Text("view All"),
+              style: TextButton.styleFrom(foregroundColor: Colors.grey),
+            ),
           ],
         ),
         SizedBox(
@@ -69,7 +73,10 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                               ],
                             ),
                           ),
-                          Text("Lamp"),
+                          Text(
+                            "Lamp",
+                            style: TextStyle(fontSize: 16, color: Colors.white),
+                          ),
                           Spacer(),
                           Switch.adaptive(value: false, onChanged: (v) {}),
                         ],
