@@ -47,6 +47,7 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                       bottom: 12,
                       top: 12,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text.rich(
                             TextSpan(
