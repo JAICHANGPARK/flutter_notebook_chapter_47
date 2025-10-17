@@ -30,7 +30,7 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
           ],
         ),
         SizedBox(
-          height: 52,
+          height: 48,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
@@ -53,6 +53,20 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                 child: Center(
                   child: Text(
                     "Living Room",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(right: 16),
+                padding: EdgeInsets.symmetric(horizontal: 28),
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(side: BorderSide(color: Colors.white12)),
+                  // color: accentColor,
+                ),
+                child: Center(
+                  child: Text(
+                    "Kichen",
                     style: TextStyle(color: Colors.grey),
                   ),
                 ),
