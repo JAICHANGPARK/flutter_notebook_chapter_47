@@ -17,15 +17,13 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("My Devices", style: TextStyle(color: Colors.white)),
-            TextButton(onPressed: () {}, child: Text("view All",)),
+            TextButton(onPressed: () {}, child: Text("view All")),
           ],
         ),
-        SizedBox(height: 62, child: ListView(
-          scrollDirection: Axis.horizontal,
-          children: [
-
-          ],
-        ),),
+        SizedBox(
+          height: 62,
+          child: ListView(scrollDirection: Axis.horizontal, children: []),
+        ),
         Expanded(
           child: GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -34,7 +32,12 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
               mainAxisSpacing: 12,
             ),
             itemBuilder: (context, index) {
-              return Placeholder();
+              return Container(
+                decoration: ShapeDecoration(
+                  shape: RoundedSuperellipseBorder(),
+                  color: Color.fromRGBO(26, 26, 26, 1),
+                ),
+              );
             },
           ),
         ),
