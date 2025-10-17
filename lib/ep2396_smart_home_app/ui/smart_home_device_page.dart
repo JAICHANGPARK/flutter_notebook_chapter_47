@@ -14,9 +14,10 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
       spacing: 16,
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("My Devices"),
-            TextButton(onPressed: () {}, child: Text("view All")),
+            Text("My Devices", style: TextStyle(color: Colors.white)),
+            TextButton(onPressed: () {}, child: Text("view All",)),
           ],
         ),
         SizedBox(height: 62, child: Placeholder()),
