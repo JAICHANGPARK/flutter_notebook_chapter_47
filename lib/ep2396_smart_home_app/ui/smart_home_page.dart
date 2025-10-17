@@ -91,6 +91,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                     index: pageNum,
                     children: [
                       Column(
+                        spacing: 20,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                         ClipRRect(
