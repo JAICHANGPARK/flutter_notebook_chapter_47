@@ -326,26 +326,33 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       mainAxisSize: MainAxisSize.min,
                       spacing: 16,
                       children: [
-                        Container(
-                          decoration: ShapeDecoration(
-                            shape: StadiumBorder(),
-                            color: Colors.white12,
-                          ),
-                          padding: EdgeInsets.only(right: 12),
-                          child: Row(
-                            spacing: 6,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: accentColor,
-                                foregroundColor: Colors.black,
-                                child: Icon(Icons.home_filled),
-                                radius: 24,
-                              ),
-                              Text(
-                                "Home",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
+                        GestureDetector(
+                          onTap: (){
+                            setState(() {
+                              pageNum = 0;
+                            });
+                          },
+                          child: Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Colors.white12,
+                            ),
+                            padding: EdgeInsets.only(right: 12),
+                            child: Row(
+                              spacing: 6,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: accentColor,
+                                  foregroundColor: Colors.black,
+                                  child: Icon(Icons.home_filled),
+                                  radius: 24,
+                                ),
+                                Text(
+                                  "Home",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         Container(
