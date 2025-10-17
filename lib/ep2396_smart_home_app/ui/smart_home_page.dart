@@ -13,7 +13,7 @@ class SmartHomePage extends StatefulWidget {
 
 class _SmartHomePageState extends State<SmartHomePage> {
   Color accentColor = Color.fromRGBO(33, 232, 225, 1);
-
+  int pageNum = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -86,210 +86,215 @@ class _SmartHomePageState extends State<SmartHomePage> {
                       ),
                     ],
                   ),
-                  ClipRRect(
-                    child: BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: 2, sigmaY: 1),
-                      child: Container(
-                        height: 72,
-                        decoration: BoxDecoration(
-                          color: Colors.white12.withValues(alpha: .2),
-                          border: Border.all(color: Colors.white12),
-                          borderRadius: BorderRadius.circular(42),
-                        ),
-                        padding: EdgeInsets.only(left: 8),
-                        child: Row(
-                          spacing: 8,
-                          children: [
-                            CircleAvatar(
-                              radius: 30,
-                              backgroundColor: accentColor,
-                              foregroundColor: Colors.black,
-                              child: Icon(Icons.bolt, size: 28),
-                            ),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: "952",
-                                          style: TextStyle(
-                                            fontSize: 20,
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: 'Kwh',
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Text(
-                                    "Date updated 3 hours ago",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.keyboard_arrow_down),
-                              color: Colors.white,
-                              iconSize: 36,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Expanded(child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        "Rooms",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        style: TextButton.styleFrom(
-                          foregroundColor: Colors.grey,
-                        ),
-                        child: Text("view All"),
-                      ),
-                    ],
-                  ),
-                  Expanded(
-                    child: ListView.builder(
-                      itemCount: 10,
-                      padding: EdgeInsets.zero,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          height: 300,
-                          padding: EdgeInsets.only(
-                            left: 16,
-                            right: 16,
-                            top: 16,
-                            bottom: 24,
+                    ClipRRect(
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 2, sigmaY: 1),
+                        child: Container(
+                          height: 72,
+                          decoration: BoxDecoration(
+                            color: Colors.white12.withValues(alpha: .2),
+                            border: Border.all(color: Colors.white12),
+                            borderRadius: BorderRadius.circular(42),
                           ),
-                          decoration: ShapeDecoration(
-                            shape: RoundedSuperellipseBorder(
-                              borderRadius: BorderRadius.circular(32),
-                            ),
-                            color: Colors.grey,
-                            image: DecorationImage(
-                              image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
-                              ),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                          margin: EdgeInsets.only(bottom: 16),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          padding: EdgeInsets.only(left: 8),
+                          child: Row(
+                            spacing: 8,
                             children: [
-                              Row(
-                                spacing: 6,
-                                children: [
-                                  Container(
-                                    height: 54,
-                                    width: 54,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: Colors.white10,
-                                      border: Border.all(color: Colors.white12),
-                                    ),
-                                    child: Icon(
-                                      Icons.edit,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  Container(
-                                    height: 54,
-                                    width: 54,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: Colors.white10,
-                                      border: Border.all(color: Colors.white12),
-                                    ),
-                                    child: Icon(
-                                      Icons.delete_outline,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  Spacer(),
-                                  Container(
-                                    height: 54,
-                                    width: 54,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: accentColor,
-                                      border: Border.all(color: Colors.white12),
-                                    ),
-                                    child: Center(
-                                      child: Transform.rotate(
-                                        angle: -2.5 / pi,
-                                        child: Icon(Icons.arrow_forward),
+                              CircleAvatar(
+                                radius: 30,
+                                backgroundColor: accentColor,
+                                foregroundColor: Colors.black,
+                                child: Icon(Icons.bolt, size: 28),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text.rich(
+                                      TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: "952",
+                                            style: TextStyle(
+                                              fontSize: 20,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: 'Kwh',
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    Text(
+                                      "Date updated 3 hours ago",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ],
+                                ),
                               ),
-                              Row(
-                                spacing: 4,
-                                children: [
-                                  Text(
-                                    "Living Room",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Spacer(),
-                                  Container(
-                                    padding: EdgeInsets.all(8),
-                                    decoration: BoxDecoration(
-                                      color: Colors.white12,
-                                      shape: BoxShape.circle,
-                                      border: Border.all(color: Colors.white12),
-                                    ),
-                                    child: Icon(
-                                      Icons.zoom_out_map,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  Container(
-                                    padding: EdgeInsets.all(8),
-                                    decoration: BoxDecoration(
-                                      color: Colors.white12,
-                                      shape: BoxShape.circle,
-                                      border: Border.all(color: Colors.white12),
-                                    ),
-                                    child: Icon(
-                                      Icons.volume_up,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ],
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.keyboard_arrow_down),
+                                color: Colors.white,
+                                iconSize: 36,
                               ),
                             ],
                           ),
-                        );
-                      },
+                        ),
+                      ),
                     ),
-                  ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Rooms",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.grey,
+                          ),
+                          child: Text("view All"),
+                        ),
+                      ],
+                    ),
+                    Expanded(
+                      child: ListView.builder(
+                        itemCount: 10,
+                        padding: EdgeInsets.zero,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            height: 300,
+                            padding: EdgeInsets.only(
+                              left: 16,
+                              right: 16,
+                              top: 16,
+                              bottom: 24,
+                            ),
+                            decoration: ShapeDecoration(
+                              shape: RoundedSuperellipseBorder(
+                                borderRadius: BorderRadius.circular(32),
+                              ),
+                              color: Colors.grey,
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
+                                ),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            margin: EdgeInsets.only(bottom: 16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  spacing: 6,
+                                  children: [
+                                    Container(
+                                      height: 54,
+                                      width: 54,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        color: Colors.white10,
+                                        border: Border.all(color: Colors.white12),
+                                      ),
+                                      child: Icon(
+                                        Icons.edit,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 54,
+                                      width: 54,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        color: Colors.white10,
+                                        border: Border.all(color: Colors.white12),
+                                      ),
+                                      child: Icon(
+                                        Icons.delete_outline,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Container(
+                                      height: 54,
+                                      width: 54,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        color: accentColor,
+                                        border: Border.all(color: Colors.white12),
+                                      ),
+                                      child: Center(
+                                        child: Transform.rotate(
+                                          angle: -2.5 / pi,
+                                          child: Icon(Icons.arrow_forward),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  spacing: 4,
+                                  children: [
+                                    Text(
+                                      "Living Room",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Container(
+                                      padding: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white12,
+                                        shape: BoxShape.circle,
+                                        border: Border.all(color: Colors.white12),
+                                      ),
+                                      child: Icon(
+                                        Icons.zoom_out_map,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Container(
+                                      padding: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white12,
+                                        shape: BoxShape.circle,
+                                        border: Border.all(color: Colors.white12),
+                                      ),
+                                      child: Icon(
+                                        Icons.volume_up,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],))
+
                 ],
               ),
             ),
