@@ -42,6 +42,10 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                 child: Stack(
                   children: [
                     Positioned(
+                      left: 12,
+                      right: 12,
+                      bottom: 12,
+                      top: 12,
                       child: Column(
                         children: [
                           Text.rich(
@@ -52,6 +56,9 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                               ],
                             ),
                           ),
+                          Text("Lamp"),
+                          Spacer(),
+                          Switch.adaptive(value: false, onChanged: (v) {}),
                         ],
                       ),
                     ),
