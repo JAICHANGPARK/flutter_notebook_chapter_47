@@ -55,11 +55,17 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                                 TextSpan(
                                   text: "2",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 32,
                                     color: Colors.white,
                                   ),
                                 ),
-                                TextSpan(text: "Devices"),
+                                TextSpan(
+                                  text: "Devices",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
