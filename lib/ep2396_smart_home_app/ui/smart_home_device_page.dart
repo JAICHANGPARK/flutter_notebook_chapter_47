@@ -41,9 +41,20 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                 ),
                 child: Stack(
                   children: [
-                    Positioned(child: Column(children: [
-                      Text.rich(TextSpan)
-                    ],))
+                    Positioned(
+                      child: Column(
+                        children: [
+                          Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(text: "2"),
+                                TextSpan(text: "Devices"),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               );
