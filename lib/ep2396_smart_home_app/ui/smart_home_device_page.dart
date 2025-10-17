@@ -42,17 +42,23 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 12,
-                      right: 12,
-                      bottom: 12,
-                      top: 12,
+                      left: 16,
+                      right: 16,
+                      bottom: 16,
+                      top: 16,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text.rich(
                             TextSpan(
                               children: [
-                                TextSpan(text: "2"),
+                                TextSpan(
+                                  text: "2",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                  ),
+                                ),
                                 TextSpan(text: "Devices"),
                               ],
                             ),
