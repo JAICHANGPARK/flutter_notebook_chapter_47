@@ -18,6 +18,10 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
             TextButton(onPressed: () {}, child: Text("view All")),
           ],
         ),
+        SizedBox(
+          height: 62,
+          child: Placeholder(),
+        )
       ],
     );
   }
