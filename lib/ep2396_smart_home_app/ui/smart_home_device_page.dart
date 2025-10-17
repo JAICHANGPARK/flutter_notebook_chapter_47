@@ -16,7 +16,10 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("My Devices", style: TextStyle(color: Colors.white)),
+            Text(
+              "My Devices",
+              style: TextStyle(color: Colors.white, fontSize: 16),
+            ),
             TextButton(
               onPressed: () {},
               child: Text("view All"),
