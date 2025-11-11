@@ -65,10 +65,7 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                   // color: accentColor,
                 ),
                 child: Center(
-                  child: Text(
-                    "Kichen",
-                    style: TextStyle(color: Colors.grey),
-                  ),
+                  child: Text("Kichen", style: TextStyle(color: Colors.grey)),
                 ),
               ),
               Container(
@@ -79,10 +76,7 @@ class _SmartHomeDevicePageState extends State<SmartHomeDevicePage> {
                   // color: accentColor,
                 ),
                 child: Center(
-                  child: Text(
-                    "Kichen",
-                    style: TextStyle(color: Colors.grey),
-                  ),
+                  child: Text("Kichen", style: TextStyle(color: Colors.grey)),
                 ),
               ),
             ],
