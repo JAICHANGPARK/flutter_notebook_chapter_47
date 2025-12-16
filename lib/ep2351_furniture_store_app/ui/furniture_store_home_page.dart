@@ -28,7 +28,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                     children: [
                       Expanded(
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: .start,
                           children: [
                             Text(
                               "Discover Your",
@@ -71,7 +71,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             shape: StadiumBorder(),
                             color: Colors.white,
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12),
+                          padding: .symmetric(horizontal: 12),
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: "Search furniture",
