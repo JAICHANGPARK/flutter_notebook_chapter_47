@@ -100,7 +100,7 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                             shape: StadiumBorder(),
                             color: Color.fromRGBO(172, 127, 85, 1),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: .symmetric(
                             horizontal: 18,
                             vertical: 8,
                           ),
@@ -115,12 +115,12 @@ class _FurnitureStoreHomePageState extends State<FurnitureStoreHomePage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 8),
+                          margin: .only(right: 8),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.white,
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: .symmetric(
                             horizontal: 18,
                             vertical: 8,
                           ),
