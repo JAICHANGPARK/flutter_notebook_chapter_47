@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
-
 import 'home_cleaning_detail_page.dart';
 
 class HomeCleaningHomePage extends StatefulWidget {
