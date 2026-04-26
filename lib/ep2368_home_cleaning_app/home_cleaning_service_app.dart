@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'ui/home_cleaning_start_page.dart';
 
 class HomeCleaningServiceApp extends StatelessWidget {
